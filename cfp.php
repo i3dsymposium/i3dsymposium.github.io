@@ -1,5 +1,5 @@
 <?php $pagetitle="Call For Participation"; include("header.php") ?>
-
+<!-- 
 <p class="lead">ACM Symposium on Interactive 3D Graphics and Games (I3D) 2015</p>
 
 <p><b>Paper submission deadline: October 21, 2014</b></p>
@@ -85,5 +85,5 @@ Techniques (JCGT)</p>
 <li>Kartic Subr, Heriot Watt University</li>
 <li>Li-Yi Wei, The University of Hong Kong</li>
 </ul></p>
-
+ -->
 <?php include("footer.php") ?>

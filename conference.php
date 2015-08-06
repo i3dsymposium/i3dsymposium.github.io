@@ -3,6 +3,7 @@
     <h3>Past I3D Conferences</h3>
 
         <ul class="unstyled">
+        <li>I3D 2015 archive will be here soon.</li>
           <li>
 I3D 2014 - San Francisco, California<small>
 [ <a href="http://www.csee.umbc.edu/csee/research/vangogh/I3D2014/">website</a> ]

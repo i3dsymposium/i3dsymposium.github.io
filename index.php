@@ -3,7 +3,9 @@
           <p class="lead">I3D is the leading conference for real time 3D
           computer graphics and human interaction.</p>
 
-          <p>2015 marks the 29th year since the first conference. This time we
+          <p>2016 marks the 30th year since the first conference.</p>
+
+<!--           <p>This time we
           will be returning to San Francisco, California during February 27th to
           March 1st, 2015. We invite you to submit papers across the entire
           range of topics in interaction, interactive 3D graphics, and
@@ -13,9 +15,9 @@
           <a href="http://gdconf.com">Game Developers Conference (GDC'15)</a>
           in the Bay Area. This is an excellent opportunity to attend both
           conferences and see both research and application in real time 3D
-          computer graphics.</p>
+          computer graphics.</p> -->
 
-          <hr>
+<!--           <hr>
 
           <p>Keynote Speaker Slides:
             <ul>
@@ -104,7 +106,7 @@
               Matthias Müller, Research Lead, NVIDIA
             </p></li>
           </ul>
-          </p>
+          </p> -->
 
           <hr>
 

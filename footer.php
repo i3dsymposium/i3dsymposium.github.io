@@ -3,7 +3,8 @@
       <!-- grid_3 is a 3-wide cell -->
       <div id="news" class="grid_3">
         <h4>Important Dates</h4>
-        <ul><small>
+        This information will be available soon.
+<!--         <ul><small>
           <li>Full paper submission deadline:<br>
           <del>Tue, Oct. 21, 2014</del></li>
           <li>Notification to authors:<br>
@@ -20,7 +21,7 @@
           <del>Mon, Feb. 9, 2015</del></li>
           <li>Conference:<br>
           <del>Fri, Feb. 27 - Sun, Mar. 1, 2015</del></li>
-        </small></ul>
+        </small></ul> -->
 
         <p><b>Unless otherwise specified<br>
         <b>all deadlines are at<br>
@@ -32,13 +33,14 @@
         </ul>
 
         <h4>Registration Site</h4>
-        <ul class="unstyled">
+<!--         <ul class="unstyled">
           <li><a href="https://www.regonline.com/i3d2015">http://www.regonline.com/i3d2015</a></li>
-        </ul>
+        </ul> -->
 
         <h4>Updates</h4>
         <ul><small>
-          <li>Mar  9, 2015 - Keynote slides posted.</li>
+        <li> Aug 6, 2015 - I3D 2016 website is now live!</li>
+<!--           <li>Mar  9, 2015 - Keynote slides posted.</li>
           <li>Mar  1, 2015 - Awards posted.</li>
           <li>Feb  3, 2015 - Papers, posters, and program posted.</li>
           <li>Jan 28, 2015 - Industry speaker.</li>
@@ -50,7 +52,7 @@
           <li>Oct 27, 2014 - First keynote speaker.</li>
           <li>Oct 10, 2014 - Submission system is open.</li>
           <li>Oct 10, 2014 - Posters information available.</li>
-          <li>Sep 12, 2014 - The I3D 2015 website is live.</li>
+          <li>Sep 12, 2014 - The I3D 2015 website is live.</li> -->
         <small></ul>
 
         <h4>Sponsored by:</h4>

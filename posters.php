@@ -1,6 +1,8 @@
 <?php $pagetitle="Posters &amp; Demos"; include("header.php") ?>
 
-    <p>Below is a list of posters accepted to ACM I3D 2015.</p>
+<p>List of posters will be available after the review phase.</p>
+
+<!--     <p>Below is a list of posters accepted to ACM I3D 2015.</p>
 
     <dt><b>iHap: Towards a Vision Substitution System for Active Analysis of Facial Expressions</b></dt>
     <dd>
@@ -70,7 +72,7 @@
     guidelines for poster abstracts (linked below). Copyright space is not
     necessary. All extended abstracts will be included in the ACM Digital
     Library (DL). Note that this still allows you to submit your work as a full
-    paper to another conference or journal.</p>
+    paper to another conference or journal.</p> -->
 
     <p><b>How to submit?</b><br>
     Please e-mail your submission to

@@ -1,5 +1,5 @@
 <?php $pagetitle="Keynotes"; include("header.php") ?>
-
+<!-- 
 <h3><a name="opening">Opening Keynote</a></h3>
 
 <div class="grid_7 alpha">
@@ -160,7 +160,9 @@ offline simulations to macroscopic real time simulation in computer graphics.
 In 2002 he co-founded Novodex, a company that developed a simulation engine for
 computer games. In 2004 Novodex was acquired by AGEIA which, in turn, was
 acquired by NVIDIA in 2008.
-</p>
+</p> -->
+
+
 <!--
 <hr>
 

@@ -1,6 +1,8 @@
 <?php $pagetitle="Committee"; include("header.php") ?>
 
-          <p>Each category is listed in alphabetical order.</p>
+<p>Committee for I3D 2016 has not been announced yet.</p>
+
+<!--           <p>Each category is listed in alphabetical order.</p>
 
           <h4>General Chairs</h4>
           <ul class="unstyled expand">
@@ -58,7 +60,8 @@
             National Institute of Standards and Technology</li>
           </ul>
 
-          <h4>International Paper Committee</h4>
-<?php include("ipc.html") ?>
+          <h4>International Paper Committee</h4> 
+          
+<?php include("ipc.html") ?> -->
 
 <?php include("footer.php") ?>

@@ -2,6 +2,9 @@
 
 <h3>Conference Registration</h3>
 
+Registration information is not available currently.
+
+<!-- 
 <p>Conference registration is now open:
 <ul>
   <li><a href="https://www.regonline.com/i3d2015">http://www.regonline.com/i3d2015</a></li>
@@ -21,6 +24,6 @@
 
 <p>All prices are in US Dollars. One banquet ticket is <b>included</b> for each
 registration entry. Extra banquet tickets can be purchased during
-registration.</p>
+registration.</p> -->
 
 <?php include("footer.php") ?>

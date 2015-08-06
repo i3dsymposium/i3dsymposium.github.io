@@ -2,7 +2,9 @@
 
 <h3>Conference Venue</h3>
 
-<p>
+<p>Venue information will be here soon.</p>
+
+<!-- <p>
 <a href="http://www.marriott.com/hotels/travel/sfofw-san-francisco-marriott-fishermans-wharf/">
 Marriott Fisherman's Wharf</a><br>
 1250 Columbus Avenue<br>
@@ -50,7 +52,7 @@ and Transportation page</a>.</p>
 <h5>Visitor Information</h5>
 
 <p>Please check the <a href="http://www.onlyinsanfrancisco.com/">official
-visitor site for San Francisco</a> for details.</p>
+visitor site for San Francisco</a> for details.</p> -->
 
 <?php include("footer.php") ?>
 

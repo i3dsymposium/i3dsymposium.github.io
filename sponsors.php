@@ -1,28 +1,16 @@
 <?php $pagetitle="Corporate Sponsors"; include("header.php") ?>
 
           <p>The ACM SIGGRAPH Symposim on Interactive 3D Graphics and Games
-          2015 is a highly-visible, leading-edge conference for techniques that
+          2016 is a highly-visible, leading-edge conference for techniques that
           combine 3D computer graphics with human interaction. I3D continues to
           focus on the hottest research in 3D game technology, interactive
           visualization and visual depiction, interactive modeling,
           user-assisted techniques, and applications. As a corporate supported
           you participate in this exciting field and demonstrate leadership in
           supporting the latest developments in computer graphics research.</p>
-
+<!-- 
           <p>The I3D 2015 corporate sponsors are:</p>
 
-<!--
-
-          <h4>Title Sponsors</h4>
-          <ul class="sponsors">
-            <li>
-            </li>
-            <li>
-            </li>
-            <li>
-            </li>
-          </ul>
--->
           <h4>Benefactors</h4>
           <ul class="sponsors">
             <li>
@@ -116,5 +104,5 @@
             <li>Option to provide advertisement material that is put into the
             delegate packs handed out to every participant.</li>
           </ul>
-
+ -->
 <?php include("footer.php") ?>

@@ -38,7 +38,7 @@
     <div id="header">
       <p class="text-left float-left subhead tight"><small>ACM SIGGRAPH Symposium on<br>
       Interactive 3D Graphics and Games<br>
-      San Francisco, CA : February 27 - March 1, 2016</small></p>
+      <!-- San Francisco, CA : February 27 - March 1, 2015 --></small></p>
     </div> <!-- #header -->
     <div class="clearfix"></div>
 

@@ -2,6 +2,9 @@
 
 <h3>Program</h3>
 
+Program information will be here soon.
+
+<!-- 
 <table>
 <tr>
     <td valign="top" width="90" style="border-right: 1px solid white">
@@ -169,6 +172,6 @@
         </table>
     </td>
 </tr>
-</table>
+</table> -->
 
 <?php include("footer.php") ?>
