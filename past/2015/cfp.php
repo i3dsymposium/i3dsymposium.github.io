@@ -2,7 +2,7 @@
 
 <p class="lead">ACM Symposium on Interactive 3D Graphics and Games (I3D) 2015</p>
 
-<p><b>Paper submission deadline: Tuesday, October 20, 2015</b></p>
+<p><b>Paper submission deadline: October 21, 2014</b></p>
 
 <p>Conference Homepage:
 <a href="http://www.i3dsymposium.org">http://www.i3dsymposium.org</a><br>
@@ -10,17 +10,15 @@ Submission System:
 <a href="http://precisionconference.com/~i3d">http://precisionconference.com/~i3d</a>
 </p>
 
-<p>Conference Dates: TBA, 2016<br>
-Location: Redmond, Washington</p>
+<p>Conference Dates: February 27 - March 1, 2015<br>
+Location: San Francisco, CA</p>
 
 <p>I3D is the leading conference for real time 3D computer graphics and human
-interaction. 2016 marks the 30th year since the first conference. We invite you
+interaction. 2015 marks the 29th year since the first conference. We invite you
 to submit papers across the entire range of topics of interaction, interactive
 3D graphics, and games. The fall deadline provides the perfect outlet for your
-summer work.</p>
-
-<!-- In addition, GDC will be held right after I3D in the Bay Area,
-making it an excellent opportunity to attend both conferences.</p> -->
+summer work. In addition, GDC will be held right after I3D in the Bay Area,
+making it an excellent opportunity to attend both conferences.</p>
 
 <p>Topics include, but are not limited to:
 <ol>
@@ -47,9 +45,9 @@ making it an excellent opportunity to attend both conferences.</p> -->
 The submission of a video to accompany the paper is encouraged. Papers will be
 peer-reviewed in a single-blind process and authors notified by e-mail.</p>
 
-<p>The best I3D papers (about 4 to 6 papers) from 2016 will be
+<p>The best I3D papers (about 4 to 6 papers) from 2015 will be
 invited to submit extended versions to appear in a IEEE Transactions on
-Visualization and Computer Graphics (TVCG) special edition on I3D 2016.
+Visualization and Computer Graphics (TVCG) special edition on I3D 2015.
 Also, several of the most practical or implementation-minded papers will
 be invited to submit extended versions to the Journal of Computer Graphics
 Techniques (JCGT)</p>
@@ -63,18 +61,18 @@ Techniques (JCGT)</p>
 
 <p><b>Important Dates:</b>
 <ul class="unstyled">
-<li>Paper Submission: Tuesday, October 20, 2015</li>
-<li>Paper Notification: Tuesday, December 8, 2015</li>
-<li>Camera-Ready Paper: Friday, December 18, 2015</li>
+<li>Paper Submission: October 21, 2014</li>
+<li>Paper Notification: December 8, 2014</li>
+<li>Camera-Ready Paper: December 19, 2014</li>
 <li>Poster and Demo Submission: TBA</li>
 <li>Poster and Demo Notification: TBA</li>
-<li>Conference: TBA, 2016</li>
+<li>Conference: February 27 - March 1, 2015</li>
 </ul></p>
 
 <p><b>Papers Chairs:</b>
 <ul class="unstyled">
-<li>Kartic Subr, Heriot Watt University</li>
-<li>Li-Yi Wei, The University of Hong Kong</li>
+<li>Pedro Sander, The Hong Kong University of Science and Technology</li>
+<li>John Keyser, Texas A&amp;M University</li>
 </ul></p>
 
 <p><b>Posters Chair:</b>
@@ -84,8 +82,8 @@ Techniques (JCGT)</p>
 
 <p><b>General Chairs:</b>
 <ul class="unstyled">
-<li>Chris Wyman, NVIDIA Research</li>
-<li>Cem Yuksel, School of Computing, University of Utah</li>
+<li>Kartic Subr, Heriot Watt University</li>
+<li>Li-Yi Wei, The University of Hong Kong</li>
 </ul></p>
 
 <?php include("footer.php") ?>

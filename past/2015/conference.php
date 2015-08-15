@@ -3,12 +3,6 @@
     <h3>Past I3D Conferences</h3>
 
         <ul class="unstyled">
-        <li>
-I3D 2015 - San Francisco, California<small>
-[ <a href="past/2015/">website</a> ]
-[ <a href="http://dl.acm.org/citation.cfm?id=2699276&picked=prox&cfid=699263023&cftoken=25796259">papers</a> ]
-[ <a href="http://kesen.realtimerendering.com/i3d2015Papers.htm">paper archive</a> ]
-          </small></li>
           <li>
 I3D 2014 - San Francisco, California<small>
 [ <a href="http://www.csee.umbc.edu/csee/research/vangogh/I3D2014/">website</a> ]
