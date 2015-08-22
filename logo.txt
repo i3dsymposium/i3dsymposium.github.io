@@ -1,11 +1,3 @@
-The site uses the 960 Grid System (http://960.gs) for the layout,
-modified into a fluid layout (960-fluid.css) with some additions
-for responsive design (responsive.css).
-
-Both the {header,footer}.php and css/i3d.css files are commented.
-
-The individual php files should be self explanatory.
-
 For the logo, there is an img/logo.xcf file which is the layered
 logo in the GIMP file format. The text is on two separate editable
 layers. For the drop shadow:
