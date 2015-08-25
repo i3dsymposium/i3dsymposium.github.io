@@ -26,15 +26,15 @@
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>
-    $(function () {
-      // Set the active button based on the current url.
-      var filename = {{window.location.pathname.split('/').reverse()[0]}};
-      $('a[href$="' + filename + '"]').parent().addClass('active');
-      // If there are no objects with the active class,
-      if ($('.active').length == 0) {
-        // assume the index is the current url.
-        $('a[href$="index.html"]').parent().addClass('active');
-      }
-    });
+      $(function () {
+        // Set the active button based on the current url.
+        var filename = window.location.pathname.split('/').reverse()[0];
+        $('a[href$="' + filename + '"]').parent().addClass('active');
+        // If there are no objects with the active class,
+        if ($('.active').length == 0) {
+          // assume the index is the current url.
+          $('a[href$="index.html"]').parent().addClass('active');
+        }
+      });
   </script>
 </head>
