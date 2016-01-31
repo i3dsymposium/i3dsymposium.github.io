@@ -284,6 +284,11 @@ ul.sponsors > li {
     margin-bottom: 16px;
 }
 
+ul.sponsors img {
+	max-width: 100%;
+	height: auto;
+}
+
 #nav {
   padding-top: 140px; /* bump down content, very low for logo */
 }
