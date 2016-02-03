@@ -3,15 +3,17 @@ layout: default
 ---
 
 <style>
-    table#tblprog {width: 400px; display: inline; padding: 0px 20px 0px 20px;}
+    table#tblprog {width: 400px; display: block; padding: 0px 20px 0px 20px;}
     /*table#tblprog tr:nth-child(odd)  { background-color:#F2D0A4; }*/
     /*table#tblprog tr:nth-child(even) { background-color:#F7F5E7; }*/
     table#tblprog td#time {vertical-align: center; font-weight: bold;   font-size: 120%; width: 1px;  text-align: right; padding: 0px 10px 10px 0px; white-space: nowrap;}
     table#tblprog td#item {vertical-align: center; font-weight: normal; font-size: 100%; width: auto; text-align: left;  padding: 0px 10px 10px 0px;}
     h4#daytitle {display: block; border-bottom: 2px solid rgb(0, 133, 200); padding: 25px 0px 0px 5px; margin: auto; font-size: 120%; font-weight: bold; text-align: left;}
+    div#programdiv {display:inline-block; }
 </style>
 
 <h3>Program</h3> 
+<div id="programdiv">
 <h4 id="daytitle">Saturday, Feb 27 (8 am - 9 pm)</h4>
 <table id="tblprog">
 <!--         <tr>
@@ -72,6 +74,8 @@ layout: default
             End of Banquet</td>
         </tr>
 </table>
+</div>
+<div id="programdiv">
 <h4 id="daytitle">Sunday, Feb 28 (8 am to 3:30 pm)</h4>
 <table id="tblprog">
 <!--         <tr>
@@ -126,6 +130,7 @@ layout: default
             End of Conference</td>
         </tr>
 </table>
+</div>
 
 <!-- <table>
 <tr>
