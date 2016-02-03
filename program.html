@@ -2,57 +2,180 @@
 layout: default
 ---
 
-<h3>Program</h3>
+<style>
+    table#tblprog {width: 400px; display: inline; padding: 0px 20px 0px 20px;}
+    /*table#tblprog tr:nth-child(odd)  { background-color:#F2D0A4; }*/
+    /*table#tblprog tr:nth-child(even) { background-color:#F7F5E7; }*/
+    table#tblprog td#time {vertical-align: center; font-weight: bold;   font-size: 150%; width: 1px;  text-align: right; padding: 20px 5px 5px 5px; white-space: nowrap;}
+    table#tblprog td#item {vertical-align: center; font-weight: normal; font-size: 120%; width: auto; text-align: left;  padding: 20px 5px 5px 5px;}
+    table#tblprog td#daytitle {display: block; border-bottom: 5px solid #eeeeff; padding: 25px 0px 10px 5px; margin: auto; font-size: 150%; font-weight: bold; text-align: left;}
+</style>
 
-<table>
+<h3>Program</h3> 
+
+<table id="tblprog">
+        <tr>
+        <td id="daytitle" colspan=2>Saturday, Feb 27 (8 am - 9 pm)</td>
+        </tr>
+        <tr>
+            <td id="time">8:00 am</td>
+            <td id="item">
+            Breakfast and Registration</td>
+        </tr>
+        <tr>
+            <td id="time">9:00 am</td>
+            <td id="item">
+            Opening and <a href="keynotes.html">Keynote</a><br>
+            Session Chair: TBA</td>
+        </tr>
+        <tr>
+            <td id="time">10:30 am</td>
+            <td id="item">
+            Break</td>
+        </tr>
+        <tr>
+            <td id="time">10:45 am</td>
+            <td id="item">
+            Papers: <a href="papers.html#interaction">Interaction</a><br>
+            Session Chair: TBA</td>
+        </tr>
+        <tr>
+            <td id="time">12:15 pm</td>
+            <td id="item">
+            Lunch and <a href="posters.html">Poster Session</a></td>
+        </tr>
+        <tr>
+            <td id="time">2:30 pm</td>
+            <td id="item">
+            Papers: <a href="papers.html#illumination">Illumination</a><br>
+            Session Chair: TBA</td>
+        </tr>
+        <tr>
+            <td id="time">4:00 pm</td>
+            <td id="item">
+            Break (food provided)</td>
+        </tr>
+        <tr>
+            <td id="time">4:30 pm</td>
+            <td id="item">
+            Papers: <a href="papers.html#rendering">Rendering</a><br>
+            Session Chair: TBA</td>
+        </tr>
+        <tr>
+            <td id="time">6:15 pm</td>
+            <td id="item">
+            Banquet</td>
+        </tr>
+        <tr>
+            <td id="time">9:00 pm</td>
+            <td id="item">
+            End of Banquet</td>
+        </tr>
+</table>
+<!-- <h4 id="daytitle">Sunday, Feb 28</h4> -->
+<table id="tblprog">
+        <tr>
+        <td id="daytitle" colspan=2>Sunday, Feb 28 (8 am to 3:30 pm)</td>
+        </tr>
+        <tr>
+            <td id="time">8:00 am</td>
+            <td id="item">
+            Breakfast</td>
+        </tr>
+        <tr>
+            <td id="time">9:00 am</td>
+            <td id="item">
+            Papers: <a href="papers.html#geometry">Geometry</a><br>
+            Session Chair: TBA</td>
+        </tr>
+        <tr>
+            <td id="time">10:30 am</td>
+            <td id="item">
+            Break</td>
+        </tr>
+        <tr>
+            <td id="time">10:45 am</td>
+            <td id="item">
+            Papers: <a href="papers.html#simulation">Simulation</a><br>
+            Session Chair: TBA</td>
+        </tr>
+        <tr>
+            <td id="time">12:15 pm</td>
+            <td id="item">
+            Lunch</td>
+        </tr>
+        <tr>
+            <td id="time">1:00 pm</td>
+            <td id="item">
+            Papers: <a href="papers.html#animation">Animation</a><br>
+            Session Chair: TBA</td>
+        </tr>
+        <tr>
+            <td id="time">2:30 pm</td>
+            <td id="item">
+            Break (food provided)</td>
+        </tr>
+        <tr>
+            <td id="time">3:00 pm</td>
+            <td id="item">
+            Awards and Closing</td>
+        </tr>
+        <tr>
+            <td id="time">3:30 pm</td>
+            <td id="item">
+            End of Conference</td>
+        </tr>
+</table>
+
+<!-- <table>
 <tr>
     <td valign="top" width="90" style="border-right: 1px solid white">
-    Saturday<br/>February 27<br/>8:00am - 9:00pm<br/>
+    Saturday<br/>February 27<br/>8:00am - 9:00 pm<br/>
     </td>
     <td style="padding-bottom: 10px">
         <table>
         <tr>
-            <td width="80">8:00am</td>
+            <td width="80">8:00 am</td>
             <td>Breakfast and Registration</td>
         </tr>
         <tr>
-            <td valign="top">9:00am</td>
+            <td valign="top">9:00 am</td>
             <td>Opening and <a href="keynotes.html">Keynote</a><br>
             Session Chair: TBA</td>
         </tr>
         <tr>
-            <td>10:30am</td>
+            <td>10:30 am</td>
             <td>Break</td>
         </tr>
         <tr>
-            <td valign="top">10:45am</td>
+            <td valign="top">10:45 am</td>
             <td>Papers: <a href="papers.html#interaction">Interaction</a><br>
             Session Chair: TBA</td>
         </tr>
         <tr>
-            <td>12:15pm</td>
+            <td>12:15 pm</td>
             <td>Lunch and <a href="posters.html">Poser Session</a></td>
         </tr>
         <tr>
-            <td valign="top">2:30pm</td>
+            <td valign="top">2:30 pm</td>
             <td>Papers: <a href="papers.html#illumination">Illumination</a><br>
             Session Chair: TBA</td>
         </tr>
         <tr>
-            <td>4:00pm</td>
+            <td>4:00 pm</td>
             <td>Break (food provided)</td>
         </tr>
         <tr>
-            <td valign="top">4:30pm</td>
+            <td valign="top">4:30 pm</td>
             <td>Papers: <a href="papers.html#rendering">Rendering</a><br>
             Session Chair: TBA</td>
         </tr>
         <tr>
-            <td>6:15pm</td>
+            <td>6:15 pm</td>
             <td>Banquet</td>
         </tr>
         <tr>
-            <td>9:00pm</td>
+            <td>9:00 pm</td>
             <td>End of Banquet</td>
         </tr>
         </table>
@@ -68,46 +191,46 @@ layout: default
     <td style="padding-bottom: 10px">
         <table>
         <tr>
-            <td width="80">8:00am</td>
+            <td width="80">8:00 am</td>
             <td>Breakfast</td>
         </tr>
         <tr>
-            <td valign="top">9:00am</td>
+            <td valign="top">9:00 am</td>
             <td>Papers: <a href="papers.html#geometry">Geometry</a><br>
             Session Chair: TBA</td>
         </tr>
         <tr>
-            <td>10:30am</td>
+            <td>10:30 am</td>
             <td>Break</td>
         </tr>
         <tr>
-            <td valign="top">10:45am</td>
+            <td valign="top">10:45 am</td>
             <td>Papers: <a href="papers.html#simulation">Simulation</a><br>
             Session Chair: TBA</td>
         </tr>
         <tr>
-            <td>12:15pm</td>
+            <td>12:15 pm</td>
             <td>Lunch</td>
         </tr>
         <tr>
-            <td valign="top">1:00pm</td>
+            <td valign="top">1:00 pm</td>
             <td>Papers: <a href="papers.html#animation">Animation</a><br>
             Session Chair: TBA</td>
         </tr>
         <tr>
-            <td>2:30pm</td>
+            <td>2:30 pm</td>
             <td>Break (food provided)</td>
         </tr>
         <tr>
-            <td>3:00pm</td>
+            <td>3:00 pm</td>
             <td>Awards and Closing</td>
         </tr>
         <tr>
-            <td>3:30pm</td>
+            <td>3:30 pm</td>
             <td>End of Conference</td>
         </tr>
         </table>
     </td>
 </tr>
 </table>
-
+ -->
