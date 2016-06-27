@@ -131,14 +131,19 @@ li {
 
 dt {
   font-size: 140%;
+  margin-top: 28px;
   margin-bottom: 3px;
 }
 
 dd {
   font-size: 90%;
-  margin-bottom: 28px;
   margin-left: 20px;
   color: #ccccdd;
+}
+
+dl {
+  font-size: 90%;
+  margin-left: 20px;
 }
 
 p,
