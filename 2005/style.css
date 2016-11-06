@@ -1,0 +1,122 @@
+FONT, P, DIV, TD {
+        FONT-SIZE: 12px; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif
+}
+BODY {
+        FONT-SIZE: 12px; FONT-FAMILY: Verdana,Arial,Helvetica,sans-serif; MARGIN-LEFT: 20px
+}
+A:link {
+        COLOR: #CC0033
+}
+A:visited {
+        COLOR: #426079
+}
+A:hover {
+        COLOR: #CC0033; TEXT-DECORATION: underline
+}
+A:active {
+        COLOR: #CC0033
+}
+IMG {
+	BORDER: 0px
+}
+
+#top {
+        FLOAT: top; PADDING: 1px 0px 0px 3px
+}
+#links {
+	PADDING: 0px; FONT-WEIGHT: bold; WHITE-SPACE: nowrap
+}
+.tutsection {
+	FONT-STYLE: italic
+}
+.tutsecdesc {
+	MARGIN-LEFT: 50px;
+}
+.tuttime {
+}
+.tutinfo {
+	MARGIN-LEFT: 50px
+}
+.schedule {
+	MARGIN-LEFT: 50px
+}
+.papertitle {
+	FONT-STYLE: italic;
+	MARGIN-LEFT: 20px;
+	MARGIN-BOTTOM: 0px
+}
+.authors {
+	MARGIN-LEFT: 40px;
+	MARGIN-TOP: 0px
+}
+.logo {
+        FLOAT: left
+}
+.chosenbutton A {
+	WIDTH: 140px; HEIGHT: 20px; DISPLAY: inline-block; COLOR: #000000; BACKGROUND-COLOR: #D295A9; BORDER-TOP: 2px #FFCCE3 solid; BORDER-LEFT: 2px #FFCCE3 solid; BORDER-BOTTOM: 2px #7F3155 solid; BORDER-RIGHT: 2px #7F3155 solid; MARGIN-TOP: 10px; TEXT-DECORATION: none; TEXT-ALIGN: center
+}
+.chosenbutton A:hover {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.chosenbutton A:link: {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.chosenbutton A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.button A {
+	WIDTH: 140px; HEIGHT: 20px; DISPLAY: inline-block; COLOR: #224059; BACKGROUND-COLOR: #B5C9E2; BORDER-TOP: 2px #CCE3FF solid; BORDER-LEFT: 2px #CCE3FF solid; BORDER-BOTTOM: 2px #31557F solid; BORDER-RIGHT: 2px #31557F solid; TEXT-DECORATION: none; TEXT-ALIGN: center
+}
+.button A:hover {
+	BACKGROUND-COLOR: #99AABF; COLOR: #224059; BORDER-TOP: 2px #31557F solid; BORDER-LEFT: 2px #31557F solid; BORDER-BOTTOM: 2px #CCE3FF solid; BORDER-RIGHT: 2px #CCE3FF solid; TEXT-DECORATION: none
+}
+.button A:link: {
+	COLOR: #224059; TEXT-DECORATION: none
+}
+.button A:visited {
+	COLOR: #224059; TEXT-DECORATION: none
+}
+
+.bigbanner {
+	TEXT-ALIGN: center; FONT-SIZE: 24px
+}
+
+.bigtitle {
+	FONT-SIZE: 24px; FONT-STYLE: bold
+}
+
+.programday {
+	FONT-SIZE: 14px
+}
+
+.top_title {
+        MARGIN-TOP: 40px; MARGIN-LEFT: 145px; WHITE-SPACE: nowrap; FONT-SIZE: 24px
+}
+
+.title {
+	FONT-SIZE: 18px
+}
+.heading {
+	FONT-WEIGHT: bold
+}
+.subheading {
+	FONT-STYLE: italic
+}
+.sponsor {
+	TEXT-ALIGN: center; FONT-SIZE: 11px; MARGIN-TOP: 50px
+}
+.corpsponsor {
+	TEXT-ALIGN: center; FONT-SIZE: 11px; 
+}
+.sponsorimage {
+	MARGIN: 0px 10px
+}
+UL.close {
+	MARGIN-TOP: 0px
+}
+BLOCKQUOTE.close {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px
+}
+LI.t {
+	LIST-STYLE: url('triangle.gif')
+}

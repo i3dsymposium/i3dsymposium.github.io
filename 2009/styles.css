@@ -1,0 +1,91 @@
+html,body,#wrapper{
+	height:100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+}p {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 16pt;
+	color: #FFFFFF;
+}
+ol {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	line-height: 16pt;
+	color: #FFFFFF;
+}
+.PageTitle {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 24pt;
+}
+.Highlight {
+
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 14pt;
+}
+.HighlightLarge {
+
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 16pt;
+}
+.HighlightText {
+
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #FFCC00;
+	font-size: 10pt;
+	line-height: 16pt;
+
+}
+.HighlightTextLarge {
+
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #FFCC00;
+	font-size: 14pt;
+	line-height: 16pt;
+
+}
+.SideBar {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 10pt;
+	line-height: 14pt;
+}
+.List {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-size: 10pt;
+	line-height: 16pt;
+	list-style-type: disc;
+}
+
+h2 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #FFFF90;
+	font-size: 14pt;
+	line-height: 16pt;
+	list-style-type: disc;
+}
+
+a:link {
+	color: #FFCC00;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FF9900;
+}
+a:visited {
+	color: #FFFF99;
+}
+.footer {
+	font-size: 9px;
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	color: #66CCFF;
+}
