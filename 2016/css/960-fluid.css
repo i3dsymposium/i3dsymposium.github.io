@@ -1,0 +1,377 @@
+/*
+  960 Grid System ~ Core CSS.
+  Learn more ~ http://960.gs/
+
+  Licensed under GPL and MIT.
+*/
+
+/*
+  Forces backgrounds to span full width,
+  even if there is horizontal scrolling.
+  Increase this if your layout is wider.
+
+  Note: IE6 works fine without this fix.
+*/
+
+/*
+  Modified to use % and em for sizes.
+  This makes the layout a fluid grid.
+*/
+
+body {
+  font-size: 100%;
+  min-width: 93.75%; /* 960px / 1024px = 93.75% */
+}
+
+/* `Container
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 93.75%; /* 960px / 1024px = 93.75% */
+}
+
+/* `Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  display: inline;
+  float: left;
+  margin-left: 0.625em; /* 16px x 0.625em = 10px */
+  margin-right: 0.625em; /* 16px x 0.625em = 10px */
+}
+
+.push_1, .pull_1,
+.push_2, .pull_2,
+.push_3, .pull_3,
+.push_4, .pull_4,
+.push_5, .pull_5,
+.push_6, .pull_6,
+.push_7, .pull_7,
+.push_8, .pull_8,
+.push_9, .pull_9,
+.push_10, .pull_10,
+.push_11, .pull_11,
+.push_12, .pull_12 {
+  position: relative;
+}
+
+.container_12 .grid_3 {
+  width: 21.484375%; /* 220px / 1024px = 21.484375% */
+}
+
+.container_12 .grid_6 {
+  width: 44.921875%; /* 460px / 1024px = 44.921875% */
+}
+
+.container_12 .grid_9 {
+  width: 68.359375%; /* 700px / 1024px = 68.359375% */
+}
+
+.container_12 .grid_12 {
+  width: 97.796875%; /* 940px / 1024px = 97.796875% */
+}
+
+/* `Grid >> Children (Alpha ~ First, Omega ~ Last)
+----------------------------------------------------------------------------------------------------*/
+
+.alpha {
+  margin-left: 0;
+}
+
+.omega {
+  margin-right: 0;
+}
+
+/* `Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .grid_1 {
+  width: 5.859375%; /* 60px / 1024px = 5.859375% */
+}
+
+.container_12 .grid_2 {
+  width: 13.671875%; /* 140px / 1024px = 13.671875% */
+}
+
+.container_12 .grid_4 {
+  width: 29.296875%; /* 300px / 1024px = 29.296875% */
+}
+
+.container_12 .grid_5 {
+  width: 37.109375%; /* 380px / 1024px = 37.109375% */
+}
+
+.container_12 .grid_7 {
+  width: 52.734375%; /* 540px / 1024px = 52.734375% */
+}
+
+.container_12 .grid_8 {
+  width: 60.546875%; /* 620px / 1024px = 60.546875% */
+}
+
+.container_12 .grid_10 {
+  width: 76.171875%; /* 780px / 1024px = 76.171875% */
+}
+
+.container_12 .grid_11 {
+  width: 83.984375%; /* 860px / 1024px = 83.984375% */
+}
+
+/* `Prefix Extra Space >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .prefix_3 {
+  padding-left: 23.4375%; /* 240px / 1024px = 23.4375% */
+}
+
+.container_12 .prefix_6 {
+  padding-left: 46.875%; /* 480px / 1024px = 46.875% */
+}
+
+.container_12 .prefix_9 {
+  padding-left: 70.3125%; /* 720px / 1024px = 70.3125% */
+}
+
+/* `Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .prefix_1 {
+  padding-left: 7.8125%; /* 80px / 1024px = 7.8125% */
+}
+
+.container_12 .prefix_2 {
+  padding-left: 15.625%; /* 160px / 1024px = 15.625% */
+}
+
+.container_12 .prefix_4 {
+  padding-left: 31.25%; /* 320px / 1024px = 31.25% */
+}
+
+.container_12 .prefix_5 {
+  padding-left: 39.0625%; /* 400px / 1024px = 39.0625% */
+}
+
+.container_12 .prefix_7 {
+  padding-left: 54.6875%; /* 560px / 1024px = 54.6875% */
+}
+
+.container_12 .prefix_8 {
+  padding-left: 62.5%; /* 640px / 1024px = 62.5% */
+}
+
+.container_12 .prefix_10 {
+  padding-left: 78.125%; /* 800px / 1024px = 78.125% */
+}
+
+.container_12 .prefix_11 {
+  padding-left: 85.9375%; /* 880px / 1024px = 85.9375% */
+}
+
+/* `Suffix Extra Space >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .suffix_3 {
+  padding-left: 23.4375%; /* 240px / 1024px = 23.4375% */
+}
+
+.container_12 .suffix_6 {
+  padding-left: 46.875%; /* 480px / 1024px = 46.875% */
+}
+
+.container_12 .suffix_9 {
+  padding-left: 70.3125%; /* 720px / 1024px = 70.3125% */
+}
+
+
+/* `Suffix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .suffix_1 {
+  padding-left: 7.8125%; /* 80px / 1024px = 7.8125% */
+}
+
+.container_12 .suffix_2 {
+  padding-left: 15.625%; /* 160px / 1024px = 15.625% */
+}
+
+.container_12 .suffix_4 {
+  padding-left: 31.25%; /* 320px / 1024px = 31.25% */
+}
+
+.container_12 .suffix_5 {
+  padding-left: 39.0625%; /* 400px / 1024px = 39.0625% */
+}
+
+.container_12 .suffix_7 {
+  padding-left: 54.6875%; /* 560px / 1024px = 54.6875% */
+}
+
+.container_12 .suffix_8 {
+  padding-left: 62.5%; /* 640px / 1024px = 62.5% */
+}
+
+.container_12 .suffix_10 {
+  padding-left: 78.125%; /* 800px / 1024px = 78.125% */
+}
+
+.container_12 .suffix_11 {
+  padding-left: 85.9375%; /* 880px / 1024px = 85.9375% */
+}
+
+/* `Push Space >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .push_3 {
+  left: 23.4375%; /* 240px / 1024px = 23.4375% */
+}
+
+.container_12 .push_6 {
+  left: 46.875%; /* 480px / 1024px = 46.875% */
+}
+
+.container_12 .push_9 {
+  left: 70.3125%; /* 720px / 1024px = 70.3125% */
+}
+
+/* `Push Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .push_1 {
+  left: 7.8125%; /* 80px / 1024px = 7.8125% */
+}
+
+.container_12 .push_2 {
+  left: 15.625%; /* 160px / 1024px = 15.625% */
+}
+
+.container_12 .push_4 {
+  left: 31.25%; /* 320px / 1024px = 31.25% */
+}
+
+.container_12 .push_5 {
+  left: 39.0625%; /* 400px / 1024px = 39.0625% */
+}
+
+.container_12 .push_7 {
+  left: 54.6875%; /* 560px / 1024px = 54.6875% */
+}
+
+.container_12 .push_8 {
+  left: 62.5%; /* 640px / 1024px = 62.5% */
+}
+
+.container_12 .push_10 {
+  left: 78.125%; /* 800px / 1024px = 78.125% */
+}
+
+.container_12 .push_11 {
+  left: 85.9375%; /* 880px / 1024px = 85.9375% */
+}
+
+/* `Pull Space >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .pull_3 {
+  left: -23.4375%; /* -240px / 1024px = 23.4375% */
+}
+
+.container_12 .pull_6 {
+  left: -46.875%; /* -480px / 1024px = 46.875% */
+}
+
+.container_12 .pull_9 {
+  left: -70.3125%; /* -720px / 1024px = 70.3125% */
+}
+
+/* `Pull Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .pull_1 {
+  left: -7.8125%; /* -80px / 1024px = 7.8125% */
+}
+
+.container_12 .pull_2 {
+  left: -15.625%; /* -160px / 1024px = 15.625% */
+}
+
+.container_12 .pull_4 {
+  left: -31.25%; /* -320px / 1024px = 31.25% */
+}
+
+.container_12 .pull_5 {
+  left: -39.0625%; /* -400px / 1024px = 39.0625% */
+}
+
+.container_12 .pull_7 {
+  left: -54.6875%; /* -560px / 1024px = 54.6875% */
+}
+
+.container_12 .pull_8 {
+  left: -62.5%; /* -640px / 1024px = 62.5% */
+}
+
+.container_12 .pull_10 {
+  left: -78.125%; /* -800px / 1024px = 78.125% */
+}
+
+.container_12 .pull_11 {
+  left: -85.9375%; /* -880px / 1024px = 85.9375% */
+}
+
+/* `Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+/* http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* http://www.yuiblog.com/blog/2010/09/27/clearfix-reloaded-overflowhidden-demystified */
+
+.clearfix:before,
+.clearfix:after,
+.container_12:before,
+.container_12:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+.clearfix:after,
+.container_12:after {
+  clear: both;
+}
+
+/*
+  The following zoom:1 rule is specifically for IE6 + IE7.
+  Move to separate stylesheet if invalid CSS is a problem.
+*/
+
+.clearfix,
+.container_12 {
+  zoom: 1;
+}
