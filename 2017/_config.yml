@@ -2,7 +2,7 @@
 title: I3D 2017
 email: general@i3dsymposium.org
 description: > # I3D is an awesome conference!
-baseurl: "" # the subpath of your site, e.g. /blog/
+baseurl: "/2017/" # the subpath of your site, e.g. /blog/
 url: "http://i3dsymposium.org" # the base hostname & protocol for your site
 github_username:  i3dsymposium
 ## highlighter: pygments
