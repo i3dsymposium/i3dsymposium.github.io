@@ -13,8 +13,6 @@ markdown: kramdown
 gems:
   - jekyll-redirect-from
 
-permalink: /404.html
-
 defaults:
   -
     scope:
