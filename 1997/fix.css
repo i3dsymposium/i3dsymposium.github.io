@@ -1,0 +1,15 @@
+/* This fix is added by Cem Yuksel in an attempt to make the website appear similar to its original look. */
+
+html {
+	width: 100%;
+	background-color: gray;
+}
+
+body {
+	width: 800px;
+	margin: auto;
+	padding: 20px;
+	background-color: rgb(244, 244, 255);
+	overflow-y: scroll;
+}
+
