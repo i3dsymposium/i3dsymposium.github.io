@@ -1,6 +1,6 @@
-This special issue of IEEE Transactions on Visualization and Computer Graphics (TVCG) includes four extended papers from the 2015 ACM Symposium on Interactive 3D Graphics and Games. This edition marked the 29th year since the first conference.
+This special issue of IEEE Transactions on Visualization and Computer Graphics (TVCG) includes four extended papers from the 2016 ACM Symposium on Interactive 3D Graphics and Games. This edition marked the 30th gathering since the inauguration in 1986.
 
-The main focus of I3D is on disseminating novel techniques in computer graphics with an emphasis on speed and interaction. The proposed solutions cover a wide range of areas within the field, including rendering, animation, imaging, and simulation. Many of these techniques find practical uses in many fields, particularly in the game industry. 
+The main focus of I3D is on disseminating novel techniques in computer graphics and human interaction with an emphasis on practical applications such as digital games. The proposed solutions cover a wide range of areas within the field, including rendering, animation, imaging, and simulation. Many of these techniques find practical uses in many fields, particularly in the game industry. 
 
 I3D 2015 took place in San Francisco, California from February 27-March 1. Following the 2014 edition, the conference was co-located with the annual Game Developers conference, which helps connect the researchers working on these novel state of the art techniques with the main target practitioners from the game industry.
 
