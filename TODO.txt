@@ -1,0 +1,38 @@
+2018 directory strip & update
+DONE
+	awards
+	cfp
+	committee: DONE (includes URLs for general chairs)
+	conference: need ACM DL link for 2017
+	contact
+	   index_awards:  do we actually use this? 2017 version still cites 2015
+	keynotes
+	papers
+	posters
+	registration
+	sponsors
+	   template:  not used, I think?
+	venue
+	
+	index.html needs a lot of work
+	
+	default2018 layout for all
+	
+copy and update:
+
+_includes/footer2018,head2018,header2018
+    DONE for now,  will need time zone for submissions
+_includes/head.html, footer.html
+    are these  used?	
+_layouts/default
+    DONE
+_site/img/logo2017
+	DONE
+css/i3d.css
+	DONE
+2018/css/i3d.css
+	DONE
+do we still use banner*.png?	
+
+
+
