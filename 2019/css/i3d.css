@@ -173,7 +173,7 @@ table {
 
 .lead {
   margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 200;
   line-height: 30px;
 }
@@ -310,6 +310,17 @@ ul.sponsors > li {
 ul.sponsors img {
 	max-width: 100%;
 	height: auto;
+}
+
+ul.news { 
+  text-align: left;
+  margin-left: 0;
+  list-style: none;
+}
+
+ul.news > li {
+    margin-left: 0;
+    margin-bottom: 20px;
 }
 
 #nav {
