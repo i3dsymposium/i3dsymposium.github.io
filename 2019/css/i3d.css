@@ -171,6 +171,12 @@ table {
   margin-left: 8%;
 }
 
+th {
+  font-weight: bold;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
 .lead {
   margin-bottom: 20px;
   font-size: 20px;
