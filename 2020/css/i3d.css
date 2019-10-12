@@ -214,6 +214,7 @@ ol.unstyled,
 ul.unstyled > li,
 ol.unstyled > li {
   margin-left: 0;
+  padding-bottom: 0.6em;
   list-style: none;
 }
 
