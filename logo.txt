@@ -2,17 +2,16 @@ For the logo, there is an img/logo.xcf file which is the layered
 logo in the GIMP file format. The text is on two separate editable
 layers. For the drop shadow:
 
- - Delete or hide the previous year's text and drop-shadow layers.
- - Duplicate the "year text" layer. (Only that one. Don't duplicate the "year text drop shadow" layer.)
+ - Delete or hide the previous year's text [and drop-shadow layers, if there is one].
+ - Duplicate the "year editable text" layer. (Only that one. Don't duplicate the "year text drop shadow" layer.)
  - Rename the new layer as appropriate.
  - With the new layer selected, update the text to the current year.
  - From the Filters menu, select Light and Shadow >> Drop Shadow...
- - In the Drop Shadow dialog, 
-      Set Offset X and Offset Y to 4 and Blur Radius to 15 [the defaults]
-      Set Opacity to 70%. 
-      Make sure "allow resizing" is checked.
-	  Hit "OK".
-	  Rename the new drop shadow layer as appropriate.
+ - In the Drop Shadow dialog, [THIS HAS CHANGED 2021]
+      Set Offset X and Offset Y to 4 and Blur Radius to 5
+      Set Opacity to 70%. (0.700)
+      Hit "OK".
+	  
 
 Export to "logoYYYY.png", e.g. logo2018.png.
 	  
