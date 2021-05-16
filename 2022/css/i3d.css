@@ -8,7 +8,7 @@ body {
   font-size: 14px;
   line-height: 20px;
   /* place the background on the body */
-  background-image: url(../img/logo2022.png);
+  background-image: url(../img/logo20222.png);
   background-repeat: no-repeat;
   background-color: rgb(0, 102, 153); /* blue */
 }
@@ -171,9 +171,15 @@ table {
   margin-left: 8%;
 }
 
+th {
+  font-weight: bold;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
 .lead {
   margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 200;
   line-height: 30px;
 }
@@ -208,6 +214,7 @@ ol.unstyled,
 ul.unstyled > li,
 ol.unstyled > li {
   margin-left: 0;
+  padding-bottom: 0.6em;
   list-style: none;
 }
 
@@ -310,6 +317,17 @@ ul.sponsors > li {
 ul.sponsors img {
 	max-width: 100%;
 	height: auto;
+}
+
+ul.news { 
+  text-align: left;
+  margin-left: 0;
+  list-style: none;
+}
+
+ul.news > li {
+    margin-left: 0;
+    margin-bottom: 20px;
 }
 
 #nav {
