@@ -60,12 +60,14 @@ class Paper:
 
     def get_html(self):
         """:return: HTML code for the papers page."""
+        # Main meta data
         if len(self.authors) > 1:
             author_list = ", ".join(self.authors[:-1]) + " and " + self.authors[-1]
         else:
             author_list = self.authors[0]
         html = "<dt><b>%s</b></dt>\n" % escape_characters(self.title)
         html += "        <dd>%s</dd>\n" % escape_characters(author_list)
+        # Paper type and links
         type = dict(i3d="", jcgt="(JCGT paper presentation)", tvcg="(TVCG paper presentation)")[self.type]
         links = list()
         for name, url in [("link", self.link), ("preprint", self.preprint)]:
@@ -74,6 +76,13 @@ class Paper:
         links = ",".join(links)
         if len(type + links):
             html += "        <dd>%s</dd>\n" % (type + links)
+        # Abstract and thumbnail in a detail environment
+        html += "        <dd><details><summary>Abstract</summary>\n"
+        for line in self.abstract.split("\n"):
+            html += "        <p>%s</p>\n" % escape_characters(line)
+        if len(self.thumb):
+            html += "        <p><img src=\"img/paper_thumbnails/%s\" width=\"400\"></p>\n" % self.thumb
+        html += "        </details></dd>"
         html += "\n"
         return html
 

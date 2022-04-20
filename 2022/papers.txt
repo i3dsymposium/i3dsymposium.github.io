@@ -14,7 +14,7 @@ i3d
 Peiteng Shi, Markus Billeter, Elmar Eisemann
 link:
 preprint:
-thumb:
+thumb:Shi.png
 Screen-space ambient occlusion (SSAO) shows high efficiency and is widely used in real-time 3D applications. However, using SSAO algorithms in stereo rendering can lead to inconsistencies due to the differences in the screen-space information captured by the left and right eye. This will affect the perception of the scene and may be a source of viewer discomfort. In this paper, we show that the raw obscurance estimation part and subsequent filtering are both sources of inconsistencies. We developed a screen-space method involving both views in conjunction, leading to a stereo-aware raw obscurance estimation method and a stereo-aware bilateral filter. The results show that our method reduces stereo inconsistencies to a level comparable to geometry-based AO solutions, while maintaining the performance benefits of a screen space approach.
 
 ## Scaling Probe-Based Real-Time Dynamic Global Illumination for Production
@@ -22,7 +22,7 @@ jcgt
 Alexander Majercik, Adam Marrs, Josef Spjut, Morgan McGuire
 link:https://jcgt.org/published/0010/02/01/
 preprint:
-thumb:
+thumb:Majercik.png
 We contribute several practical extensions to the probe-based irradiance-field-with-visibility representation [Majercik et al. 2019] [McGuire et al. 2017] to improve image quality, constant and asymptotic performance, memory efficiency, and artist control. We developed these extensions in the process of incorporating the previous work into the global illumination solutions of the NVIDIA RTXGI SDK, the Unity and Unreal Engine 4 game engines, and proprietary engines for several commercial games. These extensions include: an intuitive tuning parameter (the "self-shadow" bias); heuristics to speed transitions in the global illumination; reuse of irradiance data as prefiltered radiance for recursive glossy reflection; a probe state machine to prune work that will not affect the final image; and multiresolution cascaded volumes for large worlds.
 
 ## Collimated Whole Volume Light Scattering in Homogeneous Finite Media
@@ -30,7 +30,7 @@ tvcg
 Zdravko Velinov, Kenny Mitchell
 link:https://doi.org/10.1109/TVCG.2021.3135764
 preprint:http://3dgraphics.guru/
-thumb:
+thumb:Velinov.png
 Crepuscular rays form when light encounters an optically thick or opaque medium which masks out portions of the visible scene. Real-time applications commonly estimate this phenomena by connecting paths between light sources and the camera after a single scattering event. We provide a set of algorithms for solving integration and sampling of single-scattered collimated light in a box-shaped medium and show how they extend to multiple scattering and convex media. First, a method for exactly integrating the unoccluded single scattering in rectilinear box-shaped medium is proposed and paired with a ratio estimator and moment-based approximation. Compared to previous methods, it requires only a single sample in unoccluded areas to compute the whole integral solution and provides greater convergence in the rest of the scene. Second, we derive an importance sampling scheme accounting for the entire geometry of the medium. This sampling strategy is then incorporated in an optimized Monte Carlo integration. The resulting integration scheme yields visible noise reduction and it is directly applicable to indoor scene rendering in room-scale interactive experiences. Furthermore, it extends to multiple light sources and achieves superior converge compared to independent sampling with existing algorithms. We validate our techniques against previous methods based on ray marching and distance sampling to prove their superior noise reduction capability.
 
 # Simulation and Animation
@@ -41,7 +41,7 @@ i3d
 Wouter Raateland, Torsten Hädrich, Jorge Alejandro Amador Herrera, Daniel Banuti, Wojciech Pałubicki, Sören Pirk, Klaus Hildebrandt, Dominik Michels
 link:
 preprint:
-thumb:
+thumb:Raateland.png
 We introduce Dynamic Constrained Grid (DCGrid), a hierarchical and adaptive grid structure for fluid simulation combined with a scheme for effectively managing the grid adaptations. DCGrid is designed to be implemented on the GPU and used in high-performance simulations. Specifically, it allows us to efficiently vary and adjust the grid resolution across the spatial domain and to rapidly evaluate local stencils and individual cells in a GPU implementation. A special feature of DCGrid is that the control of the grid adaption is modeled as an optimization under a constraint on the maximum available memory, which addresses the memory limitations in GPU-based simulation. To further advance the use of DCGrid in high-performance simulations, we complement DCGrid with an efficient scheme for approximating collisions between fluids and static solids on cells with different resolutions. We demonstrate the effectiveness of DCGrid for smoke flows and complex cloud simulations in which terrain-atmosphere interaction requires working with cells of varying resolution and rapidly changing conditions. Finally, we compare the performance of DCGrid to that of alternative adaptive grid structures.
 
 ## Interactive simulation of plume and pyroclastic volcanic ejections
@@ -57,7 +57,7 @@ i3d
 Christoph Peters, Bastian Kuth, Quirin Meyer
 link:
 preprint:
-thumb:
+thumb:Peters.png
 Compression of vertex attributes is crucial to keep bandwidth requirements in real-time rendering low. We present a method that encodes any given number of blend attributes for skinning at a fixed bit rate while keeping the worst-case error small. Our method exploits that the blend weights are sorted. With this knowledge, no information is lost when the weights get shuffled. Our permutation coding thus encodes additional data, e.g. about bone indices, into the order of the weights. We also transform the weights linearly to ensure full coverage of the representable domain. Through a thorough error analysis, we arrive at a nearly optimal quantization scheme. Our method is fast enough to decode blend attributes in a vertex shader and also to encode them at runtime, e.g. in a compute shader. Our open source implementation supports up to 13 weights in up to 64 bits.
 
 ## Real-Time Style Modelling of Human Locomotion via Feature-Wise Transformations and Local Motion Phases
@@ -76,7 +76,7 @@ i3d
 Jialin Wang, Rongkai Shi, Zehui Xiao, Xueying Qin, Hai-Ning Liang
 link:
 preprint:
-thumb:
+thumb:Chen.png
 Higher resolution is one of the main directions and drivers in the development of virtual reality (VR) head-mounted displays (HMDs). However, given its associated higher cost, it is important to determine the benefits of having higher resolution on user experience. For non-VR games, higher resolution is often thought to lead to a better experience, but it is unexplored in VR games. This research aims to investigate the resolution tradeoff in gameplay experience, performance, and simulator sickness (SS) for VR games, particularly first-person shooter (FPS) games. To this end, we designed an experiment to collect gameplay experience, SS, and player performance data with a popular VR FPS game, Half-Life: Alyx. Our results indicate that 2K resolution is an important threshold for an enhanced gameplay experience without affecting performance and increasing SS levels. Moreover, the resolution from 1K to 4K has no significant difference in player performance. Our results can inform game developers and players in determining the type of HMD they want to use to balance the tradeoff between costs and benefits and achieve a more optimal experience.
 
 ## Investigating the Performance of Various Deep Neural Networks-based Approaches Designed to Identify Game Events in Gameplay Footage
@@ -84,7 +84,7 @@ i3d
 Matheus Prado Prandini Faria, Etienne Julia, Marcelo Zanchetta Do Nascimento, Rita M. S. Julia
 link:
 preprint:
-thumb:
+thumb:Julia.png
 Video games, in addition to representing an extremely relevant field of entertainment and market, have been widely used as a case study in artificial intelligence for representing a problem with a high de- gree of complexity. In such studies, the investigation of approaches that endow player agents with the ability to retrieve relevant in- formation from game scenes stands out, since such information can be very useful to improve their learning ability. This work pro- poses and analyses new deep learning-based models to identify game events occurring in Super Mario Bros gameplay footage. The architecture of each model is composed of a feature extractor convo- lutional neural network (CNN) and a classifier neural network (NN). The extracting CNN aims to produce a feature-based representation for game scenes and submit it to the classifier, so that the latter can identify the game event present in each scene. The models differ from each other according to the following elements: the type of the CNN; the type of the NN classifier; and the type of the game scene representation at the CNN input, being either single frames, or chunks, which are n-sequential frames (in this paper 6 frames were used per chunk) grouped into a single input. The main con- tribution of this article is to demonstrate the greater performance reached by the models which combines the chunk representation for the game scenes with the resources of the classifier recurrent neural networks (RNN).
 
 ## Interactive Physics-Based Virtual Sculpting with Haptic Feedback
@@ -148,8 +148,8 @@ i3d
 João Cardoso, Bernhard Kerbl, Lei Yang, Yury Uralsky, Michael Wimmer
 link:
 preprint:
-thumb:
-Visual error metrics play a fundamental role in the quantification of perceived image similarity. Most recently, use cases for them in real-time applications have emerged, such as content-adaptive shading and shading reuse to increase performance and improve efficiency. A wide range of different metrics has been established, with the most sophisticated being capable of capturing the perceptual characteristics of the human visual system. However, their complexity, computational expense, and reliance on reference images to compare against prevent their generalized use in real-time, restricting such applications to using only the simplest available metrics. In this work, we explore the abilities of convolutional neural networks to predict a variety of visual metrics without requiring either reference or rendered images. Specifically, we train and deploy a neural network to estimate the visual error resulting from reusing shading or using reduced shading rates. The resulting models account for 70%-90% of the variance while achieving up to an order of magnitude faster computation times. Our solution combines image-space information that is readily available in most state-of-the-art deferred shading pipelines with reprojection from previous frames to enable an adequate estimate of visual errors, even in previously unseen regions. We describe a suitable convolutional network architecture and considerations for data preparation for training. We demonstrate the capability of our network to predict complex error metrics at interactive rates in a real-time application that implements content-adaptive shading in a deferred pipeline. Depending on the portion of unseen image regions, our approach can achieve up to 2x performance compared to state-of-the-art methods.
+thumb:Cardoso.png
+Visual error metrics play a fundamental role in the quantification of perceived image similarity. Most recently, use cases for them in real-time applications have emerged, such as content-adaptive shading and shading reuse to increase performance and improve efficiency. A wide range of different metrics has been established, with the most sophisticated being capable of capturing the perceptual characteristics of the human visual system. However, their complexity, computational expense, and reliance on reference images to compare against prevent their generalized use in real-time, restricting such applications to using only the simplest available metrics. In this work, we explore the abilities of convolutional neural networks to predict a variety of visual metrics without requiring either reference or rendered images. Specifically, we train and deploy a neural network to estimate the visual error resulting from reusing shading or using reduced shading rates. The resulting models account for 70%-90% of the variance while achieving up to an order of magnitude faster computation times. Our solution combines image-space information that is readily available in most state-of-the-art deferred shading pipelines with reprojection from previous frames to enable an adequate estimate of visual errors, even in previously unseen regions. We describe a suitable convolutional network architecture and considerations for data preparation for training. We demonstrate the capability of our network to predict complex error metrics at interactive rates in a real-time application that implements content-adaptive shading in a deferred pipeline. Depending on the portion of unseen image regions, our approach can achieve up to 2× performance compared to state-of-the-art methods.
 
 ## Fast temporal reprojection without motion vectors
 jcgt
@@ -165,7 +165,7 @@ jcgt
 Alban Fichet, Romain Pacanowski, Alexander Wilkie, Marc Stamminger
 link:https://jcgt.org/published/0010/03/01/
 preprint:
-thumb:
+thumb:Fichet.png
 We propose a standardized layout to organize spectral data stored in OpenEXR images. We motivate why we chose the OpenEXR format as the basis for our work, and we explain our choices with regard to data selection and organization: our goal is to define a standard for the exchange of measured or simulated spectral and bi-spectral data. We also provide sample code to store spectral images in OpenEXR format.
 
 ## MMPX Style-Preserving Pixel Art Magnification
@@ -210,7 +210,7 @@ tvcg
 Carlos Rodriguez-Pardo, Elena Garces
 link:https://doi.org/10.1109/TVCG.2021.3133081
 preprint:https://carlosrodriguezpardo.es/
-thumb:
+thumb:Rodriguez.png
 We present a deep learning-based method for propagating spatially-varying visual material attributes (e.g. texture maps or image stylizations) to larger samples of the same or similar materials. For training, we leverage images of the material taken under multiple illuminations and a dedicated data augmentation policy, making the transfer robust to novel illumination conditions and affine deformations. Our model relies on a supervised image-to-image translation framework and is agnostic to the transferred domain; we showcase a semantic segmentation, a normal map, and a stylization. Following an image analogies approach, the method only requires the training data to contain the same visual structures as the input guidance. Our approach works at interactive rates, making it suitable for material edit applications. We thoroughly evaluate our learning methodology in a controlled setup providing quantitative measures of performance. Last, we demonstrate that training the model on a single material is enough to generalize to materials of the same type without the need for massive datasets.
 
 # Virtual Humans
@@ -221,7 +221,7 @@ i3d
 Nejc Maček, Baran Usta, Elmar Eisemann, Ricardo Marroquim
 link:
 preprint:
-thumb:
+thumb:Macek.png
 Video-streaming services usually feature post-processing effects to replace the background. However, these often yield inconsistent lighting. Machine-learning-based relighting methods can address this problem, but, at real-time rates, are restricted to a low resolu- tion and can result in an unrealistic skin appearance. Physically- based rendering techniques require complex skin models that can only be acquired using specialised equipment. Our method is light- weight and uses only a standard smartphone. By correcting imper- fections during capture, we extract a convincing physically-based skin model. In combination with suitable acceleration techniques, we achieve real-time rates on commodity hardware.
 
 ## Real-Time Hair Filtering with Convolutional Neural Networks
@@ -238,7 +238,7 @@ i3d
 Yingruo Fan, Zhaojiang Lin, Jun Saito, Wenping Wang, Taku Komura
 link:
 preprint:
-thumb:
+thumb:Fan.png
 Speech-driven 3D facial animation with accurate lip synchronization has been widely studied. However, synthesizing realistic motions for the entire face during speech has rarely been explored. In this work, we present a joint audio-text model to capture the contextual information for expressive speech-driven 3D facial animation. The existing datasets are collected to cover as many different phonemes as possible instead of sentences, thus limiting the capability of the audio-based model to learn more diverse contexts. To address this, we propose to leverage the contextual text embeddings extracted from the powerful pre-trained language model that has learned rich contextual representations from large-scale text data. Our hypothesis is that the text features can disambiguate the variations in upper face expressions, which are not strongly correlated with the audio. In contrast to prior approaches which learn phoneme-level features from the text, we investigate the high-level contextual text features for speech-driven 3D facial animation. We show that the combined acoustic and textual modalities can synthesize realistic facial expressions while maintaining audio-lip synchronization. We conduct the quantitative and qualitative evaluations as well as the perceptual user study. The results demonstrate the superior performance of our model against existing state-of-the-art approaches. 
 
 ## Cross-Domain and Disentangled Face Manipulation With 3D Guidance
@@ -246,6 +246,6 @@ tvcg
 Can Wang, Menglei Chai, Mingming He, Dongdong Chen, Jing Liao
 link:https://doi.org/10.1109/TVCG.2021.3139913
 preprint:https://cassiepython.github.io/cddfm3d/index
-thumb:
+thumb:Wang.png
 Face image manipulation via three-dimensional guidance has been widely applied in various interactive scenarios due to its semantically-meaningful understanding and user-friendly controllability. However, existing 3D-morphable-model-based manipulation methods are not directly applicable to out-of-domain faces, such as non-photorealistic paintings, cartoon portraits, or even animals, mainly due to the formidable difficulties in building the model for each specific face domain. To overcome this challenge, we propose, as far as we know, the first method to manipulate faces in arbitrary domains using human 3DMM. This is achieved through two major steps: 1) disentangled mapping from 3DMM parameters to the latent space embedding of a pre-trained StyleGAN2 that guarantees disentangled and precise controls for each semantic attribute; and 2) cross-domain adaptation that bridges domain discrepancies and makes human 3DMM applicable to out-of-domain faces by enforcing a consistent latent space embedding. Experiments and comparisons demonstrate the superiority of our high-quality semantic manipulation method on a variety of face domains with all major 3D facial attributes controllable pose, expression, shape, albedo, and illumination. Moreover, we develop an intuitive editing interface to support user-friendly control and instant feedback. Our project page is https://cassiepython.github.io/cddfm3d/index.html
 
