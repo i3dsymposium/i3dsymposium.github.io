@@ -68,7 +68,9 @@ class Paper:
         html = "<dt><b>%s</b></dt>\n" % escape_characters(self.title)
         html += "        <dd>%s</dd>\n" % escape_characters(author_list)
         # Paper type and links
-        type = dict(i3d="", jcgt="(JCGT paper presentation)", tvcg="(TVCG paper presentation)")[self.type]
+        type_dict = dict(i3d="", jcgt="(JCGT paper presentation)", tvcg="(TVCG paper presentation)",
+                         i3d_live="(Live presentation only)", jcgt_live="(JCGT paper presentation, live presentation only)", tvcg_live="(TVCG paper presentation, live presentation only)")
+        type = type_dict[self.type]
         links = list()
         for name, url in [("link", self.link), ("preprint", self.preprint)]:
             if len(url):
