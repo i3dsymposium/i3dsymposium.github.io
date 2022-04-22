@@ -29,7 +29,7 @@ class Session:
 
     def get_html(self):
         """:return: HTML code for this whole session on the papers page."""
-        html = "<h3><a name=\"Papers%d\">Papers %d: %s</a></h3>\n" % (self.index, self.index, escape_characters(self.name))
+        html = "<h3 style=\"margin-bottom:5px;\"><a name=\"Papers%d\">Papers %d: %s</a></h3>\n" % (self.index, self.index, escape_characters(self.name))
         if len(self.chair):
             html += "<p>Session chair: %s<p>\n" % escape_characters(self.chair)
         html += "<dl>\n"
