@@ -1,5 +1,5 @@
 # Real-Time Rendering
-chair:
+chair:Marco Salvi
 
 ## Real-Time Ray-Traced Soft Shadows of Environmental Lighting by Conical Ray Culling
 i3d
@@ -34,7 +34,7 @@ thumb:Velinov.png
 Crepuscular rays form when light encounters an optically thick or opaque medium which masks out portions of the visible scene. Real-time applications commonly estimate this phenomena by connecting paths between light sources and the camera after a single scattering event. We provide a set of algorithms for solving integration and sampling of single-scattered collimated light in a box-shaped medium and show how they extend to multiple scattering and convex media. First, a method for exactly integrating the unoccluded single scattering in rectilinear box-shaped medium is proposed and paired with a ratio estimator and moment-based approximation. Compared to previous methods, it requires only a single sample in unoccluded areas to compute the whole integral solution and provides greater convergence in the rest of the scene. Second, we derive an importance sampling scheme accounting for the entire geometry of the medium. This sampling strategy is then incorporated in an optimized Monte Carlo integration. The resulting integration scheme yields visible noise reduction and it is directly applicable to indoor scene rendering in room-scale interactive experiences. Furthermore, it extends to multiple light sources and achieves superior converge compared to independent sampling with existing algorithms. We validate our techniques against previous methods based on ray marching and distance sampling to prove their superior noise reduction capability.
 
 # Simulation and Animation
-chair:
+chair:Christiaan Gribble
 
 ## DCGrid: An Adaptive Grid Structure for Memory-Constrained Fluid Simulation on the GPU
 i3d
@@ -69,7 +69,7 @@ thumb:
 Controlling the manner in which a character moves in a real-time animation system is a challenging task with useful applications. Existing style transfer systems require access to a reference content motion clip, however, in real-time systems the future motion con- tent is unknown and liable to change with user input. In this work we present a style modelling system that uses an animation synthe- sis network to model motion content based on local motion phases. An additional style modulation network uses feature-wise trans- formations to modulate style in real-time. To evaluate our method, we create and release a new style modelling dataset, 100style, con- taining over 4 million frames of stylised locomotion data in 100 different styles that present a number of challenges for existing sys- tems. To model these styles, we extend the local phase calculation with a contact-free formulation. In comparison to other methods for real-time style modelling, we show our system is more robust and efficient in its style representation while improving motion quality.
 
 # Games and VR
-chair:
+chair:Qi Sun
 
 ## Effect of Render Resolution on Gameplay Experience, Performance, and Simulator Sickness in Virtual Reality Games
 i3d
@@ -104,7 +104,7 @@ thumb:
 The latest innovations of VR make it possible to construct 3D models in a holographic immersive simulation environment. In this paper, we develop a user-friendly mid-air interactive modeling system named EasyVRModeling. We first prepare a dataset consisting of diverse components and precompute the discrete signed distance function (SDF) for each component. During the modeling phase, users can freely design complicated shapes with a pair of VR controllers. Based on the discrete SDF representation, any CSG-like operation (union, intersect, subtract) can be performed voxel-wise. Throughout the modeling process, we maintain one single dynamic SDF for the whole scene so that the zero-level set surface of the SDF exactly encodes the up-to-date constructed shape. Both SDF fusion and surface extraction are implemented via GPU to allow for smooth user experience. We asked 34 volunteers to create their favorite models using EasyVRModeling. With a simple training process for several minutes, most of them can create a fascinating shape or even a descriptive scene very quickly.
 
 # Geometry
-chair:
+chair:Markus Billeter
 
 ## A Dataset and Explorer for 3D Signed Distance Functions
 jcgt
@@ -141,7 +141,7 @@ thumb:
 Due to inevitable noises introduced during scanning and quantization, 3D reconstruction via RGB-D sensors suffers from errors both in geometry and texture, leading to artifacts such as camera drifting, mesh distortion, texture ghosting, and blurriness. Given an imperfect reconstructed 3D model, most previous methods have focused on refining either geometry, texture, or camera pose. Consequently, different optimization schemes and objectives for optimizing each component have been used in previous joint optimization methods, forming a complicated system. In this paper, we propose a novel optimization approach based on differentiable rendering, which integrates the optimization of camera pose, geometry, and texture into a unified framework by enforcing consistency between the rendered results and the corresponding RGB-D inputs. Based on the unified framework, we introduce a joint optimization approach to fully exploit the inter-relationships among the three objective components, and describe an adaptive interleaving strategy to improve optimization stability and efficiency. Using differentiable rendering, an image-level adversarial loss is applied to further improve the 3D model, making it more photorealistic. Experiments on synthetic and real data using quantitative and qualitative evaluation demonstrated the superiority of our approach in recovering both fine-scale geometry and high-fidelity texture.
 
 # Image-Based Algorithms
-chair:
+chair:Leonardo Scandolo
 
 ## Training and Predicting Visual Error for Real-Time Applications
 i3d
@@ -179,7 +179,7 @@ Pixel-art magnification enables the displaying of classic games and new retro-st
 MMPX reconstructs curves, diagonal lines, and sharp corners while preserving the exact palette, transparency, and single-pixel features. For general pixel art, it can often preserve more aspects of the original art style than previous magnification filters such as nearest-neighbor, bilinear, HQX, XBR, and EPX. In specific cases and applications, other filters will be better. We recommend EPX and base XBR for content with exclusively rounded corners, and HQX and antialiased XBR for content with large palettes, gradients, and antialiasing. MMPX is fast enough on embedded systems to process typical retro 64k-pixel full screens in less than 0.5 ms on a GPU or CPU. We include open source implementations in C++, JavaScript, and OpenGL ES GLSL for our method and several others.
 
 # Appearance and Shading
-chair:
+chair:Adrien Gruson
 
 ## Bringing Linearly Transformed Cosines to Anisotropic GGX
 i3d

@@ -31,7 +31,7 @@ class Session:
         """:return: HTML code for this whole session on the papers page."""
         text = self.name
         if len(self.chair):
-            text += "(chair %s)" % self.chair
+            text += " (chair %s)" % self.chair
         html = "<h3><a name=\"Papers%d\">Papers %d: %s</a></h3>\n<dl>\n" % (self.index, self.index, escape_characters(text))
         for paper in self.papers:
             html += paper.get_html()
