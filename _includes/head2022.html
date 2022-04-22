@@ -30,7 +30,9 @@
   <meta property="og:title"              content="{{ page.title }}" />
   <meta property="og:description"        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
   <meta property="og:image"              content="{{ page.dir | append: 'img/banner.png' | prepend: site.baseurl | prepend: site.url }}" />
-  <meta property="twitter:image"              content="{{ page.dir | append: 'img/banner.png' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta name="twitter:card" content="summary"></meta>
+  <meta name="twitter:image"              content="{{ page.dir | append: 'img/banner.png' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta name="twitter:site" content="@I3DCONF"></meta>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script>
