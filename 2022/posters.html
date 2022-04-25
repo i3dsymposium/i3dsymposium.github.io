@@ -1,0 +1,72 @@
+---
+layout: default2022
+title: Posters
+posters:
+  - title: Tighter Spherical Harmonic Quantization Bound
+    author: Peter-Pike Sloan and Tyler Wiederien
+    #links:
+    #  - url: ./posters/allmenroeder2021_linearly_transformed_sh_paper.pdf
+    #    link: 2-page paper
+    #  - url: ./posters/allmenroeder2021_linearly_transformed_sh_poster.pdf
+    #    link: poster
+  - title: Real-time render for multi-resolution model based on dynamic subdivision
+    author: Rui Li
+  - title: Specular Manifold Bisection Sampling for Caustics Rendering
+    author: Jia-Wun Jhang and Chun-Fa Chang
+  - title: "Immersive-Labeler: Immersive Annotation of Large-Scale 3D Point Clouds in Virtual Reality"
+    author: Achref Doula, Tobias Güdelhöfer, Andrii Mativiienko, Alejandro Sanchez Guinea and Max Mühlhäuser
+  - title: Cone-Traced Antialiasing for Signed Distance Field Rendering
+    author: Andrei Chubarau, Lei Rao and Derek Nowrouzezahrai
+
+demos:
+  - title: Interactive simulation of plume and pyroclastic volcanic ejections
+    author: Maud Lastic, Damien Rohmer, Guillaume Cordonnier, Claude Jaupart, Fabrice Neyret and Marie-Paule Cani
+  - title: Real-Time Style Modelling of Human Locomotion via Feature-Wise Transformations and Local Motion Phases
+    author: Ian Mason, Sebastian Starke and Taku Komura
+  - title: Real-time Shading with Free-form Planar Area Lights using Linearly Transformed Cosines
+    author: Takahiro Kuge, Tatsuya Yatagawa, Shigeo Morishima
+  - title: MMPX Style-Preserving Pixel Art Magnification
+    author: Morgan McGuire, Mara Gagiu
+  - title: A Dataset and Explorer for 3D Signed Distance Functions
+    author: Towaki Takikawa, Andrew Glassner, Morgan McGuire
+  - title: Scaling Probe-Based Real-Time Dynamic Global Illumination for Production
+    author: Alexander Majercik, Adam Marrs, Josef Spjut, Morgan McGuire
+---
+
+<h3>Posters</h3>
+
+<p>The following posters will presented in the fast forward session on <a href="./program.html">Tuesday, 3 May</a> and in the virtual posters session on <a href="./program.html">Wednesday, 4 May</a>.</p>
+
+{% for poster in page.posters %}
+    <dt><b>{{ poster.title | escape_once }}</b></dt>
+    <dd>
+    {{ poster.author | escape_once }}<br>
+    {% if poster.links %}
+        {% for link in poster.links %}
+            <a href="{{ link.url }}">{{ link.link }}</a>{% if forloop.last == false %},{% endif %}
+        {% endfor %}
+    {% endif %}
+	</dd>
+{% endfor %}
+
+
+<h3>Demos</h3>
+
+<p>Additionally, some paper authors will give live demos of their techniques during the virtual posters session on <a href="./program.html">Wednesday, 4 May</a>. These demos will not be streamed to Youtube, so be sure to come to the session if you are interested. Here is a list of these papers:</p>
+
+{% for demo in page.demos %}
+    <dt><b>{{ demo.title | escape_once }}</b></dt>
+    <dd>
+    {{ demo.author | escape_once }}<br>
+	</dd>
+{% endfor %}
+
+
+
+<h3>Virtual Posters Session</h3>
+
+<P>You must <a href="attend.html">register</a> to attend the posters and demos session. For more details, visit the #posters channel once registered.
+
+
+<p>All questions about posters and poster presentations should be directed to 
+I3D 2022 Posters Chair <a href="committee.html">Petrik Clarberg</a>.</p>
