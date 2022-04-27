@@ -111,8 +111,8 @@ jcgt
 Towaki Takikawa, Andrew Glassner, Morgan McGuire
 link:http://jcgt.org/published/0011/02/01/
 preprint:
-thumb:
-To appear
+thumb:Takikawa.png
+Reference datasets are a key tool in the creation of new algorithms. They allow us to compare different existing solutions and identify problems and weaknesses during the development of new algorithms. The signed distance function (SDF) is enjoying a renewed focus of research activity in computer graphics, but until now there has been no standard reference dataset of such functions. We present a database of 63 curated, optimized, and regularized functions of varying complexity. Our functions are provided as analytic expressions that can be efficiently evaluated on a GPU at any point in space. We also present a viewing and inspection tool and software for producing SDF samples appropriate for both traditional graphics and training neural networks.
 
 ## Improved Accuracy for Prism-Based Motion Blur
 jcgt
