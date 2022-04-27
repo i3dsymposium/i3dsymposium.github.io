@@ -132,14 +132,6 @@ preprint:
 thumb:
 We extend 3D SurfaceNets to generate surfaces of segmented 3D medical images composed of multiple materials represented as indexed labels. Our extension generates smooth, high-quality triangle meshes suitable for rendering and tetrahedralization, preserves topology and sharp boundaries between materials, guarantees a user-specified accuracy, and is fast enough that users can interactively explore the trade-off between accuracy and surface smoothness. We provide open-source code in the form of an extendable C++ library with a simple API, and a Qt and OpenGL-based application that allows users to import or randomly generate multi-label volumes to experiment with surface fairing parameters. In this paper, we describe the basic SurfaceNets algorithm, our extension to handle multiple materials, our method for preserving sharp boundaries between materials, and implementation details used to achieve efficient processing.
 
-## Adaptive Joint Optimization for 3D Reconstruction with Differentiable Rendering
-tvcg
-Jingbo Zhang, Ziyu Wan, Jing Liao
-link:https://doi.org/10.1109/TVCG.2022.3148245
-preprint:
-thumb:
-Due to inevitable noises introduced during scanning and quantization, 3D reconstruction via RGB-D sensors suffers from errors both in geometry and texture, leading to artifacts such as camera drifting, mesh distortion, texture ghosting, and blurriness. Given an imperfect reconstructed 3D model, most previous methods have focused on refining either geometry, texture, or camera pose. Consequently, different optimization schemes and objectives for optimizing each component have been used in previous joint optimization methods, forming a complicated system. In this paper, we propose a novel optimization approach based on differentiable rendering, which integrates the optimization of camera pose, geometry, and texture into a unified framework by enforcing consistency between the rendered results and the corresponding RGB-D inputs. Based on the unified framework, we introduce a joint optimization approach to fully exploit the inter-relationships among the three objective components, and describe an adaptive interleaving strategy to improve optimization stability and efficiency. Using differentiable rendering, an image-level adversarial loss is applied to further improve the 3D model, making it more photorealistic. Experiments on synthetic and real data using quantitative and qualitative evaluation demonstrated the superiority of our approach in recovering both fine-scale geometry and high-fidelity texture.
-
 # Image-Based Algorithms
 chair:Leonardo Scandolo
 
