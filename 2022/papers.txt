@@ -109,7 +109,7 @@ chair:Markus Billeter
 ## A Dataset and Explorer for 3D Signed Distance Functions
 jcgt
 Towaki Takikawa, Andrew Glassner, Morgan McGuire
-link:
+link:http://jcgt.org/published/0011/02/01/
 preprint:
 thumb:
 To appear
