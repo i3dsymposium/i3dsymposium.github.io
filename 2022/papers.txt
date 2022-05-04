@@ -126,7 +126,7 @@ In this article, we start by noting that the path of the intersection point can 
 
 ## SurfaceNets for Multi-Label Segmentations with Preservation of Sharp Boundaries
 jcgt
-Sarah Frisken, Alexander Wilkie
+Sarah Frisken
 link:https://jcgt.org/published/0011/01/03/
 preprint:
 thumb:04_03_Sarah_Frisken.png
@@ -154,7 +154,7 @@ This is exploited in numerous rendering algorithms, offline and real-time, by re
 
 ## An OpenEXR Layout for Spectral Images
 jcgt
-Alban Fichet, Romain Pacanowski, Alexander Wilkie, Marc Stamminger
+Alban Fichet, Romain Pacanowski, Alexander Wilkie
 link:https://jcgt.org/published/0010/03/01/
 preprint:
 thumb:05_03_Alban_Fichet.png
