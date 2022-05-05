@@ -44,8 +44,8 @@ class Paper:
 
     def __init__(self, text):
         """Parses paper data from the given text."""
-        #                       1      2      3           4               5            6      7
-        match = re.match(r"##\s+(.+?)\n(\w+)\n(.+?)\nlink:(.*?)\npreprint:(.*?)\nthumb:(.*?)\n(.*)", text, re.DOTALL)
+        #                       1      2      3           4           5               6            7      8
+        match = re.match(r"##\s+(.+?)\n(\w+)\n(.+?)\ndesc:(.*?)\nlink:(.*?)\npreprint:(.*?)\nthumb:(.*?)\n(.*)", text, re.DOTALL)
         if match is None:
             print("Paper misformatted:")
             print(text)
@@ -53,10 +53,11 @@ class Paper:
         self.title = match.group(1)
         self.type = match.group(2)
         self.authors = match.group(3).split(", ")
-        self.link = match.group(4)
-        self.preprint = match.group(5)
-        self.thumb = match.group(6)
-        self.abstract = match.group(7)
+        self.desc = match.group(4)
+        self.link = match.group(5)
+        self.preprint = match.group(6)
+        self.thumb = match.group(7)
+        self.abstract = match.group(8)
 
     def get_html(self):
         """:return: HTML code for the papers page."""
@@ -117,3 +118,15 @@ if __name__ == "__main__":
     html = html[:begin] + session_html + html[end:]
     with open("papers.html", "w", encoding="utf-8") as file:
         file.write(html)
+    # Print some text to paste into discord
+    for session in sessions:
+        print(session.name)
+        print("These are the papers presented in this session:")
+        for paper in session.papers:
+            print()
+            print("**%s**" % paper.title)
+            print("*%s*" % ", ".join(paper.authors))
+            print("%s" % paper.desc)
+            print(paper.link if len(paper.link) > 0 else paper.preprint)
+        print()
+        print()

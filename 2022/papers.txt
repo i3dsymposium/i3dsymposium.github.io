@@ -4,6 +4,7 @@ chair:Marco Salvi
 ## Real-Time Ray-Traced Soft Shadows of Environmental Lighting by Conical Ray Culling
 i3d
 Yang Xu, Yuanfa Jiang, Junbo Zhang, Kang Li, Guohua Geng
+desc:We present a method to render soft shadows of environmental lighting at real-time frame rates based on hardware-accelerated ray tracing. To composite the soft shadows cast by dynamic objects with the precomputed lighting of static objects, the incident irradiance occluded by dynamic objects is subtracted from the precomputed incident irradiance. Conical ray culling is proposed to exclude the rays that cannot intersect dynamic objects.
 link:
 preprint:https://sapphiresoul.github.io/conicalrayculling.pdf
 thumb:01_01_Yang_Xu.png
@@ -12,6 +13,7 @@ It is difficult to render soft shadows of environmental lighting in real-time be
 ## Stereo-consistent screen space ambient occlusion
 i3d
 Peiteng Shi, Markus Billeter, Elmar Eisemann
+desc:Screen-space ambient occlusion (SSAO) shows high efficiency and is widely used in real-time 3D applications. However, using SSAO algorithms in stereo rendering can lead to inconsistencies due to the differences in the screen-space information captured by the left and right eye. This will affect the perception of the scene and may be a source of viewer discomfort. In this paper, we show that the raw obscurance estimation part and subsequent filtering are both sources of inconsistencies. We developed a screen-space method involving both views in conjunction, leading to a stereo-aware raw obscurance estimation method and a stereo-aware bilateral filter.
 link:
 preprint:https://graphics.tudelft.nl/Publications-new/2022/SBE22/
 thumb:01_02_Peiteng_Shi.png
@@ -20,6 +22,7 @@ Screen-space ambient occlusion (SSAO) shows high efficiency and is widely used i
 ## Scaling Probe-Based Real-Time Dynamic Global Illumination for Production
 jcgt
 Alexander Majercik, Adam Marrs, Josef Spjut, Morgan McGuire
+desc:This talk shows how we took the original Dynamic Diffuse Global Illumination research paper from 2019 and scaled it for production in the NVIDIA RTXGI SDK. It includes changes we made to the algorithm and general lessons for taking a research algorithm to production.
 link:https://jcgt.org/published/0010/02/01/
 preprint:
 thumb:01_03_Zander_Majercik.png
@@ -28,6 +31,7 @@ We contribute several practical extensions to the probe-based irradiance-field-w
 ## Collimated Whole Volume Light Scattering in Homogeneous Finite Media
 tvcg_live
 Zdravko Velinov, Kenny Mitchell
+desc:Single- and multiple-scattering estimators of radiance propagating in finite participating media illuminated by collimated light sources.
 link:https://doi.org/10.1109/TVCG.2021.3135764
 preprint:http://3dgraphics.guru/
 thumb:01_04_Zdravko_Velinov.png
@@ -39,6 +43,7 @@ chair:Christiaan Gribble
 ## DCGrid: An Adaptive Grid Structure for Memory-Constrained Fluid Simulation on the GPU
 i3d
 Wouter Raateland, Torsten Hädrich, Jorge Alejandro Amador Herrera, Daniel Banuti, Wojciech Pałubicki, Sören Pirk, Klaus Hildebrandt, Dominik Michels
+desc:A data structure for running large-scale fluid simulations with high performance.
 link:
 preprint:http://graphics.tudelft.nl/~klaus/
 thumb:02_01_Wouter_Raateland.png
@@ -47,6 +52,7 @@ We introduce Dynamic Constrained Grid (DCGrid), a hierarchical and adaptive grid
 ## Interactive simulation of plume and pyroclastic volcanic ejections
 i3d
 Maud Lastic, Damien Rohmer, Guillaume Cordonnier, Claude Jaupart, Fabrice Neyret, Marie-Paule Cani
+desc:We propose an interactive animation method for the ejection of gas and ashes mixtures in volcano eruption. Our novel, layered solution combines a coarse-grain, physically-based simulation of the ejection dynamics with a consistent, procedural animation of multi-resolution details. 
 link:
 preprint:https://hal.archives-ouvertes.fr/hal-03639288
 thumb:02_02_Maud_Lastic.png
@@ -55,6 +61,7 @@ We propose an interactive animation method for the ejection of gas and ashes mix
 ## Permutation Coding for Vertex-Blend Attribute Compression
 i3d
 Christoph Peters, Bastian Kuth, Quirin Meyer
+desc:A method to store bone indices and weights for vertex blend animation compactly.
 link:
 preprint:https://momentsingraphics.de/I3D2022.html
 thumb:02_03_Christoph_Peters.png
@@ -63,6 +70,7 @@ Compression of vertex attributes is crucial to keep bandwidth requirements in re
 ## Real-Time Style Modelling of Human Locomotion via Feature-Wise Transformations and Local Motion Phases
 i3d
 Ian Mason, Sebastian Starke, Taku Komura
+desc: In this work we present a style modelling system that uses an animation synthesis network to model motion content based on local motion phases. An additional style modulation network uses feature-wise transformations to modulate style in real-time. To evaluate our method, we create and release a new style modelling dataset, 100STYLE, containing over 4 million frames of stylised locomotion data in 100 different styles that present a number of challenges for existing systems.
 link:
 preprint:https://www.ianxmason.com/papers/local_phases_film.pdf
 thumb:02_04_Ian_Mason.png
@@ -74,6 +82,7 @@ chair:Qi Sun
 ## Effect of Render Resolution on Gameplay Experience, Performance, and Simulator Sickness in Virtual Reality Games
 i3d
 Jialin Wang, Rongkai Shi, Zehui Xiao, Xueying Qin, Hai-Ning Liang
+desc:This research aims to investigate the resolution tradeoff in gameplay experience, performance, and simulator sickness (SS) for VR games, particularly first-person shooter (FPS) games.
 link:
 preprint:https://arxiv.org/pdf/2203.12294.pdf
 thumb:03_01_Jialin_Wang.png
@@ -82,6 +91,7 @@ Higher resolution is one of the main directions and drivers in the development o
 ## Investigating the Performance of Various Deep Neural Networks-based Approaches Designed to Identify Game Events in Gameplay Footage
 i3d
 Matheus Prado Prandini Faria, Etienne Julia, Marcelo Zanchetta Do Nascimento, Rita M. S. Julia
+desc:Video games, in addition to representing an extremely relevant field of entertainment and market, have been widely used as a case study in artificial intelligence for representing a problem with a high degree of complexity. In such studies, the investigation of approaches that endow player agents with the ability to retrieve relevant information from game scenes stands out, since such information can be very useful to improve their learning ability. This presentation provides an overview of a work that proposes and analyses new deep learning-based models to identify game events occurring in Super Mario Bros gameplay footage.
 link:
 preprint:https://matheusprandini.github.io/dnns-game-events/
 thumb:03_02_Matheus_Prandini.png
@@ -90,6 +100,7 @@ Video games, in addition to representing an extremely relevant field of entertai
 ## Interactive Physics-Based Virtual Sculpting with Haptic Feedback
 i3d
 Avirup Mandal, Parag Chaudhuri, Subhasis Chaudhuri
+desc:We have developed a physics-based virtual sculpting framework with haptic feedback. We performed user studies to evaluate our framework.
 link:
 preprint:https://avirupmandal.github.io/sculpt-i3d/
 thumb:03_03_Avirup_Mandal.png
@@ -98,6 +109,7 @@ Sculpting is an art form that relies on both the visual and tactile senses. A fa
 ## EasyVRModeling: Easily Create 3D Models by an Immersive VR System
 i3d
 Zhiying Fu, Rui Xu, Shiqing Xin, Shuangmin Chen, Changhe Tu, Chenglei Yang, Lin Lu
+desc:In this paper, we present EasyVRModeling, a user-friendly mid-air interactive 3D modeling system, with which users can create  appealing and realistic shapes/scenes based on component synthesis.
 link:
 preprint:http://irc.cs.sdu.edu.cn/~shiqing/index.html#Publications-2022
 thumb:03_04_Zhiying_Fu.png
@@ -109,6 +121,7 @@ chair:Markus Billeter
 ## A Dataset and Explorer for 3D Signed Distance Functions
 jcgt
 Towaki Takikawa, Andrew Glassner, Morgan McGuire
+desc:Our work is a dataset and explorer for 3D signed distance functions. We will showcase some cool things about our dataset and provide a demo.
 link:http://jcgt.org/published/0011/02/01/
 preprint:
 thumb:04_01_Towaki_Takikawa.png
@@ -117,6 +130,7 @@ Reference datasets are a key tool in the creation of new algorithms. They allow 
 ## Improved Accuracy for Prism-Based Motion Blur
 jcgt
 Mads Rønnow, Ulf Assarsson, Erik Sintorn, Marco Fratarcangeli
+desc:We present improvements to the accuracy of prism-based motion blur, and show that prisms are insufficient as 3D bounds for the swept-volume of a moving triangle.
 link:https://jcgt.org/published/0011/01/05/
 preprint:
 thumb:04_02_Mads_Ronnow.png
@@ -127,6 +141,7 @@ In this article, we start by noting that the path of the intersection point can 
 ## SurfaceNets for Multi-Label Segmentations with Preservation of Sharp Boundaries
 jcgt
 Sarah Frisken
+desc:We describe an extension of SurfaceNets for surfacing volumes of labeled voxels, where each label indicates a different object or material. The method preserves sharp edges and corners between materials.
 link:https://jcgt.org/published/0011/01/03/
 preprint:
 thumb:04_03_Sarah_Frisken.png
@@ -138,6 +153,7 @@ chair:Leonardo Scandolo
 ## Training and Predicting Visual Error for Real-Time Applications
 i3d
 João Cardoso, Bernhard Kerbl, Lei Yang, Yury Uralsky, Michael Wimmer
+desc:We explore the abilities of convolutional neural networks to predict a variety of visual metrics in real-time, before rendering. https://jaliborc.github.io/rt-percept/
 link:
 preprint:https://jaliborc.github.io/rt-percept/
 thumb:05_01_Joao_Liborio_Cardoso.png
@@ -146,6 +162,7 @@ Visual error metrics play a fundamental role in the quantification of perceived 
 ## Fast temporal reprojection without motion vectors
 jcgt
 Johannes Hanika, Lorenzo Tessari, Carsten Dachsbacher
+desc:Computing image-space pixel correspondences to previous frames, do that on a GPU and quickly. An application to TAA is presented.
 link:https://jcgt.org/published/0010/03/02/
 preprint:
 thumb:05_02_Johannes_Hanika.png
@@ -155,6 +172,7 @@ This is exploited in numerous rendering algorithms, offline and real-time, by re
 ## An OpenEXR Layout for Spectral Images
 jcgt
 Alban Fichet, Romain Pacanowski, Alexander Wilkie
+desc:We present a layout to allow storage of spectral images within an OpenEXR image.
 link:https://jcgt.org/published/0010/03/01/
 preprint:
 thumb:05_03_Alban_Fichet.png
@@ -163,6 +181,7 @@ We propose a standardized layout to organize spectral data stored in OpenEXR ima
 ## MMPX Style-Preserving Pixel Art Magnification
 jcgt
 Morgan McGuire, Mara Gagiu
+desc:MMPX is an efficient filter for magnifying pixel art such as 8- and 16-bit era video game sprites, fonts, and screen images by two in each dimension. MMPX preserves art style, attempting to predict what the artist would have produced if working at a larger scale but within the same technical constraints.
 link:https://jcgt.org/published/0010/02/04/
 preprint:
 thumb:05_04_Mara_Gagiu.png
@@ -176,6 +195,7 @@ chair:Adrien Gruson
 ## Bringing Linearly Transformed Cosines to Anisotropic GGX
 i3d
 Aakash Kt, Eric Heitz, Jonathan Dupuy, Narayanan P. J.
+desc:Approximating anisotropic GGX with LTCs for analytic shading from area lights.
 link:
 preprint:http://cvit.iiit.ac.in/images/ConferencePapers/2022/Bringing_ggx.pdf
 thumb:06_01_Aakash_KT.png
@@ -184,6 +204,7 @@ Linearly Transformed Cosines (LTCs) are a family of distributions that are used 
 ## Rendering Layered Materials with Diffuse Interfaces
 i3d
 Heloise Dupont de Dinechin, Laurent Belcour
+desc:In this presentation, we discuss how to render layered materials with diffuse interfaces. We first study a rough coated Lambertian; we explain how to tabulate efficiently some needed coefficients by dimension reduction. Then, we use this analysis to add the support of Lambertian layers in a state-of-the-art statistical layered framework.
 link:
 preprint:https://arxiv.org/pdf/2203.11835
 thumb:06_02_Heloise_Dupont_de_Dinechin.png
@@ -192,6 +213,7 @@ In this work, we introduce a novel method to render, in real-time, Lambertian su
 ## Real-time Shading with Free-form Planar Area Lights using Linearly Transformed Cosines
 jcgt
 Takahiro Kuge, Tatsuya Yatagawa, Shigeo Morishima
+desc:The presentation is about the real-time shading technique for a planar area light whose boundary shape is defined by a set of polynomial curves.
 link:https://www.jcgt.org/published/0011/01/01/
 preprint:
 thumb:06_03_Tatsuya_Yatagawa.png
@@ -200,6 +222,7 @@ This article introduces a simple yet powerful approach to illuminating scenes wi
 ## Neural Photometry-guided Visual Attribute Transfer
 tvcg
 Carlos Rodriguez-Pardo, Elena Garces
+desc:We present a deep learning-based method for propagating spatially-varying visual material attributes (e.g. texture maps or image stylizations) to larger samples of the same or similar materials. For training, we leverage images of the material taken under multiple illuminations and a dedicated data augmentation policy, making the transfer robust to novel illumination conditions and affine deformations. Our model relies on a supervised image-to-image translation framework and is agnostic to the transferred domain; we showcase a semantic segmentation, a normal map, and a stylization. Following an image analogies approach, the method only requires the training data to contain the same visual structures as the input guidance. Our approach works at interactive rates, making it suitable for material edit applications. We thoroughly evaluate our learning methodology in a controlled setup providing quantitative measures of performance. Last, we demonstrate that training the model on a single material is enough to generalize to materials of the same type without the need for massive datasets.
 link:https://doi.org/10.1109/TVCG.2021.3133081
 preprint:https://carlosrodriguezpardo.es/
 thumb:06_04_Carlos_Rodriguez-Pardo.png
@@ -211,6 +234,7 @@ chair:Michal Iwanicki
 ## Real-Time Relighting of Human Faces with a Low-Cost Setup
 i3d
 Nejc Maček, Baran Usta, Elmar Eisemann, Ricardo Marroquim
+desc:Video-streaming services usually feature post-processing effects to replace the background. However, these often yield inconsistent lighting. Machine-learning-based relighting methods can address this problem, but, at real-time rates, are restricted to a low resolution and can result in an unrealistic skin appearance. Physically-based rendering techniques require complex skin models that can only be acquired using specialised equipment. Our method is lightweight and uses only a standard smartphone. By correcting imperfections during capture, we extract a convincing physically-based skin model. In combination with suitable acceleration techniques, we achieve real-time rates on commodity hardware.
 link:
 preprint:https://graphics.tudelft.nl/Publications-new/2022/MUEM22/
 thumb:07_01_Nejc_Macek.png
@@ -219,6 +243,7 @@ Video-streaming services usually feature post-processing effects to replace the 
 ## Real-Time Hair Filtering with Convolutional Neural Networks
 i3d
 Roc R. Currius, Erik Sintorn, Ulf Assarsson
+desc:We show how an autoencoder network, that can be evaluated in real time, can be trained to filter an image of few stochastic samples, including self-shadowing, to produce a much more detailed image that takes into account real hair thickness and transparency.
 link:
 preprint:https://www.cse.chalmers.se/~ramon/hair-filtering.html
 thumb:07_02_Roc_R_Currius.png
@@ -228,6 +253,7 @@ We show how an autoencoder network, that can be evaluated in real time, can be t
 ## Joint Audio-Text Model for Expressive Speech-Driven 3D Facial Animation
 i3d
 Yingruo Fan, Zhaojiang Lin, Jun Saito, Wenping Wang, Taku Komura
+desc:This is a video presentation about our i3D paper "Joint Audio-Text Model for Expressive Speech-Driven 3D Facial Animation."
 link:
 preprint:https://evelynfan.github.io/files/i3d_author_version.pdf
 thumb:07_03_Yingruo_Fan.png
@@ -236,6 +262,7 @@ Speech-driven 3D facial animation with accurate lip synchronization has been wid
 ## Cross-Domain and Disentangled Face Manipulation With 3D Guidance
 tvcg
 Can Wang, Menglei Chai, Mingming He, Dongdong Chen, Jing Liao
+desc:Face Manipulation with 3D guidance
 link:https://doi.org/10.1109/TVCG.2021.3139913
 preprint:https://cassiepython.github.io/cddfm3d/index
 thumb:07_04_Can_Wang.png
