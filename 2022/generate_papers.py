@@ -15,13 +15,15 @@ class Session:
     def __init__(self, index, text):
         """Parses session meta-data from the given text."""
         self.index = index
-        match = re.match(r"#\s+(.+)\nchair:(.*)", text)
+        match = re.match(r"#\s+(.+)\nchair:(.*)\nopening:(.*)\nqa:(.*)", text)
         if match is None:
             print("Session misformatted:")
             print(text)
             return
         self.name = match.group(1)
         self.chair = match.group(2)
+        self.opening = match.group(3)
+        self.qa = match.group(4)
         self.papers = list()
 
     def add_paper(self, paper):
@@ -31,7 +33,11 @@ class Session:
         """:return: HTML code for this whole session on the papers page."""
         html = "<h3 style=\"margin-bottom:5px;\"><a name=\"Papers%d\">Papers %d: %s</a></h3>\n" % (self.index, self.index, escape_characters(self.name))
         if len(self.chair):
-            html += "<p>Session chair: %s<p>\n" % escape_characters(self.chair)
+            chair_text = escape_characters(self.chair)
+            if len(self.opening) or len(self.qa):
+                links = [("opening", self.opening), ("Q&A", self.qa)]
+                chair_text += " (%s)" % (", ".join(["<a href=\"%s\">%s</a>" % (url, name) for name, url in links if len(url) > 0]))
+            html += "<p>Session chair: %s<p>\n" % chair_text
         html += "<dl>\n"
         for paper in self.papers:
             html += paper.get_html()
@@ -44,8 +50,8 @@ class Paper:
 
     def __init__(self, text):
         """Parses paper data from the given text."""
-        #                       1      2      3           4           5               6            7      8
-        match = re.match(r"##\s+(.+?)\n(\w+)\n(.+?)\ndesc:(.*?)\nlink:(.*?)\npreprint:(.*?)\nthumb:(.*?)\n(.*)", text, re.DOTALL)
+        #                       1      2      3           4           5               6                   7            8      9
+        match = re.match(r"##\s+(.+?)\n(\w+)\n(.+?)\ndesc:(.*?)\nlink:(.*?)\npreprint:(.*?)\npresentation:(.*?)\nthumb:(.*?)\n(.*)", text, re.DOTALL)
         if match is None:
             print("Paper misformatted:")
             print(text)
@@ -56,8 +62,9 @@ class Paper:
         self.desc = match.group(4)
         self.link = match.group(5)
         self.preprint = match.group(6)
-        self.thumb = match.group(7)
-        self.abstract = match.group(8)
+        self.presentation = match.group(7)
+        self.thumb = match.group(8)
+        self.abstract = match.group(9)
 
     def get_html(self):
         """:return: HTML code for the papers page."""
@@ -73,7 +80,7 @@ class Paper:
                          i3d_live="(Live presentation only)", jcgt_live="(JCGT paper presentation, live presentation only)", tvcg_live="(TVCG paper presentation, live presentation only)")
         type = type_dict[self.type]
         links = list()
-        for name, url in [("link", self.link), ("preprint", self.preprint)]:
+        for name, url in [("link", self.link), ("preprint", self.preprint), ("presentation", self.presentation)]:
             if len(url):
                 links.append(" <a href=\"%s\">%s</a>" % (url, name))
         links = ",".join(links)
