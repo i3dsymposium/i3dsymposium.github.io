@@ -326,42 +326,45 @@ See the <a href="awards.html">awards section</a> for which papers won.
 
 <h3 style="margin-bottom:5px;" id="Papers{{ forloop.index }}">Papers {{ forloop.index }}: {{ session.title }}</h3>
 <p>
-  Session chair: {{ session.chair }}
-  {% assign opening = session.opening | strip -%}
-  {% assign qa = session.qa | strip -%}
-  {%if opening != empty or qa != empty -%}
-    ({% if opening != empty %}<a href="{{ session.opening }}">opening</a>{%if qa != empty %}, {% endif %}{% endif %}{% if qa != empty %}<a href="{{ session.qa }}">Q&A</a>{% endif %})
-  {% endif -%}
+    Session chair: {{ session.chair }}
+    {% assign opening = session.opening | strip -%}
+    {% assign qa = session.qa | strip -%}
+    {%if opening != empty or qa != empty -%}
+        ({% if opening != empty %}<a href="{{ session.opening }}">opening</a>{%if qa != empty %}, {% endif %}{% endif %}{% if qa != empty %}<a href="{{ session.qa }}">Q&A</a>{% endif -%})
+    {% endif %}
 <p>
 
-<dl>
-{% for paper in session.papers -%}
-<dt><b>{{ paper.title }}</b></dt>
+<dl>{% for paper in session.papers %}
+    <dt><b>{{ paper.title }}</b></dt>
     <dd>{% assign authors = paper.authors | escape_once | split: ", " %}{% for author in authors %}{%if forloop.last %} and {% elsif forloop.first == false %}, {% endif %}{{ author }}{% endfor %}</dd>
     <dd>
         {% assign journal = paper.journal | strip -%}
         {% if journal != empty or paper.live_only -%}
-        ({% if journal != empty %}invited {{ journal | upcase }} paper presentation{%if paper.live_only %}, {% endif %}{% endif -%}
-        {%if paper.live_only %}live presentation only{% endif %})
+            ({% if journal != empty %}invited {{ journal | upcase }} paper presentation{%if paper.live_only %}, {% endif %}{% endif -%}
+            {%if paper.live_only %}live presentation only{% endif %})
         {% endif -%}
         {% assign link = paper.link | strip -%}
         {% assign preprint = paper.preprint | strip -%}
         {% assign presentation = paper.presentation | strip -%}
         {% if link != empty -%}
-        <a href="{{ link }}">link</a>{% if preprint != empty or presentation != empty %}, {% endif -%}
+            <a href="{{ link }}">link</a>{% if preprint != empty or presentation != empty %}, {% endif -%}
         {% endif -%}
         {% if preprint != empty -%}
-        <a href="{{ preprint }}">preprint</a>{% if presentation != empty %}, {% endif -%}
+            <a href="{{ preprint }}">preprint</a>{% if presentation != empty %}, {% endif -%}
         {% endif -%}
         {% if presentation != empty -%}
-        <a href="{{ presentation }}">presentation</a>
-        {% endif -%}
+            <a href="{{ presentation }}">presentation</a>
+        {% endif %}
     </dd>
-    <dd><details><summary>Abstract</summary>
-        <p>{{ paper.abstract | escape_once | newline_to_br }}</p>
-        {% if paper.thumbnail -%}
-        <p><img src="img/paper_thumbnails/{{ paper.thumbnail }}" width="400"></p>
-        {% endif -%}
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                {{ paper.abstract | strip | escape_once | newline_to_br }}
+            </p>
+            {% if paper.thumbnail -%}
+                <p><img src="img/paper_thumbnails/{{ paper.thumbnail }}" width="400"></p>
+            {% endif %}
         </details>
     </dd>
 {% endfor -%}

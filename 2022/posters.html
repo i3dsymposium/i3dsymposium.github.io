@@ -37,29 +37,32 @@ demos:
 
 <p>The following posters will presented in the fast forward session on <a href="./program.html">Tuesday, 3 May</a> and in the virtual posters session on <a href="./program.html">Wednesday, 4 May</a>.</p>
 
-{% for poster in page.posters %}
+<dl>{% for poster in page.posters %}
     <dt><b>{{ poster.title | escape_once }}</b></dt>
     <dd>
-    {{ poster.author | escape_once }}<br>
-    {% if poster.links %}
-        {% for link in poster.links %}
-            <a href="{{ link.url }}">{{ link.link }}</a>{% if forloop.last == false %},{% endif %}
-        {% endfor %}
-    {% endif %}
-	</dd>
-{% endfor %}
+        {{ poster.author | escape_once }}
+        {% if poster.links -%}
+            <br>
+            {% for link in poster.links -%}
+                <a href="{{ link.url }}">{{ link.link }}</a>{% if forloop.last == false %},{% endif %}
+            {% endfor -%}
+        {% endif %}
+    </dd>
+{% endfor -%}
+</dl>
 
 
 <h3>Demos</h3>
 
 <p>Additionally, some paper authors will give live demos of their techniques during the virtual posters session on <a href="./program.html">Wednesday, 4 May</a>. These demos will not be streamed to Youtube, so be sure to come to the session if you are interested. Here is a list of these papers:</p>
 
-{% for demo in page.demos %}
+<dl>{% for demo in page.demos %}
     <dt><b>{{ demo.title | escape_once }}</b></dt>
     <dd>
-    {{ demo.author | escape_once }}<br>
-	</dd>
-{% endfor %}
+        {{ demo.author | escape_once }}
+    </dd>
+{% endfor -%}
+</dl>
 
 
 

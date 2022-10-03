@@ -121,11 +121,11 @@ The conference will be streamed at the <a href="https://www.youtube.com/c/I3DSym
         <tr>
             <td class="time" data-day="{{ day.day }}" valign="top" {% if time.cancelled %}style="text-decoration:line-through;"{% endif %}>{{ time.time }}</td>
             <td class="item">
-                {% if time.cancelled %}CANCELLED:&nbsp;{% endif %}
-                {% if time.link %}<a href="{{ time.link }}">{{ time.title }}</a>{% else %}{{ time.title }}{% endif %}
-                {% if time.registered_only %}&nbsp;- <a href="attend.html">registration required</a>{% endif %}
-                {% if time.notes %}&nbsp;<i>{{ time.notes }}</i>{% endif %}
-                {% if time.chair %}
+                {% if time.cancelled %}CANCELLED:&nbsp;{% endif -%}
+                {% if time.link %}<a href="{{ time.link }}">{{ time.title }}</a>{% else %}{{ time.title }}{% endif -%}
+                {% if time.registered_only %}&nbsp;- <a href="attend.html">registration required</a>{% endif -%}
+                {% if time.notes %}&nbsp;<i>{{ time.notes }}</i>{% endif -%}
+                {% if time.chair -%}
                     <br>Session chair: {{ time.chair }}
                 {% endif %}
             </td>
