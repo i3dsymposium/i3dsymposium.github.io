@@ -395,6 +395,11 @@ div.program h4.program-day {
   background: #007FBF;
 }
 
+.time[title] {
+  text-decoration: underline dotted 1px;
+  cursor: help;
+}
+
 /* debug
 .container_12 {
     border: 1px solid rgb(153, 153, 153);
