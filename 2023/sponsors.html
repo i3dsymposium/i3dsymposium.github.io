@@ -1,0 +1,96 @@
+---
+layout: default2023
+title: sponsors
+
+sponsors:
+  - level: Platinum Sponsors
+    size: 230
+    members:
+      - name: Epic Games
+        image: sponsor_Unreal_Epic_Black.png
+        link: https://www.unrealengine.com
+
+      - name: EA
+        image: sponsor_ea.png
+        link: https://seed.ea.com
+
+  - level: Gold Sponsors
+    size: 170
+    members:
+      - name: The Forge
+        image: sponsor_TheForge_color_black_landscape.png
+        link: https://theforge.dev
+
+      - name: Unity
+        image: sponsor_unity.png
+        link: https://unity3d.com
+
+      - name: Futurewei
+        image: sponsor_futurewei.png
+        link: https://www.huawei.com
+
+      - name: Intel
+        image: sponsor_intel.png
+        link: https://www.intel.com/content/www/us/en/developer/topic-technology/graphics-research/overview.html
+
+      - name: Google
+        image: sponsor_google.png
+        link: https://google.com
+
+      - name: Arm
+        image: sponsor_arm.png
+        link: https://developer.arm.com/solutions/graphics-and-gaming
+
+      - name: Facebook Reality Labs
+        image: sponsor_FRL_Research_Logo.png
+        link: https://www.facebook.com/careers/areas-of-work/facebookrealitylabs/?teams[0]=Facebook%20Reality%20Labs
+
+      - name: Roblox
+        image: sponsor_roblox.png
+        link: https://corp.roblox.com/research/
+
+  - level: Silver Sponsors
+    size: 120
+    members:
+      - name: Activision
+        image: sponsor_Activision_logo.png
+        link: https://activision.com
+
+      - name: AMD
+        image: sponsor_amd.png
+        link: https://www.amd.com
+
+      - name: NVIDIA
+        image: sponsor_nvidia_horz.png
+        link: https://research.nvidia.com
+
+---
+
+<h1>Corporate Sponsors</h1>
+
+<p>The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
+2023 is a highly-visible, leading-edge conference for techniques that
+combine 3D computer graphics with human interaction. I3D continues to
+focus on the hottest research in 3D game technology, interactive
+visualization and visual depiction, interactive modeling,
+user-assisted techniques, and applications. As a corporate supporter
+you participate in this exciting field and demonstrate leadership in
+supporting the latest developments in computer graphics research.</p>
+
+
+<p>If your organization would like to become a corporate sponsor of I3D 2023, please contact the conference chairs: <a 
+href="mailto:general@i3dsymposium.org">general@i3dsymposium.org</a></p>
+    
+{% for level in page.sponsors %}
+
+<h2>{{ level.level }}</h2>
+{% for sponsor in level.members %}
+<div style="margin: 0px 5px 25px 5px;">
+  <a href="{{ sponsor.link }}">
+    <img width="{{ level.size }}" src="img/{{ sponsor.image }}" alt="{{ sponsor.name }}" style="padding: 2px; background: #fff;">
+  </a>
+</div>
+{% endfor %}
+
+{% endfor %}
+

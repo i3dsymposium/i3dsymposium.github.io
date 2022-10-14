@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 400 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-miterlimit:10;">
+    <g id="Layer-2" serif:id="Layer 2" transform="matrix(0.359358,0,0,0.362202,-73.8257,-115.118)">
+        <g transform="matrix(0.494232,0.86933,0.86933,-0.494232,761.36,-674.085)">
+            <path d="M236.912,-947.188L858.053,-947.188L1628.06,407.211L1158.64,674.085L236.912,-947.188Z" style="fill:rgb(148,191,0);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.998148,0,0,1.03805,361.58,1100.5)">
+            <path d="M0,-539.977L0.047,-539.93L-236.979,0L1557.98,0L1557.98,-539.977L0,-539.977Z" style="fill:rgb(0,102,153);fill-rule:nonzero;"/>
+        </g>
+        <g transform="matrix(0.832048,0,0,0.832048,69.4194,989.343)">
+            <g id="Layer-6" serif:id="Layer 6">
+                <path d="M0,-1080L0,0L125.04,0L362.065,-539.977L55.031,-1080L0,-1080Z" style="fill:rgb(247,147,30);fill-rule:nonzero;"/>
+            </g>
+        </g>
+        <g id="Layer-8" serif:id="Layer 8" transform="matrix(0.993482,0,0,0.993482,12.5151,1.8147)">
+            <g transform="matrix(1,0,0,1,1920,-0.0004)">
+                <path d="M0,539.977L-1557.98,539.977L-1864.97,0" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:5.58px;"/>
+            </g>
+            <g transform="matrix(1,0,0,1,125.04,539.976)">
+                <path d="M0,539.977L237.026,0.047L236.979,0" style="fill:none;fill-rule:nonzero;stroke:white;stroke-width:5.58px;stroke-linejoin:round;"/>
+            </g>
+        </g>
+    </g>
+    <g transform="matrix(0.273102,0,0,0.275263,-38.4558,-69.0398)">
+        <g opacity="0.55">
+            <g transform="matrix(-0.407228,0.913326,-1.27581,0.40574,-1.77636e-15,-3.63288)">
+                <clipPath id="_clip1">
+                    <path d="M1002.39,-474.904L1183.02,-881.504L927.573,-799.969L746.944,-393.369L1002.39,-474.904Z" clip-rule="nonzero"/>
+                </clipPath>
+                <g clip-path="url(#_clip1)">
+                    <g transform="matrix(1.1668,0,-0.445059,1,-382.579,0)">
+                        <text x="817.948px" y="-553.056px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:288.744px;fill:white;">D</text>
+                    </g>
+                </g>
+            </g>
+            <g transform="matrix(0.999986,0.00522012,1.13525,1.00594,-5,0)">
+                <clipPath id="_clip2">
+                    <path d="M-485.64,611.956L-78.037,609.841L274.363,299.429L-133.241,301.544L-485.64,611.956Z" clip-rule="nonzero"/>
+                </clipPath>
+                <g clip-path="url(#_clip2)">
+                    <g transform="matrix(1.29877,0,-0.570242,1,385.161,0)">
+                        <text x="-266.752px" y="535.673px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:273.683px;fill:white;">D</text>
+                    </g>
+                </g>
+            </g>
+            <g transform="matrix(-0.49618,-0.86822,0.13377,-1.78133,0,3.63288)">
+                <clipPath id="_clip3">
+                    <path d="M-356.67,-286.225L-834.241,-53.456L-760.965,218.339L-283.394,-14.43L-356.67,-286.225Z" clip-rule="nonzero"/>
+                </clipPath>
+                <g clip-path="url(#_clip3)">
+                    <g transform="matrix(1.37083,0,-0.740104,1,305.089,0)">
+                        <text x="-735.099px" y="43.907px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:266.393px;fill:white;">D</text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+    <g id="Layer-12" serif:id="Layer 12" transform="matrix(0.996678,0,0,1.00457,-453.55,-306.402)">
+        <g transform="matrix(0.873042,0,0,0.873042,77.6699,42.8031)">
+            <g opacity="0.85">
+                <g transform="matrix(0.3,0,0,0.3,606.189,315.837)">
+                    <path d="M0,54.422C0.809,52.07 1.2,51.416 1.778,50.139C2.321,49.03 2.859,48.004 3.415,46.978C4.521,44.989 5.678,43.115 6.866,41.318C9.281,37.767 11.766,34.401 14.45,31.312C19.771,25.08 25.606,19.641 31.71,14.762C44.11,5.188 57.026,-2.41 71.286,-7.933C85.255,-13.372 99.296,-16.818 113.319,-19.461C127.333,-22.123 141.371,-23.791 155.39,-24.822C183.371,-26.974 211.551,-26.088 239.008,-23.209C266.518,-20.554 293.914,-17.666 321.278,-14.001C322.002,-13.904 322.51,-13.239 322.413,-12.516C322.317,-11.797 321.66,-11.291 320.943,-11.379L320.911,-11.383C293.67,-14.728 266.12,-15.906 238.659,-16.006C224.873,-16.105 211.292,-15.773 197.746,-14.603C184.207,-13.395 170.752,-11.525 157.478,-9.001C144.212,-6.436 131.125,-3.168 118.442,0.884C105.799,4.991 93.517,10.005 82.499,16.133C71.74,22.098 61.521,29.961 53.38,38.693C49.329,43.094 45.707,47.729 42.765,52.505C41.263,54.88 40.008,57.306 38.943,59.688C38.428,60.881 37.969,62.044 37.591,63.16L37.131,64.714C37.063,65.031 36.817,65.977 37.112,65.268C34.117,75.516 23.381,81.396 13.133,78.401C2.885,75.406 -2.995,64.67 0,54.422" style="fill:white;fill-rule:nonzero;"/>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0.261497,0,0,0.259941,448.881,247.776)">
+            <clipPath id="_clip4">
+                <path d="M604.197,366.255L603.161,514.122L1611.65,519.322L1613.67,290.693L680.828,290.468L658.103,364.169L604.197,366.255Z"/>
+            </clipPath>
+            <g clip-path="url(#_clip4)">
+                <g transform="matrix(3.8544,0,0,3.84703,-1723.38,-941.659)">
+                    <text x="603.763px" y="372.555px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:58.4px;fill-opacity:0.7;">i3D {{ include.year }}</text>
+                </g>
+            </g>
+        </g>
+        <g transform="matrix(0.261497,0,0,0.259941,445.881,244.776)">
+            <clipPath id="_clip5">
+                <path d="M604.197,366.255L603.161,514.122L1611.65,519.322L1613.67,290.693L680.828,290.468L658.103,364.169L604.197,366.255Z"/>
+            </clipPath>
+            <g clip-path="url(#_clip5)">
+                <g transform="matrix(3.8544,0,0,3.84703,-1723.38,-941.659)">
+                    <text x="603.763px" y="372.555px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:58.4px;fill:white;">i3D {{ include.year }}</text>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

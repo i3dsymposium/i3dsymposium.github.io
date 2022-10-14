@@ -230,13 +230,17 @@ ol.expand > li {
 .nav > li {
   margin-left: 0;
   font-size: 95%;
+  color: #999;
+  padding: 3px 10px;
 }
 
 .nav > li > a {
   color: rgb(255, 255, 255);
   display: block;
-  padding: 3px 10px;
   text-decoration: none;
+  position:relative;
+  margin: -3px -10px;
+  padding: 3px 10px;
 }
 
 .nav > li.active,
