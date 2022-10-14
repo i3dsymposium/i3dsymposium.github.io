@@ -113,7 +113,7 @@ The conference will be streamed at the <a href="https://www.youtube.com/c/I3DSym
 
 {% for day in page.program %}
 <div class="program">
-    <h4 class="program-day">{{ day.day | date: "%A, %e of %B %Y" }}{% if day.video %}&nbsp;<a href="{{ day.video }}" target="_blank"><img src="img/youtube-link-logo.png" width="40px" style="vertical-align: text-bottom;" alt="YouTube stream for Day {{ forloop.index }}"></a>{% endif %}</h4>
+    <h4 class="program-day">{{ day.day | date: "%A, %e of %B %Y" }}{% if day.video %}&nbsp;<a href="{{ day.video }}" target="_blank"><img src="../img/youtube-link-logo.png" width="40px" style="vertical-align: text-bottom;" alt="YouTube stream for Day {{ forloop.index }}"></a>{% endif %}</h4>
 
     <h3><span class="time" data-day="{{ day.day }}">{{ day.times.first.time }}</span> to <span class="time" data-day="{{ day.day }}">{{ day.times.last.time }}</span> {{ page.timezone_name }}</h3>
     <table class="times">
