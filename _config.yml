@@ -13,6 +13,9 @@ markdown: kramdown
 gems:
   - jekyll-redirect-from
 
+exclude:
+  - img_src
+
 defaults:
   -
     scope:
