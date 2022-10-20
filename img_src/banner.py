@@ -6,10 +6,16 @@ args = parser.parse_args()
 
 import subprocess
 
-with open("banner_plain_template.svg") as b:
-    svg = b.read()
+def svg2png(src, dst, year):
+    with open(src) as b:
+        svg = b.read()
 
-svg = svg.replace("{{year}}", str(args.year))
+    svg = svg.replace("{{year}}", str(year))
 
-args = ["inkscape", "--pipe", "-o", f"../{args.year}/img/banner.png"]
-subprocess.run(args, input=svg, text=True)
+    args = ["inkscape", "--pipe", "-o", f"../{year}/img/{dst}"]
+    subprocess.run(args, input=svg, text=True)
+
+
+svg2png("banner_plain_template.svg", "banner.png", args.year)
+svg2png("banner_subtitle_template.svg", "banner-subtitle.png", args.year)
+svg2png("banner_narrow_subtitle_template.svg", "banner-narrow-subtitle.png", args.year)

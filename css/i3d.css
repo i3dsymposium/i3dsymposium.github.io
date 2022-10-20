@@ -258,6 +258,7 @@ ol.expand > li {
 #header {
   margin-left: 400px; /* 400 px is the logo width */
   border-bottom: 2px solid rgb(255, 255, 255);
+  padding-left: 1em;
   height: 79px; /* aligns the bottom border with the logo */
   background-color: rgb(148, 191, 0); /* green */
 }
@@ -339,3 +340,7 @@ ul.sponsors img {
     border: 1px dashed rgb(255, 255, 255);
 }*/
 
+.icon {
+  font-size: inherit !important;
+  height: 1em;
+}

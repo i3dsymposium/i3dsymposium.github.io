@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-
-{% assign current_year = 2023 %}
-
 <head>
+
+    {% assign current_year = 2023 -%}
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,28 +32,14 @@
     <link href="/css/responsive.css" rel="stylesheet" media="screen">
 
     <!-- SEO metadata for social posts -->
-    <meta property="og:url"                content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-    <meta property="og:title"              content="{% if page.title %}{{ page.title }} | {% endif %}I3D {{ current_year }}" />
-    <meta property="og:description"        content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:image"              content="{{ page.dir | append: 'img/banner.png' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url | replace: 'http://','https://' }}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}I3D {{ current_year }}" />
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
+    <meta property="og:image" content="{{ page.dir | append: 'img/banner-narrow-subtitle.png' | prepend: site.baseurl | prepend: site.url | replace: 'http://','https://' }}" />
     <meta name="twitter:card" content="summary"></meta>
-    <meta name="twitter:image"              content="{{ page.dir | append: 'img/banner.png' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta name="twitter:image" content="{{ '/img/logo-square.png' | prepend: site.baseurl | prepend: site.url | replace: 'http://','https://' }}" />
     <meta name="twitter:site" content="@I3DCONF"></meta>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>
-        $(function () {
-            // Set the active button based on the current url.
-            var filename = window.location.pathname.split('/').reverse()[0];
-            $('a[href$="' + filename + '"]').parent().addClass('active');
-            // If there are no objects with the active class,
-            if ($('.active').length == 0) {
-            // assume the index is the current url.
-            $('a[href$="index.html"]').parent().addClass('active');
-            }
-        });
-    </script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
 <body>
@@ -106,11 +92,33 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
 
+            <!-- This script is to color the current page in the menu. It's added right after the menu so it makes the changes at the earliest possible moment -->
+            <script>
+            (function(){
+                function urlToName(url) {
+                    // Take the last part of the path, without extension
+                    url = url.split("/").reverse()[0].split(".")[0];
+                    if (url === "") {
+                        url = "index";
+                    }
+                    return url;
+                }
+                // Set the active button based on the current url.
+                var links = document.querySelectorAll(".nav-list a");
+                for (var i = 0; i < links.length; ++i) {
+                    var url = urlToName(links[i].attributes["href"].value);
+                    links[i].classList.add(url);
+                }
+                var filename = urlToName(window.location.pathname);
+                document.querySelector('.nav-list a.' + filename).parentElement.classList.add("active");
+            })();
+            </script>
+
             <!-- social media links -->
             <p>
-                <a href="https://twitter.com/I3DCONF"><span style="font-size: 2.4em; color:white;"><i class="fab fa-twitter"></i></span></a>&nbsp;
-                <a href="http://www.facebook.com/pages/I3D-Symposium-on-Interactive-3D-Graphics-and-Games/147772558570274"><span style="font-size: 2.4em; color:white;"><i class="fab fa-facebook"></i></span></a>&nbsp;
-                <a href="https://www.youtube.com/channel/UCZNuH6k97yBaiTerqd0u1_Q/"><span style="font-size: 2.4em; color:white;"><i class="fab fa-youtube"></i></span></a>
+                <a href="https://twitter.com/I3DCONF"><span style="font-size: 2.4em;"><img src="/img/twitter.svg" alt="twitter" class="icon" /></span></a>&nbsp;
+                <a href="http://www.facebook.com/pages/I3D-Symposium-on-Interactive-3D-Graphics-and-Games/147772558570274"><span style="font-size: 2.4em;"><img src="/img/square-facebook.svg" alt="facebook" class="icon" /></span></a>&nbsp;
+                <a href="https://www.youtube.com/channel/UCZNuH6k97yBaiTerqd0u1_Q/"><span style="font-size: 2.4em;"><img src="/img/youtube.svg" alt="youtube" class="icon" /></span></a>
                 <h4><a href="contact.html#mailing_list">Join our Mailing List</a></h4>
             </p>
 		
