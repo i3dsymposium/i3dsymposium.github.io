@@ -1,236 +1,147 @@
-/**
- * Site header
- */
-.site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
 
-    // Positioning context for the mobile navigation icon
-    position: relative;
+.nav {
+  margin-left: 0;
+  margin-bottom: 20px;
+  list-style: none;
 }
 
-.site-title {
-    font-size: 26px;
-    line-height: 56px;
-    letter-spacing: -1px;
-    margin-bottom: 0;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+.nav > li {
+  margin-left: 0;
+  font-size: 95%;
+  color: #999;
+  padding: 3px 10px;
 }
 
-.site-nav {
-    float: right;
-    line-height: 56px;
+.nav > li > a {
+  color: rgb(255, 255, 255);
+  display: block;
+  text-decoration: none;
+  position:relative;
+  margin: -3px -10px;
+  padding: 3px 10px;
+}
 
-    .menu-icon {
-        display: none;
-    }
+.nav > li.active,
+.nav > li.active a,
+.nav > li > a:hover {
+  color: rgb(0, 68, 102); /* darker blue than body background */
+  background-color: rgb(255, 153, 0); /* orange */
+}
 
-    .page-link {
-        color: $text-color;
-        line-height: $base-line-height;
+.subhead {
+  margin-bottom: 0;
+  padding-top: 17px; /* bump the text down from the top of the window */
+  font-size: 18px;
+  font-weight: 200;
+}
 
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
+#header {
+  background-color: rgb(148, 191, 0); /* green */
+  border-bottom: 2px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  height: 81px; /* aligns the bottom border with the logo */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1000;
+  width: 100%;
 
-    @include media-query($on-palm) {
-        position: absolute;
-        top: 9px;
-        right: 30px;
-        background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
-        text-align: right;
+  img {
+    max-width: 100%;
+  }
+}
 
-        .menu-icon {
-            display: block;
-            float: right;
-            width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
-            text-align: center;
+#header-subtitle {
+  margin-left: 400px; /* 400 px is the logo width */
+  font-size: 16px;
+  padding-left: 1em;
+  padding-top: 18px;
+  line-height: 18px;
 
-            > svg {
-                width: 18px;
-                height: 15px;
+  @include smaller-than(700px) {
+    margin-left: 140px;
+    margin-top: 72px;
+    margin-bottom: 16px;
+  }
 
-                path {
-                    fill: $grey-color-dark;
-                }
-            }
-        }
+  @include phone-screen {
+    font-size: 12px;
+  }
 
-        .trigger {
-            clear: both;
-            display: none;
-        }
+  @include smaller-than(400px)
+  {
+    margin-top: 18vw;
+    margin-left: 35vw;
+  }
+}
 
-        &:hover .trigger {
-            display: block;
-            padding-bottom: 5px;
-        }
+/* flush-left the containers */
+.container_12 {
+  margin-left: 0;
+  margin-right: 0;
 
-        .page-link {
-            display: block;
-            padding: 5px 10px;
-        }
-    }
+}
+
+ul.social {
+  text-align: center;
+  margin-left: 0;
+  list-style: none;
+}
+
+ul.social > li {
+  margin-top: -4px;
+  margin-bottom: 3px;
+}
+
+ul.social > li > a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+table#sponsors {
+  width: 99%;
+  border: 0px;
 }
 
 
-
-/**
- * Site footer
- */
-.site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+table#sponsors tr td{
+  width: 33%;
 }
 
-.footer-heading {
-    font-size: 18px;
-    margin-bottom: $spacing-unit / 2;
+
+ul.sponsors {
+  text-align: left;
+  margin-left: 0;
+  list-style: none;
 }
 
-.contact-list,
-.social-media-list {
-    list-style: none;
+ul.sponsors > li {
     margin-left: 0;
+    margin-bottom: 16px;
 }
 
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
+ul.sponsors img {
+	max-width: 100%;
+	height: auto;
 }
 
-.footer-col {
-    float: left;
-    margin-bottom: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+#nav {
+  padding-top: 140px; /* bump down content, very low for logo */
 }
 
-.footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+#main {
+  padding-top: 20px; /* bump down content */
+  /*padding-right: 25px; /* create some space from the border 
+  border-right: 1px solid rgb(255, 255, 255);*/
 }
 
-.footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
-}
-
-@include media-query($on-laptop) {
-    .footer-col-1,
-    .footer-col-2 {
-        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-        width:         calc(50% - (#{$spacing-unit} / 2));
-    }
-
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
-}
-
-@include media-query($on-palm) {
-    .footer-col {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+#news {
+  padding-top: 12px; /* bump down content */
+  padding-left: 15px; /* create some space from the border */
+  border-left: 1px solid rgb(255, 255, 255);
 }
 
 
 
-/**
- * Page content
- */
-.page-content {
-    padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
-}
-
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
-}
-
-.post-link {
-    display: block;
-    font-size: 24px;
-}
-
-
-
-/**
- * Posts
- */
-.post-header {
-    margin-bottom: $spacing-unit;
-}
-
-.post-title {
-    font-size: 42px;
-    letter-spacing: -1px;
-    line-height: 1;
-
-    @include media-query($on-laptop) {
-        font-size: 36px;
-    }
-}
-
-.post-content {
-    margin-bottom: $spacing-unit;
-
-    h2 {
-        font-size: 32px;
-
-        @include media-query($on-laptop) {
-            font-size: 28px;
-        }
-    }
-
-    h3 {
-        font-size: 26px;
-
-        @include media-query($on-laptop) {
-            font-size: 22px;
-        }
-    }
-
-    h4 {
-        font-size: 20px;
-
-        @include media-query($on-laptop) {
-            font-size: 18px;
-        }
-    }
-}

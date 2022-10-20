@@ -1,204 +1,221 @@
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-    margin: 0;
-    padding: 0;
+html {
+    font-size: 100%;
 }
 
-
-
-/**
- * Basic styling
- */
 body {
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    font-weight: 300;
-    color: $text-color;
-    background-color: $background-color;
-    -webkit-text-size-adjust: 100%;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Geneva, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    /* place the background on the body */
+    background-color: rgb(0, 102, 153);
+    /* blue */
 }
 
-
-
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+small {
+    font-size: 85%;
 }
 
-
-
-/**
- * Images
- */
-img {
-    max-width: 100%;
-    vertical-align: middle;
+strong {
+    font-weight: bold;
 }
 
-
-
-/**
- * Figures
- */
-figure > img {
-    display: block;
+em {
+    font-style: italic;
 }
 
-figcaption {
-    font-size: $small-font-size;
+cite {
+    font-style: normal;
 }
 
+a,
+a:focus {
+    color: rgb(255, 204, 0);
+    /* orange */
+}
 
+a:hover,
+a:active {
+    color: rgb(255, 153, 0);
+    /* darkish orange */
+}
 
-/**
- * Lists
- */
-ul, ol {
-    margin-left: $spacing-unit;
+a:visited {
+    color: rgb(255, 255, 153);
+    /* light yellow */
+}
+
+hr {
+    border: 0 solid rgb(204, 204, 204);
+    border-top-width: 1px;
+    clear: both;
+    height: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0;
+    font-weight: bold;
+    line-height: 20px;
+    text-rendering: optimizelegibility;
+}
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+    font-weight: normal;
+    line-height: 1;
+    color: #999999;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 40px;
+}
+
+h1 {
+    font-size: 38.5px;
+}
+
+h2 {
+    font-size: 31.5px;
+}
+
+h3 {
+    font-size: 24.5px;
+}
+
+h4 {
+    font-size: 17.5px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    font-size: 11.9px;
+}
+
+h1 small {
+    font-size: 24.5px;
+}
+
+h2 small {
+    font-size: 17.5px;
+}
+
+h3 small {
+    font-size: 14px;
+}
+
+h4 small {
+    font-size: 14px;
+}
+
+ol {
+    list-style: decimal;
+}
+
+ul {
+    list-style: disc;
 }
 
 li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
+    margin-left: 30px;
 }
 
-
-
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+dt {
+    font-size: 140%;
+    margin-top: 28px;
+    margin-bottom: 3px;
 }
 
-
-
-/**
- * Links
- */
-a {
-    color: $brand-color;
-    text-decoration: none;
-
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
-    &:hover {
-        color: $text-color;
-        text-decoration: underline;
-    }
+dd {
+    font-size: 90%;
+    margin-left: 20px;
+    color: #ccccdd;
 }
 
-
-
-/**
- * Blockquotes
- */
-blockquote {
-    color: $grey-color;
-    border-left: 4px solid $grey-color-light;
-    padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
-
-    > :last-child {
-        margin-bottom: 0;
-    }
+dl {
+    font-size: 90%;
+    margin-left: 20px;
 }
 
-
-
-/**
- * Code formatting
- */
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
 pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
+table,
+address,
+fieldset,
+figure {
+    margin-bottom: 20px;
 }
 
-code {
-    padding: 1px 5px;
+table {
+    width: 90%;
+    margin-right: 10%;
+    margin-left: 8%;
 }
 
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+ul.unstyled,
+ol.unstyled,
+ul.unstyled > li,
+ol.unstyled > li {
+  margin-left: 0;
+  list-style: none;
 }
 
-
-
-/**
- * Wrapper
- */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
+ul.expand,
+ol.expand {
+    margin-bottom: 20px;
 }
 
-
-
-/**
- * Clearfix
- */
-%clearfix {
-
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+ul.expand > li,
+ol.expand > li {
+  padding-bottom: 10px;
 }
 
-
-
-/**
- * Icons
- */
 .icon {
+  font-size: inherit !important;
+  height: 1em;
+}
 
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
 
-        path {
-            fill: $grey-color;
-        }
-    }
+/* Youtube Videos */
+
+.youtube-embed {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  margin: 20px auto 20px auto;
+}
+.youtube-embed iframe,
+.youtube-embed object,
+.youtube-embed embed {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
