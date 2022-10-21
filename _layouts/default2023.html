@@ -18,8 +18,16 @@
     
     <meta name="author" content="I3D Publicity Chair (general@i3dsymposium.org)">
 
-    <link href="/css/960-fluid.css" rel="stylesheet" media="screen">
-    <link href="/css/i3d.css" rel="stylesheet" media="screen">
+
+    {% if page.contact_form %}
+    <!-- Mailchimp signup form styling -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    #mc_embed_signup{font:14px Helvetica,Arial,sans-serif; width:400px; max-width: 100%;}
+    </style>
+    {% endif %}
+
+    <link href="css/i3d.css" rel="stylesheet" media="screen">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -36,26 +44,39 @@
 
 <body>
 
-    <div id="header">
-        <img id="banner" style="width: 400px;" src="img/banner.png" alt="" />
-    </div> <!-- #header -->
-    <!-- put the header outside of the grid container -->
-    <div id="header-subtitle">
-        ACM SIGGRAPH Symposium on<br/>
-        Interactive 3D Graphics and Games<br/>
-        TBA, 2023
-        <!--p class="text-left float-left subhead tight">
-            <small></small>
-        </p-->
-    </div> <!-- #header -->
+    <header>
+        <div id="header">
+            <img id="banner" src="img/banner.png" alt="" />
+        </div> <!-- #header -->
+        <div id="header-subtitle">
+            <span class="br">ACM SIGGRAPH Symposium on</span>
+            Interactive 3D Graphics and Games<br/>
+            TBA, 2023
+        </div><!-- #header-subtitle -->
+    </header>
+
     <div class="clearfix"></div>
 
-    <!-- container_12 is a 12-cell grid -->
-    <div class="container_12">
-        <!-- grid_2 is a 2-wide cell -->
-        <div id="nav" class="grid_2">
+    <div id="main-wrapper">
+        <nav id="nav">
             <!-- nav and nav-list are styled in css/i3d.css -->
-            <ul class="nav nav-list">
+            <input type="checkbox" id="menu-open" />
+            <label for="menu-open"><svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                <title>Toggle Menu</title>
+                <g>
+                  <circle class="menuicon__circle_bg" r="23" cx="25" cy="25" />
+                  <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+                </g>
+                <g>
+                  <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+                  <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                  <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                  <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+                </g>
+              </svg>
+            </label>
+
+            <ul class="nav-list">
                 <li><a href="index.html">Home</a></li>
                 <li>Register and Attend</li>
                 <li>Program</li>
@@ -110,28 +131,18 @@
             </script>
 
             <!-- social media links -->
-            <p>
-                <a href="https://twitter.com/I3DCONF"><span style="font-size: 2.4em;"><img src="/img/twitter.svg" alt="twitter" class="icon" /></span></a>&nbsp;
-                <a href="http://www.facebook.com/pages/I3D-Symposium-on-Interactive-3D-Graphics-and-Games/147772558570274"><span style="font-size: 2.4em;"><img src="/img/square-facebook.svg" alt="facebook" class="icon" /></span></a>&nbsp;
-                <a href="https://www.youtube.com/channel/UCZNuH6k97yBaiTerqd0u1_Q/"><span style="font-size: 2.4em;"><img src="/img/youtube.svg" alt="youtube" class="icon" /></span></a>
-                <h4><a href="contact.html#mailing_list">Join our Mailing List</a></h4>
-            </p>
+            <footer id="socials">
+                <ul class="social-icons">
+                    <li><a href="https://twitter.com/I3DCONF" target="_blank"><img src="/img/twitter.svg" alt="twitter" class="icon" /></a></li>
+                    <li><a href="http://www.facebook.com/pages/I3D-Symposium-on-Interactive-3D-Graphics-and-Games/147772558570274" target="_blank"><img src="/img/square-facebook.svg" alt="facebook" class="icon" /></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCZNuH6k97yBaiTerqd0u1_Q/" target="_blank"><img src="/img/youtube.svg" alt="youtube" class="icon" /></a></li>
+                </ul>
+                <a href="contact.html#mailing_list">Join our Mailing List</a>
+            </footer>
 		
-        </div> <!-- #nav -->
+        </nav> <!-- #nav -->
 
-        <!--grid_7 is a 7-wide cell for the main content-->
-        <div id="main" class="grid_7">
-
-            <div class="page-content">
-                <div class="wrapper">
-                    {{ content }}
-                </div>
-            </div>
-
-        </div> <!-- #main -->
-
-        <!-- grid_3 is a 3-wide cell -->
-        <div id="news" class="grid_3">
+        <div id="news">
             <h4>
                 Watch here for updates
             </h4>
@@ -142,34 +153,38 @@
                 <!--
                 <li><b>Paper notifications:</b><br /><strike>February 23, 2022</strike></li>
                 <li><b>Camera-ready deadline:</b><br /><strike>March 9, 2022</strike></li>
-                <li><b>PACM CGIT revisions deadline:</b><br /><strike>April 6, 2022</strike></li>
                 <li><b>Poster submission deadline:</b><br /><strike>March 23, 2022</strike></li>
                 <li><b>Poster notifications:</b><br /><strike>March 30, 2022</strike></li>
-                <li><b>Extended poster submission deadline:</b><br /><strike>April 14, 2022</strike></li>
-                <li><b>Extended poster notifications:</b><br /><strike>April 17, 2022</strike></li>
                 <li><b>Travel grant submission deadline:</b><br />TBA</li>
-                <li><b>Poster submission deadline:</b><br /><strike>March 16, 2021</strike></li>
-                <li><b>Poster notifications:</b><br />March 23, 2021</li>
-                <li><b>Extended poster submission deadline:</b><br /><strike>March 30, 2021</strike></li>
-                <li><b>Extended poster notifications:</b><br /><strike>April 2, 2021</strike></li>
                 <li><b>Early registration deadline:</b><br />TBA</li>
                 -->		
                 <li><b>Conference:</b><br />TBA, 2023</li>
             </ul>
     
         </div> <!-- #news -->
-    </div> <!-- .container -->
 
+        <main id="main">
+            {{ content }}
+        </main> <!-- #main -->
 
-    <!-- start a new container for the footer -->
-    <div id="footer" class="container_12">
-        <div class="grid_6 prefix_2"> <!-- prefix_2 offsets the cell -->
-            <p class="muted"><small>
-                <a href="http://www.i3dsymposium.org/">HOME</a> | &copy; {{ current_year }}
-                Symposium on Interactive 3D Graphics and Games
-            </small></p>
-        </div>
-    </div>
+    </div> <!-- #main-wrapper -->
+
+    <div class="clearfix"></div>
+
+    <!-- social media links for mobile -->
+    <footer id="socials-mobile">
+        <ul class="social-icons">
+            <li><a href="https://twitter.com/I3DCONF" target="_blank"><img src="/img/twitter.svg" alt="twitter" class="icon" /></a></li>
+            <li><a href="http://www.facebook.com/pages/I3D-Symposium-on-Interactive-3D-Graphics-and-Games/147772558570274" target="_blank"><img src="/img/square-facebook.svg" alt="facebook" class="icon" /></a></li>
+            <li><a href="https://www.youtube.com/channel/UCZNuH6k97yBaiTerqd0u1_Q/" target="_blank"><img src="/img/youtube.svg" alt="youtube" class="icon" /></a></li>
+        </ul>
+        <a href="contact.html#mailing_list">Join our Mailing List</a>
+    </footer>
+
+    <footer id="footer">
+        <a href="http://www.i3dsymposium.org/">HOME</a> | &copy; {{ current_year }}
+        Symposium on Interactive 3D Graphics and Games
+    </footer>
 
 
 
