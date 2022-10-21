@@ -102,13 +102,13 @@ $large-screen-size: 970px;
         margin-bottom: 20px;
         list-style: none;
 
-        &>li {
+        & > li {
             margin-left: 0;
             font-size: 95%;
             color: #999;
             padding: 3px 10px;
 
-            &>a {
+            & > a {
                 color: rgb(255, 255, 255);
                 display: block;
                 text-decoration: none;
@@ -119,7 +119,7 @@ $large-screen-size: 970px;
 
             &.active,
             &.active a,
-            &>a:hover {
+            & > a:hover {
                 color: rgb(0, 68, 102);
                 /* darker blue than body background */
                 background-color: rgb(255, 153, 0);
@@ -177,6 +177,16 @@ $large-screen-size: 970px;
             width: 100%;
             margin: 0;
             border-top: 2px solid white;
+            & > li {
+                font-size: 100%;
+                margin: 0;
+                padding: 6px 1em;
+                a {
+                    margin: -6px -1em;
+                    padding: 6px 1em;
+                    display: block;
+                }
+            }
         }
 
         #socials {
