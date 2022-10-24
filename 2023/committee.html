@@ -9,7 +9,7 @@ committee:
         link: http://www.cse.chalmers.se/~d00sint/
         institution: Chalmers University of Technology, Sweden
         email: erik.sintorn@chalmers.se
-        pronouns: (he, his)
+        pronouns: (he, him)
       - name: Bart Wroński
         link: https://bartwronski.com
         institution: NVIDIA Corporation
@@ -22,12 +22,12 @@ committee:
         link: https://cs.lth.se/michael_doggett/
         institution: Lund University, Sweden
         email: michael.doggett@cs.lth.se
-        pronouns: (he, his)
+        pronouns: (he, him)
       - name: Angelo Pesce
         link: http://c0de517e.blogspot.com/
         institution: Roblox
         email: c0de517e@gmail.com
-        pronouns: (he, his)
+        pronouns: (he, him)
 
   - chair: Program Chairs
     members:
@@ -35,19 +35,27 @@ committee:
         link: http://momentsingraphics.de/
         institution: Intel
         email: i3d@momentsingraphics.de
-        pronouns: (he, his)
+        pronouns: (he, him)
       - name: Mauricio Vives
         link: https://twitter.com/pixnblox
         institution: Autodesk, Inc.
         email: mauricio.vives@autodesk.com
-        pronouns: (he, his)
+        pronouns: (he, him)
+
+  - chair: Posters Chair
+    members:
+      - name: Markus Billeter
+        link: http://newq.net/
+        institution: School of Computing, University of Leeds
+        email: m.billeter@leeds.ac.uk
+        pronouns: (he, him)
 
   - chair: Publicity Chair
     members:
       - name: Roc R. Currius
         link: https://ror3d.xyz
         institution: Chalmers University of Technology, Sweden
-        email: roc.ramon@chalmers.se
+        email: akdm@ror3d.xyz
         pronouns: (he, him)
 
 steering_committee:
@@ -85,7 +93,7 @@ ipc:
   {% for member in chair.members -%}
   <li> 
     <a href="{{ member.link }}">{{ member.name }}</a><br>
-		{{ member.institution }}<br>
+		{% if member.institution %}{{ member.institution }}<br>{% endif %}
 		{{ member.email }}<br>
 		{{ member.pronouns }}
 	</li>
