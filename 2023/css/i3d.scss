@@ -32,6 +32,12 @@ $large-screen-size: 970px;
     z-index: -1000;
     width: 100%;
 
+    @include smaller-than(400px) {
+        position: absolute;
+        border-bottom: none;
+        height: 0;
+    }
+
     #banner {
         width: 400px;
         max-width: 100%;
@@ -54,8 +60,9 @@ $large-screen-size: 970px;
     }
 
     @include smaller-than($medium-screen-size) {
+        position: relative;
+        margin-top: 0;
         margin-left: 140px;
-        margin-top: 72px;
         margin-bottom: 16px;
     }
 
@@ -65,8 +72,9 @@ $large-screen-size: 970px;
 
     // Smaller than the size of the image
     @include smaller-than(400px) {
-        margin-top: 18vw;
-        margin-left: 30vw;
+        padding: 0;
+        margin-top: 22vw;
+        margin-left: 32vw;
     }
 
     @include smaller-than(300px) {
@@ -77,8 +85,8 @@ $large-screen-size: 970px;
 
     @include smaller-than(220px) {
         line-height: 100%;
-        margin-top: 25vw;
-        margin-left: 8vw;
+        margin-top: 36vw;
+        margin-left: 10vw;
     }
 }
 
@@ -87,6 +95,10 @@ $large-screen-size: 970px;
     width: 100%;
     max-width: $max-page-width;
     box-sizing: border-box;
+
+    @include phone-screen {
+        overflow: auto;
+    }
 }
 
 #nav {
@@ -295,7 +307,7 @@ $large-screen-size: 970px;
     /* bump down content */
     padding-left: 15px;
     /* create some space from the border */
-    border-left: 1px solid rgb(255, 255, 255);
+    border-left: 1px solid white;
 
     float: right;
     box-sizing: border-box;
@@ -304,10 +316,11 @@ $large-screen-size: 970px;
         border: none;
         float: left;
         width: $medium-main-width;
-    }
 
-    @include smaller-than($medium-screen-size) {
-        margin-top: 75px;
+        ul {
+            padding-bottom: 1em;
+            border-bottom: 1px solid white;
+        }
     }
 
     @include phone-screen {
@@ -316,6 +329,10 @@ $large-screen-size: 970px;
         padding-left: 15vw;
         padding-right: 1em;
         padding-top: 0;
+
+        ul {
+            margin-bottom: 0;
+        }
     }
 
     @include smaller-than(250px) {
