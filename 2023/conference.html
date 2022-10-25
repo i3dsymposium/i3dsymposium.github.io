@@ -113,23 +113,23 @@ conferences:
 
 <ul class="unstyled">
   {% for conf in page.conferences -%}
-  <li>
-    I3D {{ conf.year }} - {{ conf.location }}
+  <li style="margin-bottom: 10px; line-height: 120%;">
+    <strong>I3D {{ conf.year }}</strong> - {{ conf.location }}
     <small>
     {% if conf.website == nil or conf.website -%}
-    [ <a href="../{{conf.year}}/">website</a> ]
+    [&nbsp;<a href="../{{conf.year}}/">website</a>&nbsp;]
     {% endif -%}
     {% if conf.papers -%}
-    [ <a href="{{ conf.papers }}" target="_blank">papers</a> ]
+    [&nbsp;<a href="{{ conf.papers }}" target="_blank">papers</a>&nbsp;]
     {% endif -%}
     {% if conf.pacm_cgit -%}
-    [ <a href="{{ conf.pacm_cgit }}" target="_blank">PACM CGIT journal papers in the ACM DL</a> ]
+    [&nbsp;<a href="{{ conf.pacm_cgit }}" target="_blank">PACM CGIT journal papers in the ACM DL</a>&nbsp;]
     {% endif -%}
     {% if conf.acm_dl -%}
-    [ <a href="{{ conf.acm_dl }}" target="_blank">papers in the ACM Digital Library</a> ]
+    [&nbsp;<a href="{{ conf.acm_dl }}" target="_blank">papers in the ACM Digital Library</a>&nbsp;]
     {% endif -%}
     {% if conf.archive -%}
-    [ <a href="{{ conf.archive }}" target="_blank">paper archive</a> ]
+    [&nbsp;<a href="{{ conf.archive }}" target="_blank">paper archive</a>&nbsp;]
     {% endif -%}
     </small>
   </li>

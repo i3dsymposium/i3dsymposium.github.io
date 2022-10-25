@@ -9,7 +9,7 @@
 
 $max-page-width: 1440px;
 
-$banner-width: 400px;
+$banner-width: 580px;
 $banner-stripe-height: 80px;
 $banner-stripe-pct: $banner-stripe-height / $banner-width * 100vw;
 
@@ -56,7 +56,7 @@ $large-screen-size: 970px;
     /* $banner-width px is the logo width */
     font-size: 16px;
     padding-left: 1em;
-    padding-top: 18px;
+    padding-top: 26px;
     line-height: 18px;
     position: absolute;
     top: 0;
@@ -91,7 +91,7 @@ $large-screen-size: 970px;
 
     @include smaller-than(220px) {
         line-height: 100%;
-        margin-top: $banner-stripe-pct + 16vw;
+        margin-top: $banner-stripe-pct + 14vw;
         margin-left: 10vw;
     }
 }

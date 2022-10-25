@@ -3,3 +3,5 @@ _site
 *.bak
 .idea
 __pycache__
+/Gemfile
+/Gemfile.lock
