@@ -1,20 +1,27 @@
 # Site settings
-title: I3D
-email: general@i3dsymposium.org
+title: I3D Symposium
 description: "ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games" # I3D is an awesome conference!
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://i3dsymposium.org" # the base hostname & protocol for your site
+lang: en-US
+timezone: US/Pacific
+email: general@i3dsymposium.org
 github_username:  i3dsymposium
-## highlighter: pygments
+
+author:
+  name: I3D Publicity Chair
+  email: general@i3dsymposium.org
 
 # Build settings
 markdown: kramdown
 
-gems:
+plugins:
   - jekyll-redirect-from
 
 exclude:
   - img_src
+
+excerpt_separator: <!--more-->
 
 defaults:
   -
@@ -23,3 +30,7 @@ defaults:
       type: "posts" # previously `post` in Jekyll 2.2.
     values:
       layout: "default"
+
+collections:
+  - news
+
