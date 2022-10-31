@@ -5,10 +5,10 @@ months_to_show: 4
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" {% if site.lang %}xml:lang="{{ site.lang }}"{% endif %}>
-  <link href="{{ page.url | absolute_url }}" rel="self" type="application/atom+xml" />
-  <link href="{{ '/' | absolute_url }}" rel="alternate" type="text/html" {% if site.lang %}hreflang="{{ site.lang }}" {% endif %}/>
+  <link href="{{ page.url | absolute_url | replace: 'http://','https://' }}" rel="self" type="application/atom+xml" />
+  <link href="{{ '/' | absolute_url | replace: 'http://','https://' }}" rel="alternate" type="text/html" {% if site.lang %}hreflang="{{ site.lang }}" {% endif %}/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>{{ page.url | absolute_url | xml_escape }}</id>
+  <id>{{ page.url | absolute_url | replace: 'http://','https://' | xml_escape }}</id>
   <title type="html">{{ site.title | smartify | xml_escape }}</title>
   <subtitle>{{ site.description | xml_escape }}</subtitle>
   {% if site.author -%}
@@ -34,16 +34,19 @@ months_to_show: 4
   {%- if post_date >= first_valid_date -%}
   <entry{% if post.lang %}{{" "}}xml:lang="{{ post.lang }}"{% endif %}>
     {% assign post_title = post.title | smartify | strip_html | normalize_whitespace | xml_escape -%}
+    {%- assign post_url = post.url | absolute_url | replace: 'http://','https://' -%}
+    {%- assign post_link = post.link | absolute_url | replace: 'http://','https://' -%}
+    {%- assign post_id = post.id | absolute_url | replace: 'http://','https://' -%}
 
     <title type="html">{{ post_title }}</title>
-    <link href="{{ post.link | default: post.url | absolute_url }}" rel="alternate" type="text/html" title="{{ post_title }}" />
+    <link href="{{ post_link | default: post_url }}" rel="alternate" type="text/html" title="{{ post_title }}" />
     {% if post.related -%}
       <link href="{{ post.related | absolute_url }}" rel="related" type="text/html" />
     {%- endif %}
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
-    <id>{{ post.link | default: post.id | absolute_url | xml_escape }}</id>
-    <content type="html" xml:base="{{ post.link | default: post.url | absolute_url | xml_escape }}"><![CDATA[{{ post.content | strip }}]]></content>
+    <id>{{ post_link | default: post_id | xml_escape }}</id>
+    <content type="html" xml:base="{{ post_link | default: post_url | xml_escape }}"><![CDATA[{{ post.content | strip }}]]></content>
     {% assign post_author = post.author | default: post.authors[0] | default: site.author -%}
     {%- assign post_author_email = post_author.email | default: nil -%}
     {%- assign post_author_name = post_author.name | default: post_author -%}
