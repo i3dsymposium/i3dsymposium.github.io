@@ -34,3 +34,5 @@ defaults:
 collections:
   - news
 
+redirect_from:
+  json: false
