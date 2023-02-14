@@ -29,14 +29,6 @@ committee:
         email: c0de517e@gmail.com
         pronouns: (he, him)
 
-  - chair: Program Chairs
-    members:
-      - name: Mauricio Vives
-        link: https://twitter.com/pixnblox
-        institution: Autodesk, Inc.
-        email: mauricio.vives@autodesk.com
-        pronouns: (he, him)
-
   - chair: Posters Chair
     members:
       - name: Markus Billeter
@@ -45,10 +37,26 @@ committee:
         email: m.billeter@leeds.ac.uk
         pronouns: (he, him)
 
+  - chair: Program Chairs
+    members:
+      - name: Mauricio Vives
+        link: https://twitter.com/pixnblox
+        institution: Autodesk, Inc.
+        email: mauricio.vives@autodesk.com
+        pronouns: (he, him)
+
+  - chair: Local Chair
+    members:
+      - name: Xiaoxi Liu
+        institution: Unity Technologies
+        email: xiaoxi@unity3d.com
+        pronouns: (she, her)
+
   - chair: Publicity Chair
     members:
       - name: Roc R. Currius
         link: https://ror3d.xyz
+        institution: Sony Interactive Entertainment
         email: akdm@ror3d.xyz
         pronouns: (he, him)
 
@@ -71,7 +79,35 @@ steering_committee:
       - Eric Haines
 
 ipc:
-  - TBD
+  - Christoph Peters, University of Bonn
+  - Tiow Seng Tan, National University of Singapore
+  - Yusuke Tokuyoshi, AMD Japan Ltd.
+  - Shiguang Liu, Tianjin University
+  - Corey Toler-Franklin, University of Florida
+  - Nicolas Savva, Autodesk, Inc.
+  - Markus Billeter, University of Leeds
+  - Michal Iwanicki, Activision
+  - Jon Hasselgren, NVIDIA
+  - Elena Garces, Universidad
+  - Konstantin Shkurko, University of Utah
+  - Colin Barré-Brisebois, SEED, Electronic Arts
+  - Javier Meseguer de Paz, Next Limit Technologies
+  - Markus Billeter, University of Leeds
+  - Yann Savoye, INRIA
+  - Jiri Bittner, Czech Technical University in Prague
+  - Bart Wronski, NVIDIA
+  - John Hable, Unity Technologies
+  - Eric Guérin, LIRIS
+  - Ludovic Hoyet, INRIA Rennes - Centre Bretagne Atlantique
+  - Ulf Assarsson, Chalmers University of Technology
+  - Erik Sintorn, Chalmers University of Technology
+  - Chris Oat, Rockstar Games
+  - Soufiane Khiat, Unity Technologies
+  - Dr. Mansi Sharma, Indian Institute of Technology, Delhi
+  - Petrik Clarberg, NVIDIA
+  - Wallace Lages, Northeastern University
+  - Romain Pacanowski, INRIA
+  - Christiaan Gribble, Advanced Micro Devices, Inc.
 
 ---
 
@@ -86,7 +122,7 @@ ipc:
 <ul class="unstyled expand">
   {% for member in chair.members -%}
   <li> 
-    <a href="{{ member.link }}">{{ member.name }}</a><br>
+		<b>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</b><br>
 		{% if member.institution %}{{ member.institution }}<br>{% endif %}
 		{{ member.email }}<br>
 		{{ member.pronouns }}
