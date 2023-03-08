@@ -165,8 +165,15 @@ pre,
 table,
 address,
 fieldset,
+blockquote,
 figure {
     margin-bottom: 20px;
+}
+
+blockquote {
+    margin-left: 1em;
+    padding-left: 1em;
+    border-left: 2px solid rgba(255, 255, 255, 0.5);
 }
 
 table {

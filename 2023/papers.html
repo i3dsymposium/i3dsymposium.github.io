@@ -1,0 +1,122 @@
+---
+layout: default2023
+title: Papers program
+sessions_:
+  - title: "Real-Time Rendering"
+    chair: ""
+    opening: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=4165s"
+    qa: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=6934s"
+    papers:
+      - title: "Real-Time Ray-Traced Soft Shadows of Environmental Lighting by Conical Ray Culling"
+        authors: "Yang Xu, Yuanfa Jiang, Junbo Zhang, Kang Li, Guohua Geng"
+        link: "https://doi.org/10.1145/3522617"
+        preprint: "https://sapphiresoul.github.io/conicalrayculling.pdf"
+        presentation: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=4259s"
+        thumbnail: "01_01_Yang_Xu.png"
+        abstract: |
+          some text here, can be multiline
+      - title: "Scaling Probe-Based Real-Time Dynamic Global Illumination for Production"
+        authors: "Alexander Majercik, Adam Marrs, Josef Spjut, Morgan McGuire"
+        journal: "jcgt"
+        link: "https://jcgt.org/published/0010/02/01/"
+        preprint: ""
+        presentation: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=6035s"
+        thumbnail: "01_03_Zander_Majercik.png"
+        abstract: |
+          some text here, can be multiline
+
+---
+
+<h3>Papers Program</h3>
+
+<p>
+<em>The submitted papers are currently under review and being prepared for the revision deadline. We will include more information on them when we are able to.</em>
+</p>
+
+<p>
+Over the past three decades, the ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games has showcased 
+exceptional progress from academic and industrial research covering all aspects of interactive computer graphics.</p>
+<p>
+<!-- This year, we continue a track record of excellence with 16 high-quality papers selected by the international paper committee 
+for publication and presentation at the conference. Paper presentations will be streamed daily on the
+<a href="https://www.youtube.com/c/I3DSymposium">I3D YouTube channel</a> during the conference.
+Almost all presentations will be archived and available afterwards. All papers will be presented one after the other in each session, followed by moderated Q &amp; A for all of them.</p> -->
+
+<P>Conference papers will appear in <a href="https://dl.acm.org/loi/pacmcgit">PACM CGIT</a> after the conference. We have requested authors to provide preprint links as possible until then. Refresh this page periodically, or use <a href="https://www.hongkiat.com/blog/detect-website-change-notification/">a web page monitoring tool</a>, to check this page for updates.</P>
+
+<!--
+<h4>Invited papers</h4>
+<p>
+The program also includes 8 papers originally published in the <a href="http://jcgt.org/">Journal of 
+Computer Graphics Techniques</a> (JCGT) and 4 papers from the <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945">IEEE Transactions on Visualization and Computer Graphics</a> (TVCG).
+</p>
+-->
+
+<!--
+<h4>Awards</h4>
+<p>	
+See the <a href="awards.html">awards section</a> for which papers won.
+</p>
+<h4>Digital Library Access</h4>
+<p>All uninvited (i.e., not previously published) papers are available at the ACM Digital Library to members:
+	<UL>
+		<LI><B><a href="https://dl.acm.org/toc/pacmcgit/2020/3/1">PACM CGIT 3(1)</a></B></LI>
+		<LI><B><a href="https://dl.acm.org/doi/proceedings/10.1145/3384382">I3D'20 proceedings</a></B></LI>
+	</UL>
+	Many of these can also be found as preprints, along with related information such as videos and code, on <a href="http://kesen.realtimerendering.com/i3d2020Papers.htm">Ke-Sen Huang's I3D 2020 page</a>.</p>
+	
+<hr/>
+-->
+
+{% for session in page.sessions %}
+
+<h3 style="margin-bottom:5px;" id="Papers{{ forloop.index }}">Papers {{ forloop.index }}: {{ session.title }}</h3>
+<p>
+    Session chair: {{ session.chair }}
+    {% assign opening = session.opening | strip -%}
+    {% assign qa = session.qa | strip -%}
+    {%if opening != empty or qa != empty -%}
+        ({% if opening != empty %}<a href="{{ session.opening }}">opening</a>{%if qa != empty %}, {% endif %}{% endif %}{% if qa != empty %}<a href="{{ session.qa }}">Q&A</a>{% endif -%})
+    {% endif %}
+<p>
+
+<dl>{% for paper in session.papers %}
+    <dt><b>{{ paper.title }}</b></dt>
+    <dd>{% assign authors = paper.authors | escape_once | split: ", " %}{% for author in authors %}{%if forloop.last %} and {% elsif forloop.first == false %}, {% endif %}{{ author }}{% endfor %}</dd>
+    <dd>
+        {% assign journal = paper.journal | strip -%}
+        {% if journal != empty or paper.live_only -%}
+            ({% if journal != empty %}invited {{ journal | upcase }} paper presentation{%if paper.live_only %}, {% endif %}{% endif -%}
+            {%if paper.live_only %}live presentation only{% endif %})
+        {% endif -%}
+        {% assign link = paper.link | strip -%}
+        {% assign preprint = paper.preprint | strip -%}
+        {% assign presentation = paper.presentation | strip -%}
+        {% if link != empty -%}
+            <a href="{{ link }}">link</a>{% if preprint != empty or presentation != empty %}, {% endif -%}
+        {% endif -%}
+        {% if preprint != empty -%}
+            <a href="{{ preprint }}">preprint</a>{% if presentation != empty %}, {% endif -%}
+        {% endif -%}
+        {% if presentation != empty -%}
+            <a href="{{ presentation }}">presentation</a>
+        {% endif %}
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                {{ paper.abstract | strip | escape_once | newline_to_br }}
+            </p>
+            {% if paper.thumbnail -%}
+                <p><img src="img/paper_thumbnails/{{ paper.thumbnail }}" width="400"></p>
+            {% endif %}
+        </details>
+    </dd>
+{% endfor -%}
+</dl>
+<br/>
+<hr/>
+
+{% endfor %}
+

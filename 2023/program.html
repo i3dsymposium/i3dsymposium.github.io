@@ -1,0 +1,99 @@
+---
+layout: default2023
+title: Program Schedule
+iana_timezone: "US/Pacific"
+timezone: "UTC-7"
+timezone_name: "PT"
+program_definition:
+  - day: A date, in YYYY-MM-DD format
+    video: Youtube url
+    times:
+      - time: "9:30" # time formatted as HH:MM, in quotes for the parser to not complain
+        title: Title of the time slot
+        link: Optional link to something, like papers.html#Papers1 for the first paper session
+        chair: Optional name of the chair for this session
+        registered_only: true/false, default false, specifies that the event is only for registered individuals. This was mainly used when the conference was online only, for poster presentations and social events
+program:
+  - day: 2023-05-03
+    video: 
+    times:
+      - time: "9:00"
+        title: Opening Session
+      - time: "9:15"
+        title: Keynote Presentation
+      - time: "10:00"
+        notes: break
+  - day: 2023-05-04
+    video: 
+    times: 
+      - time: "9:00"
+        title: Keynote Presentation
+      - time: "10:00"
+        notes: break
+  - day: 2023-05-05
+    video: 
+    times: 
+      - time: "9:00"
+        title: Keynote Presentation
+      - time: "10:00"
+        notes: break
+---
+
+<h3>Program</h3> 
+
+The conference will run from Wednesday, 3rd of May to Friday, 5th of May 2023, in <a href="./venue.html">Bellevue, WA, USA</a>. We will prepare the detailed program when we have the full list of papers that will be presented. 
+
+<!--
+<p>
+The virtual conference runs Tuesday May 3 through Thursday May 5. You can <a href="https://www.youtube.com/c/I3DSymposium">view the sessions</a> and access the <a href="papers.html">papers</a> and <a href="posters.html">posters</a>.
+
+The conference will be streamed at the <a href="https://www.youtube.com/c/I3DSymposium">I3D YouTube channel</a>.
+
+See <a href="./attend.html">Register and Attend</a> for more information.
+</p>
+-->
+
+<p>
+All times are United States Pacific Time ({{ page.timezone_name }}, or {{ page.timezone }}).
+</p>
+
+{% for day in page.program %}
+<div class="program">
+    <h4 class="program-day">{{ day.day | date: "%A, %e of %B %Y" }}{% if day.video %}&nbsp;<a href="{{ day.video }}" target="_blank"><img src="../img/youtube-link-logo.png" width="40px" style="vertical-align: text-bottom;" alt="YouTube stream for Day {{ forloop.index }}"></a>{% endif %}</h4>
+
+    {% if day.times and day.times.size > 0 %}
+    <h3><span class="time" data-day="{{ day.day }}">{{ day.times.first.time }}</span> to <span class="time" data-day="{{ day.day }}">{{ day.times.last.time }}</span> {{ page.timezone_name }}</h3>
+    {% endif %}
+    <table class="times">
+        {% for time in day.times %}
+        <tr>
+            <td class="time" data-day="{{ day.day }}" valign="top" {% if time.cancelled %}style="text-decoration:line-through;"{% endif %}>{{ time.time }}</td>
+            <td class="item">
+                {% if time.cancelled %}CANCELLED:&nbsp;{% endif -%}
+                {% if time.link %}<a href="{{ time.link }}">{{ time.title }}</a>{% else %}{{ time.title }}{% endif -%}
+                {% if time.registered_only %}&nbsp;- <a href="attend.html">registration required</a>{% endif -%}
+                {% if time.notes %}&nbsp;<i>{{ time.notes }}</i>{% endif -%}
+                {% if time.chair -%}
+                    <br>Session chair: {{ time.chair }}
+                {% endif %}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endfor %}
+
+
+
+<script src="../script/luxon.min.js"></script>
+<script>
+  var times = document.getElementsByClassName("time");
+  Array.from(times).forEach(te => {
+    var s = te.attributes["data-day"].value + " " + te.textContent;
+    var t = luxon.DateTime.fromFormat(s, "yyyy-MM-dd H:mm", {zone:"{{page.iana_timezone}}"})
+    var lt = t.toLocal();
+    var lts =  lt.toLocaleString({ weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
+    te.setAttribute("data-local-time", lts);
+    te.setAttribute("title", lts);
+  });
+</script>
