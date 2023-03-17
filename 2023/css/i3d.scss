@@ -384,4 +384,17 @@ footer#socials-mobile {
     clear: both;
 }
 
+
+.keynote-headshot {
+    float: right;
+    border-left: 20px solid transparent;
+    border-bottom: 10px solid transparent;
+
+    @include smaller-than($medium-screen-size) {
+        float: none;
+        border: none;
+    }
+}
+
+
 @import 'program';
