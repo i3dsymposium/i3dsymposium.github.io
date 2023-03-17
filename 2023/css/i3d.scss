@@ -322,6 +322,21 @@ $large-screen-size: 970px;
     float: right;
     box-sizing: border-box;
 
+    ul {
+        li {
+            font-weight: bold;
+            span.date {
+                font-weight: normal;
+                display: block;
+            }
+            &.past {
+                span.date {
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+
     @include smaller-than($large-screen-size) {
         border: none;
         float: left;
