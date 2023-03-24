@@ -330,6 +330,7 @@ $large-screen-size: 970px;
                 display: block;
             }
             &.past {
+                color: #bbb;
                 span.date {
                     text-decoration: line-through;
                 }
