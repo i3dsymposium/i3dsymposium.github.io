@@ -322,7 +322,13 @@ $large-screen-size: 970px;
     float: right;
     box-sizing: border-box;
 
-    .important-dates-toggle {
+    #important-dates-open {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+        position: absolute;
+    }
+    #important-dates-toggle {
         margin-left: 1em;
         display: none;
         @include smaller-than($large-screen-size) {
@@ -331,8 +337,20 @@ $large-screen-size: 970px;
         &::before {
             content: '⮜';
         }
-        &.open::before {
+    }
+
+    #important-dates-open:checked+h4 > #important-dates-toggle {
+        &::before {
             content: '⮟';
+        }
+    }
+
+    @include smaller-than($large-screen-size) {
+        #important-dates {
+            display: none;
+        }
+        #important-dates-open:checked~#important-dates {
+            display: block;
         }
     }
 
