@@ -322,6 +322,20 @@ $large-screen-size: 970px;
     float: right;
     box-sizing: border-box;
 
+    .important-dates-toggle {
+        margin-left: 1em;
+        display: none;
+        @include smaller-than($large-screen-size) {
+            display: inline-block;
+        }
+        &::before {
+            content: '⮜';
+        }
+        &.open::before {
+            content: '⮟';
+        }
+    }
+
     ul {
         li {
             font-weight: bold;

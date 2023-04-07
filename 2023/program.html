@@ -29,6 +29,8 @@ program:
         title: Posters Session
       - time: "18:00"
         title: Reception
+      - time: "20:30"
+        endtime: true
   - day: 2023-05-04
     video: 
     times: 
@@ -40,6 +42,8 @@ program:
         title: Paper Sessions Start
       - time: "18:00"
         title: Banquet
+      - time: "20:30"
+        endtime: true
   - day: 2023-05-05
     video: 
     times: 
@@ -49,6 +53,8 @@ program:
         notes: break
       - time: "10:10"
         title: Paper Sessions Start
+      - time: "15:30"
+        endtime: true
 ---
 
 <h3>Program</h3> 
@@ -78,6 +84,7 @@ All times are United States Pacific Time ({{ page.timezone_name }}, or {{ page.t
     {% endif %}
     <table class="times">
         {% for time in day.times %}
+        {% unless time.endtime %}
         <tr>
             <td class="time" data-day="{{ day.day }}" valign="top" {% if time.cancelled %}style="text-decoration:line-through;"{% endif %}>{{ time.time }}</td>
             <td class="item">
@@ -90,6 +97,7 @@ All times are United States Pacific Time ({{ page.timezone_name }}, or {{ page.t
                 {% endif %}
             </td>
         </tr>
+        {% endunless %}
         {% endfor %}
     </table>
 </div>
