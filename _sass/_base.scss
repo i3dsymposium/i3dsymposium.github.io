@@ -140,13 +140,14 @@ dt {
 }
 
 dd {
-    font-size: 90%;
     margin-left: 20px;
     color: #ccccdd;
+    p {
+        color: #eee;
+    }
 }
 
 dl {
-    font-size: 90%;
     margin-left: 20px;
 }
 
