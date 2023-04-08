@@ -16,7 +16,7 @@ sessions_definition:
         presentation: "direct link to the presentation (timestamp)"
         thumbnail: "thumbnail in the [year]/img/paper_thumbnails/ directory"
         abstract:  |
-          some text here, can be multiline
+          some text here, can be multiline. If separated by a single line, it will be converted to <br>, otherwise it will be converted to separate <p> tags
 
 sessions:
   - title: "Neural Rendering and Image Warping"
@@ -46,6 +46,7 @@ sessions:
         thumbnail: "02_01_laura_fink.png"
         abstract: |
           A standard paradigm when rendering for parallax-based light field displays is to render multiple, slightly offset views first and to interweave these afterwards. In practice, more than 40 views of preferably high resolution need to be rendered per frame to achieve acceptable visual quality. The total amount of rendered pixels may consequently exceed the native resolution of the display by far. Increased memory consumption and sub-optimal render times are direct consequences.
+
           In this paper, we examine where pixels are “wasted” and present novel projective mappings for the virtual camera system that are custom tailored to such displays. Thus, we alleviate the aforementioned issues and show significant performance improvements regarding render time and memory consumption, while having only minor impact on visual quality. As we mainly touch the projective mapping of the virtual camera, our method is lean and can easily be integrated in existing rendering pipelines with minimal side effects.
 
       - title: "Barycentric Quad Rasterization"
@@ -237,10 +238,12 @@ See the <a href="awards.html">awards section</a> for which papers won.
     <dd>
         <details>
             {%- if paper.abstract %}
-            <summary>Abstract</summary>
-            <p>
-                {{ paper.abstract | strip | escape_once | newline_to_br }}
-            </p>
+            <summary>Abstract</summary><!-- This next tag is pretty ugly, but it seems the only way to handle newlines in a nice way -->
+              {{ paper.abstract | strip | escape_once | newline_to_br | replace: "<br />
+<br />
+", "
+
+" | markdownify }}
             {% endif -%}
             {% if paper.thumbnail -%}
                 <p><img src="img/paper_thumbnails/{{ paper.thumbnail }}" width="400"></p>
