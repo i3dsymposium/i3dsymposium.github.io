@@ -5,16 +5,13 @@
    stroke-linecap="square"
    stroke-miterlimit="10"
    version="1.1"
-   viewBox="0 0 580 220"
+   viewBox="0 0 600 220"
    xml:space="preserve"
    id="svg59"
-   sodipodi:docname="banner_general.svg"
-   width="580"
+   sodipodi:docname="banner_subtitle_template_ink.svg"
+   width="600"
    height="220"
    inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   inkscape:export-filename="..\img\banner_general_subtitle.png"
-   inkscape:export-xdpi="96"
-   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -29,25 +26,30 @@
    inkscape:pagecheckerboard="1"
    inkscape:deskcolor="#505050"
    showgrid="false"
-   inkscape:zoom="1.5574872"
-   inkscape:cx="331.30288"
-   inkscape:cy="136.11669"
+   showguides="true"
+   inkscape:zoom="1.3888954"
+   inkscape:cx="222.47896"
+   inkscape:cy="121.67943"
    inkscape:window-width="1920"
    inkscape:window-height="1017"
-   inkscape:window-x="-8"
+   inkscape:window-x="1912"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
-   inkscape:current-layer="g31"
-   showguides="true"><sodipodi:guide
-     position="134.83257,130.75368"
+   inkscape:current-layer="svg59"><sodipodi:guide
+     position="150.57168,120.06701"
      orientation="1,0"
-     id="guide540"
+     id="guide344"
      inkscape:locked="false" /></sodipodi:namedview><defs
-   id="defs13"><filter
+   id="defs13"><rect
+     x="150.57168"
+     y="100.38112"
+     width="429.97175"
+     height="72.22861"
+     id="rect461" /><filter
      id="filter712"
-     x="-0.008323703"
+     x="-0.011469471"
      y="-0.065386063"
-     width="1.025896"
+     width="1.0356828"
      height="1.2034233"
      color-interpolation-filters="sRGB"><feFlood
        flood-color="rgb(0,0,0)"
@@ -75,17 +77,15 @@
    serif:id="Layer 2"
    id="g31">
         <path
-   d="m -54.05,-115.12 110.32,195.58 835.95574,0 v -195.58 z"
+   d="M -54.05,-115.12 56.27,80.46 h 559.87 v -195.58 z"
    fill="#94bf00"
    fill-rule="nonzero"
-   id="path15"
-   sodipodi:nodetypes="ccccc" />
+   id="path15" />
         <path
-   d="m 56.111,80.463 0.017,0.018 -85.02,203.01 922.49398,0 V 80.471 l -837.49398,0 z"
+   d="m 56.111,80.463 0.017,0.018 -85.02,203.01 h 643.84 V 80.471 H 56.108 Z"
    fill="#006699"
    fill-rule="nonzero"
-   id="path17"
-   sodipodi:nodetypes="ccccccc" />
+   id="path17" />
         <g
    serif:id="Layer 6"
    id="g21">
@@ -102,10 +102,9 @@
    serif:id="Layer 8"
    id="g29">
             <path
-   d="M 891.77333,80 H 60.487441"
+   d="M 609.7885,80.559827 H 60.479827"
    id="path23"
-   style="stroke-width:2.50395px"
-   sodipodi:nodetypes="cc" />
+   style="stroke-width:2.49786px" />
             <path
    d="M 59.918,79.846 11.157,-6.602"
    stroke-linecap="round"
@@ -144,8 +143,7 @@
     </g>
     <g
    serif:id="Layer 12"
-   id="g57"
-   transform="translate(-16)">
+   id="g57">
         <g
    opacity="0.85"
    id="g43">
@@ -165,7 +163,7 @@
      font-family="Arial-BoldMT, Arial, sans-serif"
      font-size="58.667px"
      font-weight="700"
-     id="text45">Symposium</text><g
+     id="text45">{{year}}</text><g
      fill="#ffffff"
      fill-rule="nonzero"
      id="g53">
@@ -185,7 +183,7 @@
     </g>
 <g
    id="g3044"
-   transform="translate(-15.092255,2.4369719)"><text
+   transform="translate(0,2)"><text
      xml:space="preserve"
      id="text459"
      style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:26.6667px;font-family:Arial-BoldMT, Arial, sans-serif;-inkscape-font-specification:'Arial-BoldMT, Arial, sans-serif';white-space:pre;shape-padding:0.5351;display:inline;fill:#ffffff;fill-opacity:1;stroke-linecap:square"

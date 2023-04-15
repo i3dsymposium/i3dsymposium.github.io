@@ -32,11 +32,16 @@ sessions:
         authors: "Zackary P. T. Sin, Peter H. F. Ng, Hong Va Leong"
         thumbnail: "01_02_zackary_sin.png"
         abstract: |
-          Neural rendering is an exciting topic injecting machine learning methodologies into the classical computer graphics rendering pipeline. Although recent works have achieved remarkable fidelity, discussion on how to enable it for interactive scenarios like video games seems to be lacking. Aside from an editable 3D model and UV-mapping, an interactive application will demand the neural rendering to handle animatable 3D content with interactive speed. This is currently a gap in neural rendering and our solution to this problem is a novel neural rendering pipeline involving a primitive named NeRFahedron. It localizes a NeRF field and as such effectively reduces the number of expensive network sampling operations to improve speed. Our pipeline involves tetrahedron rasterization, localized ray marching and near-surface particle sampling. The result is a method that can enable animatable content for neural rendering with interactive speed, which has been shown to be competitive in rendering animation. We will also showcase its ability to enable interactive applications 29 via a real-time demo.
+          Neural rendering is an exciting topic injecting machine learning methodologies into the classical computer graphics rendering pipeline. Although recent works have achieved remarkable fidelity, discussion on how to enable it for interactive scenarios like video games seems to be lacking. Aside from an editable 3D model and UV-mapping, an interactive application will demand the neural rendering to handle animatable 3D content with interactive speed. This is currently a gap in neural rendering and our solution to this problem is a novel neural rendering pipeline involving a primitive named NeRFahedron. It localizes a NeRF field and as such effectively reduces the number of expensive network sampling operations to improve speed. Our pipeline involves tetrahedron rasterization, localized ray marching and near-surface particle sampling. The result is a method that can enable animatable content for neural rendering with interactive speed, which has been shown to be competitive in rendering animation. We will also showcase its ability to enable interactive applications via a real-time demo.
 
       - title: "Metameric Inpainting for Image Warping"
         authors: "Rafael Kuffner dos Anjos, David Walton, Kaan Aksit, Sebastian Friston, David Swapp, Anthony Steed, Tobias Ritschel"
         journal: "tvcg"
+        thumbnail: "01_03_rafael_kuffner.png"
+        link: "https://ieeexplore.ieee.org/document/9928218"
+        preprint: "https://discovery.ucl.ac.uk/id/eprint/10158438/1/09928218.pdf"
+        abstract: |
+          Image-warping, a per-pixel deformation of one image into another, is an essential component in immersive visual experiences such as virtual reality or augmented reality. The primary issue with image warping is disocclusions, where occluded (and hence unknown) parts of the input image would be required to compose the output image. We introduce a new image warping method, Metameric image inpainting - an approach for hole-filling in real-time with foundations in human visual perception. Our method estimates image feature statistics of disoccluded regions from their neighbours. These statistics are inpainted and used to synthesise visuals in real-time that are less noticeable to study participants, particularly in peripheral vision. Our method offers speed improvements over the standard structured image inpainting methods while improving realism over colour-based inpainting such as push-pull. Hence, our work paves the way towards future applications such as depth image-based rendering, 6-DoF 360 rendering, and remote render-streaming.
 
   - title: "Rendering and Sampling"
     chair: ""
@@ -52,6 +57,11 @@ sessions:
       - title: "Barycentric Quad Rasterization"
         authors: "Jules Bloomenthal"
         journal: "jcgt"
+        thumbnail: "02_02_jules_bloomenthal.png"
+        link: "https://jcgt.org/published/0011/03/04/"
+        preprint: "https://jcgt.org/published/0011/03/04/paper.pdf"
+        abstract: |
+          When a quadrilateral is rendered as two triangles, a C1 discontinuity can occur along the dividing diagonal. In 2004, Hormann and Tarini used generalized barycentric coordinates to eliminate the discontinuity. The present paper provides an implementation using a geometry shader, unavailable in 2004, and provides additional examples of the barycentric technique.
 
       - title: "Efficient Spatial Resampling Using the PDF Similarity"
         authors: "Yusuke Tokuyoshi"
@@ -93,10 +103,20 @@ sessions:
       - title: "Performance Comparison of Bounding Volume Hierarchies for GPU Ray Tracing"
         authors: "Daniel Meister, Jiří Bittner"
         journal: "jcgt"
+        thumbnail: "04_02_daniel_meister.png"
+        link: "https://jcgt.org/published/0011/04/01/"
+        preprint: "https://jcgt.org/published/0011/04/01/paper.pdf"
+        abstract: |
+          Ray tracing is an inherent component of modern rendering algorithms. The bounding volume hierarchy (BVH) is a commonly used acceleration data structure employed in most ray tracing frameworks. Through the last decade, many methods addressing ray tracing with bounding volume hierarchies have been proposed. However, most of these methods were typically compared to only one or two reference methods. The acceleration provided by a particular BVH depends heavily on its construction algorithm. Even experts in the field dispute which method is the best. To add more insight into this challenge, we empirically compare the most popular methods addressing BVHs in the context of GPU ray tracing. Moreover, we combine the construction algorithms with other enhancements such as spatial splits, ray reordering, and wide BVHs. To estimate how close we are from the best performing BVH, we propose a novel method using global optimization with simulated annealing and combine it with the existing best-performing BVH builders. For the sake of fairness and consistency, all methods are evaluated in a single unified framework, and we make all source code publicly available. We also study the correlation between tracing times and the estimated traversal cost induced by the surface area heuristic (SAH).
     
       - title: "Accelerated Photon Mapping for Hardware-based Ray Tracing"
         authors: "René Kern, Felix Brüll, Thorsten Grosch"
         journal: "jcgt"
+        thumbnail: "04_03_rene_kern.png"
+        link: "https://jcgt.org/published/0012/01/01/"
+        preprint: "https://jcgt.org/published/0012/01/01/paper.pdf"
+        abstract: |
+          Photon mapping is a numerical solution to the rendering equation based on tracing random rays. It works by first tracing the paths of the emitted light (photons) and storing them in a data structure to then collect them later from the perspective of the camera. Especially, the collection step is difficult to realize on the GPU due to its sequential nature. We present an implementation of a progressive photon mapper for ray tracing hardware (RTPM) based on a combination of existing techniques. Additionally, we present two small novel techniques that speed up RTPM even further by reducing the number of photons stored and evaluated. We demonstrate that RTPM outperforms existing hash-based photon mappers, especially on large and complex scenes.
 
       - title: "Importance-Based Ray Strategies for Dynamic Diffuse Global Illumination"
         authors: "Zihao Liu, Jing Huang, Allan Rocha, Jim Malmros, Jerry Zhang"
@@ -158,7 +178,7 @@ sessions:
 <h3>Papers Program</h3>
 
 <p>
-<em>The following list of papers is not yet organized into sessions. Once the program is fully scheduled, we will add that information. Abstracts for each of the papers will be added soon. Links to the preprints will also be provided in the future.</em>
+<em>Links to the preprints of the I3D papers will be added soon as authors make them available to us.</em>
 </p>
 
 <p>

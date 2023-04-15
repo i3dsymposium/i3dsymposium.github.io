@@ -334,14 +334,26 @@ $large-screen-size: 970px;
         @include smaller-than($large-screen-size) {
             display: inline-block;
         }
-        &::before {
-            content: '⮜';
+
+        .newsicon {
+            cursor: pointer;
+            color: white;
+            vertical-align: bottom;
+
+            transform: rotate(0deg);
+            transition: .3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+
+            &__triangle {
+                fill: white;
+                stroke: currentColor;
+                stroke-linecap: round;
+            }
         }
     }
 
     #important-dates-open:checked+h4 > #important-dates-toggle {
-        &::before {
-            content: '⮟';
+        .newsicon {
+            transform: rotate(-90deg);
         }
     }
 
