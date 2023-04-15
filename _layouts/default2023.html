@@ -88,6 +88,8 @@
             </label>
 
             <ul class="nav-list">
+                <!-- For the menu highlighting the current page to work, the links here should be only the filename, like "index.html",
+                    if they have slashes or similar, it won't work -->
                 <li><a href="index.html">Home</a></li>
                 <li><a href="registration.html">Registration</a></li>
                 <li><a href="venue.html">Venue</a></li>
@@ -159,6 +161,7 @@
             <input type="checkbox" id="important-dates-open" />
             <h4>Important Dates<label for="important-dates-open" id="important-dates-toggle"></label></h4>
             <ul id="important-dates" class="unstyled">
+                <!-- Add class="past" to past dates so they show as greyed out -->
                 <li class="past">Paper submission deadline:<span class="date">21 December, 2022</span></li>
                 <li class="past">Paper notifications:<span class="date">21 February, 2023</span></li>
                 <li class="past">Revision deadline:<span class="date">15 March, 2023</span></li>

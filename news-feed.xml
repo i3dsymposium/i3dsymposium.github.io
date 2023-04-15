@@ -29,7 +29,7 @@ months_to_show: 4
 
   {%- assign posts = posts | sort: "date" | reverse -%}
 
-  {%- for post in site.news %}
+  {%- for post in posts %}
   {% assign post_date = post.date | date: '%s' | plus: 0 -%}
   {%- if post_date >= first_valid_date -%}
   <entry{% if post.lang %}{{" "}}xml:lang="{{ post.lang }}"{% endif %}>
@@ -45,7 +45,7 @@ months_to_show: 4
     {%- endif %}
     <published>{{ post.date | date_to_xmlschema }}</published>
     <updated>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</updated>
-    <id>{{ post_link | default: post_id | xml_escape }}</id>
+    <id>{{ post_id | xml_escape }}</id>
     <content type="html" xml:base="{{ post_link | default: post_url | xml_escape }}"><![CDATA[{{ post.content | strip }}]]></content>
     {% assign post_author = post.author | default: post.authors[0] | default: site.author -%}
     {%- assign post_author_email = post_author.email | default: nil -%}
