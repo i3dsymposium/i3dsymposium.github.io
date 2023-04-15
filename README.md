@@ -27,4 +27,4 @@ This will create a set of images in the `/<current_year>/img/` directory:
 
 The `/img/` and `/img_src/` directories have several images and icons to be used anywhere outside the website.
 
-The `/img/logo-square.png` icon is used by twitter for the small icon in link previews.
+The `/img/logo-square-twitter.png` icon is used by twitter for the small icon in link previews.
