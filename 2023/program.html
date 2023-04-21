@@ -109,7 +109,7 @@ All times are United States Pacific Time ({{ page.timezone_name }}, or {{ page.t
 </p>
 
 {% for day in page.program %}
-<div class="program">
+<div class="program" id="program-day-{{forloop.index0}}">
     <h4 class="program-day">{{ day.day | date: "%A, %e of %B %Y" }}{% if day.video %}&nbsp;<a href="{{ day.video }}" target="_blank"><img src="../img/youtube-link-logo.png" width="40px" style="vertical-align: text-bottom;" alt="YouTube stream for Day {{ forloop.index }}"></a>{% endif %}</h4>
 
     {% if day.times and day.times.size > 0 %}
