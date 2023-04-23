@@ -41,8 +41,10 @@ program:
         title: "Posters Fast-Forward"
       - time: "14:55"
         title: "Posters Session"
+        link: "posters.html"
       - time: "18:00"
-        notes: "Reception"
+        notes: "Reception dinner"
+        link: "venue.html#ReceptionVenue"
       - time: "21:00"
         endtime: true
   - day: 2023-05-04
@@ -67,7 +69,8 @@ program:
       - time: "15:45"
         title: Town Hall
       - time: "18:00"
-        notes: Banquet
+        notes: Banquet dinner
+        link: "venue.html#BanquetVenue"
       - time: "22:00"
         endtime: true
   - day: 2023-05-05
@@ -88,7 +91,7 @@ program:
         title: "Papers 6: Dynamics"
         link: "papers.html#Papers6"
       - time: "15:15"
-        notes: Closing
+        title: Closing
       - time: "16:00"
         endtime: true
 ---
@@ -125,9 +128,11 @@ All times are United States Pacific Time ({{ page.timezone_name }}, or {{ page.t
             <td class="time" data-day="{{ day.day }}" valign="top" {% if time.cancelled %}style="text-decoration:line-through;"{% endif %}>{{ time.time }}</td>
             <td class="item">
                 {% if time.cancelled %}CANCELLED:&nbsp;{% endif -%}
-                {% if time.link %}<a href="{{ time.link }}">{{ time.title }}</a>{% else %}{{ time.title }}{% endif -%}
-                {% if time.registered_only %}&nbsp;- <a href="attend.html">registration required</a>{% endif -%}
-                {% if time.notes %}&nbsp;<i>{{ time.notes }}</i>{% endif -%}
+                {% if time.link %}<a href="{{ time.link }}">{{ time.title }}</a>&nbsp;{% else %}{{ time.title }}&nbsp;{% endif -%}
+                {% if time.registered_only %}- <a href="attend.html">registration required</a>&nbsp;{% endif -%}
+                {% if time.link and time.notes %}{% unless time.title %}<a href="{{ time.link }}">{% endunless %}{% endif -%}
+                {% if time.notes %}<i>{{ time.notes }}</i>{% endif -%}
+                {% if time.link and time.notes %}{% unless time.title %}</a>{% endunless %}{% endif -%}
                 {% if time.chair -%}
                     <br>Session chair: {{ time.chair }}
                 {% endif %}
