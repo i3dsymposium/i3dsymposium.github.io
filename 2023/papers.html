@@ -125,6 +125,7 @@ sessions:
 
       - title: "Importance-Based Ray Strategies for Dynamic Diffuse Global Illumination"
         authors: "Zihao Liu, Jing Huang, Allan Rocha, Jim Malmros, Jerry Zhang"
+        preprint: "https://allenliuzihao.github.io/IS-DDGI/"
         thumbnail: "04_04_zihao_liu.png"
         abstract: |
           In this paper, we propose a first and efficient ray allocation technique for Dynamic Diffuse Global Illumination (DDGI) using Multiple Importance Sampling (MIS). Our technique, IS-DDGI, extends DDGI by incorporating a set of importance-based ray strategies that analyze, allocate, and manage ray resources on the GPU. We combine these strategies with an adaptive historical and temporal frame-to-frame analysis for an effective reuse of information and a set of GPU-based optimizations for speeding up ray allocation and reducing memory bandwidth. Our IS-DDGI achieves similar visual quality to DDGI with a speedup of 1.27x to 2.47x in total DDGI time and 3.29x to 6.64x in probes ray tracing time over previous technique [29]. Most speedup of IS-DDGI comes from probes ray tracing speedup.
