@@ -6,7 +6,7 @@ body {
     color: rgb(255, 255, 255);
     font-family: Arial, Geneva, Helvetica, sans-serif;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 1.5;
     /* place the background on the body */
     background-color: rgb(0, 102, 153);
     /* blue */
@@ -60,7 +60,7 @@ h5,
 h6 {
     margin: 10px 0;
     font-weight: bold;
-    line-height: 20px;
+    line-height: 1.5;
     text-rendering: optimizelegibility;
 }
 
@@ -71,14 +71,8 @@ h4 small,
 h5 small,
 h6 small {
     font-weight: normal;
-    line-height: 1;
+    line-height: 1.2;
     color: #999999;
-}
-
-h1,
-h2,
-h3 {
-    line-height: 40px;
 }
 
 h1 {

@@ -1,0 +1,54 @@
+---
+layout: default2023
+title: Awards
+
+awards_definition:
+  - award: ""
+    title: "title of the paper/poster awarded" # Optional
+    recipient: 
+    prize: 
+
+awards:
+  - award: Best Paper
+    title: "NeRFahedron: A Primitive for Animatable Neural Rendering with Interactive Speed"
+    recipient: "Zackary P. T. Sin, Peter H. F. Ng and Hong Va Leong"
+    prize: "NVIDIA RTX 4080"
+
+  - award: Best Paper Runner-Up
+    title: "Efficient Spatial Resampling Using the PDF Similarity"
+    recipient: "Yusuke Tokuyoshi"
+    prize: "AMD RADEON PRO W6600"
+
+  - award: Best Paper Presentation
+    title: "Joint Neural Denoising of Surfaces and Volumes"
+    recipient: "Nikolai Hofmann"
+    prize: "AMD RADEON PRO W6600"
+
+  - award: Best Poster
+    title: "A lightweight 3D viewer: real-time rendering of multi-scale 3D surface models"
+    recipient: "Rui Li"
+    prize: "Intel ARC A770"
+
+  - award: Outstanding Reviewer
+    recipient: "Eric Guérin"
+    prize: "Intel ARC A770"
+---
+
+<h2>Awards</h2>
+
+{% for award in page.awards %}
+<h3 style="color:#d7ff4e">{{ award.award }}</h3>
+<p style="font-size: 120%; line-height: 170%">
+	{% if award.title -%}
+	<b>{{award.title}}</b>
+	<br>
+	{{award.recipient}}
+	{% else %}
+	<b>{{award.recipient}}</b>
+	{% endif %}
+	<br>
+	prize: {{award.prize}}
+</p>
+
+<hr/>
+{% endfor %}

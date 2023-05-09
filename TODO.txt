@@ -1,3 +1,6 @@
+- Redesign website(/logo?)
+- Add a media kit page, with logos and so on, maybe a powerpoint presentation template, so people can use it in their presentations if they want?
+
 2018 directory strip & update
 DONE
 	awards
