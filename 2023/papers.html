@@ -5,8 +5,7 @@ title: Paper Presentations
 sessions_definition:
   - title: "Title for the session"
     chair: ""
-    opening: "Link to video, at the opening timestamp"
-    qa: "Link to video for the QA session"
+    video: "Link to video, at the opening timestamp"
     papers:
       - title: "Paper title"
         authors: "Authors, all separated by commas"
@@ -21,6 +20,7 @@ sessions_definition:
 sessions:
   - title: "Neural Rendering and Image Warping"
     chair: "Anton Kaplanyan, Intel"
+    presentations_video: "https://youtu.be/5hg5orogFf4"
     papers:
       - title: "NeRFshop: Interactive Editing of Neural Radiance Fields"
         authors: "Clément Jambon, Bernhard Kerbl, Georgios Kopanas, Stavros Diolatzis, Thomas Leimkuehler, George Drettakis"
@@ -241,11 +241,12 @@ See the <a href="awards.html">awards section</a> for which papers won.
     {%- if session.chair %}
     Session chair: {{ session.chair }}
     {% endif -%}
-    {% assign opening = session.opening | strip -%}
-    {% assign qa = session.qa | strip -%}
-    {%if opening != empty or qa != empty -%}
-        ({% if opening != empty %}<a href="{{ session.opening }}">opening</a>{%if qa != empty %}, {% endif %}{% endif %}{% if qa != empty %}<a href="{{ session.qa }}">Q&A</a>{% endif -%})
-    {% endif %}
+    {% assign presentations_video = session.presentations_video | strip -%}
+    {% assign qa_video = session.qa_video | strip -%}
+    {%- if presentations_video != empty %}
+    <br>
+    <a href="{{ session.presentations_video }}" target="_blank"><img src="../img/youtube-link-logo.png" width="25px" style="vertical-align:text-bottom;margin-right:5px;">Video presentations</a>
+    {%- endif %}
 <p>
 
 <dl>{% for paper in session.papers %}
