@@ -1,3 +1,6 @@
+$highlight-color: rgb(255, 204, 0);
+$highlight-color-dark: rgb(255, 153, 0);
+
 html {
     font-size: 100%;
 }
@@ -30,13 +33,13 @@ cite {
 
 a,
 a:focus {
-    color: rgb(255, 204, 0);
+    color: $highlight-color; 
     /* orange */
 }
 
 a:hover,
 a:active {
-    color: rgb(255, 153, 0);
+    color: $highlight-color-dark;
     /* darkish orange */
 }
 

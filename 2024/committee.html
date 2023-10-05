@@ -55,7 +55,7 @@ committee:
         email: m.billeter@leeds.ac.uk
         pronouns: (he, him)
 
-  - chair: Program Chairs
+  - chair: Program Chair
     members:
       - name: Mauricio Vives
         link: https://twitter.com/pixnblox
@@ -63,12 +63,25 @@ committee:
         email: mauricio.vives@autodesk.com
         pronouns: (he, him)
 
+  - chair: Treasurer
+    members:
+      - name: Xiaoxi Liu
+        pronouns: (she, her)
+
   - chair: Publicity Chair
     members:
       - name: Roc R. Currius
         link: https://ror3d.xyz
         institution: Sony Interactive Entertainment
         email: akdm@ror3d.xyz
+        pronouns: (he, him)
+
+  - chair: Additional Support
+    members:
+      - name: Michael Doggett
+        link: https://cs.lth.se/michael_doggett/
+        institution: Lund University, Sweden
+        email: michael.doggett@cs.lth.se
         pronouns: (he, him)
 
 steering_committee:
@@ -105,9 +118,9 @@ ipc:
 <ul class="unstyled expand">
   {% for member in chair.members -%}
   <li> 
-		<b>{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</b><br>
+		<b class="member-name">{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</b><br>
 		{% if member.institution %}{{ member.institution }}<br>{% endif %}
-		{{ member.email }}<br>
+		{% if member.email %}{{ member.email }}<br>{% endif %}
 		{{ member.pronouns }}
 	</li>
   {% endfor %}
