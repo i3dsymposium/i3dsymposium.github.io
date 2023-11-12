@@ -71,5 +71,5 @@ All questions about paper submissions should be emailed to [papers@i3dsymposium.
 Erik Sintorn and Bart Wronski\
 Papers Co-Chairs I3D 2024
 
-*Last updated November 12, 2023*
+*Last updated 12 of November, 2023*
 
