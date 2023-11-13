@@ -13,7 +13,7 @@ title: CFP
 
 The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D) is the leading conference for real-time 3D computer graphics and human interaction. The symposium brings together researchers, engineers, and industry professionals to discuss their latest work on real-time and interactive computer graphics and related applications. The symposium has a long legacy of innovative and excellent technical content, with influential work on rendering, texture synthesis, collision detection, VR interaction, animation, and many other areas of real-time computer graphics, having been presented at the conference.
 
-We invite you to submit papers and posters about real-time 3D graphics, interaction, and games. Submissions from industry and outside of academia are welcome. Topics include, but are not limited to:
+We invite you to submit papers about real-time 3D graphics, interaction, and games. Submissions from industry and outside of academia are welcome. Topics include, but are not limited to:
 
 - Real-time rendering
 - Real-time ray tracing and path tracing
