@@ -1,139 +1,371 @@
----
-layout: default2022
-title: Program schedule
-iana_timezone: "US/Pacific"
-timezone: "UTC-7"
-timezone_name: "PT"
-program:
-    - day: 2022-05-03
-      video: https://www.youtube.com/watch?v=b32NYgVVKKc
-      times: 
-        - time: "9:00"
-          title: Opening Session
-        - time: "9:10"
-          title: Posters Fast Forward
-          link: posters.html
-        - time: "9:15"
-          title: "Keynote 1: Anton Kaplanyan, Intel"
-          link: keynotes.html#Keynote1
-        - time: "10:00"
-          notes: break
-        - time: "10:10"
-          title: "Papers 1: Real-time Rendering"
-          link: papers.html#Papers1
-          chair: Marco Salvi
-        - time: "11:25"
-          notes: break
-        - time: "11:35"
-          title: "Papers 2: Simulation and Animation"
-          link: papers.html#Papers2
-          chair: Christiaan Gribble
-        - time: "12:50"
-          notes: break
-        - time: "13:00"
-          title: "Keynote 2: Johan Andersson, Embark Studios"
-          cancelled: true
-        - time: "13:00"
-          title: Town Hall
-          notes: (live presentation only)
-          registered_only: true
-        - time: "13:30"
-          title: "Social Event: Virtual meet-up"
-          link: "#social"
-          registered_only: true
-    - day: 2022-05-04
-      video: https://www.youtube.com/watch?v=qQYTLm-WVT4
-      times: 
-        - time: "9:00"
-          title: "Keynote 2: Margaret S. Livingstone, Harvard Medical School"
-          link: keynotes.html#Keynote3
-          notes: (live presentation only)
-        - time: "9:45"
-          notes: "break"
-        - time: "9:55"
-          title: "Papers 3: Games and VR"
-          link: "papers.html#Papers3"
-          chair: "Qi Sun"
-        - time: "11:10"
-          notes: "break"
-        - time: "11:20"
-          title: "Papers 4: Geometry"
-          link: "papers.html#Papers4"
-          chair: "Markus Billeter"
-        - time: "12:20"
-          notes: "break"
-        - time: "12:45"
-          title: "Posters and demos session"
-          link: "posters.html"
-          chair: "Petrik Clarberg"
-          registered_only: true
-        - time: "13:45"
-          title: "Social Event: Virtual meet-up"
-          link: "#social"
-          registered_only: true
-    - day: 2022-05-05
-      video: https://www.youtube.com/watch?v=P-wRgPe8sDs
-      times: 
-        - time: "9:00"
-          title: "Keynote 3: Morgan McGuire, Roblox"
-          link: "keynotes.html#Keynote4"
-        - time: "9:45"
-          notes: "break"
-        - time: "9:55"
-          title: "Papers 5: Image-based Algorithms"
-          link: "papers.html#Papers5"
-          chair: "Leonardo Scandolo"
-        - time: "11:10"
-          notes: "break"
-        - time: "11:20"
-          title: "Papers 6: Appearance and Shading"
-          link: "papers.html#Papers6"
-          chair: "Adrien Gruson"
-        - time: "12:35"
-          notes: "break"
-        - time: "12:45"
-          title: "Papers 7: Virtual Humans"
-          link: "papers.html#Papers7"
-          chair: "Michal Iwanicki"
-        - time: "14:00"
-          title: "Closing and Awards"
-        - time: "14:15"
-          title: "Social Event: Virtual meet-up"
-          link: "#social"
-          registered_only: true
----
+<!DOCTYPE html>
+<html>
 
-<h3>Program</h3> 
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Program schedule | I3D 2022</title>
+  <meta name="description" content="ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games">
+
+  <!-- <link rel="stylesheet" href="/css/main.css"> -->
+  <link rel="canonical" href="https://i3dsymposium.org/2022/program.html">
+  <link rel="alternate" type="application/rss+xml" title="I3D Symposium" href="https://i3dsymposium.org/feed.xml" />
+
+  
+  <meta name="author" content="I3D Publicity Chair (general@i3dsymposium.org)">
+
+  <link href="css/reset.css" rel="stylesheet" media="screen">
+  <!-- use a fluid, instead of a fixed layout
+    <link href="css/960.css" rel="stylesheet" media="screen">
+  -->
+  <link href="css/960-fluid.css" rel="stylesheet" media="screen">
+  <link href="css/i3d.css" rel="stylesheet" media="screen">
+  <link href="css/iframes.css" rel="stylesheet" media="screen">
+
+  <!-- comment out viewport/responsive.css to use a fixed layout -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/responsive.css" rel="stylesheet" media="screen">
+
+  <!-- SEO metadata for social posts -->
+  <meta property="og:url"                content="https://i3dsymposium.org/2022/program.html" />
+  <meta property="og:title"              content="Program schedule | I3D 2022" />
+  <meta property="og:description"        content="ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games" />
+  <meta property="og:image"              content="https://i3dsymposium.org/2022/img/banner.png" />
+  <meta name="twitter:card" content="summary"></meta>
+  <meta name="twitter:image"              content="https://i3dsymposium.org/2022/img/banner.png" />
+  <meta name="twitter:site" content="@I3DCONF"></meta>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+      $(function () {
+        // Set the active button based on the current url.
+        var filename = window.location.pathname.split('/').reverse()[0];
+        $('a[href$="' + filename + '"]').parent().addClass('active');
+        // If there are no objects with the active class,
+        if ($('.active').length == 0) {
+          // assume the index is the current url.
+          $('a[href$="index.html"]').parent().addClass('active');
+        }
+      });
+  </script>
+</head>
+
+
+  <body>
+
+    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- put the header outside of the grid container -->
+    <div id="header">
+      <p class="text-left float-left subhead tight"><small>ACM SIGGRAPH Symposium on<br/>
+      Interactive 3D Graphics and Games<br/>
+      Online: May 3-5 2022
+		  </small></p>
+    </div> <!-- #header -->
+    <div class="clearfix"></div>
+
+
+    <!-- container_12 is a 12-cell grid -->
+    <div class="container_12">
+
+      <!-- grid_2 is a 2-wide cell -->
+      <div id="nav" class="grid_2">
+        <!-- nav and nav-list are styled in css/i3d.css -->
+          <ul class="nav nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="attend.html">Register and Attend</a></li>
+              <li><a href="program.html">Program</a></li>
+              <li><a href="cfp.html">Call for Participation</a></li>
+              <li><a href="keynotes.html">Keynotes</a></li>
+              <li><a href="papers.html">Papers</a></li>
+              <li><a href="posters.html">Posters and Demos</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+              <li><a href="awards.html">Awards</a></li>
+              <li><a href="committee.html">Committee</a></li>
+              <li><a href="conference.html">Past Conferences</a></li>
+			  
+			  <!-- here's the order we use in normal years (travel grants, venue)
+			  
+              <li><a href="registration.html">Registration</a></li>
+              <li><a href="program.html">Program</a></li>
+              <li><a href="cfp.html">Call for Participation</a></li>
+              <li><a href="keynotes.html">Keynotes</a></li>
+              <li><a href="papers.html">Papers</a></li>
+              <li><a href="posters.html">Posters</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+              <li><a href="awards.html">Awards</a></li>
+              <li><a href="travel_grants.html">Travel Grants</a></li>
+              <li><a href="venue.html">Venue</a></li>
+              <li><a href="committee.html">Committee</a></li>
+              <li><a href="conference.html">Past Conferences</a></li>
+			  -->
+              <li><a href="http://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment">Code of Conduct</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+
+        <!-- social media links -->
+        <p>
+            <a href="https://twitter.com/I3DCONF"><span style="font-size: 2.4em; color:white;"><i class="fab fa-twitter"></i></span></a>&nbsp;
+            <a href="http://www.facebook.com/pages/I3D-Symposium-on-Interactive-3D-Graphics-and-Games/147772558570274"><span style="font-size: 2.4em; color:white;"><i class="fab fa-facebook"></i></span></a>&nbsp;
+            <a href="https://www.youtube.com/channel/UCZNuH6k97yBaiTerqd0u1_Q/"><span style="font-size: 2.4em; color:white;"><i class="fab fa-youtube"></i></span></a>
+
+        </p>
+		
+     <h4><a href="contact.html#mailing_list">Join our Mailing List</a></h4>
+		
+     </div> <!-- #nav -->
+      <!-- grid_6 is a 6-wide cell for the main content
+      grid_6 is needed for a fixed layout
+      <div id="main" class="grid_6"> -->
+
+      <!--grid_7 is a 7-wide cell for the main content-->
+      <div id="main" class="grid_7">
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h3>Program</h3> 
 <P>
 The virtual conference runs Tuesday May 3 through Thursday May 5. You can <a href="https://www.youtube.com/c/I3DSymposium">view the sessions</a> and access the <a href="papers.html">papers</a> and <a href="posters.html">posters</a>.
 
-The conference will be streamed at the <a href="https://www.youtube.com/c/I3DSymposium">I3D YouTube channel</a>. All times are United States Pacific Time ({{ page.timezone_name }}, or {{ page.timezone }}). See <a href="./attend.html">Register and Attend</a> for more information.
+The conference will be streamed at the <a href="https://www.youtube.com/c/I3DSymposium">I3D YouTube channel</a>. All times are United States Pacific Time (PT, or UTC-7). See <a href="./attend.html">Register and Attend</a> for more information.
 </P>
 
 
-{% for day in page.program %}
-<div class="program">
-    <h4 class="program-day">{{ day.day | date: "%A, %e of %B %Y" }}{% if day.video %}&nbsp;<a href="{{ day.video }}" target="_blank"><img src="../img/youtube-link-logo.png" width="40px" style="vertical-align: text-bottom;" alt="YouTube stream for Day {{ forloop.index }}"></a>{% endif %}</h4>
 
-    <h3><span class="time" data-day="{{ day.day }}">{{ day.times.first.time }}</span> to <span class="time" data-day="{{ day.day }}">{{ day.times.last.time }}</span> {{ page.timezone_name }}</h3>
+<div class="program">
+    <h4 class="program-day">Tuesday,  3 of May 2022&nbsp;<a href="https://www.youtube.com/watch?v=b32NYgVVKKc" target="_blank"><img src="../img/youtube-link-logo.png" width="40px" style="vertical-align: text-bottom;" alt="YouTube stream for Day 1"></a></h4>
+
+    <h3><span class="time" data-day="2022-05-03">9:00</span> to <span class="time" data-day="2022-05-03">13:30</span> PT</h3>
     <table class="times">
-        {% for time in day.times %}
+        
         <tr>
-            <td class="time" data-day="{{ day.day }}" valign="top" {% if time.cancelled %}style="text-decoration:line-through;"{% endif %}>{{ time.time }}</td>
+            <td class="time" data-day="2022-05-03" valign="top" >9:00</td>
             <td class="item">
-                {% if time.cancelled %}CANCELLED:&nbsp;{% endif -%}
-                {% if time.link %}<a href="{{ time.link }}">{{ time.title }}</a>{% else %}{{ time.title }}{% endif -%}
-                {% if time.registered_only %}&nbsp;- <a href="attend.html">registration required</a>{% endif -%}
-                {% if time.notes %}&nbsp;<i>{{ time.notes }}</i>{% endif -%}
-                {% if time.chair -%}
-                    <br>Session chair: {{ time.chair }}
-                {% endif %}
+                Opening Session
             </td>
         </tr>
-        {% endfor %}
+        
+        <tr>
+            <td class="time" data-day="2022-05-03" valign="top" >9:10</td>
+            <td class="item">
+                <a href="posters.html">Posters Fast Forward</a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-03" valign="top" >9:15</td>
+            <td class="item">
+                <a href="keynotes.html#Keynote1">Keynote 1: Anton Kaplanyan, Intel</a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-03" valign="top" >10:00</td>
+            <td class="item">
+                &nbsp;<i>break</i>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-03" valign="top" >10:10</td>
+            <td class="item">
+                <a href="papers.html#Papers1">Papers 1: Real-time Rendering</a><br>Session chair: Marco Salvi
+                
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-03" valign="top" >11:25</td>
+            <td class="item">
+                &nbsp;<i>break</i>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-03" valign="top" >11:35</td>
+            <td class="item">
+                <a href="papers.html#Papers2">Papers 2: Simulation and Animation</a><br>Session chair: Christiaan Gribble
+                
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-03" valign="top" >12:50</td>
+            <td class="item">
+                &nbsp;<i>break</i>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-03" valign="top" style="text-decoration:line-through;">13:00</td>
+            <td class="item">
+                CANCELLED:&nbsp;Keynote 2: Johan Andersson, Embark Studios
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-03" valign="top" >13:00</td>
+            <td class="item">
+                Town Hall&nbsp;- <a href="attend.html">registration required</a>&nbsp;<i>(live presentation only)</i>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-03" valign="top" >13:30</td>
+            <td class="item">
+                <a href="#social">Social Event: Virtual meet-up</a>&nbsp;- <a href="attend.html">registration required</a>
+            </td>
+        </tr>
+        
     </table>
 </div>
-{% endfor %}
+
+<div class="program">
+    <h4 class="program-day">Wednesday,  4 of May 2022&nbsp;<a href="https://www.youtube.com/watch?v=qQYTLm-WVT4" target="_blank"><img src="../img/youtube-link-logo.png" width="40px" style="vertical-align: text-bottom;" alt="YouTube stream for Day 2"></a></h4>
+
+    <h3><span class="time" data-day="2022-05-04">9:00</span> to <span class="time" data-day="2022-05-04">13:45</span> PT</h3>
+    <table class="times">
+        
+        <tr>
+            <td class="time" data-day="2022-05-04" valign="top" >9:00</td>
+            <td class="item">
+                <a href="keynotes.html#Keynote3">Keynote 2: Margaret S. Livingstone, Harvard Medical School</a>&nbsp;<i>(live presentation only)</i>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-04" valign="top" >9:45</td>
+            <td class="item">
+                &nbsp;<i>break</i>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-04" valign="top" >9:55</td>
+            <td class="item">
+                <a href="papers.html#Papers3">Papers 3: Games and VR</a><br>Session chair: Qi Sun
+                
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-04" valign="top" >11:10</td>
+            <td class="item">
+                &nbsp;<i>break</i>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-04" valign="top" >11:20</td>
+            <td class="item">
+                <a href="papers.html#Papers4">Papers 4: Geometry</a><br>Session chair: Markus Billeter
+                
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-04" valign="top" >12:20</td>
+            <td class="item">
+                &nbsp;<i>break</i>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-04" valign="top" >12:45</td>
+            <td class="item">
+                <a href="posters.html">Posters and demos session</a>&nbsp;- <a href="attend.html">registration required</a><br>Session chair: Petrik Clarberg
+                
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-04" valign="top" >13:45</td>
+            <td class="item">
+                <a href="#social">Social Event: Virtual meet-up</a>&nbsp;- <a href="attend.html">registration required</a>
+            </td>
+        </tr>
+        
+    </table>
+</div>
+
+<div class="program">
+    <h4 class="program-day">Thursday,  5 of May 2022&nbsp;<a href="https://www.youtube.com/watch?v=P-wRgPe8sDs" target="_blank"><img src="../img/youtube-link-logo.png" width="40px" style="vertical-align: text-bottom;" alt="YouTube stream for Day 3"></a></h4>
+
+    <h3><span class="time" data-day="2022-05-05">9:00</span> to <span class="time" data-day="2022-05-05">14:15</span> PT</h3>
+    <table class="times">
+        
+        <tr>
+            <td class="time" data-day="2022-05-05" valign="top" >9:00</td>
+            <td class="item">
+                <a href="keynotes.html#Keynote4">Keynote 3: Morgan McGuire, Roblox</a>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-05" valign="top" >9:45</td>
+            <td class="item">
+                &nbsp;<i>break</i>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-05" valign="top" >9:55</td>
+            <td class="item">
+                <a href="papers.html#Papers5">Papers 5: Image-based Algorithms</a><br>Session chair: Leonardo Scandolo
+                
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-05" valign="top" >11:10</td>
+            <td class="item">
+                &nbsp;<i>break</i>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-05" valign="top" >11:20</td>
+            <td class="item">
+                <a href="papers.html#Papers6">Papers 6: Appearance and Shading</a><br>Session chair: Adrien Gruson
+                
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-05" valign="top" >12:35</td>
+            <td class="item">
+                &nbsp;<i>break</i>
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-05" valign="top" >12:45</td>
+            <td class="item">
+                <a href="papers.html#Papers7">Papers 7: Virtual Humans</a><br>Session chair: Michal Iwanicki
+                
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-05" valign="top" >14:00</td>
+            <td class="item">
+                Closing and Awards
+            </td>
+        </tr>
+        
+        <tr>
+            <td class="time" data-day="2022-05-05" valign="top" >14:15</td>
+            <td class="item">
+                <a href="#social">Social Event: Virtual meet-up</a>&nbsp;- <a href="attend.html">registration required</a>
+            </td>
+        </tr>
+        
+    </table>
+</div>
+
 
 
 
@@ -161,7 +393,7 @@ The conference will be streamed at the <a href="https://www.youtube.com/c/I3DSym
   var times = document.getElementsByClassName("time");
   Array.from(times).forEach(te => {
     var s = te.attributes["data-day"].value + " " + te.textContent;
-    var t = luxon.DateTime.fromFormat(s, "yyyy-MM-dd H:mm", {zone:"{{page.iana_timezone}}"})
+    var t = luxon.DateTime.fromFormat(s, "yyyy-MM-dd H:mm", {zone:"US/Pacific"})
     var lt = t.toLocal();
     var lts =  lt.toLocaleString({ weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
     te.setAttribute("data-local-time", lts);
@@ -169,3 +401,141 @@ The conference will be streamed at the <a href="https://www.youtube.com/c/I3DSym
   });
 </script>
 </div>
+
+      </div>
+    </div>
+
+          </div> <!-- #main -->
+
+      <!-- grid_3 is a 3-wide cell -->
+      <div id="news" class="grid_3">
+        <h4>
+          Watch here for updates
+        </h4>
+        
+         <h4>Important Dates</h4>
+         <ul class="unstyled">
+		 <li><b>Paper submission deadline:</b><br /><strike>December 22, 2021</strike></li>
+             <li><b>Paper notifications:</b><br /><strike>February 23, 2022</strike></li>
+             <li><b>Camera-ready deadline:</b><br /><strike>March 9, 2022</strike></li>
+             <li><b>PACM CGIT revisions deadline:</b><br /><strike>April 6, 2022</strike></li>
+             <li><b>Poster submission deadline:</b><br /><strike>March 23, 2022</strike></li>
+             <li><b>Poster notifications:</b><br /><strike>March 30, 2022</strike></li>
+             <li><b>Extended poster submission deadline:</b><br /><strike>April 14, 2022</strike></li>
+             <li><b>Extended poster notifications:</b><br /><strike>April 17, 2022</strike></li>
+<!--
+             <li><b>Travel grant submission deadline:</b><br />TBA</li>
+             <li><b>Poster submission deadline:</b><br /><strike>March 16, 2021</strike></li>
+             <li><b>Poster notifications:</b><br />March 23, 2021</li>
+             <li><b>Extended poster submission deadline:</b><br /><strike>March 30, 2021</strike></li>
+             <li><b>Extended poster notifications:</b><br /><strike>April 2, 2021</strike></li>
+             <li><b>Early registration deadline:</b><br />TBA</li>
+-->		
+             <li><b>Conference:</b><br />May 3-5, 2022</li>
+	</ul>
+<!--
+        <h4>Sponsored by:</h4>
+        <a href="http://www.siggraph.org"><img src="img/sponsor_acm_11.png"></a>
+
+        <h5 class="text-left">Platinum Sponsor</h5>
+        <ul class="sponsors text-left">
+          <li class="text-left">
+              <a href="http://www.unrealengine.com">
+                <img width="230" src="img/sponsor_Unreal_Epic_Black.png" style="padding: 2px; background: #fff;" alt="Epic Games">
+              </a>
+          </li>
+        </ul>
+
+        <h5 class="text-left">Gold Sponsors</h5>
+        <ul class="sponsors text-left">
+          
+          <li class="text-left">
+              <a href="http://theforge.dev">
+                <img width="170" src="img/sponsor_TheForge_color_black_landscape.png" style="padding: 2px; background: #fff" alt="The Forge">
+              </a>
+          </li>
+		  
+          <li class="text-left">
+              <a href="https://unity3d.com">
+                <img width="170" src="img/sponsor_unity.png" style="padding: 2px; background: #fff" alt="Unity">
+              </a>
+		  </li>
+
+          <li class="text-left">
+              <a href="https://www.huawei.com">
+                <img width="170" src="img/sponsor_futurewei.png" style="padding: 2px; background: #fff" alt="Futurewei">
+              </a>
+		  </li>
+
+          <li class="text-left">
+              <a href="https://intel.com">
+                <img width="170" src="img/sponsor_intel.png" style="padding: 2px; background: #fff" alt="Intel">
+              </a>
+		  </li>
+ 
+          <li class="text-left">
+              <a href="https://google.com">
+                <img width="170" src="img/sponsor_google.png" style="padding: 2px; background: #fff" alt="Google">
+              </a>
+		  </li>
+ 
+          <li class="text-left">
+              <a href="https://developer.arm.com/solutions/graphics-and-gaming">
+                <img width="170" src="img/sponsor_arm.png" style="padding: 2px; background: #fff" alt="Arm">
+              </a>
+		  </li>
+ 
+          <li class="text-left">
+			  <a href="https://www.facebook.com/careers/areas-of-work/facebookrealitylabs/?teams[0]=Facebook%20Reality%20Labs">
+                <img width="170" src="img/sponsor_FRL_Research_Logo.png" style="padding: 2px; background: #fff" alt="Facebook Reality Labs">
+              </a>
+		  </li>
+ 
+        </ul>
+  
+        <h5 class="text-left">Silver Sponsors</h5>
+        <ul class="sponsors text-left">
+          <li class="text-left">
+              <a href="http://activision.com">
+                <img width="120" src="img/sponsor_Activision_logo.png" style="padding: 2px; background: #fff;" alt="Activision">
+              </a>
+          </li>
+
+          <li class="text-left">
+              <a href="http://www.amd.com">
+                <img width="120" src="img/sponsor_amd.png" style="padding: 2px; background: #fff;" alt="AMD">
+              </a>
+          </li>
+
+          <li class="text-left">
+              <a href="http://research.nvidia.com">
+			  <img width="120" src="img/sponsor_nvidia_horz.png" style="padding: 2px; background: #fff;" alt="NVIDIA">
+              </a>
+          </li>
+        </ul>
+		
+-->		
+		<!-- END Sponsors -->
+		
+		
+		    
+    
+      </div> <!-- #news -->
+    </div> <!-- .container -->
+
+
+    <!-- start a new container for the footer -->
+    <div id="footer" class="container_12">
+    <div class="grid_6 prefix_2"> <!-- prefix_2 offsets the cell -->
+        <p class="muted"><small>
+          <a href="http://www.i3dsymposium.org/">HOME</a> | &copy; 2022
+          Symposium on Interactive 3D Graphics and Games
+        </small></p>
+      </div>
+    </div>
+
+
+
+  </body>
+
+</html>

@@ -2,7 +2,7 @@
 title: I3D Symposium
 description: "ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games" # I3D is an awesome conference!
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://i3dsymposium.org" # the base hostname & protocol for your site
+url: "https://i3dsymposium.org" # the base hostname & protocol for your site
 lang: en-US
 timezone: US/Pacific
 email: general@i3dsymposium.org

@@ -1,287 +1,132 @@
----
-layout: default2022
-title: Papers program
-sessions:
-  - title: "Real-Time Rendering"
-    chair: "Marco Salvi"
-    opening: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=4165s"
-    qa: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=6934s"
-    papers:
-      - title: "Real-Time Ray-Traced Soft Shadows of Environmental Lighting by Conical Ray Culling"
-        authors: "Yang Xu, Yuanfa Jiang, Junbo Zhang, Kang Li, Guohua Geng"
-        link: "https://doi.org/10.1145/3522617"
-        preprint: "https://sapphiresoul.github.io/conicalrayculling.pdf"
-        presentation: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=4259s"
-        thumbnail: "01_01_Yang_Xu.png"
-        abstract: |
-          It is difficult to render soft shadows of environmental lighting in real-time because evaluating the visibility function is challenging in animated scenes. We present a method to render soft shadows of environmental lighting at real-time frame rates by hardware accelerated ray tracing and conical ray culling in this work. We assume that the scene contains both static and dynamic objects. The incident irradiance occluded by the dynamic objects is obtained by accumulating the occluded incident radiances over the hemisphere using ray tracing. Conical ray culling is proposed to exclude the rays outside the circular cones defined by the surface point and the bounding spheres of the dynamic objects, which significantly improves the efficiency. The composite incident irradiance is obtained by subtracting the incident irradiance occluded by the dynamic objects from the unshadowed incident irradiance. Rendering results are provided to demonstrate that our proposed method can achieve real-time rendering of soft shadows of environmental lighting in dynamic scenes.
-      - title: "Stereo-consistent screen space ambient occlusion"
-        authors: "Peiteng Shi, Markus Billeter, Elmar Eisemann"
-        link: "https://doi.org/10.1145/3522614"
-        preprint: "https://graphics.tudelft.nl/Publications-new/2022/SBE22/"
-        presentation: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=5160s"
-        thumbnail: "01_02_Peiteng_Shi.png"
-        abstract: |
-          Screen-space ambient occlusion (SSAO) shows high efficiency and is widely used in real-time 3D applications. However, using SSAO algorithms in stereo rendering can lead to inconsistencies due to the differences in the screen-space information captured by the left and right eye. This will affect the perception of the scene and may be a source of viewer discomfort. In this paper, we show that the raw obscurance estimation part and subsequent filtering are both sources of inconsistencies. We developed a screen-space method involving both views in conjunction, leading to a stereo-aware raw obscurance estimation method and a stereo-aware bilateral filter. The results show that our method reduces stereo inconsistencies to a level comparable to geometry-based AO solutions, while maintaining the performance benefits of a screen space approach.
-      - title: "Scaling Probe-Based Real-Time Dynamic Global Illumination for Production"
-        authors: "Alexander Majercik, Adam Marrs, Josef Spjut, Morgan McGuire"
-        journal: "jcgt"
-        link: "https://jcgt.org/published/0010/02/01/"
-        preprint: ""
-        presentation: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=6035s"
-        thumbnail: "01_03_Zander_Majercik.png"
-        abstract: |
-          We contribute several practical extensions to the probe-based irradiance-field-with-visibility representation [Majercik et al. 2019] [McGuire et al. 2017] to improve image quality, constant and asymptotic performance, memory efficiency, and artist control. We developed these extensions in the process of incorporating the previous work into the global illumination solutions of the NVIDIA RTXGI SDK, the Unity and Unreal Engine 4 game engines, and proprietary engines for several commercial games. These extensions include: an intuitive tuning parameter (the \"self-shadow\" bias); heuristics to speed transitions in the global illumination; reuse of irradiance data as prefiltered radiance for recursive glossy reflection; a probe state machine to prune work that will not affect the final image; and multiresolution cascaded volumes for large worlds.
-      - title: "Collimated Whole Volume Light Scattering in Homogeneous Finite Media"
-        authors: "Zdravko Velinov, Kenny Mitchell"
-        journal: "tvcg"
-        live_only: true
-        link: "https://doi.org/10.1109/TVCG.2021.3135764"
-        preprint: "http://3dgraphics.guru/"
-        presentation: ""
-        thumbnail: "01_04_Zdravko_Velinov.png"
-        abstract: |
-          Crepuscular rays form when light encounters an optically thick or opaque medium which masks out portions of the visible scene. Real-time applications commonly estimate this phenomena by connecting paths between light sources and the camera after a single scattering event. We provide a set of algorithms for solving integration and sampling of single-scattered collimated light in a box-shaped medium and show how they extend to multiple scattering and convex media. First, a method for exactly integrating the unoccluded single scattering in rectilinear box-shaped medium is proposed and paired with a ratio estimator and moment-based approximation. Compared to previous methods, it requires only a single sample in unoccluded areas to compute the whole integral solution and provides greater convergence in the rest of the scene. Second, we derive an importance sampling scheme accounting for the entire geometry of the medium. This sampling strategy is then incorporated in an optimized Monte Carlo integration. The resulting integration scheme yields visible noise reduction and it is directly applicable to indoor scene rendering in room-scale interactive experiences. Furthermore, it extends to multiple light sources and achieves superior converge compared to independent sampling with existing algorithms. We validate our techniques against previous methods based on ray marching and distance sampling to prove their superior noise reduction capability.
+<!DOCTYPE html>
+<html>
 
-  - title: "Simulation and Animation"
-    chair: "Christiaan Gribble"
-    opening: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=8469s"
-    qa: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=12030s"
-    papers:
-      - title: "DCGrid: An Adaptive Grid Structure for Memory-Constrained Fluid Simulation on the GPU"
-        authors: "Wouter Raateland, Torsten Hädrich, Jorge Alejandro Amador Herrera, Daniel Banuti, Wojciech Pałubicki, Sören Pirk, Klaus Hildebrandt, Dominik Michels"
-        link: "https://doi.org/10.1145/3522608"
-        preprint: "http://graphics.tudelft.nl/~klaus/"
-        presentation: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=8537s"
-        thumbnail: "02_01_Wouter_Raateland.png"
-        abstract: |
-          We introduce Dynamic Constrained Grid (DCGrid), a hierarchical and adaptive grid structure for fluid simulation combined with a scheme for effectively managing the grid adaptations. DCGrid is designed to be implemented on the GPU and used in high-performance simulations. Specifically, it allows us to efficiently vary and adjust the grid resolution across the spatial domain and to rapidly evaluate local stencils and individual cells in a GPU implementation. A special feature of DCGrid is that the control of the grid adaption is modeled as an optimization under a constraint on the maximum available memory, which addresses the memory limitations in GPU-based simulation. To further advance the use of DCGrid in high-performance simulations, we complement DCGrid with an efficient scheme for approximating collisions between fluids and static solids on cells with different resolutions. We demonstrate the effectiveness of DCGrid for smoke flows and complex cloud simulations in which terrain-atmosphere interaction requires working with cells of varying resolution and rapidly changing conditions. Finally, we compare the performance of DCGrid to that of alternative adaptive grid structures.
-      - title: "Interactive simulation of plume and pyroclastic volcanic ejections"
-        authors: "Maud Lastic, Damien Rohmer, Guillaume Cordonnier, Claude Jaupart, Fabrice Neyret, Marie-Paule Cani"
-        link: "https://doi.org/10.1145/3522609"
-        preprint: "https://hal.archives-ouvertes.fr/hal-03639288"
-        presentation: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=9301s"
-        thumbnail: "02_02_Maud_Lastic.png"
-        abstract: |
-          We propose an interactive animation method for the ejection of gas and ashes mixtures in volcano eruption. Our novel, layered solution combines a coarse-grain, physically-based simulation of the ejection dynamics with a consistent, procedural animation of multi-resolution details. We show that this layered model can be used to capture the two main types of ejection, namely ascending plume columns composed of rapidly rising gas carrying ash which progressively entrains more air, and pyroclastic flows which de- scend the slopes of the volcano depositing ash, ultimately leading to smaller plumes along their way. We validate the large-scale consis- tency of our model through comparison with geoscience data, and discuss both real-time visualization and off-line, realistic rendering.
-      - title: "Permutation Coding for Vertex-Blend Attribute Compression"
-        authors: "Christoph Peters, Bastian Kuth, Quirin Meyer"
-        link: "https://doi.org/10.1145/3522607"
-        preprint: "https://momentsingraphics.de/I3D2022.html"
-        presentation: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=10197s"
-        thumbnail: "02_03_Christoph_Peters.png"
-        abstract: |
-          Compression of vertex attributes is crucial to keep bandwidth requirements in real-time rendering low. We present a method that encodes any given number of blend attributes for skinning at a fixed bit rate while keeping the worst-case error small. Our method exploits that the blend weights are sorted. With this knowledge, no information is lost when the weights get shuffled. Our permutation coding thus encodes additional data, e.g. about bone indices, into the order of the weights. We also transform the weights linearly to ensure full coverage of the representable domain. Through a thorough error analysis, we arrive at a nearly optimal quantization scheme. Our method is fast enough to decode blend attributes in a vertex shader and also to encode them at runtime, e.g. in a compute shader. Our open source implementation supports up to 13 weights in up to 64 bits.
-      - title: "Real-Time Style Modelling of Human Locomotion via Feature-Wise Transformations and Local Motion Phases"
-        authors: "Ian Mason, Sebastian Starke, Taku Komura"
-        link: "https://doi.org/10.1145/3522618"
-        preprint: "https://www.ianxmason.com/papers/local_phases_film.pdf"
-        presentation: "https://www.youtube.com/watch?v=d6eix0MyHmg&t=11122s"
-        thumbnail: "02_04_Ian_Mason.png"
-        abstract: |
-          Controlling the manner in which a character moves in a real-time animation system is a challenging task with useful applications. Existing style transfer systems require access to a reference content motion clip, however, in real-time systems the future motion con- tent is unknown and liable to change with user input. In this work we present a style modelling system that uses an animation synthe- sis network to model motion content based on local motion phases. An additional style modulation network uses feature-wise trans- formations to modulate style in real-time. To evaluate our method, we create and release a new style modelling dataset, 100style, con- taining over 4 million frames of stylised locomotion data in 100 different styles that present a number of challenges for existing sys- tems. To model these styles, we extend the local phase calculation with a contact-free formulation. In comparison to other methods for real-time style modelling, we show our system is more robust and efficient in its style representation while improving motion quality.
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  - title: "Games and VR"
-    chair: "Qi Sun"
-    opening: "https://www.youtube.com/watch?v=qQYTLm-WVT4&t=1289s"
-    qa: "https://www.youtube.com/watch?v=qQYTLm-WVT4&t=4766s"
-    papers:
-      - title: "Effect of Render Resolution on Gameplay Experience, Performance, and Simulator Sickness in Virtual Reality Games"
-        authors: "Jialin Wang, Rongkai Shi, Zehui Xiao, Xueying Qin, Hai-Ning Liang"
-        link: "https://doi.org/10.1145/3522610"
-        preprint: "https://arxiv.org/pdf/2203.12294.pdf"
-        presentation: "https://www.youtube.com/watch?v=qQYTLm-WVT4&t=1406s"
-        thumbnail: "03_01_Jialin_Wang.png"
-        abstract: |
-          Higher resolution is one of the main directions and drivers in the development of virtual reality (VR) head-mounted displays (HMDs). However, given its associated higher cost, it is important to determine the benefits of having higher resolution on user experience. For non-VR games, higher resolution is often thought to lead to a better experience, but it is unexplored in VR games. This research aims to investigate the resolution tradeoff in gameplay experience, performance, and simulator sickness (SS) for VR games, particularly first-person shooter (FPS) games. To this end, we designed an experiment to collect gameplay experience, SS, and player performance data with a popular VR FPS game, Half-Life: Alyx. Our results indicate that 2K resolution is an important threshold for an enhanced gameplay experience without affecting performance and increasing SS levels. Moreover, the resolution from 1K to 4K has no significant difference in player performance. Our results can inform game developers and players in determining the type of HMD they want to use to balance the tradeoff between costs and benefits and achieve a more optimal experience.
-      - title: "Investigating the Performance of Various Deep Neural Networks-based Approaches Designed to Identify Game Events in Gameplay Footage"
-        authors: "Matheus Prado Prandini Faria, Etienne Julia, Marcelo Zanchetta Do Nascimento, Rita M. S. Julia"
-        link: "https://doi.org/10.1145/3522624"
-        preprint: "https://matheusprandini.github.io/dnns-game-events/"
-        presentation: "https://www.youtube.com/watch?v=qQYTLm-WVT4&t=2212s"
-        thumbnail: "03_02_Matheus_Prandini.png"
-        abstract: |
-          Video games, in addition to representing an extremely relevant field of entertainment and market, have been widely used as a case study in artificial intelligence for representing a problem with a high de- gree of complexity. In such studies, the investigation of approaches that endow player agents with the ability to retrieve relevant in- formation from game scenes stands out, since such information can be very useful to improve their learning ability. This work pro- poses and analyses new deep learning-based models to identify game events occurring in Super Mario Bros gameplay footage. The architecture of each model is composed of a feature extractor convo- lutional neural network (CNN) and a classifier neural network (NN). The extracting CNN aims to produce a feature-based representation for game scenes and submit it to the classifier, so that the latter can identify the game event present in each scene. The models differ from each other according to the following elements: the type of the CNN; the type of the NN classifier; and the type of the game scene representation at the CNN input, being either single frames, or chunks, which are n-sequential frames (in this paper 6 frames were used per chunk) grouped into a single input. The main con- tribution of this article is to demonstrate the greater performance reached by the models which combines the chunk representation for the game scenes with the resources of the classifier recurrent neural networks (RNN).
-      - title: "Interactive Physics-Based Virtual Sculpting with Haptic Feedback"
-        authors: "Avirup Mandal, Parag Chaudhuri, Subhasis Chaudhuri"
-        link: "https://doi.org/10.1145/3522611"
-        preprint: "https://avirupmandal.github.io/sculpt-i3d/"
-        presentation: "https://www.youtube.com/watch?v=qQYTLm-WVT4&t=3057s"
-        thumbnail: "03_03_Avirup_Mandal.png"
-        abstract: |
-          Sculpting is an art form that relies on both the visual and tactile senses. A faithful simulation of sculpting, therefore, requires interactive, physically accurate haptic and visual feedback. We present an interactive physics-based sculpting framework with faithful haptic feedback. We enable cutting of the material by designing a stable, remeshing-free cutting algorithm called Improved stable eXtended Finite Element Method. We present a simulation framework to enable stable visual and haptic feedback at interactive rates. We evaluate the performance of our framework quantitatively and quantitatively through an extensive user study.
-      - title: "EasyVRModeling: Easily Create 3D Models by an Immersive VR System"
-        authors: "Zhiying Fu, Rui Xu, Shiqing Xin, Shuangmin Chen, Changhe Tu, Chenglei Yang, Lin Lu"
-        link: "https://doi.org/10.1145/3522613"
-        preprint: "http://irc.cs.sdu.edu.cn/~shiqing/index.html#Publications-2022"
-        presentation: "https://www.youtube.com/watch?v=qQYTLm-WVT4&t=3962s"
-        thumbnail: "03_04_Zhiying_Fu.png"
-        abstract: |
-          The latest innovations of VR make it possible to construct 3D models in a holographic immersive simulation environment. In this paper, we develop a user-friendly mid-air interactive modeling system named EasyVRModeling. We first prepare a dataset consisting of diverse components and precompute the discrete signed distance function (SDF) for each component. During the modeling phase, users can freely design complicated shapes with a pair of VR controllers. Based on the discrete SDF representation, any CSG-like operation (union, intersect, subtract) can be performed voxel-wise. Throughout the modeling process, we maintain one single dynamic SDF for the whole scene so that the zero-level set surface of the SDF exactly encodes the up-to-date constructed shape. Both SDF fusion and surface extraction are implemented via GPU to allow for smooth user experience. We asked 34 volunteers to create their favorite models using EasyVRModeling. With a simple training process for several minutes, most of them can create a fascinating shape or even a descriptive scene very quickly.
+  <title>Papers program | I3D 2022</title>
+  <meta name="description" content="ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games">
 
-  - title: "Geometry"
-    chair: "Markus Billeter"
-    opening: "https://www.youtube.com/watch?v=qQYTLm-WVT4&t=6356s"
-    qa: "https://www.youtube.com/watch?v=qQYTLm-WVT4&t=8860s"
-    papers:
-      - title: "A Dataset and Explorer for 3D Signed Distance Functions"
-        authors: "Towaki Takikawa, Andrew Glassner, Morgan McGuire"
-        journal: "jcgt"
-        link: "http://jcgt.org/published/0011/02/01/"
-        preprint: ""
-        presentation: "https://www.youtube.com/watch?v=qQYTLm-WVT4&t=6465s"
-        thumbnail: "04_01_Towaki_Takikawa.png"
-        abstract: |
-          Reference datasets are a key tool in the creation of new algorithms. They allow us to compare different existing solutions and identify problems and weaknesses during the development of new algorithms. The signed distance function (SDF) is enjoying a renewed focus of research activity in computer graphics, but until now there has been no standard reference dataset of such functions. We present a database of 63 curated, optimized, and regularized functions of varying complexity. Our functions are provided as analytic expressions that can be efficiently evaluated on a GPU at any point in space. We also present a viewing and inspection tool and software for producing SDF samples appropriate for both traditional graphics and training neural networks.
-      - title: "Improved Accuracy for Prism-Based Motion Blur"
-        authors: "Mads Rønnow, Ulf Assarsson, Erik Sintorn, Marco Fratarcangeli"
-        journal: "jcgt"
-        link: "https://jcgt.org/published/0011/01/05/"
-        preprint: ""
-        presentation: "https://www.youtube.com/watch?v=qQYTLm-WVT4&t=7316s"
-        thumbnail: "04_02_Mads_Ronnow.png"
-        abstract: |
-          For motion blur of dynamic triangulated objects, it is common to construct a prism-like shape for each triangle, from the linear trajectories of its three edges and the triangle’s start and end position during the delta time step. Such a prism can be intersected with a primary ray to find the time points where the triangle starts and stops covering the pixel center. These intersections are paired into time intervals for the triangle and pixel. Then, all time intervals, potentially from many prisms, are used to aggregate a motion-blurred color contribution to the pixel.
-          For real-time rendering purposes, it is common to linearly interpolate the ray-triangle intersection and uv coordinates over the time interval. This approximation often works well, but the true path in 3D and uv space for the ray-triangle intersection, as a function of time, is in general nonlinear.
-          In this article, we start by noting that the path of the intersection point can even partially reside outside of the prism volume itself: i.e., the prism volume is not always identical to the volume swept by the triangle. Hence, we must first show that the prisms still work as bounding volumes when finding the time intervals with primary rays, as that may be less obvious when the volumes differ. Second, we show a simple and potentially common class of cases where this happens, such as when a triangle undergoes a wobbling- or swinging-like motion during a time step. Third, when the volumes differ, linear interpolation between two points on the prism surfaces for triangle properties works particularly poorly, which leads to visual artifacts. Therefore, we finally modify a prism-based real-time motion-blur algorithm to use adaptive sampling along the correct paths regarding the triangle location and uv coordinates over which we want to compute a filtered color. Due to being adaptive, the algorithm has a negligible performance penalty on pixels where linear interpolation is sufficient, while being able to significantly improve the visual quality where needed, for a very small additional cost.
-      - title: "SurfaceNets for Multi-Label Segmentations with Preservation of Sharp Boundaries"
-        authors: "Sarah Frisken"
-        journal: "jcgt"
-        link: "https://jcgt.org/published/0011/01/03/"
-        preprint: ""
-        presentation: "https://www.youtube.com/watch?v=qQYTLm-WVT4&t=8016s"
-        thumbnail: "04_03_Sarah_Frisken.png"
-        abstract: |
-          We extend 3D SurfaceNets to generate surfaces of segmented 3D medical images composed of multiple materials represented as indexed labels. Our extension generates smooth, high-quality triangle meshes suitable for rendering and tetrahedralization, preserves topology and sharp boundaries between materials, guarantees a user-specified accuracy, and is fast enough that users can interactively explore the trade-off between accuracy and surface smoothness. We provide open-source code in the form of an extendable C++ library with a simple API, and a Qt and OpenGL-based application that allows users to import or randomly generate multi-label volumes to experiment with surface fairing parameters. In this paper, we describe the basic SurfaceNets algorithm, our extension to handle multiple materials, our method for preserving sharp boundaries between materials, and implementation details used to achieve efficient processing.
+  <!-- <link rel="stylesheet" href="/css/main.css"> -->
+  <link rel="canonical" href="https://i3dsymposium.org/2022/papers.html">
+  <link rel="alternate" type="application/rss+xml" title="I3D Symposium" href="https://i3dsymposium.org/feed.xml" />
 
-  - title: "Image-Based Algorithms"
-    chair: "Leonardo Scandolo"
-    opening: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=3322s"
-    qa: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=6916s"
-    papers:
-      - title: "Training and Predicting Visual Error for Real-Time Applications"
-        authors: "João Cardoso, Bernhard Kerbl, Lei Yang, Yury Uralsky, Michael Wimmer"
-        link: "https://doi.org/10.1145/3522625"
-        preprint: "https://jaliborc.github.io/rt-percept/"
-        presentation: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=3429s"
-        thumbnail: "05_01_Joao_Liborio_Cardoso.png"
-        abstract: |
-          Visual error metrics play a fundamental role in the quantification of perceived image similarity. Most recently, use cases for them in real-time applications have emerged, such as content-adaptive shading and shading reuse to increase performance and improve efficiency. A wide range of different metrics has been established, with the most sophisticated being capable of capturing the perceptual characteristics of the human visual system. However, their complexity, computational expense, and reliance on reference images to compare against prevent their generalized use in real-time, restricting such applications to using only the simplest available metrics. In this work, we explore the abilities of convolutional neural networks to predict a variety of visual metrics without requiring either reference or rendered images. Specifically, we train and deploy a neural network to estimate the visual error resulting from reusing shading or using reduced shading rates. The resulting models account for 70%-90% of the variance while achieving up to an order of magnitude faster computation times. Our solution combines image-space information that is readily available in most state-of-the-art deferred shading pipelines with reprojection from previous frames to enable an adequate estimate of visual errors, even in previously unseen regions. We describe a suitable convolutional network architecture and considerations for data preparation for training. We demonstrate the capability of our network to predict complex error metrics at interactive rates in a real-time application that implements content-adaptive shading in a deferred pipeline. Depending on the portion of unseen image regions, our approach can achieve up to 2× performance compared to state-of-the-art methods.
-      - title: "Fast temporal reprojection without motion vectors"
-        authors: "Johannes Hanika, Lorenzo Tessari, Carsten Dachsbacher"
-        journal: "jcgt"
-        link: "https://jcgt.org/published/0010/03/02/"
-        preprint: ""
-        presentation: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=4263s"
-        thumbnail: "05_02_Johannes_Hanika.png"
-        abstract: |
-          Rendering realistic graphics often depends on random sampling, increasingly so even for real-time settings. When rendering animations, there is often a surprising amount of information that can be reused between frames.
-          This is exploited in numerous rendering algorithms, offline and real-time, by relying on reprojecting samples, for denoising as a post-process or for more time-critical applications such as temporal antialiasing for interactive preview or real-time rendering. Motion vectors are widely used during reprojection to align adjacent frames’ warping based on the input geometry vectors between two time samples. Unfortunately, this is not always possible, as not every pixel may have coherent motion, such as when a glass surface moves: the highlight moves in a different direction than the surface or the object behind the surface. Estimation of true motion vectors is thus only possible for special cases. We devise a fast algorithm to compute dense correspondences in image space to generalize reprojection-based algorithms to scenarios where analytical motion vectors are unavailable and high performance is required. Our key ingredient is an efficient embedding of patch-based correspondence detection into a hierarchical algorithm. We demonstrate the effectiveness and utility of the proposed reprojection technique for three applications: temporal antialiasing, handheld burst photography, and Monte Carlo rendering of animations.
-      - title: "An OpenEXR Layout for Spectral Images"
-        authors: "Alban Fichet, Romain Pacanowski, Alexander Wilkie"
-        journal: "jcgt"
-        link: "https://jcgt.org/published/0010/03/01/"
-        preprint: ""
-        presentation: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=5162s"
-        thumbnail: "05_03_Alban_Fichet.png"
-        abstract: |
-          We propose a standardized layout to organize spectral data stored in OpenEXR images. We motivate why we chose the OpenEXR format as the basis for our work, and we explain our choices with regard to data selection and organization: our goal is to define a standard for the exchange of measured or simulated spectral and bi-spectral data. We also provide sample code to store spectral images in OpenEXR format.
-      - title: "MMPX Style-Preserving Pixel Art Magnification"
-        authors: "Morgan McGuire, Mara Gagiu"
-        journal: "jcgt"
-        link: "https://jcgt.org/published/0010/02/04/"
-        preprint: ""
-        presentation: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=6009s"
-        thumbnail: "05_04_Mara_Gagiu.png"
-        abstract: |
-          We present MMPX, an efficient filter for magnifying pixel art, such as 8- and 16-bit era video-game sprites, fonts, and screen images, by a factor of two in each dimension. MMPX preserves art style, attempting to predict what the artist would have produced if working at a larger scale but within the same technical constraints.
-          Pixel-art magnification enables the displaying of classic games and new retro-styled ones on modern screens at runtime, provides high-quality scaling and rotation of sprites and raster-font glyphs through precomputation at load time, and accelerates content-creation workflow.
-          MMPX reconstructs curves, diagonal lines, and sharp corners while preserving the exact palette, transparency, and single-pixel features. For general pixel art, it can often preserve more aspects of the original art style than previous magnification filters such as nearest-neighbor, bilinear, HQX, XBR, and EPX. In specific cases and applications, other filters will be better. We recommend EPX and base XBR for content with exclusively rounded corners, and HQX and antialiased XBR for content with large palettes, gradients, and antialiasing. MMPX is fast enough on embedded systems to process typical retro 64k-pixel full screens in less than 0.5 ms on a GPU or CPU. We include open source implementations in C++, JavaScript, and OpenGL ES GLSL for our method and several others.
+  
+  <meta name="author" content="I3D Publicity Chair (general@i3dsymposium.org)">
 
-  - title: "Appearance and Shading"
-    chair: "Adrien Gruson"
-    opening: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=8348s"
-    qa: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=11962s"
-    papers:
-      - title: "Bringing Linearly Transformed Cosines to Anisotropic GGX"
-        authors: "Aakash Kt, Eric Heitz, Jonathan Dupuy, Narayanan P. J."
-        link: "https://doi.org/10.1145/3522612"
-        preprint: "http://cvit.iiit.ac.in/images/ConferencePapers/2022/Bringing_ggx.pdf"
-        presentation: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=8500s"
-        thumbnail: "06_01_Aakash_KT.png"
-        abstract: |
-          Linearly Transformed Cosines (LTCs) are a family of distributions that are used for real-time area-light shading thanks to their analytic integration properties. Modern game engines use an LTC approximation of the ubiquitous GGX model, but currently this approximation only exists for isotropic GGX and thus anisotropic GGX is not supported. While the higher dimensionality presents a challenge in itself, we show that several additional problems arise when fitting, post-processing, storing, and interpolating LTCs in the anisotropic case. Each of these operations must be done carefully to avoid rendering artifacts. We find robust solutions for each operation by introducing and exploiting invariance properties of LTCs. As a result, we obtain a small 8⁴ look-up table that provides a plausible and artifact-free LTC approximation to anisotropic GGX and brings it to real-time area-light shading.
-      - title: "Rendering Layered Materials with Diffuse Interfaces"
-        authors: "Heloise Dupont de Dinechin, Laurent Belcour"
-        link: "https://doi.org/10.1145/3522620"
-        preprint: "https://arxiv.org/pdf/2203.11835"
-        presentation: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=9257s"
-        thumbnail: "06_02_Heloise_Dupont_de_Dinechin.png"
-        abstract: |
-          In this work, we introduce a novel method to render, in real-time, Lambertian surfaces with a rough dieletric coating. We show that the appearance of such configurations is faithfully represented with two microfacet lobes accounting for direct and indirect interactions respectively. We numerically fit these lobes based on the first order directional statistics (energy, mean and variance) of light transport using 5D tables and narrow them down to 2D + 1D with analytical forms and dimension reduction. We demonstrate the quality of our method by efficiently rendering rough plastics and ceramics, closely matching ground truth. In addition, we improve a state-of-the-art layered material model to include Lambertian interfaces.
-      - title: "Real-time Shading with Free-form Planar Area Lights using Linearly Transformed Cosines"
-        authors: "Takahiro Kuge, Tatsuya Yatagawa, Shigeo Morishima"
-        journal: "jcgt"
-        link: "https://www.jcgt.org/published/0011/01/01/"
-        preprint: ""
-        presentation: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=10159s"
-        thumbnail: "06_03_Tatsuya_Yatagawa.png"
-        abstract: |
-          This article introduces a simple yet powerful approach to illuminating scenes with free-form planar area lights in real time. For this purpose, we extend a previous method for polygonal area lights in two ways. First, we adaptively approximate the closed boundary curve of the light, by extending the Ramer–Douglas–Peucker algorithm to consider the importance of a given subdivision step to the final shading result. Second, we efficiently clip the light to the upper hemisphere, by algebraically solving a polynomial equation per curve segment. Owing to these contributions, our method is efficient for various light shapes defined by cubic Bézier curves and achieves a significant performance improvement over the previous method applied to a uniformly discretized boundary curve.
-      - title: "Neural Photometry-guided Visual Attribute Transfer"
-        authors: "Carlos Rodriguez-Pardo, Elena Garces"
-        journal: "tvcg"
-        link: "https://doi.org/10.1109/TVCG.2021.3133081"
-        preprint: "https://carlosrodriguezpardo.es/"
-        presentation: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=11057s"
-        thumbnail: "06_04_Carlos_Rodriguez-Pardo.png"
-        abstract: |
-          We present a deep learning-based method for propagating spatially-varying visual material attributes (e.g. texture maps or image stylizations) to larger samples of the same or similar materials. For training, we leverage images of the material taken under multiple illuminations and a dedicated data augmentation policy, making the transfer robust to novel illumination conditions and affine deformations. Our model relies on a supervised image-to-image translation framework and is agnostic to the transferred domain; we showcase a semantic segmentation, a normal map, and a stylization. Following an image analogies approach, the method only requires the training data to contain the same visual structures as the input guidance. Our approach works at interactive rates, making it suitable for material edit applications. We thoroughly evaluate our learning methodology in a controlled setup providing quantitative measures of performance. Last, we demonstrate that training the model on a single material is enough to generalize to materials of the same type without the need for massive datasets.
+  <link href="css/reset.css" rel="stylesheet" media="screen">
+  <!-- use a fluid, instead of a fixed layout
+    <link href="css/960.css" rel="stylesheet" media="screen">
+  -->
+  <link href="css/960-fluid.css" rel="stylesheet" media="screen">
+  <link href="css/i3d.css" rel="stylesheet" media="screen">
+  <link href="css/iframes.css" rel="stylesheet" media="screen">
 
-  - title: "Virtual Humans"
-    chair: "Michal Iwanicki"
-    opening: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=13446s"
-    qa: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=16602s"
-    papers:
-      - title: "Real-Time Relighting of Human Faces with a Low-Cost Setup"
-        authors: "Nejc Maček, Baran Usta, Elmar Eisemann, Ricardo Marroquim"
-        link: "https://doi.org/10.1145/3522626"
-        preprint: "https://graphics.tudelft.nl/Publications-new/2022/MUEM22/"
-        presentation: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=13544s"
-        thumbnail: "07_01_Nejc_Macek.png"
-        abstract: |
-          Video-streaming services usually feature post-processing effects to replace the background. However, these often yield inconsistent lighting. Machine-learning-based relighting methods can address this problem, but, at real-time rates, are restricted to a low resolu- tion and can result in an unrealistic skin appearance. Physically- based rendering techniques require complex skin models that can only be acquired using specialised equipment. Our method is light- weight and uses only a standard smartphone. By correcting imper- fections during capture, we extract a convincing physically-based skin model. In combination with suitable acceleration techniques, we achieve real-time rates on commodity hardware.
-      - title: "Real-Time Hair Filtering with Convolutional Neural Networks"
-        authors: "Roc R. Currius, Erik Sintorn, Ulf Assarsson"
-        link: "https://doi.org/10.1145/3522606"
-        preprint: "https://www.cse.chalmers.se/~ramon/hair-filtering.html"
-        presentation: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=14412s"
-        thumbnail: "07_02_Roc_R_Currius.png"
-        abstract: |
-          Rendering of realistic-looking hair is in general still too costly to do in real-time applications, from simulating the physics to rendering the fine details required for it to look natural, including self-shadowing.
-          We show how an autoencoder network, that can be evaluated in real time, can be trained to filter an image of few stochastic samples, including self-shadowing, to produce a much more detailed image that takes into account real hair thickness and transparency.
-      - title: "Joint Audio-Text Model for Expressive Speech-Driven 3D Facial Animation"
-        authors: "Yingruo Fan, Zhaojiang Lin, Jun Saito, Wenping Wang, Taku Komura"
-        link: "https://doi.org/10.1145/3522615"
-        preprint: "https://evelynfan.github.io/files/i3d_author_version.pdf"
-        presentation: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=15161s"
-        thumbnail: "07_03_Yingruo_Fan.png"
-        abstract: |
-          Speech-driven 3D facial animation with accurate lip synchronization has been widely studied. However, synthesizing realistic motions for the entire face during speech has rarely been explored. In this work, we present a joint audio-text model to capture the contextual information for expressive speech-driven 3D facial animation. The existing datasets are collected to cover as many different phonemes as possible instead of sentences, thus limiting the capability of the audio-based model to learn more diverse contexts. To address this, we propose to leverage the contextual text embeddings extracted from the powerful pre-trained language model that has learned rich contextual representations from large-scale text data. Our hypothesis is that the text features can disambiguate the variations in upper face expressions, which are not strongly correlated with the audio. In contrast to prior approaches which learn phoneme-level features from the text, we investigate the high-level contextual text features for speech-driven 3D facial animation. We show that the combined acoustic and textual modalities can synthesize realistic facial expressions while maintaining audio-lip synchronization. We conduct the quantitative and qualitative evaluations as well as the perceptual user study. The results demonstrate the superior performance of our model against existing state-of-the-art approaches. 
-      - title: "Cross-Domain and Disentangled Face Manipulation With 3D Guidance"
-        authors: "Can Wang, Menglei Chai, Mingming He, Dongdong Chen, Jing Liao"
-        journal: "tvcg"
-        link: "https://doi.org/10.1109/TVCG.2021.3139913"
-        preprint: "https://cassiepython.github.io/cddfm3d/index"
-        presentation: "https://www.youtube.com/watch?v=P-wRgPe8sDs&t=15980s"
-        thumbnail: "07_04_Can_Wang.png"
-        abstract: |
-          Face image manipulation via three-dimensional guidance has been widely applied in various interactive scenarios due to its semantically-meaningful understanding and user-friendly controllability. However, existing 3D-morphable-model-based manipulation methods are not directly applicable to out-of-domain faces, such as non-photorealistic paintings, cartoon portraits, or even animals, mainly due to the formidable difficulties in building the model for each specific face domain. To overcome this challenge, we propose, as far as we know, the first method to manipulate faces in arbitrary domains using human 3DMM. This is achieved through two major steps: 1) disentangled mapping from 3DMM parameters to the latent space embedding of a pre-trained StyleGAN2 that guarantees disentangled and precise controls for each semantic attribute; and 2) cross-domain adaptation that bridges domain discrepancies and makes human 3DMM applicable to out-of-domain faces by enforcing a consistent latent space embedding. Experiments and comparisons demonstrate the superiority of our high-quality semantic manipulation method on a variety of face domains with all major 3D facial attributes controllable pose, expression, shape, albedo, and illumination. Moreover, we develop an intuitive editing interface to support user-friendly control and instant feedback. Our project page is https://cassiepython.github.io/cddfm3d/index.html
+  <!-- comment out viewport/responsive.css to use a fixed layout -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/responsive.css" rel="stylesheet" media="screen">
+
+  <!-- SEO metadata for social posts -->
+  <meta property="og:url"                content="https://i3dsymposium.org/2022/papers.html" />
+  <meta property="og:title"              content="Papers program | I3D 2022" />
+  <meta property="og:description"        content="ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games" />
+  <meta property="og:image"              content="https://i3dsymposium.org/2022/img/banner.png" />
+  <meta name="twitter:card" content="summary"></meta>
+  <meta name="twitter:image"              content="https://i3dsymposium.org/2022/img/banner.png" />
+  <meta name="twitter:site" content="@I3DCONF"></meta>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+      $(function () {
+        // Set the active button based on the current url.
+        var filename = window.location.pathname.split('/').reverse()[0];
+        $('a[href$="' + filename + '"]').parent().addClass('active');
+        // If there are no objects with the active class,
+        if ($('.active').length == 0) {
+          // assume the index is the current url.
+          $('a[href$="index.html"]').parent().addClass('active');
+        }
+      });
+  </script>
+</head>
 
 
----
+  <body>
 
-<h3>Papers Program</h3>
+    
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- put the header outside of the grid container -->
+    <div id="header">
+      <p class="text-left float-left subhead tight"><small>ACM SIGGRAPH Symposium on<br/>
+      Interactive 3D Graphics and Games<br/>
+      Online: May 3-5 2022
+		  </small></p>
+    </div> <!-- #header -->
+    <div class="clearfix"></div>
+
+
+    <!-- container_12 is a 12-cell grid -->
+    <div class="container_12">
+
+      <!-- grid_2 is a 2-wide cell -->
+      <div id="nav" class="grid_2">
+        <!-- nav and nav-list are styled in css/i3d.css -->
+          <ul class="nav nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="attend.html">Register and Attend</a></li>
+              <li><a href="program.html">Program</a></li>
+              <li><a href="cfp.html">Call for Participation</a></li>
+              <li><a href="keynotes.html">Keynotes</a></li>
+              <li><a href="papers.html">Papers</a></li>
+              <li><a href="posters.html">Posters and Demos</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+              <li><a href="awards.html">Awards</a></li>
+              <li><a href="committee.html">Committee</a></li>
+              <li><a href="conference.html">Past Conferences</a></li>
+			  
+			  <!-- here's the order we use in normal years (travel grants, venue)
+			  
+              <li><a href="registration.html">Registration</a></li>
+              <li><a href="program.html">Program</a></li>
+              <li><a href="cfp.html">Call for Participation</a></li>
+              <li><a href="keynotes.html">Keynotes</a></li>
+              <li><a href="papers.html">Papers</a></li>
+              <li><a href="posters.html">Posters</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+              <li><a href="awards.html">Awards</a></li>
+              <li><a href="travel_grants.html">Travel Grants</a></li>
+              <li><a href="venue.html">Venue</a></li>
+              <li><a href="committee.html">Committee</a></li>
+              <li><a href="conference.html">Past Conferences</a></li>
+			  -->
+              <li><a href="http://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment">Code of Conduct</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+
+        <!-- social media links -->
+        <p>
+            <a href="https://twitter.com/I3DCONF"><span style="font-size: 2.4em; color:white;"><i class="fab fa-twitter"></i></span></a>&nbsp;
+            <a href="http://www.facebook.com/pages/I3D-Symposium-on-Interactive-3D-Graphics-and-Games/147772558570274"><span style="font-size: 2.4em; color:white;"><i class="fab fa-facebook"></i></span></a>&nbsp;
+            <a href="https://www.youtube.com/channel/UCZNuH6k97yBaiTerqd0u1_Q/"><span style="font-size: 2.4em; color:white;"><i class="fab fa-youtube"></i></span></a>
+
+        </p>
+		
+     <h4><a href="contact.html#mailing_list">Join our Mailing List</a></h4>
+		
+     </div> <!-- #nav -->
+      <!-- grid_6 is a 6-wide cell for the main content
+      grid_6 is needed for a fixed layout
+      <div id="main" class="grid_6"> -->
+
+      <!--grid_7 is a 7-wide cell for the main content-->
+      <div id="main" class="grid_7">
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <h3>Papers Program</h3>
 
 <!--
 <h4><b>ACM Digital Library:</b><br/><a href="https://dl.acm.org/citation.cfm?id=3306131">Proceedings of the ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D 2019)</a></h4>
@@ -322,55 +167,709 @@ See the <a href="awards.html">awards section</a> for which papers won.
 <hr/>
 -->
 
-{% for session in page.sessions %}
 
-<h3 style="margin-bottom:5px;" id="Papers{{ forloop.index }}">Papers {{ forloop.index }}: {{ session.title }}</h3>
+
+<h3 style="margin-bottom:5px;" id="Papers1">Papers 1: Real-Time Rendering</h3>
 <p>
-    Session chair: {{ session.chair }}
-    {% assign opening = session.opening | strip -%}
-    {% assign qa = session.qa | strip -%}
-    {%if opening != empty or qa != empty -%}
-        ({% if opening != empty %}<a href="{{ session.opening }}">opening</a>{%if qa != empty %}, {% endif %}{% endif %}{% if qa != empty %}<a href="{{ session.qa }}">Q&A</a>{% endif -%})
-    {% endif %}
+    Session chair: Marco Salvi
+    (<a href="https://www.youtube.com/watch?v=d6eix0MyHmg&t=4165s">opening</a>, <a href="https://www.youtube.com/watch?v=d6eix0MyHmg&t=6934s">Q&A</a>)
+    
 <p>
 
-<dl>{% for paper in session.papers %}
-    <dt><b>{{ paper.title }}</b></dt>
-    <dd>{% assign authors = paper.authors | escape_once | split: ", " %}{% for author in authors %}{%if forloop.last %} and {% elsif forloop.first == false %}, {% endif %}{{ author }}{% endfor %}</dd>
+<dl>
+    <dt><b>Real-Time Ray-Traced Soft Shadows of Environmental Lighting by Conical Ray Culling</b></dt>
+    <dd>Yang Xu, Yuanfa Jiang, Junbo Zhang, Kang Li and Guohua Geng</dd>
     <dd>
-        {% assign journal = paper.journal | strip -%}
-        {% if journal != empty or paper.live_only -%}
-            ({% if journal != empty %}invited {{ journal | upcase }} paper presentation{%if paper.live_only %}, {% endif %}{% endif -%}
-            {%if paper.live_only %}live presentation only{% endif %})
-        {% endif -%}
-        {% assign link = paper.link | strip -%}
-        {% assign preprint = paper.preprint | strip -%}
-        {% assign presentation = paper.presentation | strip -%}
-        {% if link != empty -%}
-            <a href="{{ link }}">link</a>{% if preprint != empty or presentation != empty %}, {% endif -%}
-        {% endif -%}
-        {% if preprint != empty -%}
-            <a href="{{ preprint }}">preprint</a>{% if presentation != empty %}, {% endif -%}
-        {% endif -%}
-        {% if presentation != empty -%}
-            <a href="{{ presentation }}">presentation</a>
-        {% endif %}
+        <a href="https://doi.org/10.1145/3522617">link</a>, <a href="https://sapphiresoul.github.io/conicalrayculling.pdf">preprint</a>, <a href="https://www.youtube.com/watch?v=d6eix0MyHmg&t=4259s">presentation</a>
+        
     </dd>
     <dd>
         <details>
             <summary>Abstract</summary>
             <p>
-                {{ paper.abstract | strip | escape_once | newline_to_br }}
+                It is difficult to render soft shadows of environmental lighting in real-time because evaluating the visibility function is challenging in animated scenes. We present a method to render soft shadows of environmental lighting at real-time frame rates by hardware accelerated ray tracing and conical ray culling in this work. We assume that the scene contains both static and dynamic objects. The incident irradiance occluded by the dynamic objects is obtained by accumulating the occluded incident radiances over the hemisphere using ray tracing. Conical ray culling is proposed to exclude the rays outside the circular cones defined by the surface point and the bounding spheres of the dynamic objects, which significantly improves the efficiency. The composite incident irradiance is obtained by subtracting the incident irradiance occluded by the dynamic objects from the unshadowed incident irradiance. Rendering results are provided to demonstrate that our proposed method can achieve real-time rendering of soft shadows of environmental lighting in dynamic scenes.
             </p>
-            {% if paper.thumbnail -%}
-                <p><img src="img/paper_thumbnails/{{ paper.thumbnail }}" width="400"></p>
-            {% endif %}
+            <p><img src="img/paper_thumbnails/01_01_Yang_Xu.png" width="400"></p>
+            
         </details>
     </dd>
-{% endfor -%}
+
+    <dt><b>Stereo-consistent screen space ambient occlusion</b></dt>
+    <dd>Peiteng Shi, Markus Billeter and Elmar Eisemann</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522614">link</a>, <a href="https://graphics.tudelft.nl/Publications-new/2022/SBE22/">preprint</a>, <a href="https://www.youtube.com/watch?v=d6eix0MyHmg&t=5160s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Screen-space ambient occlusion (SSAO) shows high efficiency and is widely used in real-time 3D applications. However, using SSAO algorithms in stereo rendering can lead to inconsistencies due to the differences in the screen-space information captured by the left and right eye. This will affect the perception of the scene and may be a source of viewer discomfort. In this paper, we show that the raw obscurance estimation part and subsequent filtering are both sources of inconsistencies. We developed a screen-space method involving both views in conjunction, leading to a stereo-aware raw obscurance estimation method and a stereo-aware bilateral filter. The results show that our method reduces stereo inconsistencies to a level comparable to geometry-based AO solutions, while maintaining the performance benefits of a screen space approach.
+            </p>
+            <p><img src="img/paper_thumbnails/01_02_Peiteng_Shi.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Scaling Probe-Based Real-Time Dynamic Global Illumination for Production</b></dt>
+    <dd>Alexander Majercik, Adam Marrs, Josef Spjut and Morgan McGuire</dd>
+    <dd>
+        (invited JCGT paper presentation)
+        <a href="https://jcgt.org/published/0010/02/01/">link</a>, <a href="https://www.youtube.com/watch?v=d6eix0MyHmg&t=6035s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                We contribute several practical extensions to the probe-based irradiance-field-with-visibility representation [Majercik et al. 2019] [McGuire et al. 2017] to improve image quality, constant and asymptotic performance, memory efficiency, and artist control. We developed these extensions in the process of incorporating the previous work into the global illumination solutions of the NVIDIA RTXGI SDK, the Unity and Unreal Engine 4 game engines, and proprietary engines for several commercial games. These extensions include: an intuitive tuning parameter (the \&quot;self-shadow\&quot; bias); heuristics to speed transitions in the global illumination; reuse of irradiance data as prefiltered radiance for recursive glossy reflection; a probe state machine to prune work that will not affect the final image; and multiresolution cascaded volumes for large worlds.
+            </p>
+            <p><img src="img/paper_thumbnails/01_03_Zander_Majercik.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Collimated Whole Volume Light Scattering in Homogeneous Finite Media</b></dt>
+    <dd>Zdravko Velinov and Kenny Mitchell</dd>
+    <dd>
+        (invited TVCG paper presentation, live presentation only)
+        <a href="https://doi.org/10.1109/TVCG.2021.3135764">link</a>, <a href="http://3dgraphics.guru/">preprint</a>
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Crepuscular rays form when light encounters an optically thick or opaque medium which masks out portions of the visible scene. Real-time applications commonly estimate this phenomena by connecting paths between light sources and the camera after a single scattering event. We provide a set of algorithms for solving integration and sampling of single-scattered collimated light in a box-shaped medium and show how they extend to multiple scattering and convex media. First, a method for exactly integrating the unoccluded single scattering in rectilinear box-shaped medium is proposed and paired with a ratio estimator and moment-based approximation. Compared to previous methods, it requires only a single sample in unoccluded areas to compute the whole integral solution and provides greater convergence in the rest of the scene. Second, we derive an importance sampling scheme accounting for the entire geometry of the medium. This sampling strategy is then incorporated in an optimized Monte Carlo integration. The resulting integration scheme yields visible noise reduction and it is directly applicable to indoor scene rendering in room-scale interactive experiences. Furthermore, it extends to multiple light sources and achieves superior converge compared to independent sampling with existing algorithms. We validate our techniques against previous methods based on ray marching and distance sampling to prove their superior noise reduction capability.
+            </p>
+            <p><img src="img/paper_thumbnails/01_04_Zdravko_Velinov.png" width="400"></p>
+            
+        </details>
+    </dd>
 </dl>
 <br/>
 <hr/>
 
-{% endfor %}
 
+
+<h3 style="margin-bottom:5px;" id="Papers2">Papers 2: Simulation and Animation</h3>
+<p>
+    Session chair: Christiaan Gribble
+    (<a href="https://www.youtube.com/watch?v=d6eix0MyHmg&t=8469s">opening</a>, <a href="https://www.youtube.com/watch?v=d6eix0MyHmg&t=12030s">Q&A</a>)
+    
+<p>
+
+<dl>
+    <dt><b>DCGrid: An Adaptive Grid Structure for Memory-Constrained Fluid Simulation on the GPU</b></dt>
+    <dd>Wouter Raateland, Torsten Hädrich, Jorge Alejandro Amador Herrera, Daniel Banuti, Wojciech Pałubicki, Sören Pirk, Klaus Hildebrandt and Dominik Michels</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522608">link</a>, <a href="http://graphics.tudelft.nl/~klaus/">preprint</a>, <a href="https://www.youtube.com/watch?v=d6eix0MyHmg&t=8537s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                We introduce Dynamic Constrained Grid (DCGrid), a hierarchical and adaptive grid structure for fluid simulation combined with a scheme for effectively managing the grid adaptations. DCGrid is designed to be implemented on the GPU and used in high-performance simulations. Specifically, it allows us to efficiently vary and adjust the grid resolution across the spatial domain and to rapidly evaluate local stencils and individual cells in a GPU implementation. A special feature of DCGrid is that the control of the grid adaption is modeled as an optimization under a constraint on the maximum available memory, which addresses the memory limitations in GPU-based simulation. To further advance the use of DCGrid in high-performance simulations, we complement DCGrid with an efficient scheme for approximating collisions between fluids and static solids on cells with different resolutions. We demonstrate the effectiveness of DCGrid for smoke flows and complex cloud simulations in which terrain-atmosphere interaction requires working with cells of varying resolution and rapidly changing conditions. Finally, we compare the performance of DCGrid to that of alternative adaptive grid structures.
+            </p>
+            <p><img src="img/paper_thumbnails/02_01_Wouter_Raateland.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Interactive simulation of plume and pyroclastic volcanic ejections</b></dt>
+    <dd>Maud Lastic, Damien Rohmer, Guillaume Cordonnier, Claude Jaupart, Fabrice Neyret and Marie-Paule Cani</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522609">link</a>, <a href="https://hal.archives-ouvertes.fr/hal-03639288">preprint</a>, <a href="https://www.youtube.com/watch?v=d6eix0MyHmg&t=9301s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                We propose an interactive animation method for the ejection of gas and ashes mixtures in volcano eruption. Our novel, layered solution combines a coarse-grain, physically-based simulation of the ejection dynamics with a consistent, procedural animation of multi-resolution details. We show that this layered model can be used to capture the two main types of ejection, namely ascending plume columns composed of rapidly rising gas carrying ash which progressively entrains more air, and pyroclastic flows which de- scend the slopes of the volcano depositing ash, ultimately leading to smaller plumes along their way. We validate the large-scale consis- tency of our model through comparison with geoscience data, and discuss both real-time visualization and off-line, realistic rendering.
+            </p>
+            <p><img src="img/paper_thumbnails/02_02_Maud_Lastic.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Permutation Coding for Vertex-Blend Attribute Compression</b></dt>
+    <dd>Christoph Peters, Bastian Kuth and Quirin Meyer</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522607">link</a>, <a href="https://momentsingraphics.de/I3D2022.html">preprint</a>, <a href="https://www.youtube.com/watch?v=d6eix0MyHmg&t=10197s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Compression of vertex attributes is crucial to keep bandwidth requirements in real-time rendering low. We present a method that encodes any given number of blend attributes for skinning at a fixed bit rate while keeping the worst-case error small. Our method exploits that the blend weights are sorted. With this knowledge, no information is lost when the weights get shuffled. Our permutation coding thus encodes additional data, e.g. about bone indices, into the order of the weights. We also transform the weights linearly to ensure full coverage of the representable domain. Through a thorough error analysis, we arrive at a nearly optimal quantization scheme. Our method is fast enough to decode blend attributes in a vertex shader and also to encode them at runtime, e.g. in a compute shader. Our open source implementation supports up to 13 weights in up to 64 bits.
+            </p>
+            <p><img src="img/paper_thumbnails/02_03_Christoph_Peters.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Real-Time Style Modelling of Human Locomotion via Feature-Wise Transformations and Local Motion Phases</b></dt>
+    <dd>Ian Mason, Sebastian Starke and Taku Komura</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522618">link</a>, <a href="https://www.ianxmason.com/papers/local_phases_film.pdf">preprint</a>, <a href="https://www.youtube.com/watch?v=d6eix0MyHmg&t=11122s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Controlling the manner in which a character moves in a real-time animation system is a challenging task with useful applications. Existing style transfer systems require access to a reference content motion clip, however, in real-time systems the future motion con- tent is unknown and liable to change with user input. In this work we present a style modelling system that uses an animation synthe- sis network to model motion content based on local motion phases. An additional style modulation network uses feature-wise trans- formations to modulate style in real-time. To evaluate our method, we create and release a new style modelling dataset, 100style, con- taining over 4 million frames of stylised locomotion data in 100 different styles that present a number of challenges for existing sys- tems. To model these styles, we extend the local phase calculation with a contact-free formulation. In comparison to other methods for real-time style modelling, we show our system is more robust and efficient in its style representation while improving motion quality.
+            </p>
+            <p><img src="img/paper_thumbnails/02_04_Ian_Mason.png" width="400"></p>
+            
+        </details>
+    </dd>
+</dl>
+<br/>
+<hr/>
+
+
+
+<h3 style="margin-bottom:5px;" id="Papers3">Papers 3: Games and VR</h3>
+<p>
+    Session chair: Qi Sun
+    (<a href="https://www.youtube.com/watch?v=qQYTLm-WVT4&t=1289s">opening</a>, <a href="https://www.youtube.com/watch?v=qQYTLm-WVT4&t=4766s">Q&A</a>)
+    
+<p>
+
+<dl>
+    <dt><b>Effect of Render Resolution on Gameplay Experience, Performance, and Simulator Sickness in Virtual Reality Games</b></dt>
+    <dd>Jialin Wang, Rongkai Shi, Zehui Xiao, Xueying Qin and Hai-Ning Liang</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522610">link</a>, <a href="https://arxiv.org/pdf/2203.12294.pdf">preprint</a>, <a href="https://www.youtube.com/watch?v=qQYTLm-WVT4&t=1406s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Higher resolution is one of the main directions and drivers in the development of virtual reality (VR) head-mounted displays (HMDs). However, given its associated higher cost, it is important to determine the benefits of having higher resolution on user experience. For non-VR games, higher resolution is often thought to lead to a better experience, but it is unexplored in VR games. This research aims to investigate the resolution tradeoff in gameplay experience, performance, and simulator sickness (SS) for VR games, particularly first-person shooter (FPS) games. To this end, we designed an experiment to collect gameplay experience, SS, and player performance data with a popular VR FPS game, Half-Life: Alyx. Our results indicate that 2K resolution is an important threshold for an enhanced gameplay experience without affecting performance and increasing SS levels. Moreover, the resolution from 1K to 4K has no significant difference in player performance. Our results can inform game developers and players in determining the type of HMD they want to use to balance the tradeoff between costs and benefits and achieve a more optimal experience.
+            </p>
+            <p><img src="img/paper_thumbnails/03_01_Jialin_Wang.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Investigating the Performance of Various Deep Neural Networks-based Approaches Designed to Identify Game Events in Gameplay Footage</b></dt>
+    <dd>Matheus Prado Prandini Faria, Etienne Julia, Marcelo Zanchetta Do Nascimento and Rita M. S. Julia</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522624">link</a>, <a href="https://matheusprandini.github.io/dnns-game-events/">preprint</a>, <a href="https://www.youtube.com/watch?v=qQYTLm-WVT4&t=2212s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Video games, in addition to representing an extremely relevant field of entertainment and market, have been widely used as a case study in artificial intelligence for representing a problem with a high de- gree of complexity. In such studies, the investigation of approaches that endow player agents with the ability to retrieve relevant in- formation from game scenes stands out, since such information can be very useful to improve their learning ability. This work pro- poses and analyses new deep learning-based models to identify game events occurring in Super Mario Bros gameplay footage. The architecture of each model is composed of a feature extractor convo- lutional neural network (CNN) and a classifier neural network (NN). The extracting CNN aims to produce a feature-based representation for game scenes and submit it to the classifier, so that the latter can identify the game event present in each scene. The models differ from each other according to the following elements: the type of the CNN; the type of the NN classifier; and the type of the game scene representation at the CNN input, being either single frames, or chunks, which are n-sequential frames (in this paper 6 frames were used per chunk) grouped into a single input. The main con- tribution of this article is to demonstrate the greater performance reached by the models which combines the chunk representation for the game scenes with the resources of the classifier recurrent neural networks (RNN).
+            </p>
+            <p><img src="img/paper_thumbnails/03_02_Matheus_Prandini.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Interactive Physics-Based Virtual Sculpting with Haptic Feedback</b></dt>
+    <dd>Avirup Mandal, Parag Chaudhuri and Subhasis Chaudhuri</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522611">link</a>, <a href="https://avirupmandal.github.io/sculpt-i3d/">preprint</a>, <a href="https://www.youtube.com/watch?v=qQYTLm-WVT4&t=3057s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Sculpting is an art form that relies on both the visual and tactile senses. A faithful simulation of sculpting, therefore, requires interactive, physically accurate haptic and visual feedback. We present an interactive physics-based sculpting framework with faithful haptic feedback. We enable cutting of the material by designing a stable, remeshing-free cutting algorithm called Improved stable eXtended Finite Element Method. We present a simulation framework to enable stable visual and haptic feedback at interactive rates. We evaluate the performance of our framework quantitatively and quantitatively through an extensive user study.
+            </p>
+            <p><img src="img/paper_thumbnails/03_03_Avirup_Mandal.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>EasyVRModeling: Easily Create 3D Models by an Immersive VR System</b></dt>
+    <dd>Zhiying Fu, Rui Xu, Shiqing Xin, Shuangmin Chen, Changhe Tu, Chenglei Yang and Lin Lu</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522613">link</a>, <a href="http://irc.cs.sdu.edu.cn/~shiqing/index.html#Publications-2022">preprint</a>, <a href="https://www.youtube.com/watch?v=qQYTLm-WVT4&t=3962s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                The latest innovations of VR make it possible to construct 3D models in a holographic immersive simulation environment. In this paper, we develop a user-friendly mid-air interactive modeling system named EasyVRModeling. We first prepare a dataset consisting of diverse components and precompute the discrete signed distance function (SDF) for each component. During the modeling phase, users can freely design complicated shapes with a pair of VR controllers. Based on the discrete SDF representation, any CSG-like operation (union, intersect, subtract) can be performed voxel-wise. Throughout the modeling process, we maintain one single dynamic SDF for the whole scene so that the zero-level set surface of the SDF exactly encodes the up-to-date constructed shape. Both SDF fusion and surface extraction are implemented via GPU to allow for smooth user experience. We asked 34 volunteers to create their favorite models using EasyVRModeling. With a simple training process for several minutes, most of them can create a fascinating shape or even a descriptive scene very quickly.
+            </p>
+            <p><img src="img/paper_thumbnails/03_04_Zhiying_Fu.png" width="400"></p>
+            
+        </details>
+    </dd>
+</dl>
+<br/>
+<hr/>
+
+
+
+<h3 style="margin-bottom:5px;" id="Papers4">Papers 4: Geometry</h3>
+<p>
+    Session chair: Markus Billeter
+    (<a href="https://www.youtube.com/watch?v=qQYTLm-WVT4&t=6356s">opening</a>, <a href="https://www.youtube.com/watch?v=qQYTLm-WVT4&t=8860s">Q&A</a>)
+    
+<p>
+
+<dl>
+    <dt><b>A Dataset and Explorer for 3D Signed Distance Functions</b></dt>
+    <dd>Towaki Takikawa, Andrew Glassner and Morgan McGuire</dd>
+    <dd>
+        (invited JCGT paper presentation)
+        <a href="http://jcgt.org/published/0011/02/01/">link</a>, <a href="https://www.youtube.com/watch?v=qQYTLm-WVT4&t=6465s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Reference datasets are a key tool in the creation of new algorithms. They allow us to compare different existing solutions and identify problems and weaknesses during the development of new algorithms. The signed distance function (SDF) is enjoying a renewed focus of research activity in computer graphics, but until now there has been no standard reference dataset of such functions. We present a database of 63 curated, optimized, and regularized functions of varying complexity. Our functions are provided as analytic expressions that can be efficiently evaluated on a GPU at any point in space. We also present a viewing and inspection tool and software for producing SDF samples appropriate for both traditional graphics and training neural networks.
+            </p>
+            <p><img src="img/paper_thumbnails/04_01_Towaki_Takikawa.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Improved Accuracy for Prism-Based Motion Blur</b></dt>
+    <dd>Mads Rønnow, Ulf Assarsson, Erik Sintorn and Marco Fratarcangeli</dd>
+    <dd>
+        (invited JCGT paper presentation)
+        <a href="https://jcgt.org/published/0011/01/05/">link</a>, <a href="https://www.youtube.com/watch?v=qQYTLm-WVT4&t=7316s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                For motion blur of dynamic triangulated objects, it is common to construct a prism-like shape for each triangle, from the linear trajectories of its three edges and the triangle’s start and end position during the delta time step. Such a prism can be intersected with a primary ray to find the time points where the triangle starts and stops covering the pixel center. These intersections are paired into time intervals for the triangle and pixel. Then, all time intervals, potentially from many prisms, are used to aggregate a motion-blurred color contribution to the pixel.<br />
+For real-time rendering purposes, it is common to linearly interpolate the ray-triangle intersection and uv coordinates over the time interval. This approximation often works well, but the true path in 3D and uv space for the ray-triangle intersection, as a function of time, is in general nonlinear.<br />
+In this article, we start by noting that the path of the intersection point can even partially reside outside of the prism volume itself: i.e., the prism volume is not always identical to the volume swept by the triangle. Hence, we must first show that the prisms still work as bounding volumes when finding the time intervals with primary rays, as that may be less obvious when the volumes differ. Second, we show a simple and potentially common class of cases where this happens, such as when a triangle undergoes a wobbling- or swinging-like motion during a time step. Third, when the volumes differ, linear interpolation between two points on the prism surfaces for triangle properties works particularly poorly, which leads to visual artifacts. Therefore, we finally modify a prism-based real-time motion-blur algorithm to use adaptive sampling along the correct paths regarding the triangle location and uv coordinates over which we want to compute a filtered color. Due to being adaptive, the algorithm has a negligible performance penalty on pixels where linear interpolation is sufficient, while being able to significantly improve the visual quality where needed, for a very small additional cost.
+            </p>
+            <p><img src="img/paper_thumbnails/04_02_Mads_Ronnow.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>SurfaceNets for Multi-Label Segmentations with Preservation of Sharp Boundaries</b></dt>
+    <dd> and Sarah Frisken</dd>
+    <dd>
+        (invited JCGT paper presentation)
+        <a href="https://jcgt.org/published/0011/01/03/">link</a>, <a href="https://www.youtube.com/watch?v=qQYTLm-WVT4&t=8016s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                We extend 3D SurfaceNets to generate surfaces of segmented 3D medical images composed of multiple materials represented as indexed labels. Our extension generates smooth, high-quality triangle meshes suitable for rendering and tetrahedralization, preserves topology and sharp boundaries between materials, guarantees a user-specified accuracy, and is fast enough that users can interactively explore the trade-off between accuracy and surface smoothness. We provide open-source code in the form of an extendable C++ library with a simple API, and a Qt and OpenGL-based application that allows users to import or randomly generate multi-label volumes to experiment with surface fairing parameters. In this paper, we describe the basic SurfaceNets algorithm, our extension to handle multiple materials, our method for preserving sharp boundaries between materials, and implementation details used to achieve efficient processing.
+            </p>
+            <p><img src="img/paper_thumbnails/04_03_Sarah_Frisken.png" width="400"></p>
+            
+        </details>
+    </dd>
+</dl>
+<br/>
+<hr/>
+
+
+
+<h3 style="margin-bottom:5px;" id="Papers5">Papers 5: Image-Based Algorithms</h3>
+<p>
+    Session chair: Leonardo Scandolo
+    (<a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=3322s">opening</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=6916s">Q&A</a>)
+    
+<p>
+
+<dl>
+    <dt><b>Training and Predicting Visual Error for Real-Time Applications</b></dt>
+    <dd>João Cardoso, Bernhard Kerbl, Lei Yang, Yury Uralsky and Michael Wimmer</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522625">link</a>, <a href="https://jaliborc.github.io/rt-percept/">preprint</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=3429s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Visual error metrics play a fundamental role in the quantification of perceived image similarity. Most recently, use cases for them in real-time applications have emerged, such as content-adaptive shading and shading reuse to increase performance and improve efficiency. A wide range of different metrics has been established, with the most sophisticated being capable of capturing the perceptual characteristics of the human visual system. However, their complexity, computational expense, and reliance on reference images to compare against prevent their generalized use in real-time, restricting such applications to using only the simplest available metrics. In this work, we explore the abilities of convolutional neural networks to predict a variety of visual metrics without requiring either reference or rendered images. Specifically, we train and deploy a neural network to estimate the visual error resulting from reusing shading or using reduced shading rates. The resulting models account for 70%-90% of the variance while achieving up to an order of magnitude faster computation times. Our solution combines image-space information that is readily available in most state-of-the-art deferred shading pipelines with reprojection from previous frames to enable an adequate estimate of visual errors, even in previously unseen regions. We describe a suitable convolutional network architecture and considerations for data preparation for training. We demonstrate the capability of our network to predict complex error metrics at interactive rates in a real-time application that implements content-adaptive shading in a deferred pipeline. Depending on the portion of unseen image regions, our approach can achieve up to 2× performance compared to state-of-the-art methods.
+            </p>
+            <p><img src="img/paper_thumbnails/05_01_Joao_Liborio_Cardoso.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Fast temporal reprojection without motion vectors</b></dt>
+    <dd>Johannes Hanika, Lorenzo Tessari and Carsten Dachsbacher</dd>
+    <dd>
+        (invited JCGT paper presentation)
+        <a href="https://jcgt.org/published/0010/03/02/">link</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=4263s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Rendering realistic graphics often depends on random sampling, increasingly so even for real-time settings. When rendering animations, there is often a surprising amount of information that can be reused between frames.<br />
+This is exploited in numerous rendering algorithms, offline and real-time, by relying on reprojecting samples, for denoising as a post-process or for more time-critical applications such as temporal antialiasing for interactive preview or real-time rendering. Motion vectors are widely used during reprojection to align adjacent frames’ warping based on the input geometry vectors between two time samples. Unfortunately, this is not always possible, as not every pixel may have coherent motion, such as when a glass surface moves: the highlight moves in a different direction than the surface or the object behind the surface. Estimation of true motion vectors is thus only possible for special cases. We devise a fast algorithm to compute dense correspondences in image space to generalize reprojection-based algorithms to scenarios where analytical motion vectors are unavailable and high performance is required. Our key ingredient is an efficient embedding of patch-based correspondence detection into a hierarchical algorithm. We demonstrate the effectiveness and utility of the proposed reprojection technique for three applications: temporal antialiasing, handheld burst photography, and Monte Carlo rendering of animations.
+            </p>
+            <p><img src="img/paper_thumbnails/05_02_Johannes_Hanika.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>An OpenEXR Layout for Spectral Images</b></dt>
+    <dd>Alban Fichet, Romain Pacanowski and Alexander Wilkie</dd>
+    <dd>
+        (invited JCGT paper presentation)
+        <a href="https://jcgt.org/published/0010/03/01/">link</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=5162s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                We propose a standardized layout to organize spectral data stored in OpenEXR images. We motivate why we chose the OpenEXR format as the basis for our work, and we explain our choices with regard to data selection and organization: our goal is to define a standard for the exchange of measured or simulated spectral and bi-spectral data. We also provide sample code to store spectral images in OpenEXR format.
+            </p>
+            <p><img src="img/paper_thumbnails/05_03_Alban_Fichet.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>MMPX Style-Preserving Pixel Art Magnification</b></dt>
+    <dd>Morgan McGuire and Mara Gagiu</dd>
+    <dd>
+        (invited JCGT paper presentation)
+        <a href="https://jcgt.org/published/0010/02/04/">link</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=6009s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                We present MMPX, an efficient filter for magnifying pixel art, such as 8- and 16-bit era video-game sprites, fonts, and screen images, by a factor of two in each dimension. MMPX preserves art style, attempting to predict what the artist would have produced if working at a larger scale but within the same technical constraints.<br />
+Pixel-art magnification enables the displaying of classic games and new retro-styled ones on modern screens at runtime, provides high-quality scaling and rotation of sprites and raster-font glyphs through precomputation at load time, and accelerates content-creation workflow.<br />
+MMPX reconstructs curves, diagonal lines, and sharp corners while preserving the exact palette, transparency, and single-pixel features. For general pixel art, it can often preserve more aspects of the original art style than previous magnification filters such as nearest-neighbor, bilinear, HQX, XBR, and EPX. In specific cases and applications, other filters will be better. We recommend EPX and base XBR for content with exclusively rounded corners, and HQX and antialiased XBR for content with large palettes, gradients, and antialiasing. MMPX is fast enough on embedded systems to process typical retro 64k-pixel full screens in less than 0.5 ms on a GPU or CPU. We include open source implementations in C++, JavaScript, and OpenGL ES GLSL for our method and several others.
+            </p>
+            <p><img src="img/paper_thumbnails/05_04_Mara_Gagiu.png" width="400"></p>
+            
+        </details>
+    </dd>
+</dl>
+<br/>
+<hr/>
+
+
+
+<h3 style="margin-bottom:5px;" id="Papers6">Papers 6: Appearance and Shading</h3>
+<p>
+    Session chair: Adrien Gruson
+    (<a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=8348s">opening</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=11962s">Q&A</a>)
+    
+<p>
+
+<dl>
+    <dt><b>Bringing Linearly Transformed Cosines to Anisotropic GGX</b></dt>
+    <dd>Aakash Kt, Eric Heitz, Jonathan Dupuy and Narayanan P. J.</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522612">link</a>, <a href="http://cvit.iiit.ac.in/images/ConferencePapers/2022/Bringing_ggx.pdf">preprint</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=8500s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Linearly Transformed Cosines (LTCs) are a family of distributions that are used for real-time area-light shading thanks to their analytic integration properties. Modern game engines use an LTC approximation of the ubiquitous GGX model, but currently this approximation only exists for isotropic GGX and thus anisotropic GGX is not supported. While the higher dimensionality presents a challenge in itself, we show that several additional problems arise when fitting, post-processing, storing, and interpolating LTCs in the anisotropic case. Each of these operations must be done carefully to avoid rendering artifacts. We find robust solutions for each operation by introducing and exploiting invariance properties of LTCs. As a result, we obtain a small 8⁴ look-up table that provides a plausible and artifact-free LTC approximation to anisotropic GGX and brings it to real-time area-light shading.
+            </p>
+            <p><img src="img/paper_thumbnails/06_01_Aakash_KT.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Rendering Layered Materials with Diffuse Interfaces</b></dt>
+    <dd>Heloise Dupont de Dinechin and Laurent Belcour</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522620">link</a>, <a href="https://arxiv.org/pdf/2203.11835">preprint</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=9257s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                In this work, we introduce a novel method to render, in real-time, Lambertian surfaces with a rough dieletric coating. We show that the appearance of such configurations is faithfully represented with two microfacet lobes accounting for direct and indirect interactions respectively. We numerically fit these lobes based on the first order directional statistics (energy, mean and variance) of light transport using 5D tables and narrow them down to 2D + 1D with analytical forms and dimension reduction. We demonstrate the quality of our method by efficiently rendering rough plastics and ceramics, closely matching ground truth. In addition, we improve a state-of-the-art layered material model to include Lambertian interfaces.
+            </p>
+            <p><img src="img/paper_thumbnails/06_02_Heloise_Dupont_de_Dinechin.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Real-time Shading with Free-form Planar Area Lights using Linearly Transformed Cosines</b></dt>
+    <dd>Takahiro Kuge, Tatsuya Yatagawa and Shigeo Morishima</dd>
+    <dd>
+        (invited JCGT paper presentation)
+        <a href="https://www.jcgt.org/published/0011/01/01/">link</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=10159s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                This article introduces a simple yet powerful approach to illuminating scenes with free-form planar area lights in real time. For this purpose, we extend a previous method for polygonal area lights in two ways. First, we adaptively approximate the closed boundary curve of the light, by extending the Ramer–Douglas–Peucker algorithm to consider the importance of a given subdivision step to the final shading result. Second, we efficiently clip the light to the upper hemisphere, by algebraically solving a polynomial equation per curve segment. Owing to these contributions, our method is efficient for various light shapes defined by cubic Bézier curves and achieves a significant performance improvement over the previous method applied to a uniformly discretized boundary curve.
+            </p>
+            <p><img src="img/paper_thumbnails/06_03_Tatsuya_Yatagawa.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Neural Photometry-guided Visual Attribute Transfer</b></dt>
+    <dd>Carlos Rodriguez-Pardo and Elena Garces</dd>
+    <dd>
+        (invited TVCG paper presentation)
+        <a href="https://doi.org/10.1109/TVCG.2021.3133081">link</a>, <a href="https://carlosrodriguezpardo.es/">preprint</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=11057s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                We present a deep learning-based method for propagating spatially-varying visual material attributes (e.g. texture maps or image stylizations) to larger samples of the same or similar materials. For training, we leverage images of the material taken under multiple illuminations and a dedicated data augmentation policy, making the transfer robust to novel illumination conditions and affine deformations. Our model relies on a supervised image-to-image translation framework and is agnostic to the transferred domain; we showcase a semantic segmentation, a normal map, and a stylization. Following an image analogies approach, the method only requires the training data to contain the same visual structures as the input guidance. Our approach works at interactive rates, making it suitable for material edit applications. We thoroughly evaluate our learning methodology in a controlled setup providing quantitative measures of performance. Last, we demonstrate that training the model on a single material is enough to generalize to materials of the same type without the need for massive datasets.
+            </p>
+            <p><img src="img/paper_thumbnails/06_04_Carlos_Rodriguez-Pardo.png" width="400"></p>
+            
+        </details>
+    </dd>
+</dl>
+<br/>
+<hr/>
+
+
+
+<h3 style="margin-bottom:5px;" id="Papers7">Papers 7: Virtual Humans</h3>
+<p>
+    Session chair: Michal Iwanicki
+    (<a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=13446s">opening</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=16602s">Q&A</a>)
+    
+<p>
+
+<dl>
+    <dt><b>Real-Time Relighting of Human Faces with a Low-Cost Setup</b></dt>
+    <dd>Nejc Maček, Baran Usta, Elmar Eisemann and Ricardo Marroquim</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522626">link</a>, <a href="https://graphics.tudelft.nl/Publications-new/2022/MUEM22/">preprint</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=13544s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Video-streaming services usually feature post-processing effects to replace the background. However, these often yield inconsistent lighting. Machine-learning-based relighting methods can address this problem, but, at real-time rates, are restricted to a low resolu- tion and can result in an unrealistic skin appearance. Physically- based rendering techniques require complex skin models that can only be acquired using specialised equipment. Our method is light- weight and uses only a standard smartphone. By correcting imper- fections during capture, we extract a convincing physically-based skin model. In combination with suitable acceleration techniques, we achieve real-time rates on commodity hardware.
+            </p>
+            <p><img src="img/paper_thumbnails/07_01_Nejc_Macek.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Real-Time Hair Filtering with Convolutional Neural Networks</b></dt>
+    <dd>Roc R. Currius, Erik Sintorn and Ulf Assarsson</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522606">link</a>, <a href="https://www.cse.chalmers.se/~ramon/hair-filtering.html">preprint</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=14412s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Rendering of realistic-looking hair is in general still too costly to do in real-time applications, from simulating the physics to rendering the fine details required for it to look natural, including self-shadowing.<br />
+We show how an autoencoder network, that can be evaluated in real time, can be trained to filter an image of few stochastic samples, including self-shadowing, to produce a much more detailed image that takes into account real hair thickness and transparency.
+            </p>
+            <p><img src="img/paper_thumbnails/07_02_Roc_R_Currius.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Joint Audio-Text Model for Expressive Speech-Driven 3D Facial Animation</b></dt>
+    <dd>Yingruo Fan, Zhaojiang Lin, Jun Saito, Wenping Wang and Taku Komura</dd>
+    <dd>
+        <a href="https://doi.org/10.1145/3522615">link</a>, <a href="https://evelynfan.github.io/files/i3d_author_version.pdf">preprint</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=15161s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Speech-driven 3D facial animation with accurate lip synchronization has been widely studied. However, synthesizing realistic motions for the entire face during speech has rarely been explored. In this work, we present a joint audio-text model to capture the contextual information for expressive speech-driven 3D facial animation. The existing datasets are collected to cover as many different phonemes as possible instead of sentences, thus limiting the capability of the audio-based model to learn more diverse contexts. To address this, we propose to leverage the contextual text embeddings extracted from the powerful pre-trained language model that has learned rich contextual representations from large-scale text data. Our hypothesis is that the text features can disambiguate the variations in upper face expressions, which are not strongly correlated with the audio. In contrast to prior approaches which learn phoneme-level features from the text, we investigate the high-level contextual text features for speech-driven 3D facial animation. We show that the combined acoustic and textual modalities can synthesize realistic facial expressions while maintaining audio-lip synchronization. We conduct the quantitative and qualitative evaluations as well as the perceptual user study. The results demonstrate the superior performance of our model against existing state-of-the-art approaches.
+            </p>
+            <p><img src="img/paper_thumbnails/07_03_Yingruo_Fan.png" width="400"></p>
+            
+        </details>
+    </dd>
+
+    <dt><b>Cross-Domain and Disentangled Face Manipulation With 3D Guidance</b></dt>
+    <dd>Can Wang, Menglei Chai, Mingming He, Dongdong Chen and Jing Liao</dd>
+    <dd>
+        (invited TVCG paper presentation)
+        <a href="https://doi.org/10.1109/TVCG.2021.3139913">link</a>, <a href="https://cassiepython.github.io/cddfm3d/index">preprint</a>, <a href="https://www.youtube.com/watch?v=P-wRgPe8sDs&t=15980s">presentation</a>
+        
+    </dd>
+    <dd>
+        <details>
+            <summary>Abstract</summary>
+            <p>
+                Face image manipulation via three-dimensional guidance has been widely applied in various interactive scenarios due to its semantically-meaningful understanding and user-friendly controllability. However, existing 3D-morphable-model-based manipulation methods are not directly applicable to out-of-domain faces, such as non-photorealistic paintings, cartoon portraits, or even animals, mainly due to the formidable difficulties in building the model for each specific face domain. To overcome this challenge, we propose, as far as we know, the first method to manipulate faces in arbitrary domains using human 3DMM. This is achieved through two major steps: 1) disentangled mapping from 3DMM parameters to the latent space embedding of a pre-trained StyleGAN2 that guarantees disentangled and precise controls for each semantic attribute; and 2) cross-domain adaptation that bridges domain discrepancies and makes human 3DMM applicable to out-of-domain faces by enforcing a consistent latent space embedding. Experiments and comparisons demonstrate the superiority of our high-quality semantic manipulation method on a variety of face domains with all major 3D facial attributes controllable pose, expression, shape, albedo, and illumination. Moreover, we develop an intuitive editing interface to support user-friendly control and instant feedback. Our project page is https://cassiepython.github.io/cddfm3d/index.html
+            </p>
+            <p><img src="img/paper_thumbnails/07_04_Can_Wang.png" width="400"></p>
+            
+        </details>
+    </dd>
+</dl>
+<br/>
+<hr/>
+
+
+
+
+      </div>
+    </div>
+
+          </div> <!-- #main -->
+
+      <!-- grid_3 is a 3-wide cell -->
+      <div id="news" class="grid_3">
+        <h4>
+          Watch here for updates
+        </h4>
+        
+         <h4>Important Dates</h4>
+         <ul class="unstyled">
+		 <li><b>Paper submission deadline:</b><br /><strike>December 22, 2021</strike></li>
+             <li><b>Paper notifications:</b><br /><strike>February 23, 2022</strike></li>
+             <li><b>Camera-ready deadline:</b><br /><strike>March 9, 2022</strike></li>
+             <li><b>PACM CGIT revisions deadline:</b><br /><strike>April 6, 2022</strike></li>
+             <li><b>Poster submission deadline:</b><br /><strike>March 23, 2022</strike></li>
+             <li><b>Poster notifications:</b><br /><strike>March 30, 2022</strike></li>
+             <li><b>Extended poster submission deadline:</b><br /><strike>April 14, 2022</strike></li>
+             <li><b>Extended poster notifications:</b><br /><strike>April 17, 2022</strike></li>
+<!--
+             <li><b>Travel grant submission deadline:</b><br />TBA</li>
+             <li><b>Poster submission deadline:</b><br /><strike>March 16, 2021</strike></li>
+             <li><b>Poster notifications:</b><br />March 23, 2021</li>
+             <li><b>Extended poster submission deadline:</b><br /><strike>March 30, 2021</strike></li>
+             <li><b>Extended poster notifications:</b><br /><strike>April 2, 2021</strike></li>
+             <li><b>Early registration deadline:</b><br />TBA</li>
+-->		
+             <li><b>Conference:</b><br />May 3-5, 2022</li>
+	</ul>
+<!--
+        <h4>Sponsored by:</h4>
+        <a href="http://www.siggraph.org"><img src="img/sponsor_acm_11.png"></a>
+
+        <h5 class="text-left">Platinum Sponsor</h5>
+        <ul class="sponsors text-left">
+          <li class="text-left">
+              <a href="http://www.unrealengine.com">
+                <img width="230" src="img/sponsor_Unreal_Epic_Black.png" style="padding: 2px; background: #fff;" alt="Epic Games">
+              </a>
+          </li>
+        </ul>
+
+        <h5 class="text-left">Gold Sponsors</h5>
+        <ul class="sponsors text-left">
+          
+          <li class="text-left">
+              <a href="http://theforge.dev">
+                <img width="170" src="img/sponsor_TheForge_color_black_landscape.png" style="padding: 2px; background: #fff" alt="The Forge">
+              </a>
+          </li>
+		  
+          <li class="text-left">
+              <a href="https://unity3d.com">
+                <img width="170" src="img/sponsor_unity.png" style="padding: 2px; background: #fff" alt="Unity">
+              </a>
+		  </li>
+
+          <li class="text-left">
+              <a href="https://www.huawei.com">
+                <img width="170" src="img/sponsor_futurewei.png" style="padding: 2px; background: #fff" alt="Futurewei">
+              </a>
+		  </li>
+
+          <li class="text-left">
+              <a href="https://intel.com">
+                <img width="170" src="img/sponsor_intel.png" style="padding: 2px; background: #fff" alt="Intel">
+              </a>
+		  </li>
+ 
+          <li class="text-left">
+              <a href="https://google.com">
+                <img width="170" src="img/sponsor_google.png" style="padding: 2px; background: #fff" alt="Google">
+              </a>
+		  </li>
+ 
+          <li class="text-left">
+              <a href="https://developer.arm.com/solutions/graphics-and-gaming">
+                <img width="170" src="img/sponsor_arm.png" style="padding: 2px; background: #fff" alt="Arm">
+              </a>
+		  </li>
+ 
+          <li class="text-left">
+			  <a href="https://www.facebook.com/careers/areas-of-work/facebookrealitylabs/?teams[0]=Facebook%20Reality%20Labs">
+                <img width="170" src="img/sponsor_FRL_Research_Logo.png" style="padding: 2px; background: #fff" alt="Facebook Reality Labs">
+              </a>
+		  </li>
+ 
+        </ul>
+  
+        <h5 class="text-left">Silver Sponsors</h5>
+        <ul class="sponsors text-left">
+          <li class="text-left">
+              <a href="http://activision.com">
+                <img width="120" src="img/sponsor_Activision_logo.png" style="padding: 2px; background: #fff;" alt="Activision">
+              </a>
+          </li>
+
+          <li class="text-left">
+              <a href="http://www.amd.com">
+                <img width="120" src="img/sponsor_amd.png" style="padding: 2px; background: #fff;" alt="AMD">
+              </a>
+          </li>
+
+          <li class="text-left">
+              <a href="http://research.nvidia.com">
+			  <img width="120" src="img/sponsor_nvidia_horz.png" style="padding: 2px; background: #fff;" alt="NVIDIA">
+              </a>
+          </li>
+        </ul>
+		
+-->		
+		<!-- END Sponsors -->
+		
+		
+		    
+    
+      </div> <!-- #news -->
+    </div> <!-- .container -->
+
+
+    <!-- start a new container for the footer -->
+    <div id="footer" class="container_12">
+    <div class="grid_6 prefix_2"> <!-- prefix_2 offsets the cell -->
+        <p class="muted"><small>
+          <a href="http://www.i3dsymposium.org/">HOME</a> | &copy; 2022
+          Symposium on Interactive 3D Graphics and Games
+        </small></p>
+      </div>
+    </div>
+
+
+
+  </body>
+
+</html>

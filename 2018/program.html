@@ -1,8 +1,180 @@
----
-layout: default2018
----
+<!DOCTYPE html>
+<html>
 
-<style>
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>  I3D 2018</title>
+  <meta name="description" content="ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games">
+
+  <!-- <link rel="stylesheet" href="/css/main.css"> -->
+  <link rel="canonical" href="https://i3dsymposium.org/2018/program.html">
+  <link rel="alternate" type="application/rss+xml" title="I3D Symposium" href="https://i3dsymposium.org/feed.xml" />
+
+  
+  <meta name="author" content="I3D Publicity Chair (general@i3dsymposium.org)">
+
+  <link href="css/reset.css" rel="stylesheet" media="screen">
+  <!-- use a fluid, instead of a fixed layout
+    <link href="css/960.css" rel="stylesheet" media="screen">
+  -->
+  <link href="css/960-fluid.css" rel="stylesheet" media="screen">
+  <link href="css/i3d.css" rel="stylesheet" media="screen">
+  <link href="css/iframes.css" rel="stylesheet" media="screen">
+
+  <!-- comment out viewport/responsive.css to use a fixed layout -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/responsive.css" rel="stylesheet" media="screen">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+      $(function () {
+        // Set the active button based on the current url.
+        var filename = window.location.pathname.split('/').reverse()[0];
+        $('a[href$="' + filename + '"]').parent().addClass('active');
+        // If there are no objects with the active class,
+        if ($('.active').length == 0) {
+          // assume the index is the current url.
+          $('a[href$="index.html"]').parent().addClass('active');
+        }
+      });
+  </script>
+</head>
+
+
+  <body>
+
+        <!-- put the header outside of the grid container -->
+    <div id="header">
+      <p class="text-left float-left subhead tight"><small>ACM SIGGRAPH Symposium on<br>
+      Interactive 3D Graphics and Games<br>
+      Montreal, Quebec, Canada: 15-18 May 2018</small></p>
+    </div> <!-- #header -->
+    <div class="clearfix"></div>
+
+
+    <!-- container_12 is a 12-cell grid -->
+    <div class="container_12">
+
+      <!-- grid_2 is a 2-wide cell -->
+      <div id="nav" class="grid_2">
+        <!-- nav and nav-list are styled in css/i3d.css -->
+        <ul class="nav nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cfp.html">Call for Participation</a></li>
+
+          <li><a href="awards.html">Awards</li>
+          <li><a href="program.html">Program</a></li>
+          <li><a href="keynotes.html">Keynotes</a></li>
+          <li><a href="papers.html">Papers<a/></li>
+		  
+          <li><a href="posters.html">Posters &amp; Demos</a></li>
+          <li><a href="registration.html">Registration</a></li>
+          <li><a href="venue.html">Venue</a></li>
+          <li><a href="sponsors.html">Corporate Sponsors</a></li>
+          <li><a href="conference.html">Past Conferences</a></li>
+          <li><a href="committee.html">Committee</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="http://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment">Code of Conduct</a></li>
+        </ul>
+
+        <!-- social media links -->
+        <ul class="social">
+          <li>
+            <a href="https://twitter.com/I3DCONF"><b>I3D</b> on Twitter</a>
+          </li>
+          <li>
+            <a href="http://www.facebook.com/pages/I3D-Symposium-on-Interactive-3D-Graphics-and-Games/147772558570274"><b>I3D</b> on Facebook</a>
+          </li>
+          <li>
+            <a href="https://plus.google.com/108443903002417824594/"><b>I3D</b> on Google+</a>
+          </li>
+        </ul>
+
+<!--
+        <h5 class="text-right">Title Sponsors</h5>
+
+        <ul class="sponsors">
+          <li class="text-right">
+          </li>
+          <li class="text-right">
+          </li>
+          <li class="text-right">
+          </li>
+        </ul>
+-->
+	<!-- END Title Sponsors -->
+
+<!--
+        <h5 class="text-right">Benefactors</h5>
+        <ul class="sponsors text-right">
+
+          <li class="text-right">
+            <a href="http://www.samsung.com/semiconductor">
+              <img width="160" height="38" src="img/sponsor_samsung.jpg" style="padding: 2px; background: #fff" alt="Samsung">
+            </a>
+          </li>
+
+          <li class="text-right">
+            <a href="http://activision.com">
+              <img width="160" height="38" src="img/sponsor_Activision_logo.png" style="padding: 2px; background: #fff" alt="Activision">
+            </a>
+          </li>
+
+          <li class="text-right">
+            <a href="http://www.oculus.com">
+              <img width="80" src="img/sponsor_Oculus-Full-Lockup-Vertical-Black.png" style="padding: 2px; background: #fff" alt="Oculus">
+            </a>
+          </li>
+
+		  <li class="text-right">
+            <a href="http://www.unrealengine.com">
+              <img width="80" src="img/sponsor_Unreal_Epic_Black.png" style="padding: 2px; background: #fff" alt="Epic Games">
+            </a>
+          </li>
+ 
+        </ul>
+
+	<!-- END Benefactors -->
+
+<!--
+
+        <h5 class="text-right">Supporters</h5>
+        <ul class="sponsors text-right">
+
+          <li class="text-right">
+            <a href="http://www.disneyresearch.com">
+              <img width="75" height="64" src="img/sponsor_DR_stacked_17.png" style="padding: 5px; background: #fff" alt="Disney Research">
+            </a>
+          </li>
+          <li class="text-right">
+            <a href="http://intel.com/software/vcsource">
+              <img width="80" height="73" src="img/intSFT_i_rgb_73.png" style="padding: 5px; background:#fff" alt="Intel">
+            </a>
+          </li>
+          <li class="text-right">
+            <a href="http://research.nvidia.com">
+              <img width="75" height="55" src="img/sponsor_NVLogo_2D.jpg" style="padding: 5px; background: #fff" alt="NVIDIA">
+            </a>
+          </li>
+ 
+        </ul>
+	<!-- END Supporters -->
+
+      </div> <!-- #nav -->
+      <!-- grid_6 is a 6-wide cell for the main content
+      grid_6 is needed for a fixed layout
+      <div id="main" class="grid_6"> -->
+
+      <!--grid_7 is a 7-wide cell for the main content-->
+      <div id="main" class="grid_7">
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <style>
     table#tblprog {width: 100%; display: block; padding: 0px 5px 0px 0px; margin: 0px 10px 0px 10px; }
     /*table#tblprog tr:nth-child(odd)  { background-color:#F2D0A4; }*/
     /*table#tblprog tr:nth-child(even) { background-color:#F7F5E7; }*/
@@ -225,3 +397,75 @@ layout: default2018
 </div>
 
 * Posters will be on display throughout the conference. Poster authors will also be able to present their work during these breaks.
+
+      </div>
+    </div>
+
+          </div> <!-- #main -->
+
+      <!-- grid_3 is a 3-wide cell -->
+      <div id="news" class="grid_3">
+        <h4>Important Dates</h4>
+        <ul><small>
+<!--
+          <li>Paper submissions open:<br>
+           day-of-week, date, 2017</li>
+-->
+ <li>Paper Submission Deadline<br/>
+           <strike>Friday, 29 December 2017</strike></li>
+<li>Paper Notifications<br/> <strike>12 February 2018</strike> </li>		
+          <li>Camera-ready version of papers<br>
+           <strike>26 February 2018</strike></li>
+          <li>Poster and demo submission deadline<br>
+           <strike>Friday 9 March 2018</strike></li>
+          <li>Poster and demo notification<br>
+           <strike>22 March 2018</strike></li>
+         <li>Early registration deadline<br>
+           <strike>April 13 2018, 5pm Eastern time</strike></li>
+          <li><b>Conference</b><br>
+          <b>15-18 May 2018</b></li>
+        </small></ul> 
+
+        <p><br><b>Unless otherwise specified, all deadlines are at 11:59pm IDLW (UTC - 12hrs).</b></p>  
+
+        <h4>Submission Website</h4>
+        <ul class="unstyled">
+          <li><a href="https://easychair.org/conferences/?conf=i3d">
+https://easychair.org/conferences/?conf=i3d</a></li>
+        </ul>
+
+      <h4>Registration</h4>
+
+       <ul class="unstyled">
+
+          <li><a href="https://www.regonline.com/registration/Checkin.aspx?EventID=2313657">  https://www.regonline.com/registration/Checkin.aspx?EventID=2313657</a></li>
+
+         </ul> 
+
+     <h4><a href = "contact.html#mailing_list">Join our Mailing List</a></h4>
+		
+        <h4>Organizations interested in sponsoring I3D 2018 please contact the general chairs: <a  href="mailto:general@i3dsymposium.org">general@i3dsymposium.org</a></h4>
+		
+
+        <h4>Sponsored by:</h4>
+        <a href="http://www.siggraph.org"><img src="img/sponsor_acm_11.png"></a>
+	
+      </div> <!-- #news -->
+    </div> <!-- .container -->
+
+
+    <!-- start a new container for the footer -->
+    <div id="footer" class="container_12">
+    <div class="grid_6 prefix_2"> <!-- prefix_2 offsets the cell -->
+        <p class="muted"><small>
+          <a href="http://www.i3dsymposium.org">HOME</a> | &copy; 2005-2018
+          Symposium on Interactive 3D Graphics and Games
+        </small></p>
+      </div>
+    </div>
+
+
+
+  </body>
+
+</html>

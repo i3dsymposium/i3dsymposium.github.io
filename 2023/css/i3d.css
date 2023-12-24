@@ -1,0 +1,215 @@
+/* XHTML, HTML4, HTML5 Reset */
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, i, iframe, img, ins, kbd, label, legend, li, main, mark, menu, meter, nav, object, ol, output, p, pre, progress, q, rp, rt, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video, xmp { border: 0; margin: 0; padding: 0; font-size: 100%; }
+
+html, body { height: 100%; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {     /* Override the default (display: inline) for browsers that do not recognize HTML5 tags.
+ IE8 (and lower) requires a shiv: http://ejohn.org/blog/html5-shiv */ display: block; }
+
+b, strong { /*
+Makes browsers agree.
+IE + Opera = font-weight: bold.
+Gecko + WebKit = font-weight: bolder.
+*/ font-weight: bold; }
+
+img { color: transparent; font-size: 0; vertical-align: middle; /*
+For IE.
+http://css-tricks.com/ie-fix-bicubic-scaling-for-images
+*/ -ms-interpolation-mode: bicubic; }
+
+ol, ul { list-style: none; }
+
+li {     /* For IE6 + IE7:
+ "display: list-item" keeps bullets from disappearing if hasLayout is triggered. */ display: list-item; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+th, td, caption { font-weight: normal; vertical-align: top; text-align: left; }
+
+q { quotes: none; }
+
+q:before, q:after { content: ""; content: none; }
+
+sub, sup, small { font-size: 75%; }
+
+sub, sup { line-height: 0; position: relative; vertical-align: baseline; }
+
+sub { bottom: -0.25em; }
+
+sup { top: -0.5em; }
+
+svg { /* For IE9. Without, occasionally draws shapes outside the boundaries of <svg> rectangle. */ overflow: hidden; }
+
+html { font-size: 100%; }
+
+body { color: white; font-family: Arial, Geneva, Helvetica, sans-serif; font-size: 14px; line-height: 1.5; /* place the background on the body */ background-color: #006699; /* blue */ }
+
+small { font-size: 85%; }
+
+strong { font-weight: bold; }
+
+em { font-style: italic; }
+
+cite { font-style: normal; }
+
+a, a:focus { color: #ffcc00; /* orange */ }
+
+a:hover, a:active { color: #ff9900; /* darkish orange */ }
+
+a:visited { color: #ffff99; /* light yellow */ }
+
+hr { border: 0 solid #cccccc; border-top-width: 1px; clear: both; height: 0; }
+
+h1, h2, h3, h4, h5, h6 { margin: 10px 0; font-weight: bold; line-height: 1.5; text-rendering: optimizelegibility; }
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-weight: normal; line-height: 1.2; color: #999999; }
+
+h1 { font-size: 38.5px; }
+
+h2 { font-size: 31.5px; }
+
+h3 { font-size: 24.5px; }
+
+h4 { font-size: 17.5px; }
+
+h5 { font-size: 14px; }
+
+h6 { font-size: 11.9px; }
+
+h1 small { font-size: 24.5px; }
+
+h2 small { font-size: 17.5px; }
+
+h3 small { font-size: 14px; }
+
+h4 small { font-size: 14px; }
+
+ol { list-style: decimal; }
+
+ul { list-style: disc; }
+
+li { margin-left: 30px; }
+
+dt { font-size: 140%; margin-top: 28px; margin-bottom: 3px; }
+
+dd { margin-left: 20px; color: #ccccdd; }
+dd p { color: #eee; text-indent: 1em; margin-bottom: 0.5em; }
+
+dl { margin-left: 20px; }
+
+p, dl, hr, h1, h2, h3, h4, h5, h6, ol, ul, pre, table, address, fieldset, blockquote, figure { margin-bottom: 20px; }
+
+blockquote { margin-left: 1em; padding-left: 1em; border-left: 2px solid rgba(255, 255, 255, 0.5); }
+
+table { width: 90%; margin-right: 10%; margin-left: 8%; }
+
+.clearfix { overflow: auto; }
+.clearfix::after { content: ""; clear: both; display: table; }
+
+ul.unstyled, ol.unstyled, ul.unstyled > li, ol.unstyled > li { margin-left: 0; list-style: none; }
+
+ul.expand, ol.expand { margin-bottom: 20px; }
+
+ul.expand > li, ol.expand > li { padding-bottom: 10px; }
+
+article { margin-bottom: 4em; }
+
+.icon { font-size: inherit !important; height: 1em; }
+
+.lead { margin-bottom: 25px; font-size: 21px; line-height: 30px; }
+
+.text-right { text-align: right; }
+
+.text-center { text-align: center; }
+
+/* Youtube Videos */
+.youtube-embed { position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden; margin: 20px auto 20px auto; }
+
+.youtube-embed iframe, .youtube-embed object, .youtube-embed embed { border: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+#header { background-color: #94bf00; /* green */ border-bottom: 2px solid white; box-sizing: border-box; height: 81px; /* aligns the bottom border with the logo */ top: 0; left: 0; z-index: -1000; width: 100%; }
+@media (max-width: 400px) { #header { position: absolute; border-bottom: none; height: 0; } }
+#header #banner { width: 400px; max-width: 100%; position: absolute; }
+
+#header-subtitle { margin-left: 400px; /* $banner-width px is the logo width */ font-size: 16px; padding-left: 1em; padding-top: 18px; line-height: 18px; position: absolute; top: 0; }
+#header-subtitle .br { display: block; }
+@media (max-width: 700px) { #header-subtitle { position: relative; margin-top: 0; margin-left: 140px; margin-bottom: 16px; } }
+@media (max-width: 550px) { #header-subtitle { font-size: 12px; } }
+@media (max-width: 400px) { #header-subtitle { padding: 0; margin-top: 23vw; margin-left: 32.5vw; } }
+@media (max-width: 300px) { #header-subtitle .br { display: inline; } }
+@media (max-width: 220px) { #header-subtitle { line-height: 1; margin-top: 36vw; margin-left: 10vw; } }
+
+#main-wrapper { position: relative; width: 100%; max-width: 1440px; box-sizing: border-box; }
+@media (max-width: 550px) { #main-wrapper { overflow: auto; } }
+
+#nav { margin-top: 150px; /* bump down content, very low for logo */ width: 13%; min-width: 150px; float: left; box-sizing: border-box; }
+@media (max-width: 700px) { #nav { margin-top: 72px; } }
+#nav .nav-list { margin-left: 0; margin-bottom: 20px; list-style: none; }
+#nav .nav-list > li { margin-left: 0; font-size: 95%; color: #999; padding: 3px 10px; }
+#nav .nav-list > li > a { color: white; display: block; text-decoration: none; position: relative; margin: -3px -10px; padding: 3px 10px; }
+#nav .nav-list > li.active, #nav .nav-list > li.active a, #nav .nav-list > li > a:hover { color: #004466; /* darker blue than body background */ background-color: #ff9900; /* orange */ }
+#nav footer#socials { padding-left: 0.5rem; font-size: 1.2rem; line-height: 1.3; }
+#nav footer#socials .social-icons { font-size: 1.6rem; margin-left: 0; }
+#nav footer#socials .social-icons li { list-style: none; margin-left: 0; margin-right: 0.25rem; display: inline-block; }
+#nav #menu-open { position: absolute; opacity: 0; visibility: hidden; display: none; }
+#nav #menu-open + label { display: none; }
+@media (max-width: 550px) { #nav { float: none; position: fixed; bottom: 0; left: 0; width: 100%; margin: 0; z-index: 10000; }
+  #nav .nav-list { opacity: 0; visibility: hidden; padding-bottom: 70px; padding-top: 20px; background-color: #006699; position: absolute; bottom: 0; width: 100%; margin: 0; border-top: 2px solid white; }
+  #nav .nav-list > li { font-size: 100%; margin: 0; padding: 6px 1em; }
+  #nav .nav-list > li a { margin: -6px -1em; padding: 6px 1em; display: block; }
+  #nav #socials { display: none; }
+  #nav #menu-open { display: block; }
+  #nav #menu-open + label { display: block; position: absolute; bottom: 10px; left: 10px; width: 50px; height: 50px; z-index: 1000; }
+  #nav #menu-open + label .menuicon { display: block; cursor: pointer; color: white; transform: rotate(0deg); transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+  #nav #menu-open + label .menuicon__bar, #nav #menu-open + label .menuicon__circle { fill: none; stroke: currentColor; stroke-width: 3; stroke-linecap: round; }
+  #nav #menu-open + label .menuicon__circle_bg { fill: #006699; }
+  #nav #menu-open + label .menuicon__bar { transform: rotate(0deg); transform-origin: 50% 50%; transition: transform .25s ease-in-out; }
+  #nav #menu-open + label .menuicon__circle { transition: stroke-dashoffset .3s linear .1s; stroke-dashoffset: circumference(23); stroke-dasharray: circumference(23); }
+  #nav #menu-open:checked + label .menuicon { transform: rotate(180deg); }
+  #nav #menu-open:checked + label .menuicon__circle { stroke-dashoffset: 0; }
+  #nav #menu-open:checked + label .menuicon__bar:nth-child(1), #nav #menu-open:checked + label .menuicon__bar:nth-child(4) { opacity: 0; }
+  #nav #menu-open:checked + label .menuicon__bar:nth-child(2) { transform: rotate(45deg); }
+  #nav #menu-open:checked + label .menuicon__bar:nth-child(3) { transform: rotate(-45deg); }
+  #nav #menu-open:checked ~ .nav-list { opacity: 1; visibility: visible; } }
+
+#main { margin-top: 20px; /* bump down content */ padding: 0 1em; width: calc(100% - max(13%, 150px) - 250px); float: right; box-sizing: border-box; }
+@media (max-width: 970px) { #main { float: left; width: calc(100% - max(13%, 150px)); } }
+@media (max-width: 550px) { #main { float: none; width: 100%; } }
+
+#news { width: 250px; padding-top: 12px; /* bump down content */ padding-left: 15px; /* create some space from the border */ border-left: 1px solid white; float: right; box-sizing: border-box; }
+#news #important-dates-open { visibility: hidden; display: none; opacity: 0; position: absolute; }
+#news #important-dates-toggle { margin-left: 1em; display: none; }
+@media (max-width: 970px) { #news #important-dates-toggle { display: inline-block; } }
+#news #important-dates-toggle .newsicon { cursor: pointer; color: white; vertical-align: bottom; transform: rotate(0deg); transition: 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+#news #important-dates-toggle .newsicon__triangle { fill: white; stroke: currentColor; stroke-linecap: round; }
+#news #important-dates-open:checked + h4 > #important-dates-toggle .newsicon { transform: rotate(-90deg); }
+@media (max-width: 970px) { #news #important-dates { display: none; }
+  #news #important-dates-open:checked ~ #important-dates { display: block; } }
+#news ul li { font-weight: bold; }
+#news ul li span.date { font-weight: normal; display: block; }
+#news ul li.past { color: #bbb; }
+#news ul li.past span.date { text-decoration: line-through; }
+@media (max-width: 970px) { #news { border: none; float: left; width: calc(100% - max(13%, 150px)); }
+  #news ul { padding-bottom: 1em; border-bottom: 1px solid white; } }
+@media (max-width: 550px) { #news { float: none; width: 100%; padding-left: 15vw; padding-right: 1em; padding-top: 0; }
+  #news ul { margin-bottom: 0; } }
+@media (max-width: 250px) { #news { padding-left: 1em; } }
+
+footer#socials-mobile { display: none; text-align: center; margin-bottom: 1em; font-size: 1.2rem; line-height: 1.3; }
+footer#socials-mobile .social-icons { font-size: 1.8rem; margin-left: 0; margin-bottom: 0.2em; }
+footer#socials-mobile .social-icons li { list-style: none; margin-left: 0; margin-right: 0.25rem; display: inline-block; }
+@media (max-width: 550px) { footer#socials-mobile { display: block; } }
+
+#footer { color: #999999; font-size: 85%; max-width: 1440px; text-align: center; padding-bottom: 60px; clear: both; }
+
+.keynote-headshot { float: right; border-left: 20px solid transparent; border-bottom: 10px solid transparent; }
+@media (max-width: 700px) { .keynote-headshot { float: none; border: none; } }
+
+img.venue-picture { max-width: 700px; width: 100%; }
+
+div.program { display: block; width: 100%; max-width: 100%; border-bottom: 0px solid white; margin: 10px 10px 30px 10px; }
+div.program table.times { width: 100%; display: block; padding: 0px 5px 0px 0px; margin: 0px 10px 0px 10px; }
+div.program table.times td.time { vertical-align: center; font-weight: bold; table-layout: fixed; font-size: 120%; width: 8em; text-align: right; padding: 2px 10px 10px 0px; white-space: nowrap; }
+div.program table.times td.item { vertical-align: center; font-weight: normal; font-size: 100%; width: auto; text-align: left; padding: 2px 10px 10px 0px; }
+div.program h4.program-day { display: block; border-bottom: 0px solid white; padding: 10px 10px 10px 5px; margin: 0px 0px 10px 0px; font-size: 150%; font-weight: bold; text-align: left; background: #007fbf; }
+div.program .time[title] { text-decoration: underline dotted 1px; cursor: help; }

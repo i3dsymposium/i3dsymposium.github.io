@@ -4,3 +4,5 @@ _site
 .idea
 __pycache__
 /Gemfile.lock
+_old
+_build

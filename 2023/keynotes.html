@@ -1,98 +1,264 @@
----
-layout: default2023
-title: Keynotes
+<!DOCTYPE html>
+<html>
+<head>
 
-keynotes_definition:
-  - title: "title of the presentation"
-    video: "optional, link to youtube video"
-    author: "name & affiliation of the author"
-    headshot: "filename of a picture of the author"
-    abstract: |
-      abstract of the presentation
-    bio: |
-      bio of the author
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-keynotes:
-  - title: "Scaling NeRF Up and Down: Big Scenes and Real-Time View Synthesis"
-    video: "https://youtu.be/51WWUxhzuso"
-    author: "Peter Hedman, Senior Research Scientist, Google"
-    headshot: "img/peterhedman_headshot.jpg"
-    abstract: |
-      Neural Radiance Fields (NeRF) can synthesize convincing novel viewpoints in a scene using only photographs as input. At first NeRF representations were not practical for interactive 3D applications: they could only synthesize images within a limited viewing volume and were only suitable for offline rendering, even with powerful GPUs.
+    <link rel="shortcut icon" href="https://i3dsymposium.org/2023/favicon.ico">
 
-      In this talk I will focus on these two challenges: 1) scaling up the size of the scenes that can be reconstructed by NeRF, and 2) scaling down hardware requirements needed to render NeRFs in real-time. I will cover our work on extending NeRF volumes to large and unbounded scenes, and how NeRFs can be converted into practical representations suitable for real-time rendering on commodity devices.
+    <title>Keynotes | I3D 2023</title>
+    <meta name="description" content="ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games">
 
-      Finally, I will show some applications that NeRF has already enabled and will explore challenges that remain before NeRFs could be used as assets in real-time 3D graphics pipelines.
+    <link rel="canonical" href="https://i3dsymposium.org/2023/keynotes.html">
 
-    bio: |
-      Peter Hedman is a senior research scientist at Google, where he works on problems at the intersection of computer graphics and vision. His recent work focuses on neural radiance fields and real-time rendering.
+    
+    <meta name="author" content="I3D Publicity Chair (general@i3dsymposium.org)">
 
-      He received his PhD from the CS Department at UCL in 2019, where he was advised by Gabriel Brostow and Tobias Ritschel, and he received his MSc from Helsinki University in 2015.
+    <link rel="alternate" type="application/atom+xml" href="https://i3dsymposium.org/news-feed.xml" title="I3D Conference News">
 
-      He received the prize for the most distinguished master’s thesis from Finnish Academic Association for Mathematics and Natural Sciences, the 2016 Rabin Ezra scholarship for doctoral students in computer graphics, imaging and vision, the ICCV Best Paper Honorable Mention Award in 2021, as well as the Best Student Paper Honorable Mention at CVPR 2022.
+    
 
-  - title: "Assisted Artistry Unleashed: Powering the Collaborative Creatorverse in Real-time"
-    author: "Natalya Tatarchuk, Distinguished Technical Fellow and Chief Architect, VP, Wētā Tools at Unity"
-    headshot: "img/nataliatatarchuk_headshot.jpg"
-    abstract: |
-      Join us for a journey into the rapidly evolving world of collaborative creation and real-time rendering. In this keynote, we will explore the potential of AI-assisted artistry and procedural workflows to power the Creatorverse, enabling 3D artists and generalists to push the boundaries of what's possible.
+    <link href="css/i3d.css" rel="stylesheet" media="screen">
 
-      At the heart of this talk is the idea that we live in a world where anyone can create, and the power of real-time content creation and rendering is changing the game. Our goal is to unleash the creativity of artists and empower them to create immersive, real-time experiences that were once unimaginable.
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      Drawing on the convergence of filmic content with real-time rendering, we will examine how Unity's Wētā Tools are leading the charge in creating immersive experiences with the same power as the film Avatar. Along the way, we will deliver insights on how creators can harness AI and procedural workflows to create amazing experiences, focusing on the intersection of artistry and technology.
+    <!-- SEO metadata for social posts -->
+    <meta property="og:url" content="https://i3dsymposium.org/2023/keynotes.html" />
+    <meta property="og:title" content="Keynotes | I3D 2023" />
+    <meta property="og:description" content="ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games" />
+    <meta property="og:image" content="https://i3dsymposium.org/2023/img/banner-narrow-subtitle.png" />
+    <meta name="twitter:card" content="summary"></meta>
+    <meta name="twitter:image" content="https://i3dsymposium.org/img/logo-square-twitter.png" />
+    <meta name="twitter:site" content="@I3DCONF"></meta>
 
-      Join us as we explore the future of collaborative creation, where the only limit is our imagination.
+</head>
 
-    bio: |
-      Natalya Tatarchuk (@mirror2mask) is a graphics engineer and a rendering enthusiast at heart, currently focusing on driving the state-of-the-art rendering technology, graphics performance and character content creation in her role as a Distinguished Technical Fellow and Chief Architect, VP, Wētā Tools at Unity.
+<body>
 
-      Prior to that, led the Graphics team at Unity, as VP of Graphics for the Unity Editor and Engine. Before that she was a AAA games developer, working on innovative cross-platform rendering engine and game graphics for Bungie's Destiny franchise, as well the Halo series, such as Halo: ODST and Halo: Reach, and AMD Graphics Products Group where she pushed parallel computing boundaries investigating advanced real-time graphics techniques, and graphics hardware design and APIs.
+    <header>
+        <div id="header">
+            <img id="banner" src="img/banner.png" alt="" />
+        </div> <!-- #header -->
+        <div id="header-subtitle">
+            <span class="br">ACM SIGGRAPH Symposium on</span>
+            Interactive 3D Graphics and Games<br/>
+            Bellevue, WA, United States: 3-5 May, 2023
+        </div><!-- #header-subtitle -->
+    </header>
 
-      Natalya has been encouraging sharing in the games graphics community for several decades, largely by organizing a popular series of courses such as [Advances in Real-time Rendering](http://advances.realtimerendering.com/), [Open Problems in Real-Time Rendering](http://openproblems.realtimerendering.com/) and [Rendering Engine Architecture](http://enginearchitecture.realtimerendering.com/) at SIGGRAPH, and convincing people to speak there. It seems to be working.
+    <div class="clearfix"></div>
 
-  - title: "Blurring the Line between Physics and Imagination: A Glimpse of Neural Rendering's Future"
-    video: "https://youtu.be/PV8pLZpIG1M"
-    author: "Marco Salvi, Principal Research Scientist, NVIDIA"
-    headshot: "img/marcosalvi_headshot.jpg"
-    abstract: |
-      In this talk, I will discuss the transformative impact of machine learning techniques, which are breathing new life into real-time rendering. Advances in novel scene representations and image reconstruction approaches have emerged alongside sophisticated generative models that do not rely on the physics of light transport. 
+    <div id="main-wrapper">
+        <nav id="nav">
+            <!-- nav and nav-list are styled in css/i3d.css -->
+            <input type="checkbox" id="menu-open" />
+            <label for="menu-open">
+                <svg class="menuicon" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+                    <title>Toggle Menu</title>
+                    <g>
+                        <circle class="menuicon__circle_bg" r="23" cx="25" cy="25" />
+                        <circle class="menuicon__circle" r="23" cx="25" cy="25" />
+                    </g>
+                    <g>
+                        <line class="menuicon__bar" x1="13" y1="16.5" x2="37" y2="16.5"/>
+                        <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                        <line class="menuicon__bar" x1="13" y1="24.5" x2="37" y2="24.5"/>
+                        <line class="menuicon__bar" x1="13" y1="32.5" x2="37" y2="32.5"/>
+                    </g>
+                </svg>
+            </label>
 
-      These developments are bringing about a major shift in how we generate images, challenging traditional rendering pipelines. I will explore some of the possibilities that lie ahead as these distinct approaches may converge, seamlessly blending physics and imagination to create realistic and accessible computer-generated imagery.
+            <ul class="nav-list">
+                <!-- For the menu highlighting the current page to work, the links here should be only the filename, like "index.html",
+                    if they have slashes or similar, it won't work -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="cfp.html">Call for Participation</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="keynotes.html">Keynotes</a></li>
+                <li><a href="papers.html">Papers</a></li>
+                <li><a href="posters.html">Posters</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="committee.html">Committee</a></li>
+                <li><a href="conference.html">Past Conferences</a></li>
+			  
+			    <!-- here's the order we use in normal years (travel grants, venue)
+			  
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="program.html">Program</a></li>
+                <li><a href="cfp.html">Call for Participation</a></li>
+                <li><a href="keynotes.html">Keynotes</a></li>
+                <li><a href="papers.html">Papers</a></li>
+                <li><a href="posters.html">Posters</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="travel_grants.html">Travel Grants</a></li>
+                <li><a href="venue.html">Venue</a></li>
+                <li><a href="committee.html">Committee</a></li>
+                <li><a href="conference.html">Past Conferences</a></li>
+			    -->
+                <li><a href="http://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment" target="_blank">Code of Conduct</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
 
-    bio: |
-      Marco Salvi is a Principal Research Scientist at NVIDIA, where he works on developing high-performance software and hardware rendering algorithms for the post-Moore's law era. 
+            <!-- This script is to color the current page in the menu. It's added right after the menu so it makes the changes at the earliest possible moment -->
+            <script>
+            (function(){
+                function urlToName(url) {
+                    // Take the last part of the path, without extension
+                    url = url.split("/").reverse()[0].split(".")[0];
+                    if (url === "") {
+                        url = "index";
+                    }
+                    return url;
+                }
+                // Set the active button based on the current url.
+                var links = document.querySelectorAll(".nav-list a");
+                for (var i = 0; i < links.length; ++i) {
+                    var url = urlToName(links[i].attributes["href"].value);
+                    links[i].classList.add(url);
+                }
+                var filename = urlToName(window.location.pathname);
+                document.querySelector('.nav-list a.' + filename).parentElement.classList.add("active");
+            })();
+            </script>
 
-      His research interests span a broad range of topics, from anti-aliasing and order-independent transparency to ray tracing hardware, texture compression and neural rendering. Marco has made numerous contributions to rendering APIs, including raster order views and micro-meshes, and his early work on real-time neural image reconstruction has led to the development of NVIDIA DLSS. 
+            <!-- social media links -->
+            <footer id="socials">
+                <ul class="social-icons">
+                    <li><a href="https://twitter.com/I3DCONF" target="_blank"><img src="/img/twitter.svg" alt="twitter" class="icon" /></a></li>
+                    <li><a href="https://mastodon.acm.org/@i3d" rel="me" target="_blank"><img src="/img/mastodon.svg" alt="mastodon" class="icon" /></a></li>
+                    <li><a href="http://www.facebook.com/pages/I3D-Symposium-on-Interactive-3D-Graphics-and-Games/147772558570274" target="_blank"><img src="/img/square-facebook.svg" alt="facebook" class="icon" /></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCZNuH6k97yBaiTerqd0u1_Q/" target="_blank"><img src="/img/youtube.svg" alt="youtube" class="icon" /></a></li>
+                </ul>
+                <a href="contact.html#mailing_list">Join our Mailing List</a>
+            </footer>
+		
+        </nav> <!-- #nav -->
 
-      Prior to becoming a researcher, Marco worked at Ninja Theory and LucasArts architecting advanced graphics engines, performing low-level optimizations and developing new rendering techniques for games on two generations of Playstation and XBOX consoles.
+        <div id="news">
+            <input type="checkbox" id="important-dates-open" />
+            <h4>Important Dates<label for="important-dates-open" id="important-dates-toggle">
+                <svg class="newsicon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                    <title>Toggle Important Dates</title>
+                    <g>
+                        <polygon class="newsicon__triangle" points="18,0 0,9 18,18" />
+                    </g>
+                </svg>
+            </label></h4>
+            <ul id="important-dates" class="unstyled">
+                <!-- Add class="past" to past dates so they show as greyed out -->
+                <li class="past">Paper submission deadline:<span class="date">21 December, 2022</span></li>
+                <li class="past">Paper notifications:<span class="date">21 February, 2023</span></li>
+                <li class="past">Revision deadline:<span class="date">15 March, 2023</span></li>
+                <li class="past">Camera-ready deadline:<span class="date">5 April, 2023</span></li>	
+                <li class="past">Poster submission deadline:<span class="date">24 March, 2023</span></li>
+                <li class="past">Extended Poster submission deadline:<span class="date">30 March, 2023</span></li>
+                <li class="past">Poster notifications:<span class="date">3 April, 2023</span></li>
+                <li class="past">Early registration deadline:<span class="date">5 April, 2023</span></li>
+                <li>Conference:<span class="date">3-5 May, 2023</span></li>
+            </ul>
+    
+        </div> <!-- #news -->
 
-      Marco holds an M.S. in Physics from the University of Bologna, Italy.
+        <main id="main">
+            <h2>Keynote Presentations</h2>
 
----
-
-<h2>Keynote Presentations</h2>
-
-{% for keynote in page.keynotes -%}
 <article>
-    <h3 id="Keynote{{forloop.index}}">{{keynote.title}}</h3>
-    <h4>{{keynote.author}}</h4>
-    {% if keynote.video %}
-<a href="{{keynote.video}}" target="_blank"><img src="../img/youtube-link-logo.png" width="40px" style="vertical-align:middle;margin-right:10px;">Watch the video presentation </a>
-    {% endif %}
-	<img src="{{keynote.headshot}}" class="keynote-headshot" style="max-width:250px;">
+    <h3 id="Keynote1">Scaling NeRF Up and Down: Big Scenes and Real-Time View Synthesis</h3>
+    <h4>Peter Hedman, Senior Research Scientist, Google</h4>
+    
+<a href="https://youtu.be/51WWUxhzuso" target="_blank"><img src="../img/youtube-link-logo.png" width="40px" style="vertical-align:middle;margin-right:10px;">Watch the video presentation </a>
+    
+	<img src="img/peterhedman_headshot.jpg" class="keynote-headshot" style="max-width:250px;">
     <h5>Abstract</h5>
-    {{ keynote.abstract | strip | escape_once | newline_to_br | replace: "<br />
-<br />
-", "
+    <p>Neural Radiance Fields (NeRF) can synthesize convincing novel viewpoints in a scene using only photographs as input. At first NeRF representations were not practical for interactive 3D applications: they could only synthesize images within a limited viewing volume and were only suitable for offline rendering, even with powerful GPUs.</p>
 
-" | markdownify }}
+<p>In this talk I will focus on these two challenges: 1) scaling up the size of the scenes that can be reconstructed by NeRF, and 2) scaling down hardware requirements needed to render NeRFs in real-time. I will cover our work on extending NeRF volumes to large and unbounded scenes, and how NeRFs can be converted into practical representations suitable for real-time rendering on commodity devices.</p>
+
+<p>Finally, I will show some applications that NeRF has already enabled and will explore challenges that remain before NeRFs could be used as assets in real-time 3D graphics pipelines.</p>
+
     <h5>Bio</h5>
-    {{ keynote.bio | strip | escape_once | newline_to_br | replace: "<br />
-<br />
-", "
+    <p>Peter Hedman is a senior research scientist at Google, where he works on problems at the intersection of computer graphics and vision. His recent work focuses on neural radiance fields and real-time rendering.</p>
 
-" | markdownify }}
+<p>He received his PhD from the CS Department at UCL in 2019, where he was advised by Gabriel Brostow and Tobias Ritschel, and he received his MSc from Helsinki University in 2015.</p>
+
+<p>He received the prize for the most distinguished master’s thesis from Finnish Academic Association for Mathematics and Natural Sciences, the 2016 Rabin Ezra scholarship for doctoral students in computer graphics, imaging and vision, the ICCV Best Paper Honorable Mention Award in 2021, as well as the Best Student Paper Honorable Mention at CVPR 2022.</p>
+
+</article><article>
+    <h3 id="Keynote2">Assisted Artistry Unleashed: Powering the Collaborative Creatorverse in Real-time</h3>
+    <h4>Natalya Tatarchuk, Distinguished Technical Fellow and Chief Architect, VP, Wētā Tools at Unity</h4>
+    
+	<img src="img/nataliatatarchuk_headshot.jpg" class="keynote-headshot" style="max-width:250px;">
+    <h5>Abstract</h5>
+    <p>Join us for a journey into the rapidly evolving world of collaborative creation and real-time rendering. In this keynote, we will explore the potential of AI-assisted artistry and procedural workflows to power the Creatorverse, enabling 3D artists and generalists to push the boundaries of what's possible.</p>
+
+<p>At the heart of this talk is the idea that we live in a world where anyone can create, and the power of real-time content creation and rendering is changing the game. Our goal is to unleash the creativity of artists and empower them to create immersive, real-time experiences that were once unimaginable.</p>
+
+<p>Drawing on the convergence of filmic content with real-time rendering, we will examine how Unity's Wētā Tools are leading the charge in creating immersive experiences with the same power as the film Avatar. Along the way, we will deliver insights on how creators can harness AI and procedural workflows to create amazing experiences, focusing on the intersection of artistry and technology.</p>
+
+<p>Join us as we explore the future of collaborative creation, where the only limit is our imagination.</p>
+
+    <h5>Bio</h5>
+    <p>Natalya Tatarchuk (@mirror2mask) is a graphics engineer and a rendering enthusiast at heart, currently focusing on driving the state-of-the-art rendering technology, graphics performance and character content creation in her role as a Distinguished Technical Fellow and Chief Architect, VP, Wētā Tools at Unity.</p>
+
+<p>Prior to that, led the Graphics team at Unity, as VP of Graphics for the Unity Editor and Engine. Before that she was a AAA games developer, working on innovative cross-platform rendering engine and game graphics for Bungie's Destiny franchise, as well the Halo series, such as Halo: ODST and Halo: Reach, and AMD Graphics Products Group where she pushed parallel computing boundaries investigating advanced real-time graphics techniques, and graphics hardware design and APIs.</p>
+
+<p>Natalya has been encouraging sharing in the games graphics community for several decades, largely by organizing a popular series of courses such as <a href="http://advances.realtimerendering.com/">Advances in Real-time Rendering</a>, <a href="http://openproblems.realtimerendering.com/">Open Problems in Real-Time Rendering</a> and <a href="http://enginearchitecture.realtimerendering.com/">Rendering Engine Architecture</a> at SIGGRAPH, and convincing people to speak there. It seems to be working.</p>
+
+</article><article>
+    <h3 id="Keynote3">Blurring the Line between Physics and Imagination: A Glimpse of Neural Rendering's Future</h3>
+    <h4>Marco Salvi, Principal Research Scientist, NVIDIA</h4>
+    
+<a href="https://youtu.be/PV8pLZpIG1M" target="_blank"><img src="../img/youtube-link-logo.png" width="40px" style="vertical-align:middle;margin-right:10px;">Watch the video presentation </a>
+    
+	<img src="img/marcosalvi_headshot.jpg" class="keynote-headshot" style="max-width:250px;">
+    <h5>Abstract</h5>
+    <p>In this talk, I will discuss the transformative impact of machine learning techniques, which are breathing new life into real-time rendering. Advances in novel scene representations and image reconstruction approaches have emerged alongside sophisticated generative models that do not rely on the physics of light transport.</p>
+
+<p>These developments are bringing about a major shift in how we generate images, challenging traditional rendering pipelines. I will explore some of the possibilities that lie ahead as these distinct approaches may converge, seamlessly blending physics and imagination to create realistic and accessible computer-generated imagery.</p>
+
+    <h5>Bio</h5>
+    <p>Marco Salvi is a Principal Research Scientist at NVIDIA, where he works on developing high-performance software and hardware rendering algorithms for the post-Moore's law era.</p>
+
+<p>His research interests span a broad range of topics, from anti-aliasing and order-independent transparency to ray tracing hardware, texture compression and neural rendering. Marco has made numerous contributions to rendering APIs, including raster order views and micro-meshes, and his early work on real-time neural image reconstruction has led to the development of NVIDIA DLSS.</p>
+
+<p>Prior to becoming a researcher, Marco worked at Ninja Theory and LucasArts architecting advanced graphics engines, performing low-level optimizations and developing new rendering techniques for games on two generations of Playstation and XBOX consoles.</p>
+
+<p>Marco holds an M.S. in Physics from the University of Bologna, Italy.</p>
+
 </article>
-{%- endfor %}
 
 <div class="clear"></div>
+
+        </main> <!-- #main -->
+
+    </div> <!-- #main-wrapper -->
+
+    <div class="clearfix"></div>
+
+    <!-- social media links for mobile -->
+    <footer id="socials-mobile">
+        <ul class="social-icons">
+            <li><a href="https://twitter.com/I3DCONF" target="_blank"><img src="/img/twitter.svg" alt="twitter" class="icon" /></a></li>
+            <li><a href="https://mastodon.acm.org/@i3d" rel="me" target="_blank"><img src="/img/mastodon.svg" alt="mastodon" class="icon" /></a></li>
+            <li><a href="http://www.facebook.com/pages/I3D-Symposium-on-Interactive-3D-Graphics-and-Games/147772558570274" target="_blank"><img src="/img/square-facebook.svg" alt="facebook" class="icon" /></a></li>
+            <li><a href="https://www.youtube.com/channel/UCZNuH6k97yBaiTerqd0u1_Q/" target="_blank"><img src="/img/youtube.svg" alt="youtube" class="icon" /></a></li>
+        </ul>
+        <a href="contact.html#mailing_list">Join our Mailing List</a>
+    </footer>
+
+    <footer id="footer">
+        <a href="http://www.i3dsymposium.org/">HOME</a> | &copy; 2023
+        Symposium on Interactive 3D Graphics and Games
+    </footer>
+
+
+
+  </body>
+
+</html>
