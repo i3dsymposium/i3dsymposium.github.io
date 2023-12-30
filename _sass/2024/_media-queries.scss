@@ -1,0 +1,19 @@
+@mixin bigger-than($breakpoint) {
+    // Write the media query.
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin smaller-than($breakpoint) {
+    // Write the media query.
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+@mixin phone-screen() {
+    @media (max-width: 550px) {
+        @content;
+    }
+}
