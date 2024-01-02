@@ -9,18 +9,11 @@
 
 $max-page-width: 1440px;
 
-$banner-width: 400px;
-$banner-stripe-height: 80px;
-$banner-stripe-pct: $banner-stripe-height / $banner-width * 100vw;
+$nav-height: 80px;
 
-$subtitle-width: 300px;
+$main-horizontal-padding: 40px;
+$main-vertical-padding: 40px;
 
-$large-nav-width: 13%;
-$large-nav-min-width: 150px;
-$large-news-width: 250px;
-$large-main-width: calc(100% - max(#{$large-nav-width}, #{$large-nav-min-width}) - #{$large-news-width});
-
-$medium-main-width: calc(100% - max(#{$large-nav-width}, #{$large-nav-min-width}));
 
 $medium-screen-size: 700px;
 $large-screen-size: 970px;
@@ -34,17 +27,18 @@ header {
     margin: 0 auto;
 
     box-sizing: border-box;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: $main-horizontal-padding;
+    padding-right: $main-horizontal-padding;
 
     img {
-        height: 80px;
+        height: $nav-height;
     }
 
     nav {
         float: right;
         right: 0;
         top: 0;
+        max-height: $nav-height;
         ul {
             position: relative;
             list-style: none;
@@ -79,7 +73,9 @@ header {
     }
 
     #page-title {
-        padding: 2em 0;
+        padding: $main-vertical-padding $main-horizontal-padding;
+        margin: 0px (-$main-horizontal-padding);
+        margin-bottom: $main-vertical-padding;
         background: $bg-blue;
         background: linear-gradient(90deg, $bg-blue 0%, $bg-green 100%);
         color: white;
@@ -92,9 +88,17 @@ header {
     clear: both;
     margin: 0 auto;
 
-    #main > div {
-        padding-left: 2.5rem;
-        padding-right: 2.5rem;
+    @each $tag in (div, p, h1, h2, h3, h4, h5, h6, ul, ol) {
+        #main > #{$tag} {
+            padding-left: $main-horizontal-padding;
+            padding-right: $main-horizontal-padding;
+        }
+    }
+    @each $tag in (img, table) {
+        #main > #{$tag} {
+            margin-left: $main-horizontal-padding;
+            margin-right: $main-horizontal-padding;
+        }
     }
 }
 
@@ -103,6 +107,10 @@ header {
     background: $bg-blue;
     background: linear-gradient(120deg, $bg-blue 0%, $bg-green 100%);
     color: white;
+
+    .youtube-embed {
+        margin: 0;
+    }
 }
 
 .flex {
@@ -110,11 +118,14 @@ header {
 }
 
 .one-third {
-   flex: 1 1 33.3%; 
+    flex: 1 1 33.3%; 
+    &:not(:last-child) {
+        padding-right: 1rem;
+    }
 }
 
 .two-thirds {
-   flex: 2 1 66.6%; 
+    flex: 2 1 66.6%; 
 }
 
 .highlight-bg {
@@ -123,13 +134,23 @@ header {
 }
 
 #important-dates {
+    h2 {
+        margin-bottom: 0;
+    }
     ul {
         columns: 3;
+        column-fill: balance;
         list-style: none;
         li {
             font-weight: bold;
-            padding: 1em 0;
             margin: 0;
+            padding-top: 2em;
+            break-inside: avoid;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
             .date {
                 display: block;
                 color: $blue;

@@ -113,8 +113,6 @@ conferences:
 
 ---
 
-<h2>Past I3D Conferences</h2>
-
 <ul class="unstyled">
   {% for conf in page.conferences -%}
   <li style="margin-bottom: 10px; line-height: 120%;">

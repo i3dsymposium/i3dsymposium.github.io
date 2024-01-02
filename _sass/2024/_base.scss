@@ -75,8 +75,11 @@ h4,
 h5,
 h6 {
     margin: 0.5em 0;
+    &:first-child {
+        margin-top: 0;
+    }
     font-weight: 500;
-    line-height: 100%;
+    line-height: 120%;
     text-transform: uppercase;
     text-rendering: optimizelegibility;
 
@@ -139,20 +142,6 @@ dd {
 
 dl {
     margin-left: 20px;
-}
-
-p,
-dl,
-hr,
-ol,
-ul,
-pre,
-table,
-address,
-fieldset,
-blockquote,
-figure {
-    margin-bottom: 20px;
 }
 
 blockquote {

@@ -1,6 +1,6 @@
 ---
 layout: default2024
-title: I3D 2024 Conference Committee
+title: 2024 Organizing Committee
 
 committee_definition:
   - chair: Name of the chair(s)
@@ -109,14 +109,12 @@ ipc:
 
 ---
 
-<h3>I3D 2024 Conference Committee</h3>
-
-<p>Each category is listed in alphabetical order.</p>
+<small>*Co-chairs are listed alphabetically*</small>
 
 
 {% for chair in page.committee %}
 
-<h4>{{ chair.chair }}</h4>
+### {{ chair.chair }}
 <ul class="unstyled expand">
   {% for member in chair.members -%}
   <li> 
@@ -125,53 +123,45 @@ ipc:
 		{% if member.email %}{{ member.email }}<br>{% endif %}
 		{{ member.pronouns }}
 	</li>
-  {% endfor %}
+  {%- endfor %}
 </ul>
+{% endfor %}
 
+---
+
+## International Paper Committee
+
+{% for member in page.ipc %}
+- {{ member }}
 {% endfor %}
 
 
+---
 
+## Steering Committee
 
-<h3>International Paper Committee</h3>
-
-
-<ul>
-  {% for member in page.ipc %}
-  <li>{{ member }}</li>
-  {% endfor %}
-</ul>
-
-<hr>
-
-<h3>Steering Committee</h3>
-
-<p>The steering committee consists of the conference and general
+The steering committee consists of the conference and general
 co-chairs of the most recent 4 years, including the chairs of the
-upcoming conference that is still being planned.</p>
+upcoming conference that is still being planned.
 
-<p>For 2024, this is<br>
-  <ul>
-    {% for year in page.steering_committee -%}
-    <!-- {{ year.year }} -->
-    {% for member in year.members -%}
-    <li>{{ member }}</li>
-    {% endfor %}
-    {% endfor %}
-  </ul>
-</p>
+For 2024, this is:
+{% for year in page.steering_committee -%}
+<!-- {{ year.year }} -->
+{%- for member in year.members %}
+- {{ member }}
+{% endfor -%}
+{% endfor %}
 
-<p>In general, we expect that a junior and senior person will serve as
+In general, we expect that a junior and senior person will serve as
 co-chairs for the conference and a similar team will serve as co-chairs
 for the program.  This guideline allows junior members of the community
-to gain exposure by participating in the conference organization.</p>
+to gain exposure by participating in the conference organization.
 
-<p>The general chairs for each year's conference become the next year's
+The general chairs for each year's conference become the next year's
 program chairs, unless they step down, in which case they can be replaced.
 The following year's general chairs are selected and recruited by the current
-chairs, with input and approval by the steering committee.</p>
+chairs, with input and approval by the steering committee.
 
-<p>The steering committee is also responsible for making long-term strategic
-decisions, such as those related to the publication format and timing.</p>
-     
+The steering committee is also responsible for making long-term strategic
+decisions, such as those related to the publication format and timing.
 

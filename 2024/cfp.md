@@ -1,11 +1,9 @@
 ---
 layout: default2024
-title: CFP
+title: Participate
 ---
 
-## Call for Participation
-
-### Call for Papers
+## Call for Papers
 
 
 *__Summary:__ 5 of January 2024 deadline; at most 16 pages + references (shorter submissions are welcome); anonymous submission; submission link <https://easychair.org/conferences/?conf=i3d2024>*
@@ -43,7 +41,7 @@ We invite you to submit papers about real-time 3D graphics, interaction, and gam
 
 
 
-#### Submission Information
+### Submission Information
 
 Research papers should be in [ACM conference format](https://www.siggraph.org/learn/instructions-authors) using the **ACM small trim** journal size ("acmsmall"). They should contain at most sixteen (16) pages of content, including appendices but excluding references. Optional supplemental material does not count towards this limit. Videos are required for techniques involving motion or animation.
 
@@ -57,7 +55,7 @@ By submitting your article to an ACM Publication, you are hereby acknowledging t
 
 Please ensure that you and your co-authors obtain an ORCID ID, so you can complete the publishing process for your accepted paper. ACM has been involved in ORCID from the start and we have recently made a commitment to collect ORCID IDs from all of our published authors. We are committed to improve author discoverability, ensure proper attribution and contribute to ongoing community efforts around name normalization; your ORCID ID will help in these efforts.
 
-#### Important Dates
+### Important Dates
 *All deadlines are 23:59 Pacific Time (UTC -7).*
 
 **5 of January, 2024** &nbsp;&nbsp; Paper submission deadline\
