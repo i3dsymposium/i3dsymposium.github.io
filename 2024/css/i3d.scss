@@ -39,6 +39,7 @@ header {
         right: 0;
         top: 0;
         max-height: $nav-height;
+        font-size: 16px;
         ul {
             position: relative;
             list-style: none;
@@ -66,6 +67,12 @@ header {
                     padding-right: 0;
                     a, a:hover, a:active, a:visited {
                         padding-right: 0;
+                    }
+                }
+
+                &.active {
+                    a, a:hover, a:active, a:visited {
+                        color: $link;
                     }
                 }
             }
@@ -103,7 +110,7 @@ header {
 }
 
 #index-highlight {
-    padding: 60px 0;
+    padding: $main-vertical-padding 0;
     background: $bg-blue;
     background: linear-gradient(120deg, $bg-blue 0%, $bg-green 100%);
     color: white;
@@ -144,7 +151,7 @@ header {
         li {
             font-weight: bold;
             margin: 0;
-            padding-top: 2em;
+            padding-top: 1.5em;
             break-inside: avoid;
 
             &:first-child {
@@ -154,6 +161,39 @@ header {
             .date {
                 display: block;
                 color: $blue;
+            }
+        }
+    }
+}
+
+#sponsors {
+    margin-top: $main-vertical-padding;
+    ul.sponsors-list {
+        position: relative;
+        list-style: none;
+        columns: 3;
+        column-fill: balance;
+        margin-bottom: 2rem;
+
+        li {
+            display: block;
+            margin: 0;
+            break-inside: avoid;
+
+            a {
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                position: relative;
+
+                img {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
             }
         }
     }

@@ -1,5 +1,77 @@
 ---
 layout: default2024
+
+sponsors_definition:
+  - level: Title of the level of sponsorship
+    size: Width of the images that will be shown in this level
+    columns: Number of columns in the 
+    members: # List of members
+      - name: Name of the company (Only used in the "alt" of the img tag)
+        image: Image to show for this sponsor
+        link: url to link to for this sponsor
+
+sponsors:
+  - level: Platinum Sponsors
+    size: 230
+    members:
+      - name: Epic Games
+        image: sponsor_Unreal_Epic_Black.png
+        link: https://www.unrealengine.com
+
+      - name: EA
+        image: sponsor_ea.png
+        link: https://seed.ea.com
+
+  - level: Gold Sponsors
+    size: 170
+    members:
+      - name: The Forge
+        image: sponsor_TheForge_color_black_landscape.png
+        link: https://theforge.dev
+
+      - name: Unity
+        image: sponsor_unity.png
+        link: https://unity3d.com
+
+      - name: Futurewei
+        image: sponsor_futurewei.png
+        link: https://www.huawei.com
+
+      - name: Intel
+        image: sponsor_intel.png
+        link: https://www.intel.com/content/www/us/en/developer/topic-technology/graphics-research/overview.html
+
+      - name: Google
+        image: sponsor_google.png
+        link: https://google.com
+
+      - name: Arm
+        image: sponsor_arm.png
+        link: https://developer.arm.com/solutions/graphics-and-gaming
+
+      - name: Facebook Reality Labs
+        image: sponsor_FRL_Research_Logo.png
+        link: https://www.facebook.com/careers/areas-of-work/facebookrealitylabs/?teams[0]=Facebook%20Reality%20Labs
+
+      - name: Roblox
+        image: sponsor_roblox.png
+        link: https://corp.roblox.com/research/
+
+  - level: Silver Sponsors
+    size: 120
+    members:
+      - name: Activision
+        image: sponsor_Activision_logo.png
+        link: https://activision.com
+
+      - name: AMD
+        image: sponsor_amd.png
+        link: https://www.amd.com
+
+      - name: NVIDIA
+        image: sponsor_nvidia_horz.png
+        link: https://research.nvidia.com
+
 ---
 
 <div id="index-highlight" class="flex">
@@ -27,9 +99,6 @@ layout: default2024
         <li>Poster notifications:<span class="date">3 April, 2023</span></li>
         <li>Early registration deadline:<span class="date">5 April, 2023</span></li-->
         <li>Conference:<span class="date">8-10 of May, 2024</span></li>
-        <li>Conference:<span class="date">8-10 of May, 2024</span></li>
-        <li>Conference:<span class="date">8-10 of May, 2024</span></li>
-        <li>Conference:<span class="date">8-10 of May, 2024</span></li>
     </ul>
 </div>
 
@@ -45,6 +114,33 @@ layout: default2024
 
 <div>
     Join <a href="contact.html#mailing_list">the mailing list</a> to receive important updates including conference dates, CFP, and other information about I3D 2024 as it becomes available.
+</div>
+
+<div id="sponsors" class="flex">
+    <div class="one-third">
+        <h2>Sponsors</h2>
+        The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
+        2024 is a highly-visible, leading-edge conference for techniques that
+        combine 3D computer graphics with human interaction.
+    </div>
+
+    <div class="two-thirds">
+        {% for level in page.sponsors -%}
+        {% if level.members -%}
+        <hr>
+        <h3>{{ level.level }}</h3>
+        <ul class="sponsors-list">
+        {% for sponsor in level.members -%}
+            <li style="height: {{ level.size }}px">
+                <a href="{{ sponsor.link }}">
+                    <img style="max-width: {{ level.size }}px; max-height: {{ level.size }}px;" src="img/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
+                </a>
+            </li>
+        {% endfor -%}
+        </ul>
+        {% endif -%}
+        {% endfor -%}
+    </div>
 </div>
 
 <div class="highlight-bg flex">
