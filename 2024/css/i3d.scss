@@ -86,6 +86,34 @@ header {
     }
 }
 
+footer {
+    position: relative;
+    width: $max-page-width;
+    clear: both;
+    margin: $main-vertical-padding auto 0;
+    padding-bottom: 2*$main-vertical-padding; 
+
+    box-sizing: border-box;
+    padding-left: $main-horizontal-padding;
+    padding-right: $main-horizontal-padding;
+
+    #footer-logo {
+        height: $nav-height;
+    }
+
+    #footer-copy {
+        margin-top: $main-vertical-padding;
+    }
+
+    #footer-links {
+        float: right;
+        right: 0;
+        top: 0;
+        max-height: $nav-height;
+        font-size: 16px;
+    }
+}
+
 #main-wrapper {
     position: relative;
     width: $max-page-width;

@@ -160,6 +160,33 @@ table {
     margin-left: 8%;
 }
 
+input, select {
+    font-family: Outfit, Arial, Geneva, Helvetica, sans-serif;
+    font-size: inherit;
+}
+
+input[type=button], input[type=submit] {
+    background-color: $link !important;
+    border: 0 none;
+    border-radius: 4px;
+    transition: all 0.23s ease-in-out 0s;
+    font-size: 100% !important;
+    height: 2em !important;
+    padding: 0 1.25em !important;
+    text-align: center;
+    width: fit-content;
+
+    &:hover {
+        background-color: $link-hover !important;
+    }
+    &:active {
+        background-color: $link-active !important;
+    }
+    &[disabled] {
+        background-color: $disabled;
+    }
+}
+
 .clearfix {
     overflow: auto;
     &::after {

@@ -30,7 +30,8 @@
     </style>
     <style type="text/css">
         #mc_embed_signup #mc-embedded-subscribe-form { margin: 0; }
-        #mc-embedded-subscribe-form input[type=checkbox]{display: inline; width: auto;margin-right: 10px;}
+        #mc-embedded-subscribe-form input[type=checkbox]{display: inline; width: 1em; height: 1em; vertical-align: text-bottom; margin-right: 1em;}
+        #mc-embedded-subscribe-form input:is([type=text], [type=email]){text-indent: 0.5em;}
         #mergeRow-gdpr fieldset label {font-weight: normal;}
         #mc-embedded-subscribe-form .mc_fieldset{border:none;min-height: 0px;padding-bottom:0px;}
         .helper_text {background-color: transparent !important; color: #a9a9a9 !important;}
@@ -87,8 +88,8 @@
                 <li><a href="cfp.html">Participate</a></li>
                 <li><a href="committee.html">Committee</a></li>
                 <li><a href="venue.html">Venue</a></li>
-                <li><a href="http://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment" target="_blank">Code of Conduct</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="http://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment" target="_blank">Code of Conduct</a></li>
             </ul>
 
             <!-- This script is to color the current page in the menu. It's added right after the menu so it makes the changes at the earliest possible moment -->
@@ -132,25 +133,26 @@
     <div class="clearfix"></div>
 
     <footer id="footer">
-        <img id="footer-banner" src="img/banner.png" alt="I3D {{ current_year }}" />
+        <img id="footer-logo" src="img/banner.png" alt="I3D {{ current_year }}" />
+
+        <!-- social media links -->
+        <ul id="footer-links">
+            <li><a href="https://twitter.com/I3DCONF" target="_blank"><img src="/img/twitter.svg" alt="twitter" class="icon" /></a></li>
+            <li><a href="https://mastodon.acm.org/@i3d" rel="me" target="_blank"><img src="/img/mastodon.svg" alt="mastodon" class="icon" /></a></li>
+            <li><a href="http://www.facebook.com/pages/I3D-Symposium-on-Interactive-3D-Graphics-and-Games/147772558570274" target="_blank"><img src="/img/square-facebook.svg" alt="facebook" class="icon" /></a></li>
+            <li><a href="https://www.youtube.com/channel/UCZNuH6k97yBaiTerqd0u1_Q/" target="_blank"><img src="/img/youtube.svg" alt="youtube" class="icon" /></a></li>
+
+            <li><a href="conference.html">Past Conferences</a></li>
+            <li><a href="sponsors.html">Sponsorship</a></li>
+            <li><a href="http://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment" target="_blank">Code of Conduct</a></li>
+            <li><a href="contact.html#mailing_list">Join our Mailing List</a></li>
+        </ul>
 
         <div id="footer-copy">
             &copy; {{ current_year }}
             ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
         </div>
 
-        <!-- social media links -->
-        <div id="footer-socials">
-            <ul class="social-icons">
-                <li><a href="https://twitter.com/I3DCONF" target="_blank"><img src="/img/twitter.svg" alt="twitter" class="icon" /></a></li>
-                <li><a href="https://mastodon.acm.org/@i3d" rel="me" target="_blank"><img src="/img/mastodon.svg" alt="mastodon" class="icon" /></a></li>
-                <li><a href="http://www.facebook.com/pages/I3D-Symposium-on-Interactive-3D-Graphics-and-Games/147772558570274" target="_blank"><img src="/img/square-facebook.svg" alt="facebook" class="icon" /></a></li>
-                <li><a href="https://www.youtube.com/channel/UCZNuH6k97yBaiTerqd0u1_Q/" target="_blank"><img src="/img/youtube.svg" alt="youtube" class="icon" /></a></li>
-            </ul>
-            <li><a href="conference.html">Past Conferences</a></li>
-            <li><a href="sponsors.html">Sponsorship</a></li>
-            <a href="contact.html#mailing_list">Join our Mailing List</a>
-        </div>
     </footer>
 
   </body>
