@@ -11,9 +11,6 @@ $max-page-width: 1440px;
 
 $nav-height: 80px;
 
-$main-horizontal-padding: 40px;
-$main-vertical-padding: 40px;
-
 
 $medium-screen-size: 700px;
 $large-screen-size: 970px;
@@ -95,7 +92,7 @@ header {
     clear: both;
     margin: 0 auto;
 
-    @each $tag in (div, p, h1, h2, h3, h4, h5, h6, ul, ol) {
+    @each $tag in (div, p, h1, h2, h3, h4, h5, h6, ul, ol, section) {
         #main > #{$tag} {
             padding-left: $main-horizontal-padding;
             padding-right: $main-horizontal-padding;
@@ -105,6 +102,22 @@ header {
         #main > #{$tag} {
             margin-left: $main-horizontal-padding;
             margin-right: $main-horizontal-padding;
+        }
+    }
+    #main > section {
+        margin-top: $main-vertical-padding;
+        margin-bottom: $main-vertical-padding;
+    }
+
+    #main p {
+        margin-top: 1em;
+        margin-bottom: 1em;
+
+        &:first-child {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
         }
     }
 }
@@ -118,26 +131,6 @@ header {
     .youtube-embed {
         margin: 0;
     }
-}
-
-.flex {
-    display: flex;
-}
-
-.one-third {
-    flex: 1 1 33.3%; 
-    &:not(:last-child) {
-        padding-right: 1rem;
-    }
-}
-
-.two-thirds {
-    flex: 2 1 66.6%; 
-}
-
-.highlight-bg {
-    background-color: $bg-soft;
-    padding: 40px 0;
 }
 
 #important-dates {

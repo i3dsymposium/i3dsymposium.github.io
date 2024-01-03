@@ -12,6 +12,9 @@ $link: $blue;
 $link-hover: #0086CC;
 $link-active: #0EAB39;
 
+$main-horizontal-padding: 40px;
+$main-vertical-padding: 40px;
+
 @font-face {
     font-family: Outfit;
     src: url('/css/fonts/Outfit-VariableFont_wght.ttf');
@@ -193,18 +196,25 @@ article {
     height: 1em;
 }
 
-.lead {
-    margin-bottom: 25px;
-    font-size: 21px;
-    line-height: 30px;
+
+.flex {
+    display: flex;
 }
 
-.text-right {
-    text-align: right;
+.one-third {
+    flex: 1 1 33.3%; 
+    &:not(:last-child) {
+        padding-right: 1rem;
+    }
 }
 
-.text-center {
-    text-align: center;
+.two-thirds {
+    flex: 2 1 66.6%; 
+}
+
+.highlight-bg {
+    background-color: $bg-soft;
+    padding: $main-vertical-padding 0;
 }
 
 

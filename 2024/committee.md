@@ -118,7 +118,7 @@ ipc:
 <ul class="unstyled expand">
   {% for member in chair.members -%}
   <li> 
-		<b class="member-name">{% if member.link %}<a href="{{ member.link }}">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</b><br>
+		<b class="member-name">{% if member.link %}<a href="{{ member.link }}" target="_blank">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</b><br>
 		{% if member.institution %}{{ member.institution }}<br>{% endif %}
 		{% if member.email %}{{ member.email }}<br>{% endif %}
 		{{ member.pronouns }}
