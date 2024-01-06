@@ -1,6 +1,6 @@
 ---
 layout: default2024
-contact_form: true
+mailing_list_form: true
 
 sponsors_definition:
   - level: Title of the level of sponsorship
@@ -180,6 +180,7 @@ sponsors:
         </div>
       </form>
     </div>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[3] = 'MMERGE3'; ftypes[3] = 'text'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[4] = 'NAME'; ftypes[4] = 'text'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
 </div>
 
 <div id="sponsors" class="flex">
@@ -203,7 +204,7 @@ sponsors:
         <ul class="sponsors-list">
         {% for sponsor in level.members -%}
             <li style="height: {{ level.size }}px">
-                <a href="{{ sponsor.link }}">
+                <a href="{{ sponsor.link }}" target="_blank">
                     <img style="max-width: {{ level.size }}px; max-height: {{ level.size }}px;" src="img/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
                 </a>
             </li>
@@ -213,21 +214,4 @@ sponsors:
         {% endfor -%}
     </div>
 </div>
-
-<div class="highlight-bg flex">
-    <div class="one-third">
-        <h2>Contact</h2>
-    </div>
-    <div class="two-thirds">
-        <p>
-            Send questions to <a href="mailto:general@i3dsymposium.org">general@i3dsymposium.org</a>
-            for general inquiries, registration, and sponsorship.
-        </p>
-        <p>
-            Direct queries about paper submissions to <a href="mailto:papers@i3dsymposium.org">papers@i3dsymposium.org</a>
-            and poster submissions to <a href="mailto:posters@i3dsymposium.org">posters@i3dsymposium.org</a>.
-        </p>
-    </div>
-</div>
-
 
