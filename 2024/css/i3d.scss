@@ -7,13 +7,9 @@
 
 @import '2024/base';
 
-$max-page-width: 1440px;
 
 $nav-height: 80px;
 
-
-$medium-screen-size: 700px;
-$large-screen-size: 970px;
 
 
 header {
@@ -27,23 +23,52 @@ header {
     padding-left: $main-horizontal-padding;
     padding-right: $main-horizontal-padding;
 
+    @include smaller-than($max-page-width) {
+        width: 100%;
+
+        padding-left: $main-horizontal-padding-small;
+        padding-right: $main-horizontal-padding-small;
+    }
+    
+
     img {
         height: $nav-height;
     }
 
-    nav {
+    nav#nav-menu {
         float: right;
         right: 0;
         top: 0;
         max-height: $nav-height;
         font-size: 16px;
-        ul {
+
+        #nav-list {
             position: relative;
             list-style: none;
+
+            @include smaller-than($max-page-width) {
+                visibility: hidden;
+                opacity: 0;
+                background-color: white;
+                padding-bottom: calc(35px - 1em);
+                padding-top: 1em;
+
+                border-top: 4px solid;
+                border-top-width: 4px;
+                border-image-slice: 1;
+                border-image-source: linear-gradient(-90deg, $bg-blue 0%, $bg-green 100%);
+            }
+
             li {
                 float: left;
                 margin: 0;
                 padding: 30px 5px;
+
+                @include smaller-than($max-page-width) {
+                    float: none;
+                    width: 100%;
+                    padding: 0;
+                }
 
                 a, a:hover, a:active, a:visited {
                     color: black;
@@ -52,18 +77,26 @@ header {
                     font-weight: bold;
                     padding: 15px 10px;
                     margin: 0;
-                }
-
-                &:first-child {
-                    padding-left: 0;
-                    a, a:hover, a:active, a:visited {
-                        padding-left: 0;
+                    @include smaller-than($max-page-width) {
+                        padding: 0.5em 0 0.5em 80px;
+                        width: 100%;
+                        display: block;
+                        box-sizing: border-box;
                     }
                 }
-                &:last-child {
-                    padding-right: 0;
-                    a, a:hover, a:active, a:visited {
+
+                @include bigger-than($max-page-width) {
+                    &:first-child {
+                        padding-left: 0;
+                        a, a:hover, a:active, a:visited {
+                            padding-left: 0;
+                        }
+                    }
+                    &:last-child {
                         padding-right: 0;
+                        a, a:hover, a:active, a:visited {
+                            padding-right: 0;
+                        }
                     }
                 }
 
@@ -74,12 +107,93 @@ header {
                 }
             }
         }
+
+        #nav-menu-open {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+
+            @include smaller-than($max-page-width) {
+                display: block;
+            }
+
+            & + label {
+                display: none;
+
+                @include smaller-than($max-page-width) {
+                    display: block;
+                    position: absolute;
+                    bottom: 10px;
+                    left: 10px;
+                    width: 50px;
+                    height: 50px;
+                    z-index: 1000;
+                }
+            }
+        }
+
+        @include smaller-than($max-page-width) {
+            float: none;
+            position: fixed;
+            max-height: inherit;
+            bottom: 0;
+            top: inherit;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            z-index: 100000;
+
+            &>#nav-menu-open:checked ~ #nav-list {
+                visibility: visible;
+                opacity: 1;
+            }
+
+
+            .menuicon {
+                display: block;
+                cursor: pointer;
+                color: $blue;
+
+                transform: rotate(0deg);
+                transition: .3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+
+                &__bar,
+                &__circle {
+                    fill: none;
+                    stroke: currentColor;
+                    stroke-width: 3;
+                    stroke-linecap: round;
+                }
+
+                &__circle_bg {
+                    fill: white;
+                }
+
+                &__bar {
+                    transform: rotate(0deg);
+                    transform-origin: 50% 50%;
+                    transition: transform .25s ease-in-out;
+                }
+
+                &__circle {
+                    transition: stroke-dashoffset .3s linear .1s;
+                    stroke-dashoffset: circumference(23); // 23 is the <circle>'s radius
+                    stroke-dasharray: circumference(23);
+                }
+            }
+        }
     }
 
     #page-title {
         padding: $main-vertical-padding $main-horizontal-padding;
         margin: 0px (-$main-horizontal-padding);
         margin-bottom: $main-vertical-padding;
+        @include smaller-than($max-page-width) {
+            padding: $main-vertical-padding-small $main-horizontal-padding-small;
+            margin: 0px (-$main-horizontal-padding-small);
+            margin-bottom: $main-vertical-padding-small;
+        }
         background: $bg-blue;
         background: linear-gradient(90deg, $bg-blue 0%, $bg-green 100%);
         color: white;
@@ -92,10 +206,22 @@ footer {
     clear: both;
     margin: $main-vertical-padding auto 0;
     padding-bottom: 2*$main-vertical-padding; 
+    @include smaller-than($max-page-width) {
+        margin: $main-vertical-padding-small auto 0;
+        padding-bottom: 2*$main-vertical-padding-small; 
+    }
 
     box-sizing: border-box;
     padding-left: $main-horizontal-padding;
     padding-right: $main-horizontal-padding;
+    @include smaller-than($max-page-width) {
+        padding-left: $main-horizontal-padding-small;
+        padding-right: $main-horizontal-padding-small;
+    }
+
+    @include smaller-than($max-page-width) {
+        width: 100%;
+    }
 
     #footer-logo {
         height: $nav-height;
@@ -103,6 +229,9 @@ footer {
 
     #footer-copy {
         margin-top: $main-vertical-padding;
+        @include smaller-than($max-page-width) {
+            margin-top: $main-vertical-padding-small;
+        }
     }
 
     #footer-links {
@@ -114,6 +243,11 @@ footer {
 
         display: flex;
         width: 60%;
+        @include smaller-than($max-page-width) {
+            float: none;
+            width: 100%;
+            margin-top: 1em;
+        }
 
         &>ul {
             //float: left;
@@ -145,21 +279,37 @@ footer {
     clear: both;
     margin: 0 auto;
 
+    @include smaller-than($max-page-width) {
+        width: 100%;
+    }
+
     @each $tag in (div, p, h1, h2, h3, h4, h5, h6, ul, ol, section) {
         #main > #{$tag} {
             padding-left: $main-horizontal-padding;
             padding-right: $main-horizontal-padding;
+            @include smaller-than($max-page-width) {
+                padding-left: $main-horizontal-padding-small;
+                padding-right: $main-horizontal-padding-small;
+            }
         }
     }
     @each $tag in (img, table) {
         #main > #{$tag} {
             margin-left: $main-horizontal-padding;
             margin-right: $main-horizontal-padding;
+            @include smaller-than($max-page-width) {
+                margin-left: $main-horizontal-padding-small;
+                margin-right: $main-horizontal-padding-small;
+            }
         }
     }
     #main > section {
         margin-top: $main-vertical-padding;
         margin-bottom: $main-vertical-padding;
+        @include smaller-than($max-page-width) {
+            margin-top: $main-vertical-padding-small;
+            margin-bottom: $main-vertical-padding-small;
+        }
     }
 
     #main p {
@@ -177,6 +327,10 @@ footer {
 
 #index-highlight {
     padding: $main-vertical-padding 0;
+    @include smaller-than($max-page-width) {
+        padding: $main-vertical-padding-small 0;
+    }
+
     background: $bg-blue;
     background: linear-gradient(120deg, $bg-blue 0%, $bg-green 100%);
     color: white;
@@ -192,13 +346,21 @@ footer {
     }
     ul {
         columns: 3;
+        @include smaller-than($medium-screen-size) {
+            columns: 1;
+        }
+
         column-fill: balance;
         list-style: none;
         li {
             font-weight: bold;
+            break-inside: avoid;
             margin: 0;
             padding-top: 1.5em;
-            break-inside: avoid;
+
+            @include smaller-than($max-page-width) {
+                padding-top: 0.5em;
+            }
 
             &:first-child {
                 margin-top: 0;
@@ -214,6 +376,9 @@ footer {
 
 #sponsors {
     margin-top: $main-vertical-padding;
+    @include smaller-than($max-page-width) {
+        margin-top: $main-vertical-padding-small;
+    }
 
     hr {
         margin-top: 2rem;
@@ -227,6 +392,10 @@ footer {
         position: relative;
         list-style: none;
         columns: 3;
+        @include smaller-than($medium-screen-size) {
+            columns: 1;
+        }
+
         column-fill: balance;
 
         li {

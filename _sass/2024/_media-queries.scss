@@ -11,9 +11,3 @@
         @content;
     }
 }
-
-@mixin phone-screen() {
-    @media (max-width: 550px) {
-        @content;
-    }
-}

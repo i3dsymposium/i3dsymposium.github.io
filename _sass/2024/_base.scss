@@ -1,3 +1,9 @@
+$max-page-width: 1440px;
+
+$medium-screen-size: 800px;
+$large-screen-size: 1080px;
+
+
 $highlight-color: rgb(255, 204, 0);
 $highlight-color-dark: rgb(255, 153, 0);
 
@@ -15,6 +21,10 @@ $link-active: #0EAB39;
 $main-horizontal-padding: 40px;
 $main-vertical-padding: 40px;
 
+$main-horizontal-padding-small: 20px;
+$main-vertical-padding-small: 25px;
+
+
 @font-face {
     font-family: Outfit;
     src: url('../../css/fonts/Outfit-VariableFont_wght.ttf');
@@ -23,6 +33,11 @@ $main-vertical-padding: 40px;
 html {
     font-size: 18px;
     line-height: 24px;
+
+    @include smaller-than($medium-screen-size) {
+        font-size: 16px;
+        line-height: 22px;
+    }
 }
 
 body {
@@ -92,29 +107,19 @@ h6 {
     }
 }
 
-h1 {
-    font-size: 36px;
+@each $h, $fs in (h1: 36px, h2: 30px, h3: 26px, h4: 22px, h5: 18px, h6: 16px) {
+    #{$h} {
+        font-size: $fs;
+    }
+}
+@include smaller-than($medium-screen-size) {
+    @each $h, $fs in (h1: 28px, h2: 25px, h3: 22px, h4: 20px, h5: 18px, h6: 16px) {
+        #{$h} {
+            font-size: $fs;
+        }
+    }
 }
 
-h2 {
-    font-size: 30px;
-}
-
-h3 {
-    font-size: 26px;
-}
-
-h4 {
-    font-size: 22px;
-}
-
-h5 {
-    font-size: 18px;
-}
-
-h6 {
-    font-size: 16px;
-}
 
 ol {
     list-style: decimal;
@@ -226,12 +231,25 @@ article {
 
 .flex {
     display: flex;
+
+    flex-direction: row;
+
+    @include smaller-than($medium-screen-size) {
+        flex-direction: column;
+    }
 }
 
 .one-third {
     flex: 1 1 33.3%; 
-    &:not(:last-child) {
-        padding-right: 1rem;
+
+    @include bigger-than($medium-screen-size) {
+        &:not(:last-child) {
+            padding-right: 1rem;
+        }
+    }
+
+    @include smaller-than($medium-screen-size) {
+        flex: 100%;
     }
 }
 
@@ -242,6 +260,9 @@ article {
 .highlight-bg {
     background-color: $bg-soft;
     padding: $main-vertical-padding 0;
+    @include smaller-than($medium-screen-size) {
+        padding: $main-vertical-padding-small 0;
+    }
 }
 
 
@@ -265,4 +286,10 @@ article {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+@include smaller-than($medium-screen-size) {
+    img {
+        max-width: 100%;
+    }
 }
