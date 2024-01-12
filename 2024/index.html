@@ -13,7 +13,7 @@ sponsors_definition:
 
 sponsors:
   - level: Platinum Sponsors
-    size: 230
+    size: platinum
     members:
       - name: Epic Games
         image: sponsor_Unreal_Epic_Black.png
@@ -24,7 +24,7 @@ sponsors:
         link: https://seed.ea.com
 
   - level: Gold Sponsors
-    size: 170
+    size: gold
     members:
       - name: The Forge
         image: sponsor_TheForge_color_black_landscape.png
@@ -59,7 +59,7 @@ sponsors:
         link: https://corp.roblox.com/research/
 
   - level: Silver Sponsors
-    size: 120
+    size: silver
     members:
       - name: Activision
         image: sponsor_Activision_logo.png
@@ -201,11 +201,11 @@ sponsors:
         {% if level.members -%}
         <hr>
         <h3>{{ level.level }}</h3>
-        <ul class="sponsors-list">
+        <ul class="sponsors-list sponsors-{{ level.size }}">
         {% for sponsor in level.members -%}
-            <li style="height: {{ level.size }}px">
+            <li>
                 <a href="{{ sponsor.link }}" target="_blank">
-                    <img style="max-width: {{ level.size }}px; max-height: {{ level.size }}px;" src="img/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
+                    <img src="img/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
                 </a>
             </li>
         {% endfor -%}

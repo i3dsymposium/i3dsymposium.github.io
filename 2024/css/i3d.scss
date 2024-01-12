@@ -10,6 +10,7 @@
 
 $nav-height: 80px;
 
+$sponsor-sizes: ("platinum": 230px, "gold": 170px, "silver": 120px);
 
 
 header {
@@ -25,7 +26,9 @@ header {
 
     @include smaller-than($max-page-width) {
         width: 100%;
+    }
 
+    @include smaller-than($large-screen-size) {
         padding-left: $main-horizontal-padding-small;
         padding-right: $main-horizontal-padding-small;
     }
@@ -46,7 +49,7 @@ header {
             position: relative;
             list-style: none;
 
-            @include smaller-than($max-page-width) {
+            @include smaller-than($large-screen-size) {
                 visibility: hidden;
                 opacity: 0;
                 background-color: white;
@@ -64,7 +67,7 @@ header {
                 margin: 0;
                 padding: 30px 5px;
 
-                @include smaller-than($max-page-width) {
+                @include smaller-than($large-screen-size) {
                     float: none;
                     width: 100%;
                     padding: 0;
@@ -77,7 +80,7 @@ header {
                     font-weight: bold;
                     padding: 15px 10px;
                     margin: 0;
-                    @include smaller-than($max-page-width) {
+                    @include smaller-than($large-screen-size) {
                         padding: 0.5em 0 0.5em 80px;
                         width: 100%;
                         display: block;
@@ -85,7 +88,7 @@ header {
                     }
                 }
 
-                @include bigger-than($max-page-width) {
+                @include bigger-than($large-screen-size) {
                     &:first-child {
                         padding-left: 0;
                         a, a:hover, a:active, a:visited {
@@ -114,14 +117,14 @@ header {
             visibility: hidden;
             position: absolute;
 
-            @include smaller-than($max-page-width) {
+            @include smaller-than($large-screen-size) {
                 display: block;
             }
 
             & + label {
                 display: none;
 
-                @include smaller-than($max-page-width) {
+                @include smaller-than($large-screen-size) {
                     display: block;
                     position: absolute;
                     bottom: 10px;
@@ -133,7 +136,7 @@ header {
             }
         }
 
-        @include smaller-than($max-page-width) {
+        @include smaller-than($large-screen-size) {
             float: none;
             position: fixed;
             max-height: inherit;
@@ -189,7 +192,7 @@ header {
         padding: $main-vertical-padding $main-horizontal-padding;
         margin: 0px (-$main-horizontal-padding);
         margin-bottom: $main-vertical-padding;
-        @include smaller-than($max-page-width) {
+        @include smaller-than($large-screen-size) {
             padding: $main-vertical-padding-small $main-horizontal-padding-small;
             margin: 0px (-$main-horizontal-padding-small);
             margin-bottom: $main-vertical-padding-small;
@@ -206,7 +209,7 @@ footer {
     clear: both;
     margin: $main-vertical-padding auto 0;
     padding-bottom: 2*$main-vertical-padding; 
-    @include smaller-than($max-page-width) {
+    @include smaller-than($large-screen-size) {
         margin: $main-vertical-padding-small auto 0;
         padding-bottom: 2*$main-vertical-padding-small; 
     }
@@ -214,7 +217,7 @@ footer {
     box-sizing: border-box;
     padding-left: $main-horizontal-padding;
     padding-right: $main-horizontal-padding;
-    @include smaller-than($max-page-width) {
+    @include smaller-than($large-screen-size) {
         padding-left: $main-horizontal-padding-small;
         padding-right: $main-horizontal-padding-small;
     }
@@ -229,7 +232,7 @@ footer {
 
     #footer-copy {
         margin-top: $main-vertical-padding;
-        @include smaller-than($max-page-width) {
+        @include smaller-than($large-screen-size) {
             margin-top: $main-vertical-padding-small;
         }
     }
@@ -250,8 +253,6 @@ footer {
         }
 
         &>ul {
-            //float: left;
-            //margin-left: 3em;
             list-style: none;
 
             flex: 1 1 50%;
@@ -287,7 +288,7 @@ footer {
         #main > #{$tag} {
             padding-left: $main-horizontal-padding;
             padding-right: $main-horizontal-padding;
-            @include smaller-than($max-page-width) {
+            @include smaller-than($large-screen-size) {
                 padding-left: $main-horizontal-padding-small;
                 padding-right: $main-horizontal-padding-small;
             }
@@ -297,7 +298,7 @@ footer {
         #main > #{$tag} {
             margin-left: $main-horizontal-padding;
             margin-right: $main-horizontal-padding;
-            @include smaller-than($max-page-width) {
+            @include smaller-than($large-screen-size) {
                 margin-left: $main-horizontal-padding-small;
                 margin-right: $main-horizontal-padding-small;
             }
@@ -306,7 +307,7 @@ footer {
     #main > section {
         margin-top: $main-vertical-padding;
         margin-bottom: $main-vertical-padding;
-        @include smaller-than($max-page-width) {
+        @include smaller-than($large-screen-size) {
             margin-top: $main-vertical-padding-small;
             margin-bottom: $main-vertical-padding-small;
         }
@@ -327,7 +328,7 @@ footer {
 
 #index-highlight {
     padding: $main-vertical-padding 0;
-    @include smaller-than($max-page-width) {
+    @include smaller-than($large-screen-size) {
         padding: $main-vertical-padding-small 0;
     }
 
@@ -358,7 +359,7 @@ footer {
             margin: 0;
             padding-top: 1.5em;
 
-            @include smaller-than($max-page-width) {
+            @include smaller-than($large-screen-size) {
                 padding-top: 0.5em;
             }
 
@@ -376,15 +377,17 @@ footer {
 
 #sponsors {
     margin-top: $main-vertical-padding;
-    @include smaller-than($max-page-width) {
+    @include smaller-than($large-screen-size) {
         margin-top: $main-vertical-padding-small;
     }
 
     hr {
         margin-top: 2rem;
 
-        &:first-child {
-            margin-top: 0;
+        @include bigger-than($medium-screen-size) {
+            &:first-child {
+                margin-top: 0;
+            }
         }
     }
 
@@ -392,9 +395,9 @@ footer {
         position: relative;
         list-style: none;
         columns: 3;
-        @include smaller-than($medium-screen-size) {
-            columns: 1;
-        }
+
+        $sponsor-column-gap: 24px;
+        column-gap: $sponsor-column-gap;
 
         column-fill: balance;
 
@@ -410,14 +413,46 @@ footer {
                 position: relative;
 
                 img {
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    top: 0;
-                    bottom: 0;
-                    margin: auto;
+                    position: relative;
+                    margin: 20px auto;
+                    display: block;
                 }
             }
+        }
+
+        @each $tier, $tier-size in $sponsor-sizes {
+            &.sponsors-#{$tier} {
+                li a img {
+                    max-width: $tier-size;
+                    max-height: $tier-size;
+                    @include smaller-than($tier-size + 2*$main-horizontal-padding) {
+                        max-width: 100%;
+                    }
+                }
+
+                // Change the number of columns dynamically so that
+                // we never go over the 2/3ds of the screen when
+                // the screen is divided, and otherwise just the 100% of it
+                // That is calculated by:
+                // N columns * size of the logo + spacing between all the columns
+                // all multiplied by 3/2 to obtain the total size, plus padding
+                // plus the padding that separates left and right sides of the screen (18px)
+                // If all that is bigger than the 2/3 division breakpoint, we
+                // deal with that. If it's smaller, then we don't use the 3/2 factor.
+                @for $n-cols from 3 to 1 {
+                    $breakpoint: ($n-cols * $tier-size + ($n-cols - 1) * $sponsor-column-gap) * 3 / 2 + 2*$main-horizontal-padding + 18px;
+                    @if $breakpoint > $medium-screen-size {
+                        @include smaller-than($breakpoint) {
+                            columns: ($n-cols - 1);
+                        }
+                    } @else {
+                        @include smaller-than(($n-cols * $tier-size + ($n-cols - 1) * $sponsor-column-gap) + 2*$main-horizontal-padding) {
+                            columns: ($n-cols - 1);
+                        }
+                    }
+                }
+            }
+
         }
     }
 }

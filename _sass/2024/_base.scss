@@ -112,7 +112,7 @@ h6 {
         font-size: $fs;
     }
 }
-@include smaller-than($medium-screen-size) {
+@include smaller-than($large-screen-size) {
     @each $h, $fs in (h1: 28px, h2: 25px, h3: 22px, h4: 20px, h5: 18px, h6: 16px) {
         #{$h} {
             font-size: $fs;
@@ -260,7 +260,7 @@ article {
 .highlight-bg {
     background-color: $bg-soft;
     padding: $main-vertical-padding 0;
-    @include smaller-than($medium-screen-size) {
+    @include smaller-than($large-screen-size) {
         padding: $main-vertical-padding-small 0;
     }
 }
