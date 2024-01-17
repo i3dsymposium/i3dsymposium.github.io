@@ -327,9 +327,10 @@ footer {
 
     #main > p {
         width: 100%;
+        box-sizing: border-box;
+
         @include bigger-than($large-screen-size) {
             width: 66%;
-            box-sizing: border-box;
         }
 
         & > img {
@@ -355,11 +356,11 @@ footer {
             width: 33%;
             box-sizing: border-box;
             border-left: 1px solid $blue;
-        }
 
-        &:first-child {
-            & + * {
-                margin-top: 0;
+            &:first-child {
+                & + * {
+                    margin-top: 0;
+                }
             }
         }
     }
