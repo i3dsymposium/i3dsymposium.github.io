@@ -324,6 +324,45 @@ footer {
             margin-bottom: 0;
         }
     }
+
+    #main > p {
+        width: 100%;
+        @include bigger-than($large-screen-size) {
+            width: 66%;
+            box-sizing: border-box;
+        }
+
+        & > img {
+            max-width: 100%;
+        }
+    }
+
+    #main #markdown-toc {
+        list-style: none;
+        position: relative;
+
+        &> li {
+            margin-left: 0;
+        }
+
+        & ul {
+            list-style: none;
+        }
+        @include bigger-than($large-screen-size) {
+            position: sticky;
+            top: $main-vertical-padding;
+            float:right;
+            width: 33%;
+            box-sizing: border-box;
+            border-left: 1px solid $blue;
+        }
+
+        &:first-child {
+            & + * {
+                margin-top: 0;
+            }
+        }
+    }
 }
 
 #index-highlight {

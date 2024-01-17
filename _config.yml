@@ -15,6 +15,10 @@ author:
 # Build settings
 markdown: kramdown
 
+kramdown:
+  header_offset: 1
+  toc_levels: 1..2
+
 plugins:
   - jekyll-redirect-from
 

@@ -32,7 +32,7 @@ $main-vertical-padding-small: 25px;
 
 html {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 1.5;
 
     @include smaller-than($medium-screen-size) {
         font-size: 16px;

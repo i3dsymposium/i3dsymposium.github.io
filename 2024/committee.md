@@ -1,6 +1,6 @@
 ---
 layout: default2024
-title: 2024 Organizing Committee
+title: Committee
 
 committee_definition:
   - chair: Name of the chair(s)
@@ -109,12 +109,18 @@ ipc:
 
 ---
 
+* This bulletpoint is necessary for kramdown to generate the ToC
+{:toc}
+
+# 2024 Organizing Committee
+
 <small>*Co-chairs are listed alphabetically*</small>
 
 
 {% for chair in page.committee %}
 
-### {{ chair.chair }}
+{:.no_toc}
+## {{ chair.chair }}
 <ul class="unstyled expand">
   {% for member in chair.members -%}
   <li> 
@@ -129,7 +135,7 @@ ipc:
 
 ---
 
-## International Paper Committee
+# International Paper Committee
 
 {% for member in page.ipc %}
 - {{ member }}
@@ -138,7 +144,7 @@ ipc:
 
 ---
 
-## Steering Committee
+# Steering Committee
 
 The steering committee consists of the conference and general
 co-chairs of the most recent 4 years, including the chairs of the
