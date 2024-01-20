@@ -1,6 +1,6 @@
 ---
 layout: default2024
-title: Committee
+title: 2024 Committee
 
 committee_definition:
   - chair: Name of the chair(s)
@@ -160,7 +160,7 @@ ipc:
 * This bulletpoint is necessary for kramdown to generate the ToC
 {:toc}
 
-# 2024 Organizing Committee
+# Organizing Committee
 
 <small>*Co-chairs are listed alphabetically*</small>
 
