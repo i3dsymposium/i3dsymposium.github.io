@@ -45,6 +45,8 @@ header {
         max-height: $nav-height;
         font-size: 16px;
 
+        $open-button-circle-radius: 40px;
+
         @include smaller-than($large-screen-size) {
             float: none;
             position: fixed;
@@ -65,7 +67,7 @@ header {
                 visibility: hidden;
                 opacity: 0;
                 background-color: white;
-                padding-bottom: calc(50px + 1em);
+                padding-bottom: calc(#{$open-button-circle-radius} + 1em);
                 padding-top: 1em;
 
                 border-top: 4px solid;
@@ -137,7 +139,22 @@ header {
                 display: block;
             }
 
-            & + label {
+            & ~ #nav-menu-open-bg {
+                position: absolute;
+                width: 2*$open-button-circle-radius;
+                height: 2*$open-button-circle-radius;
+                bottom: -$open-button-circle-radius;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                z-index: 1000;
+                background-color: $bg-blue;
+                border-radius: 50%;
+
+                transition: .5s ease-in-out;
+            }
+
+            & ~ label[for=nav-menu-open] {
                 display: none;
 
                 @include smaller-than($large-screen-size) {
@@ -145,26 +162,22 @@ header {
                 }
 
                 position: absolute;
-                width: 100px;
-                height: 100px;
-                bottom: -50px;
                 left: 0;
                 right: 0;
+                bottom: 0;
+                width: $open-button-circle-radius - 5px;
+                height: $open-button-circle-radius;
                 margin: 0 auto;
-                z-index: 1000;
-                background-color: $bg-blue;
+                z-index: 1001;
                 cursor: pointer;
-                border-radius: 50%;
-
-                transition: .5s ease-in-out;
 
                 .hamburger {
                     position: absolute;
-                    top: 27px;
+                    bottom: $open-button-circle-radius / 2 - 4px;
                     left: 0;
                     right: 0;
                     margin: 0 auto;
-                    width: 30px;
+                    width: $open-button-circle-radius*0.625;
                     height: 2px;
                     background: white;
                     display: block;
@@ -181,9 +194,9 @@ header {
                         background: white;
                     }
 
-                    &:before { top: -10px; }
+                    &:before { top: -($open-button-circle-radius*0.625 / 4 + 2px); }
 
-                    &:after { bottom: -10px; }
+                    &:after { bottom: -($open-button-circle-radius*0.625 / 4 + 2px); }
                 }
 
             }
@@ -196,9 +209,11 @@ header {
                 margin-bottom: 0%;
             }
 
-            &>#nav-menu-open:checked + label {
+            &>#nav-menu-open:checked ~ #nav-menu-open-bg {
                 background-color: white;
+            }
 
+            &>#nav-menu-open:checked ~ label[for=nav-menu-open] {
                 &> .hamburger {
                     transform: rotate(45deg);
                     background: $blue;
