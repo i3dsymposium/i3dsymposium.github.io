@@ -5,27 +5,16 @@ mailing_list_form: true
 no_contact_panel: true
 ---
 
-<p>Please contact us with questions or problems at the following
-  e-mail addresses:</p>
-<ul class="unstyled">
-  <li>
-    <h4><a href="mailto:general@i3dsymposium.org">general@i3dsymposium.org</a>
-    </h4>General inquiries, registration, sponsorship
-  </li><br>
-  &nbsp;<br>
-  <li>
-    <h4><a href="mailto:papers@i3dsymposium.org">papers@i3dsymposium.org</a>
-    </h4>Discussion about paper submissions
-  </li><br>
-  &nbsp;<br>
-  <li>
-    <h4><a href="mailto:posters@i3dsymposium.org">posters@i3dsymposium.org</a>
-    </h4>Discussion about poster and demo submissions
-  </li><br>
+Please contact us with questions or problems at the following e-mail addresses:
 
-</ul>
+{:#contacts-list}
+- [general@i3dsymposium.org](mailto:general@i3dsymposium.org)
+    General inquiries, registration, sponsorship
+- [papers@i3dsymposium.org](mailto:papers@i3dsymposium.org)
+    Inquiries about paper submissions
+- [posters@i3dsymposium.org](mailto:posters@i3dsymposium.org)
+    Inquiries about poster and demo submissions
 
-<br>
 
 
 <div id="mailing-list-form" class="highlight-bg flex">
