@@ -45,6 +45,18 @@ header {
         max-height: $nav-height;
         font-size: 16px;
 
+        @include smaller-than($large-screen-size) {
+            float: none;
+            position: fixed;
+            max-height: inherit;
+            bottom: 0;
+            top: inherit;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            z-index: 100000;
+        }
+
         #nav-list {
             position: relative;
             list-style: none;
@@ -53,13 +65,17 @@ header {
                 visibility: hidden;
                 opacity: 0;
                 background-color: white;
-                padding-bottom: calc(35px - 1em);
+                padding-bottom: calc(50px + 1em);
                 padding-top: 1em;
 
                 border-top: 4px solid;
                 border-top-width: 4px;
                 border-image-slice: 1;
                 border-image-source: linear-gradient(-90deg, $bg-blue 0%, $bg-green 100%);
+
+                width: 100%;
+                margin-bottom: -100%;
+                transition: .5s ease-in-out;
             }
 
             li {
@@ -126,64 +142,81 @@ header {
 
                 @include smaller-than($large-screen-size) {
                     display: block;
-                    position: absolute;
-                    bottom: 10px;
-                    left: 10px;
-                    width: 50px;
-                    height: 50px;
-                    z-index: 1000;
                 }
+
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                bottom: -50px;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                z-index: 1000;
+                background-color: $bg-blue;
+                cursor: pointer;
+                border-radius: 50%;
+
+                transition: .5s ease-in-out;
+
+                .hamburger {
+                    position: absolute;
+                    top: 27px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: 30px;
+                    height: 2px;
+                    background: white;
+                    display: block;
+                    transform-origin: center;
+                    transition: .5s ease-in-out;
+
+                    &:after, &:before {
+                        transition: .5s ease-in-out;
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background: white;
+                    }
+
+                    &:before { top: -10px; }
+
+                    &:after { bottom: -10px; }
+                }
+
             }
         }
 
         @include smaller-than($large-screen-size) {
-            float: none;
-            position: fixed;
-            max-height: inherit;
-            bottom: 0;
-            top: inherit;
-            left: 0;
-            width: 100%;
-            margin: 0;
-            z-index: 100000;
-
             &>#nav-menu-open:checked ~ #nav-list {
                 visibility: visible;
                 opacity: 1;
+                margin-bottom: 0%;
             }
 
+            &>#nav-menu-open:checked + label {
+                background-color: white;
 
-            .menuicon {
-                display: block;
-                cursor: pointer;
-                color: $blue;
+                &> .hamburger {
+                    transform: rotate(45deg);
+                    background: $blue;
 
-                transform: rotate(0deg);
-                transition: .3s cubic-bezier(0.165, 0.840, 0.440, 1.000);
+                    &:after {
+                        transform: rotate(90deg);
+                        bottom: 0;
+                        background: $blue;
+                    }
 
-                &__bar,
-                &__circle {
-                    fill: none;
-                    stroke: currentColor;
-                    stroke-width: 3;
-                    stroke-linecap: round;
+                    &:before {
+                        transform: rotate(90deg);
+                        background: $blue;
+                        top: 0;
+                        visibility: hidden;
+                    }
                 }
 
-                &__circle_bg {
-                    fill: white;
-                }
-
-                &__bar {
-                    transform: rotate(0deg);
-                    transform-origin: 50% 50%;
-                    transition: transform .25s ease-in-out;
-                }
-
-                &__circle {
-                    transition: stroke-dashoffset .3s linear .1s;
-                    stroke-dashoffset: circumference(23); // 23 is the <circle>'s radius
-                    stroke-dasharray: circumference(23);
-                }
             }
         }
     }
@@ -328,9 +361,11 @@ footer {
     #main > p {
         width: 100%;
         box-sizing: border-box;
+        text-align: left;
 
         @include bigger-than($large-screen-size) {
             width: 66%;
+            text-align: justify;
         }
 
         & > img {
@@ -355,6 +390,8 @@ footer {
             float:right;
             width: 33%;
             box-sizing: border-box;
+            padding-bottom: 1em;
+            background: white;
             border-left: 1px solid $blue;
 
             &:first-child {
@@ -499,5 +536,19 @@ footer {
 
 #contact-panel {
     margin-top: 2rem;
+}
+
+#contacts-list {
+    list-style: none;
+
+    li {
+        margin-left: 0;
+        margin-bottom: 2em;
+
+        a {
+            display: block;
+            font-size: 125%;
+        }
+    }
 }
 
