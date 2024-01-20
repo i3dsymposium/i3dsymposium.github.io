@@ -358,19 +358,30 @@ footer {
         }
     }
 
+    // If there's a TOC we stay at 2/3 the size
+    #main > #markdown-toc {
+        & ~ ul, & ~ h2, & ~ h3, & ~ h4, & ~ h5, & ~ h6, & ~ hr {
+            box-sizing: border-box;
+            width: 100%;
+            @include bigger-than($large-screen-size) {
+                width: 66%;
+            }
+        }
+    }
+
     #main > p {
-        width: 100%;
         box-sizing: border-box;
+        width: 100%;
         text-align: left;
 
         @include bigger-than($large-screen-size) {
             width: 66%;
             text-align: justify;
         }
+    }
 
-        & > img {
-            max-width: 100%;
-        }
+    #main img {
+        max-width: 100%;
     }
 
     #main #markdown-toc {
@@ -420,34 +431,20 @@ footer {
 
 #important-dates {
     h2 {
-        margin-bottom: 0;
+        margin-bottom: 1.5rem;
     }
-    ul {
-        columns: 3;
-        @include smaller-than($medium-screen-size) {
-            columns: 1;
+
+    li {
+        font-weight: bold;
+
+        .date {
+            display: block;
+            color: $blue;
         }
 
-        column-fill: balance;
-        list-style: none;
-        li {
-            font-weight: bold;
-            break-inside: avoid;
-            margin: 0;
-            padding-top: 1.5em;
-
-            @include smaller-than($large-screen-size) {
-                padding-top: 0.5em;
-            }
-
-            &:first-child {
-                margin-top: 0;
-            }
-
-            .date {
-                display: block;
-                color: $blue;
-            }
+        &.past .date {
+            text-decoration: line-through;
+            color: $dark-gray;
         }
     }
 }

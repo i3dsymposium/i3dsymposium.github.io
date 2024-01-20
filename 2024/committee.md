@@ -30,7 +30,7 @@ committee:
         email: r.marroquim@tudelft.nl
         pronouns: (he, him)
       - name: Laura Reznikov
-        institution: Intel
+        institution: Meta
         email: laurareznikov@gmail.com
         pronouns: (she/her)
 
@@ -105,7 +105,55 @@ steering_committee:
       - Ari Silvennoinen
 
 ipc:
-  - TBD
+  - Ulf Assarsson, Chalmers University of Technology
+  - Colin Barré-Brisebois, SEED, Electronic Arts
+  - Laurent Belcour, Intel Corporation
+  - Markus Billeter, University of Leeds
+  - Jiri Bittner, Czech Technical University in Prague
+  - Jiawen Chen, Adobe Inc.
+  - Petrik Clarberg, NVIDIA
+  - Marc Comino Trinidad, Universidad Rey Juan Carlos
+  - Carsten Dachsbacher, Karlsruhe Institute of Technology
+  - Michal Drobot, Activision, Microsoft
+  - Adrien Dubouchet, Activision
+  - Elena Garces, Universidad
+  - Christiaan Gribble, Advanced Micro Devices, Inc.
+  - Adrien Gruson, etsmtl.ca
+  - Eric Guérin, LIRIS
+  - John Hable, Unity Technologies
+  - Sebastien Hillaire, Epic Games
+  - Daniel Holden, Epic Games
+  - Ludovic Hoyet, INRIA Rennes - Centre Bretagne Atlantique
+  - Michal Iwanicki, Activision
+  - Wallace Lages, Northeastern University
+  - Shiguang Liu, Tianjin University
+  - Miles Macklin, NVIDIA
+  - Michael Manzke, Trinity College Dublin
+  - Morgan McGuire, Roblox
+  - Javier Meseguer de Paz, Next Limit Technologies
+  - Zahra Montazeri, University of Manchester
+  - Aline Normoyle, Bryn Mawr College
+  - Chris Oat, Rockstar Games
+  - Romain Pacanowski, Inria
+  - Tobias Ritschel, UCL
+  - Marco Salvi, NVIDIA
+  - Yann Savoye, Liverpool John Moores University
+  - Nicolas Savva, Autodesk, Inc.
+  - Leonardo Scandolo, TomTom
+  - Markus Schuetz, Vienna University of Technology
+  - Omer Shapira, NVIDIA
+  - Dr. Mansi Sharma, Indian Institute of Technology, Delhi
+  - Konstantin Shkurko, University of Utah
+  - Ari Silvennoinen, Activision Publishing, Inc.
+  - Qi Sun, New York University
+  - Tiow Seng Tan, National University of Singapore
+  - Yusuke Tokuyoshi, Advanced Micro Devices, Inc.
+  - Corey Toler-Franklin, University of Florida
+  - Karthik Vaidyanathan, NVIDIA
+  - Hongzhi Wu, Zhejiang University
+  - Kui Wu, LightSpeed Studios
+  - Chris Wyman, NVIDIA
+  - Kun Zhou, Zhejiang University
 
 ---
 
@@ -121,7 +169,7 @@ ipc:
 
 {:.no_toc}
 ## {{ chair.chair }}
-<ul class="unstyled expand">
+<ul class="three-columns">
   {% for member in chair.members -%}
   <li> 
 		<b class="member-name">{% if member.link %}<a href="{{ member.link }}" target="_blank">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</b><br>

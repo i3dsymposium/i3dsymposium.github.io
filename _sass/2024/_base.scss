@@ -11,6 +11,7 @@ $bg-blue: #0090DE;
 $bg-green: #0EAB39;
 $bg-soft: #E7F2F4;
 $blue: #0DA0FF;
+$dark-gray: #888888;
 
 $disabled: #D1D1D1;
 
@@ -83,8 +84,8 @@ hr {
     border-top-width: 1px;
     clear: both;
     height: 0;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 h1,
@@ -93,7 +94,7 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 1em 0 0.5em;
+    margin: 1.25em 0 0.5em;
     &:first-child {
         margin-top: 0;
     }
@@ -126,7 +127,32 @@ ol {
 }
 
 ul {
-    list-style: disc;
+    //list-style: disc;
+    list-style: '\2013\2002';
+
+    &.three-columns {
+        columns: 3;
+        @include smaller-than($medium-screen-size) {
+            columns: 1;
+        }
+
+        column-fill: balance;
+        list-style: none;
+
+        li {
+            break-inside: avoid;
+            margin: 0;
+            margin-top: 1.5em;
+
+            @include smaller-than($large-screen-size) {
+                margin-top: 0.5em;
+            }
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
 }
 
 li {
@@ -211,12 +237,14 @@ ol.unstyled>li {
 
 ul.expand,
 ol.expand {
-    margin-bottom: 20px;
+    margin-bottom: 2em;
 }
 
 ul.expand>li,
 ol.expand>li {
-    padding-bottom: 10px;
+    &:not(:last-child) {
+        padding-bottom: 1em;
+    }
 }
 
 article {
@@ -241,6 +269,7 @@ article {
 
 .one-third {
     flex: 1 1 33.3%; 
+    max-width: 33.3%;
 
     @include bigger-than($medium-screen-size) {
         &:not(:last-child) {
@@ -250,11 +279,16 @@ article {
 
     @include smaller-than($medium-screen-size) {
         flex: 100%;
+        max-width: 100%;
     }
 }
 
 .two-thirds {
     flex: 2 1 66.6%; 
+    max-width: 66.6%;
+    @include smaller-than($medium-screen-size) {
+        max-width: 100%;
+    }
 }
 
 .highlight-bg {

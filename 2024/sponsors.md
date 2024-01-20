@@ -12,15 +12,15 @@ sponsors_definition:
 
 sponsors:
   - level: Platinum Sponsors
-    size: 230
+    size: platinum
     members:
 
   - level: Gold Sponsors
-    size: 170
+    size: gold
     members:
 
   - level: Silver Sponsors
-    size: 120
+    size: silver
     members:
 
 ---
@@ -39,21 +39,23 @@ supporting the latest developments in computer graphics research.
 
 If your organization would like to become a corporate sponsor of I3D 2024, please contact the conference chairs: [general@i3dsymposium.org](mailto:general@i3dsymposium.org)
     
-
-{% for level in page.sponsors -%}
-
-{% if level.members -%}
-
-## {{ level.level }}
-{% for sponsor in level.members -%}
-<div style="margin: 0px 5px 25px 5px;">
-  <a href="{{ sponsor.link }}">
-    <img width="{{ level.size }}" src="img/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}" style="padding: 2px; background: #fff;">
-  </a>
+<div id="sponsors" class="flex">
+    <div class="two-thirds">
+        {% for level in page.sponsors -%}
+        {% if level.members -%}
+        <hr>
+        <h3>{{ level.level }}</h3>
+        <ul class="sponsors-list sponsors-{{ level.size }}">
+        {% for sponsor in level.members -%}
+            <li>
+                <a href="{{ sponsor.link }}" target="_blank">
+                    <img src="img/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
+                </a>
+            </li>
+        {% endfor -%}
+        </ul>
+        {% endif -%}
+        {% endfor -%}
+    </div>
 </div>
-{% endfor -%}
-
-{% endif -%}
-
-{% endfor -%}
 
