@@ -1,8 +1,9 @@
+---
+current_year: 2024
+---
 <!DOCTYPE html>
 <html>
 <head>
-
-    {% assign current_year = 2024 -%}
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,7 @@
 
     <link rel="shortcut icon" href="{{ 'favicon.ico' | prepend: page.dir | absolute_url | replace: 'http://','//' }}">
 
-    <title>{% if page.title %}{{ page.title }} | {% endif %}I3D {{ current_year }}</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}I3D {{ layout.current_year }}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url | replace: 'http://','https://' }}">
@@ -65,14 +66,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO metadata for social posts -->
-    <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url | replace: 'http://','https://' }}" />
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}I3D {{ current_year }}" />
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:image" content="{{ 'img/social-card.png' | prepend: page.dir | absolute_url | replace: 'http://','https://' }}" />
-    <meta name="twitter:card" content="summary"></meta>
-    <meta name="twitter:image" content="{{ '/img/logo-square-bg.png' | absolute_url | replace: 'http://','https://' }}" />
-    <meta name="twitter:site" content="@I3DCONF"></meta>
+    {% include social-media-header.html %}
 
 </head>
 
@@ -80,7 +74,7 @@
 
     <header>
         <a href="index.html">
-            <img id="banner" src="img/banner.png" alt="I3D {{ current_year }}" />
+            <img id="banner" src="img/banner.png" alt="I3D {{ layout.current_year }}" />
         </a>
         <nav id="nav-menu">
             <input type="checkbox" id="nav-menu-open" />
@@ -158,7 +152,7 @@
 
     <footer id="footer">
         <a href="index.html">
-            <img id="footer-logo" src="img/banner.png" alt="I3D {{ current_year }}" />
+            <img id="footer-logo" src="img/banner.png" alt="I3D {{ layout.current_year }}" />
         </a>
 
         <!-- social media links -->
@@ -179,7 +173,7 @@
         </ul>
 
         <div id="footer-copy">
-            &copy; {{ current_year }}
+            &copy; {{ layout.current_year }}
             ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
         </div>
 

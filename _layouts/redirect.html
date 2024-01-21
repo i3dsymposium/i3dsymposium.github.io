@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="utf-8">
-  <title>Redirecting&hellip;</title>
-  <link rel="canonical" href="{{ page.redirect.to }}"/>
-  <link rel="me" href="https://mastodon.acm.org/@i3d"/>
-  <script>location="{{ page.redirect.to }}"</script>
-  <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
-  <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <title>Redirecting&hellip;</title>
+    <link rel="canonical" href="{{ page.redirect.to }}"/>
+
+    {% include social-media-header.html %}
+
+    <script>location="{{ page.redirect.to }}"</script>
+    <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+
+    <meta name="robots" content="noindex">
 </head>
 <body>
-  <h1>Redirecting&hellip;</h1>
-  <a href="{{ page.redirect.to }}">Click here if you are not redirected.</a>
+    <h1>{{ page.title }}</h1>
+    <h2>Redirecting&hellip;</h2>
+    <a href="{{ page.redirect.to }}">Click here if you are not redirected.</a>
 </body>
 </html>

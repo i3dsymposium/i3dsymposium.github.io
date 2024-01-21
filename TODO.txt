@@ -2,13 +2,12 @@ TODO:
 
 - Ensure favicon and metadata for social media work with new logo
 
-- Redesign default.html
-
-- Fix css `background-image: url(../img/logo.png);` in 2014, 2015, 2016
-	and `../img/logo<year>.png;` in 2017 to 2022 to have the right logo for then
-
-
-
-- Add a media kit page, with logos and so on, maybe a powerpoint presentation template, so people can use it in their presentations if they want?
+- Add a media kit page with
+  - logos, banners, etc
+  - powerpoint presentation template
+  - youtube video cover
+  - youtube video layout for fast forward
+  - conference banner
+  - badges
 
 
