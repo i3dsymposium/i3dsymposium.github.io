@@ -4,7 +4,9 @@ TODO:
 
 - Redesign default.html
 
-- Update readme with logo/banner/icon generation and remove the logo.txt
+- Fix css `background-image: url(../img/logo.png);` in 2014, 2015, 2016
+	and `../img/logo<year>.png;` in 2017 to 2022 to have the right logo for then
+
 
 
 - Add a media kit page, with logos and so on, maybe a powerpoint presentation template, so people can use it in their presentations if they want?
