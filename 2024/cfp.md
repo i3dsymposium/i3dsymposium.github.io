@@ -10,7 +10,7 @@ title: Participate
 # Call for Papers
 
 
-*__Summary:__ 5 of January 2024 deadline; at most 16 pages + references (shorter submissions are welcome); anonymous submission; submission link <https://easychair.org/conferences/?conf=i3d2024>*
+*__Summary:__ 5 January 2024 deadline; at most 16 pages + references (shorter submissions are welcome); anonymous submission; submission link <https://easychair.org/conferences/?conf=i3d2024>*
 
 
 The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D) is the leading conference for real-time 3D computer graphics and human interaction. The symposium brings together researchers, engineers, and industry professionals to discuss their latest work on real-time and interactive computer graphics and related applications. The symposium has a long legacy of innovative and excellent technical content, with influential work on rendering, texture synthesis, collision detection, VR interaction, animation, and many other areas of real-time computer graphics, having been presented at the conference.
@@ -62,11 +62,11 @@ Please ensure that you and your co-authors obtain an ORCID ID, so you can comple
 ## Important Dates
 *All deadlines are 23:59 Pacific Time (UTC -7).*
 
-**5 of January, 2024** &nbsp;&nbsp; Paper submission deadline\
-**3 of March, 2024** &nbsp;&nbsp; Notification of committee decisions\
-**29 of March, 2024** &nbsp;&nbsp; Revision deadline for conditionally accepted papers\
-**19 of April, 2024** &nbsp;&nbsp; PACM CGIT camera-ready deadline for accepted papers\
-**8-10 of May, 2024** &nbsp;&nbsp; Conference
+**5 January 2024** &nbsp;&nbsp; Paper submission deadline\
+**3 March 2024** &nbsp;&nbsp; Notification of committee decisions\
+**29 March 2024** &nbsp;&nbsp; Revision deadline for conditionally accepted papers\
+**19 April 2024** &nbsp;&nbsp; PACM CGIT camera-ready deadline for accepted papers\
+**8-10 May 2024** &nbsp;&nbsp; Conference
 
 All questions about paper submissions should be emailed to [papers@i3dsymposium.org](mailto:papers@i3dsymposium.org).
 
