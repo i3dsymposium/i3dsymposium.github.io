@@ -69,9 +69,9 @@
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | absolute_url | replace: 'http://','https://' }}" />
     <meta property="og:title" content="{% if page.title %}{{ page.title }} | {% endif %}I3D {{ current_year }}" />
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}{% else %}{{ site.description }}{% endif %}" />
-    <meta property="og:image" content="{{ 'img/banner-narrow-subtitle.png' | prepend: page.dir | absolute_url | replace: 'http://','https://' }}" />
+    <meta property="og:image" content="{{ 'img/social-card.png' | prepend: page.dir | absolute_url | replace: 'http://','https://' }}" />
     <meta name="twitter:card" content="summary"></meta>
-    <meta name="twitter:image" content="{{ '/img/logo-square-twitter.png' | absolute_url | replace: 'http://','https://' }}" />
+    <meta name="twitter:image" content="{{ '/img/logo-square-bg.png' | absolute_url | replace: 'http://','https://' }}" />
     <meta name="twitter:site" content="@I3DCONF"></meta>
 
 </head>

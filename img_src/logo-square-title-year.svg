@@ -8,7 +8,7 @@
    version="1.1"
    id="svg1"
    inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
-   sodipodi:docname="logo-square.svg"
+   sodipodi:docname="logo-square-title-year.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.6927516"
-     inkscape:cx="157.43598"
+     inkscape:cx="157.1406"
      inkscape:cy="106.63112"
      inkscape:window-width="2131"
      inkscape:window-height="1370"
@@ -251,18 +251,29 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.9325px;line-height:1.25;font-family:Jost;-inkscape-font-specification:'Jost, @wght=600';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 600;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.323313"
+       x="4.7038951"
+       y="63.071125"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.9325px;font-family:Jost;-inkscape-font-specification:'Jost, @wght=600';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 600;stroke-width:0.323313"
+         x="4.7038951"
+         y="63.071125">I3D {{year}}</tspan></text>
     <g
        id="g37"
        inkscape:label="g1"
-       style="clip-rule:evenodd;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"
-       transform="matrix(0.10412923,0,0,0.10412923,2.6278834,2.6278878)">
+       style="clip-rule:evenodd;display:inline;fill-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2"
+       transform="matrix(0.07289046,0,0,0.07289046,11.999519,3.9999878)">
       <g
          transform="matrix(0.88631,0,0,0.88631,12.6097,-6.54482)"
          id="g3">
         <path
    d="m 39.861,292.389 212.533,391.099 39.97,-23.174 c 1.77,-1.457 2.844,-3.972 2.844,-7.331 V 359.022 c 0,-7.786 -5.764,-17.689 -12.59,-21.63 l -97.98,-56.569 c -33.483,-19.331 -64.375,-24.665 -89.059,-17.913 -5.899,1.613 -11.443,3.917 -16.583,6.885 z"
    style="fill:url(#_Linear1);fill-rule:nonzero"
-   id="path1-4" />
+   id="path1-3" />
 
         <g
    transform="matrix(-1.73201,-0.999976,0,2.30141,-0.804572,379.847)"
@@ -270,7 +281,7 @@
             <path
    d="m 0,0.383 c 0,38.551 -37.894,69.914 -84.473,69.914 h -56.57 c -2.24,0 -4.282,-0.923 -5.627,-2.341 -1.022,-1.077 -1.642,-2.439 -1.642,-3.899 V -63.674 c 0,-3.383 3.328,-6.24 7.269,-6.24 h 56.57 c 19.332,0 37.168,5.432 51.419,14.558 C -12.967,-42.493 0,-22.291 0,0.383"
    style="fill:url(#_Linear2);fill-rule:nonzero"
-   id="path2-8" />
+   id="path2-73" />
 
         </g>
 
@@ -284,7 +295,7 @@
             <path
    d="m 39.861,292.389 212.533,391.099 39.97,-23.174 c 1.77,-1.457 2.844,-3.972 2.844,-7.331 V 359.022 c 0,-7.786 -5.764,-17.689 -12.59,-21.63 l -97.98,-56.569 c -33.483,-19.331 -64.375,-24.665 -89.059,-17.913 -5.899,1.613 -11.443,3.917 -16.583,6.885 z"
    style="fill:url(#_Linear3);fill-rule:nonzero"
-   id="path3-0" />
+   id="path3-5" />
 
         </g>
 
@@ -294,7 +305,7 @@
             <path
    d="m 0,0.383 c 0,38.551 -37.894,69.914 -84.473,69.914 h -56.57 c -2.24,0 -4.282,-0.923 -5.627,-2.341 -1.022,-1.077 -1.642,-2.439 -1.642,-3.899 V -63.674 c 0,-3.383 3.328,-6.24 7.269,-6.24 h 56.57 c 19.332,0 37.168,5.432 51.419,14.558 C -12.967,-42.493 0,-22.291 0,0.383"
    style="fill:url(#_Linear4);fill-rule:nonzero"
-   id="path4-0" />
+   id="path4-8" />
 
         </g>
 
@@ -308,7 +319,7 @@
             <path
    d="m 39.861,292.389 212.533,391.099 39.97,-23.174 c 1.77,-1.457 2.844,-3.972 2.844,-7.331 V 359.022 c 0,-7.786 -5.764,-17.689 -12.59,-21.63 l -97.98,-56.569 c -33.483,-19.331 -64.375,-24.665 -89.059,-17.913 -5.899,1.613 -11.443,3.917 -16.583,6.885 z"
    style="fill:url(#_Linear5);fill-rule:nonzero"
-   id="path6-8" />
+   id="path6-1" />
 
         </g>
 
@@ -318,7 +329,8 @@
             <path
    d="m 0,0.383 c 0,38.551 -37.894,69.914 -84.473,69.914 h -56.57 c -2.24,0 -4.282,-0.923 -5.627,-2.341 -1.022,-1.077 -1.642,-2.439 -1.642,-3.899 V -63.674 c 0,-3.383 3.328,-6.24 7.269,-6.24 h 56.57 c 19.332,0 37.168,5.432 51.419,14.558 C -12.967,-42.493 0,-22.291 0,0.383"
    style="fill:url(#_Linear6);fill-rule:nonzero"
-   id="path7" />
+   id="path7"
+   inkscape:label="path7" />
 
         </g>
 
