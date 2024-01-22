@@ -2,6 +2,26 @@
 layout: default2024
 mailing_list_form: true
 
+important_dates:
+  - name: Conference
+    date: 8-10 May 2024
+  - name: Paper submission deadline
+    date: 5 January 2024
+  - name: Paper notifications
+    date: 3 March 2024
+  - name: Revision deadline
+    date: 29 March 2024
+  - name: Camera-ready deadline
+    date: 19 April 2024
+  - name: Poster submission deadline
+    date: TBD
+#  - name: Extended Poster submission deadline
+#    date: 30 March, 2023
+#  - name: Poster notifications
+#    date: 3 April, 2023
+#  - name: Early registration deadline
+#    date: 5 April, 2023
+
 sponsors_definition:
   - level: Title of the level of sponsorship
     size: Width of the images that will be shown in this level
@@ -42,15 +62,16 @@ sponsors:
 <div id="important-dates" class="highlight-bg">
     <h2>Important Dates</h2>
     <ul class="three-columns">
-        <li>Conference:<span class="date">8-10 May 2024</span></li>
-        <li class="past">Paper submission deadline:<span class="date">5 January 2024</span></li>
-        <li>Paper notifications:<span class="date">3 March 2024</span></li>
-        <li>Revision deadline:<span class="date">29 March 2024</span></li>
-        <li>Camera-ready deadline:<span class="date">19 April 2024</span></li>	
-        <li>Poster submission deadline:<span class="date">TBD</span></li>
-        <!--li>Extended Poster submission deadline:<span class="date">30 March, 2023</span></li>
-        <li>Poster notifications:<span class="date">3 April, 2023</span></li>
-        <li>Early registration deadline:<span class="date">5 April, 2023</span></li-->
+        {% for date in page.important_dates -%}
+            {% assign thisdate = date.date | date: "%Y%m%d" | plus: 0 -%}
+            {% assign now = "now" | date: "%Y%m%d" | plus: 0 -%}
+            {% if thisdate < now and thisdate > 0 -%}
+                {% assign past = true -%}
+            {% else -%}
+                {% assign past = false -%}
+            {% endif -%}
+            <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
+        {%- endfor %}
     </ul>
 </div>
 
