@@ -519,7 +519,7 @@ footer {
         }
     }
 
-    #main img {
+    #main > img, #main > * > img {
         max-width: 100%;
     }
 
