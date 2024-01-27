@@ -466,7 +466,7 @@ footer {
             }
         }
     }
-    @each $tag in (img, table) {
+    @each $tag in (img) {
         #main > #{$tag} {
             margin-left: $main-horizontal-padding;
             margin-right: $main-horizontal-padding;
@@ -476,6 +476,7 @@ footer {
             }
         }
     }
+
     #main > section {
         margin-top: $main-vertical-padding;
         margin-bottom: $main-vertical-padding;
@@ -497,6 +498,22 @@ footer {
         }
     }
 
+    // This is because tables apparently are horrible and can't be properly
+    // positioned with margin or padding, so we have to do hacks.
+    @each $tag in (table, blockquote) {
+        #main > #{$tag} {
+            box-sizing: border-box;
+            position: relative;
+            width: calc(100% - 2 * #{$main-horizontal-padding});
+            left: $main-horizontal-padding;
+
+            @include smaller-than($large-screen-size) {
+                width: calc(100% - 2 * #{$main-horizontal-padding-small});
+                left: $main-horizontal-padding-small;
+            }
+        }
+    }
+
     // If there's a TOC we stay at 2/3 the size
     #main > #markdown-toc {
         & ~ ul, & ~ h2, & ~ h3, & ~ h4, & ~ h5, & ~ h6, & ~ hr {
@@ -506,18 +523,29 @@ footer {
                 width: 66%;
             }
         }
-    }
 
-    #main > p {
-        box-sizing: border-box;
-        width: 100%;
-        text-align: left;
+        & ~ p {
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
 
-        @include bigger-than($large-screen-size) {
-            width: 66%;
-            text-align: justify;
+            @include bigger-than($large-screen-size) {
+                width: 66%;
+                text-align: justify;
+            }
+        }
+
+        @each $tag in (table, blockquote) {
+            & ~ #{$tag} {
+                text-align: left;
+                @include bigger-than($large-screen-size) {
+                    width: calc(66% - 2 * #{$main-horizontal-padding});
+                    text-align: justify;
+                }
+            }
         }
     }
+
 
     #main > img, #main > * > img {
         max-width: 100%;
@@ -689,6 +717,33 @@ footer {
             display: block;
             font-size: 125%;
         }
+    }
+}
+
+.time[title] {
+    text-decoration: underline dotted 1px;
+    cursor: help;
+}
+
+table.program {
+    td {
+        padding: 0.25em 0;
+
+        &.time {
+            font-variant-numeric: tabular-nums;
+            text-align: right;
+            padding-right: 1em;
+            width: 5em;
+        }
+    }
+
+    tr:nth-child(even) {
+        background-color: $bg-soft;
+    }
+
+    .session-chair {
+        display: block;
+        font-size: 95%;
     }
 }
 

@@ -97,6 +97,7 @@ h6 {
     }
     font-weight: 500;
     line-height: 120%;
+    word-spacing: 0.05em;
     text-transform: uppercase;
     text-rendering: optimizelegibility;
 
@@ -116,6 +117,14 @@ h6 {
             font-size: $fs;
         }
     }
+}
+
+h1 {
+    word-spacing: 0.15em;
+}
+
+h2 {
+    word-spacing: 0.1em;
 }
 
 
@@ -176,16 +185,13 @@ dl {
     margin-left: 20px;
 }
 
-blockquote {
-    margin-left: 1em;
-    padding-left: 1em;
-    border-left: 2px solid rgba(255, 255, 255, 0.5);
+table {
+    display: block table;
 }
 
-table {
-    width: 90%;
-    margin-right: 10%;
-    margin-left: 8%;
+blockquote {
+    padding-left: 1em;
+    border-left: 2px solid $bg-soft-darker;
 }
 
 input, select {
