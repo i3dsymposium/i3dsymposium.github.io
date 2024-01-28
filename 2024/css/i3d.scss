@@ -456,7 +456,7 @@ footer {
         width: 100%;
     }
 
-    @each $tag in (div, p, h1, h2, h3, h4, h5, h6, ul, ol, section) {
+    @each $tag in (div, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, section) {
         #main > #{$tag} {
             padding-left: $main-horizontal-padding;
             padding-right: $main-horizontal-padding;
@@ -500,7 +500,7 @@ footer {
 
     // This is because tables apparently are horrible and can't be properly
     // positioned with margin or padding, so we have to do hacks.
-    @each $tag in (table, blockquote) {
+    @each $tag in (table, blockquote, hr) {
         #main > #{$tag} {
             box-sizing: border-box;
             position: relative;
@@ -516,11 +516,13 @@ footer {
 
     // If there's a TOC we stay at 2/3 the size
     #main > #markdown-toc {
-        & ~ ul, & ~ h2, & ~ h3, & ~ h4, & ~ h5, & ~ h6, & ~ hr {
-            box-sizing: border-box;
-            width: 100%;
-            @include bigger-than($large-screen-size) {
-                width: 66%;
+        @each $tag in (h2, h3, h4, h5, h6, ul, ol, dl) {
+            & ~ #{$tag} {
+                box-sizing: border-box;
+                width: 100%;
+                @include bigger-than($large-screen-size) {
+                    width: 66%;
+                }
             }
         }
 
@@ -535,12 +537,17 @@ footer {
             }
         }
 
-        @each $tag in (table, blockquote) {
+        & ~ blockquote {
+            text-align: left;
+            @include bigger-than($large-screen-size) {
+                text-align: justify;
+            }
+        }
+
+        @each $tag in (table, blockquote, hr) {
             & ~ #{$tag} {
-                text-align: left;
                 @include bigger-than($large-screen-size) {
                     width: calc(66% - 2 * #{$main-horizontal-padding});
-                    text-align: justify;
                 }
             }
         }
@@ -727,18 +734,11 @@ footer {
 
 table.program {
     td {
-        padding: 0.25em 0;
-
         &.time {
             font-variant-numeric: tabular-nums;
             text-align: right;
-            padding-right: 1em;
             width: 5em;
         }
-    }
-
-    tr:nth-child(even) {
-        background-color: $bg-soft;
     }
 
     .session-chair {

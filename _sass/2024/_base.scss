@@ -1,3 +1,6 @@
+@use 'sass:color';
+@use "sass:map";
+
 $max-page-width: 1440px;
 
 $medium-screen-size: 800px;
@@ -6,7 +9,8 @@ $large-screen-size: 1080px;
 $bg-blue: #0090DE;
 $bg-green: #0EAB39;
 $bg-soft: #E7F2F4;
-$bg-soft-darker: #bdd8e7;
+$bg-soft-dark: scale-color($bg-soft, $lightness: -5%);
+$bg-soft-darker: scale-color($bg-soft, $lightness: -12%);
 $blue: #0DA0FF;
 $dark-gray: #888888;
 
@@ -106,13 +110,16 @@ h6 {
     }
 }
 
-@each $h, $fs in (h1: 36px, h2: 30px, h3: 26px, h4: 22px, h5: 18px, h6: 16px) {
+
+$h-font-size: (h1: 36px, h2: 30px, h3: 26px, h4: 22px, h5: 18px, h6: 16px);
+$h-font-size-small: (h1: 28px, h2: 25px, h3: 22px, h4: 20px, h5: 18px, h6: 16px);
+@each $h, $fs in $h-font-size {
     #{$h} {
         font-size: $fs;
     }
 }
 @include smaller-than($large-screen-size) {
-    @each $h, $fs in (h1: 28px, h2: 25px, h3: 22px, h4: 20px, h5: 18px, h6: 16px) {
+    @each $h, $fs in $h-font-size-small {
         #{$h} {
             font-size: $fs;
         }
@@ -162,31 +169,79 @@ ul {
 }
 
 li {
-    margin-left: 30px;
+    margin-left: 1.67em;
 }
 
 dt {
-    font-size: 140%;
-    margin-top: 28px;
-    margin-bottom: 3px;
-}
+    margin-top: 1.25em;
+    font-weight: 500;
+    line-height: 120%;
+    word-spacing: 0.05em;
+    text-rendering: optimizelegibility;
 
-dd {
-    margin-left: 20px;
-    color: #ccccdd;
-    p {
-        color: #eee;
-        text-indent: 1em;
-        margin-bottom: 0.5em;
+    font-size: map-get($h-font-size, "h3");
+
+    @include smaller-than($large-screen-size) {
+        font-size: map-get($h-font-size-small, "h3");
     }
 }
 
-dl {
-    margin-left: 20px;
+dd {
+    p {
+        text-indent: 0.5em;
+        margin-top: 0 !important;
+        &:not(:last-child) {
+            margin-bottom: 0.5em;
+        }
+    }
+
+    & > img, & > details > img {
+        display: block;
+    }
 }
 
 table {
-    display: block table;
+
+    td {
+        padding: 0.25em 0.5em;
+    }
+
+    th {
+        padding: 0.25em 0.5em;
+        background-color: $bg-soft-dark;
+    }
+
+    &:not(.odd-rows-darker) {
+        tr:nth-child(even) {
+            background-color: $bg-soft;
+
+            th {
+                background-color: $bg-soft-darker;
+            }
+        }
+    }
+
+    &.odd-rows-darker {
+        tr:nth-child(odd) {
+            background-color: $bg-soft;
+
+            th {
+                background-color: $bg-soft-darker;
+            }
+        }
+    }
+
+    &.center-text {
+        td, th {
+            text-align: center;
+        }
+    }
+
+    &.center-text-headers {
+        th {
+            text-align: center;
+        }
+    }
 }
 
 blockquote {
