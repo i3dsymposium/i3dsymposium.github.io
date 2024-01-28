@@ -3,8 +3,6 @@ TODO:
 - Ensure favicon and metadata for social media work with new logo
 
 - Add a media kit page with
-  - logos, banners, etc
-  - powerpoint presentation template
   - youtube video cover
   - youtube video layout for fast forward
   - conference banner

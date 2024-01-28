@@ -174,12 +174,19 @@ ipc:
   <li> 
 		<b class="member-name">{% if member.link %}<a href="{{ member.link }}" target="_blank">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</b><br>
 		{% if member.institution %}{{ member.institution }}<br>{% endif %}
-		{% if member.email %}{{ member.email }}<br>{% endif %}
+		{% if member.email %}<span class="e-mail" data-e-user="{{ member.email | split: '@' | first}}" data-e-domain="{{ member.email | split: '@' | last}}">&nbsp;</span><br>{% endif %}
 		{{ member.pronouns }}
 	</li>
   {%- endfor %}
 </ul>
 {% endfor %}
+
+<noscript>
+<p>&nbsp;</p>
+<p>
+If you can't see the emails of the committee members (you likely have javascript disabled) and need to contact us, use the general email address to do so.
+</p>
+</noscript>
 
 ---
 

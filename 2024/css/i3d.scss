@@ -806,3 +806,8 @@ img.keynote-headshot {
 
 }
 
+.e-mail[data-e-user][data-e-domain] {
+    &::before {
+        content: attr(data-e-user) '@' attr(data-e-domain);
+    }
+}

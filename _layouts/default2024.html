@@ -243,6 +243,16 @@ footer_socials:
 
     </footer>
 
+    <script>
+        (function(){
+            var mails = document.querySelectorAll(".e-mail[data-e-user][data-e-domain]");
+            for (var i = 0; i < mails.length; ++i) {
+                var user = mails[i].attributes["data-e-user"].value;
+                var domain = mails[i].attributes["data-e-domain"].value;
+                mails[i].textContent = user + '@' + domain;
+                mails[i].classList.remove("e-mail");
+            }
+        })();
+    </script>
   </body>
-
 </html>
