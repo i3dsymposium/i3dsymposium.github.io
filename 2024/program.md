@@ -114,7 +114,7 @@ All times are United States Pacific Time ({{ page.timezone_name }}, or {{ page.t
 
 {% for day in page.program %}
 
-## {{ day.day | date: "%A, %e %B %Y" }}{% if day.video %}&nbsp;[![YouTube stream for Day {{ forloop.index }}](../img/youtube-link-logo.png){width="40px" style="vertical-align: text-bottom;"}]({{ day.video }}){:target=_blank}{% endif %}
+## {{ day.day | date: "%A, %e %B %Y" }}{% if day.video %}&nbsp;[![YouTube stream for Day {{ forloop.index }}](../img/youtube-link-logo.png){width="40px" style="vertical-align: text-bottom;"}]({{ day.video }}){:target="_blank"}{% endif %}
 {: #program-day-{{forloop.index0}}}
 
 {% if day.times and day.times.size > 0 %}
@@ -151,18 +151,18 @@ All times are United States Pacific Time ({{ page.timezone_name }}, or {{ page.t
 
 <script src="../script/luxon.min.js"></script>
 <script>
-  var times = document.getElementsByClassName("time");
-  Array.from(times).forEach(te => {
-    var s = te.attributes["data-day"].value + " " + te.textContent;
-    var t = luxon.DateTime.fromFormat(s, "yyyy-MM-dd H:mm", {zone:"{{page.iana_timezone}}"});
-    var lt = t.toLocal();
-    var lts =  lt.toLocaleString({ weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
-    // Set the caption text on hover to the local time
-    te.setAttribute("data-local-time", lts);
-    te.setAttribute("title", lts);
+var times = document.getElementsByClassName("time");
+Array.from(times).forEach(te => {
+  var s = te.attributes["data-day"].value + " " + te.textContent;
+  var t = luxon.DateTime.fromFormat(s, "yyyy-MM-dd H:mm", {zone:"{{page.iana_timezone}}"});
+  var lt = t.toLocal();
+  var lts =  lt.toLocaleString({ weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' });
+  // Set the caption text on hover to the local time
+  te.setAttribute("data-local-time", lts);
+  te.setAttribute("title", lts);
 
-    // Use AM/PM where appropriate according to the computer locale
-    ts = t.toLocaleString(luxon.DateTime.TIME_SIMPLE);
-    te.textContent = ts.toUpperCase()
-  });
+  // Use AM/PM where appropriate according to the computer locale
+  ts = t.toLocaleString(luxon.DateTime.TIME_SIMPLE);
+  te.textContent = ts.toUpperCase()
+});
 </script>

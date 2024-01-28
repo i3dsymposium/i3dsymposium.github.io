@@ -226,7 +226,7 @@ The program also includes 3 papers originally published in the <a href="http://j
 {% assign presentations_video = session.presentations_video | strip -%}
 {%- assign qa_video = session.qa_video | strip -%}
 {%- if presentations_video != empty -%}
-- <a href="{{ session.presentations_video }}" target="_blank"><img src="../img/youtube-link-logo.png" width="25px" style="vertical-align:text-bottom;margin-right:5px;">Video presentations</a>
+- [Watch Video]({{ session.presentations_video }}){: .button target="_blank"}
 {%- endif %}
 {: .unstyled }
 

@@ -3,6 +3,7 @@
 
 $max-page-width: 1440px;
 
+$small-screen-size: 600px;
 $medium-screen-size: 800px;
 $large-screen-size: 1080px;
 
@@ -19,6 +20,10 @@ $disabled: #D1D1D1;
 $link: $blue;
 $link-hover: #0086CC;
 $link-active: #0EAB39;
+
+$button: #38ADF8;
+$button-hover: $link-hover;
+$button-active: $link-active;
 
 $main-horizontal-padding: 40px;
 $main-vertical-padding: 40px;
@@ -357,6 +362,31 @@ article {
     }
 }
 
+a.button {
+    font-size: 16px;
+    padding: 1em;
+    border-radius: 0.3em;
+    font-weight: 500;
+    margin-top: 0.5em;
+    display: inline-block;
+
+    &, &:visited {
+        background-color: $button;
+    }
+    &:hover {
+        background-color: $button-hover;
+    }
+
+    &:active {
+        background-color: $button-active;
+    }
+
+    &, &:visited, &:active, &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+
 
 /* Youtube Videos */
 
@@ -366,7 +396,7 @@ article {
     height: 0;
     padding-bottom: 56.25%;
     overflow: hidden;
-    margin: 20px auto 20px auto;
+    margin: 20px auto;
 }
 
 .youtube-embed iframe,

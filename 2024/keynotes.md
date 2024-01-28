@@ -84,9 +84,10 @@ keynotes:
 ### {{keynote.author}}
 
 {% if keynote.video -%}
-<a href="{{keynote.video}}" target="_blank"><img src="../img/youtube-link-logo.png" width="40px" style="vertical-align:middle;margin-right:10px;">Watch the video presentation </a>
+[Watch Video]({{keynote.video}}){: .button target="_blank"}
 {%- endif %}
-<img src="{{keynote.headshot}}" class="keynote-headshot">
+
+![]({{keynote.headshot}}){: .keynote-headshot}
 
 #### Abstract
 {{ keynote.abstract | strip | escape_once | newline_to_br | replace: "<br />

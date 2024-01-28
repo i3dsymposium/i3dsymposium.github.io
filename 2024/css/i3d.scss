@@ -604,6 +604,11 @@ footer {
 
     .youtube-embed {
         margin: 0;
+
+        @include smaller-than($medium-screen-size) {
+            margin: 0 (-$main-horizontal-padding-small);
+            width: 100vw;
+        }
     }
 }
 
@@ -730,6 +735,30 @@ footer {
 .time[title] {
     text-decoration: underline dotted 1px;
     cursor: help;
+
+    @media (pointer: coarse), (hover: none) {
+        user-select: none;
+        position: relative;
+        &:hover {
+            user-select: auto;
+        }
+        &:hover::after {
+            content: attr(title);
+            position: absolute;
+            top: 1em;
+            left: calc(100%);
+            font-size: 1rem;
+            line-height: 1.25;
+            font-weight: normal;
+            color: #000;
+            background-color: #fff;
+            border: 1px solid;
+            width: max-content;
+            padding: 3px;
+            text-transform: none;
+            z-index: 10000;
+        }
+    }
 }
 
 table.program {
@@ -759,5 +788,14 @@ img.keynote-headshot {
     max-width: 250px !important;
     position: relative;
     top: -1.5em;
+
+    @include smaller-than($small-screen-size) {
+        float: none;
+        margin: 0 auto;
+        max-height: 250px;
+        top: 0;
+        display: block;
+    }
+
 }
 
