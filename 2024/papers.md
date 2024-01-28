@@ -272,7 +272,7 @@ The program also includes 3 papers originally published in the <a href="http://j
 
   {%- endif -%}
   {%- if paper.thumbnail %}
-  <img src="img/paper_thumbnails/{{ paper.thumbnail }}" width="400">
+  <img src="img/paper_thumbnails/{{ paper.thumbnail }}" class="paper-thumbnail">
   {% endif -%}
   </details>
   {%- endif %}

@@ -456,7 +456,7 @@ footer {
         width: 100%;
     }
 
-    @each $tag in (div, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, section) {
+    @each $tag in (div, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, section, article) {
         #main > #{$tag} {
             padding-left: $main-horizontal-padding;
             padding-right: $main-horizontal-padding;
@@ -486,8 +486,7 @@ footer {
         }
     }
 
-    #main p {
-        margin-top: 1em;
+    #main p, #main article {
         margin-bottom: 1em;
 
         &:first-child {
@@ -526,7 +525,7 @@ footer {
             }
         }
 
-        & ~ p {
+        & ~ p, & ~ article {
             box-sizing: border-box;
             width: 100%;
             text-align: left;
@@ -563,7 +562,8 @@ footer {
         position: relative;
 
         &> li {
-            margin-left: 0;
+            text-indent: -1em;
+            margin-left: 1em;
         }
 
         & ul {
@@ -745,5 +745,19 @@ table.program {
         display: block;
         font-size: 95%;
     }
+}
+
+img.paper-thumbnail {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+img.keynote-headshot {
+    float: right;
+    margin-left: $main-horizontal-padding;
+    margin-bottom: $main-vertical-padding;
+    max-width: 250px !important;
+    position: relative;
+    top: -1.5em;
 }
 
