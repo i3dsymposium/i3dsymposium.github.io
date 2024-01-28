@@ -157,7 +157,11 @@ footer_socials:
                 {%- endif -%}
                 {% for link in layout.nav_links -%}
                     {%- if link.links -%}
-                        <li class="submenu"><span class="submenu-title">{{ link.title }}</span>
+                        {% assign submenu_active = false %}
+                        {%- for link2 in link.links -%}
+                        {%- if page_fname == link2.link %}{% assign submenu_active = true %}{% endif -%}
+                        {%- endfor %}
+                        <li class="submenu{% if submenu_active %} sub-active{% endif %}"><span class="submenu-title">{{ link.title }}</span>
                             <ul>
                         {% for link2 in link.links -%}
                             <li{% if page_fname == link2.link %} class="active"{% endif %}>
