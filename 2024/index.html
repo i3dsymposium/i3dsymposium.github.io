@@ -9,12 +9,12 @@ important_dates:
     date: 5 January 2024
   - name: Paper notifications
     date: 3 March 2024
+  - name: Poster submission deadline
+    date: 15 March 2024
   - name: Revision deadline
     date: 29 March 2024
   - name: Camera-ready deadline
     date: 19 April 2024
-  - name: Poster submission deadline
-    date: TBD
 #  - name: Extended Poster submission deadline
 #    date: 30 March, 2023
 #  - name: Poster notifications
@@ -32,66 +32,6 @@ sponsors_definition:
         link: url to link to for this sponsor
 
 sponsors:
-  - level: Platinum Sponsors
-    size: platinum
-    members:
-      - name: Epic Games
-        image: sponsor_Unreal_Epic_Black.png
-        link: https://www.unrealengine.com
-
-      - name: EA
-        image: sponsor_ea.png
-        link: https://seed.ea.com
-
-  - level: Gold Sponsors
-    size: gold
-    members:
-      - name: The Forge
-        image: sponsor_TheForge_color_black_landscape.png
-        link: https://theforge.dev
-
-      - name: Unity
-        image: sponsor_unity.png
-        link: https://unity3d.com
-
-      - name: Futurewei
-        image: sponsor_futurewei.png
-        link: https://www.huawei.com
-
-      - name: Intel
-        image: sponsor_intel.png
-        link: https://www.intel.com/content/www/us/en/developer/topic-technology/graphics-research/overview.html
-
-      - name: Google
-        image: sponsor_google.png
-        link: https://google.com
-
-      - name: Arm
-        image: sponsor_arm.png
-        link: https://developer.arm.com/solutions/graphics-and-gaming
-
-      - name: Facebook Reality Labs
-        image: sponsor_FRL_Research_Logo.png
-        link: https://www.facebook.com/careers/areas-of-work/facebookrealitylabs/?teams[0]=Facebook%20Reality%20Labs
-
-      - name: Roblox
-        image: sponsor_roblox.png
-        link: https://corp.roblox.com/research/
-
-  - level: Silver Sponsors
-    size: silver
-    members:
-      - name: Activision
-        image: sponsor_Activision_logo.png
-        link: https://activision.com
-
-      - name: AMD
-        image: sponsor_amd.png
-        link: https://www.amd.com
-
-      - name: NVIDIA
-        image: sponsor_nvidia_horz.png
-        link: https://research.nvidia.com
 
 ---
 
@@ -158,6 +98,13 @@ sponsors:
     </div>
 
     <div class="two-thirds">
+        <!-- ul class="sponsors-list sponsors-acm">
+            <li>
+                <a href="https://www.siggraph.org" target="_blank">
+                    <img src="img/sponsors/acm.png" alt="ACM">
+                </a>
+            </li>
+        </ul -->
         {% for level in page.sponsors -%}
         {% if level.members -%}
         <hr>

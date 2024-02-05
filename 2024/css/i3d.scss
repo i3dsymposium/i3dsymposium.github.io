@@ -493,14 +493,16 @@ footer {
         }
     }
 
-    #main p, #main article {
-        margin-bottom: 1em;
+    #main {
+        p, article, ul, ol {
+            margin-bottom: 1em;
 
-        &:first-child {
-            margin-top: 0;
-        }
-        &:last-child {
-            margin-bottom: 0;
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
 
