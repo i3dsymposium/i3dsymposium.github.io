@@ -1,6 +1,6 @@
 ---
 layout: default2024
-title: Call for Participation - Posters
+title: Posters Call for Participation
 ---
 
 * This bulletpoint is necessary for kramdown to generate the ToC
