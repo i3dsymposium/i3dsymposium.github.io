@@ -142,7 +142,6 @@ ipc:
   - Leonardo Scandolo, TomTom
   - Markus Schuetz, Vienna University of Technology
   - Omer Shapira, NVIDIA
-  - Dr. Mansi Sharma, Indian Institute of Technology, Delhi
   - Konstantin Shkurko, University of Utah
   - Ari Silvennoinen, Activision Publishing, Inc.
   - Qi Sun, New York University
