@@ -35,6 +35,8 @@ if args.year == 0:
     svg2png("logo-square.svg", "logo-square-bg.png", bg=True)
     svg2png("logo-square-title.svg", "logo-square-title.png")
     svg2png("logo-square-title.svg", "logo-square-title-bg.png", bg=True)
+    svg2png("cvent-banner.svg", "cvent-banner.png")
+    svg2png("cvent-logo.svg", "cvent-logo.png")
 else:
     svg2png_year("banner-year.svg", "banner.png", args.year)
     svg2png_year("banner-year.svg", "banner-bg.png", args.year, bg=True)
