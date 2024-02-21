@@ -144,6 +144,7 @@ ipc:
   - Omer Shapira, NVIDIA
   - Konstantin Shkurko, University of Utah
   - Ari Silvennoinen, Activision Publishing, Inc.
+  - Josef Spjut, NVIDIA
   - Qi Sun, New York University
   - Tiow Seng Tan, National University of Singapore
   - Yusuke Tokuyoshi, Advanced Micro Devices, Inc.
