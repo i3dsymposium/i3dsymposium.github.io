@@ -3,25 +3,35 @@ layout: default2024
 title: sponsors
 
 sponsors_definition:
-  - level: Title of the level of sponsorship
-    size: Width of the images that will be shown in this level
+  - level: ID of the level of sponsorship (for CSS, defines size, in i3d.scss)
+    title: Title of the sponsor level
+    single_column: Makes this set of entries single column instead of 3 columns if only one entry. Mainly intended for venue (and platinum if only one)
     members: # List of members
       - name: Name of the company (Only used in the "alt" of the img tag)
         image: Image to show for this sponsor
         link: url to link to for this sponsor
 
 sponsors:
-  - level: Platinum Sponsors
-    size: platinum
+  - level: venue
+    title: Venue Sponsor
+    single_column: true
     members:
-
-  - level: Gold Sponsors
-    size: gold
+      - name: Cesium
+        image: cesium.png
+        link: https://cesium.com
+  - level: platinum
+    title: Platinum Sponsor
+    single_column: true
     members:
-
-  - level: Silver Sponsors
-    size: silver
+      - name: The Forge
+        image: the_forge.png
+        link: https://theforge.dev
+  - level: gold
+    title: Gold Sponsors
     members:
+      - name: Activision
+        image: activision.png
+        link: https://www.activision.com
 
 ---
 
@@ -44,8 +54,8 @@ If your organization would like to become a corporate sponsor of I3D 2024, pleas
         {% for level in page.sponsors -%}
         {% if level.members -%}
         <hr>
-        <h3>{{ level.level }}</h3>
-        <ul class="sponsors-list sponsors-{{ level.size }}">
+        <h3>{{ level.title }}</h3>
+        <ul class="sponsors-list sponsors-{{ level.level }}{% if level.single_column and level.members.size == 1 %} sponsor-single{% endif %}">
         {% for sponsor in level.members -%}
             <li>
                 <a href="{{ sponsor.link }}" target="_blank">

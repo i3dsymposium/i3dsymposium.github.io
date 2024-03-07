@@ -10,7 +10,7 @@
 
 $nav-height: 80px;
 
-$sponsor-sizes: ("platinum": 230px, "gold": 170px, "silver": 120px);
+$sponsor-sizes: ("venue": 350px, "platinum": 230px, "gold": 170px, "silver": 120px);
 
 $hamburger-menu-breakpoint: $large-screen-size;
 
@@ -684,6 +684,10 @@ footer {
                     display: block;
                 }
             }
+        }
+
+        &.sponsor-single {
+            columns: 1;
         }
 
         @each $tier, $tier-size in $sponsor-sizes {
