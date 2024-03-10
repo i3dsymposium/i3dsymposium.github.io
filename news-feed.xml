@@ -26,12 +26,13 @@ months_to_show: 4
   {%- endunless -%}
   {%- assign valid_dates_interval = page.months_to_show | times: 3600 | times: 24 | times: 30 -%}
   {%- assign first_valid_date = 'now' | date: '%s' | minus: valid_dates_interval -%}
+  {%- assign today = 'now' | date: '%s' | minus: 0 -%}
 
   {%- assign posts = posts | sort: "date" | reverse -%}
 
   {%- for post in posts %}
   {% assign post_date = post.date | date: '%s' | plus: 0 -%}
-  {%- if post_date >= first_valid_date -%}
+  {%- if post_date >= first_valid_date and post_date <= today -%}
   <entry{% if post.lang %}{{" "}}xml:lang="{{ post.lang }}"{% endif %}>
     {% assign post_title = post.title | smartify | strip_html | normalize_whitespace | xml_escape -%}
     {%- assign post_url = post.url | absolute_url | replace: 'http://','https://' -%}

@@ -139,6 +139,10 @@ h2 {
     word-spacing: 0.1em;
 }
 
+.large-text {
+    font-size: 1.5rem;
+}
+
 
 ol {
     list-style: decimal;
@@ -369,6 +373,7 @@ a.button {
     font-weight: 500;
     margin-top: 0.5em;
     display: inline-block;
+    line-height: 1em;
 
     &, &:visited {
         background-color: $button;
@@ -386,7 +391,6 @@ a.button {
         text-decoration: none;
     }
 }
-
 
 /* Youtube Videos */
 

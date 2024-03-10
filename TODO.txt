@@ -1,7 +1,5 @@
 TODO:
 
-- Ensure favicon and metadata for social media work with new logo
-
 - Add a media kit page with
   - youtube video cover
   - youtube video layout for fast forward
