@@ -1,5 +1,5 @@
 ---
-title: I3D 2024 Registration is Open
+title: I3D 2024 Registration is now Open
 link: /2024/registration.html
 related: https://cvent.me/vLZw0g
 ---
