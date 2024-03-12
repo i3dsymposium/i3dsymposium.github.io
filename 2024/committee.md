@@ -32,7 +32,7 @@ committee:
       - name: Laura Reznikov
         institution: Meta
         email: laurareznikov@gmail.com
-        pronouns: (she/her)
+        pronouns: (she, her)
 
   - chair: Papers Chairs
     members:
@@ -76,6 +76,10 @@ committee:
         link: https://ror3d.xyz
         institution: Sony Interactive Entertainment
         email: akdm@ror3d.xyz
+        pronouns: (he, him)
+      - name: Zackary P. T. Sin
+        institution: The Hong Kong Polytechnic University
+        email: zackary-p-t.sin@polyu.edu.hk
         pronouns: (he, him)
 
   - chair: Additional Support
