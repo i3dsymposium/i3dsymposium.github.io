@@ -698,11 +698,14 @@ footer {
         @each $tier, $tier-size in $sponsor-sizes {
             &.sponsors-#{$tier} {
                 li a img {
-                    max-width: $tier-size;
+                    width: $tier-size;
                     max-height: $tier-size;
                     @include smaller-than($tier-size + 2*$main-horizontal-padding) {
                         max-width: 100%;
                     }
+                    // These two are so logos get centered horizontally when they are too thin
+                    min-height: $tier-size * 2/3;
+                    object-fit: contain;
                 }
 
                 // Change the number of columns dynamically so that
