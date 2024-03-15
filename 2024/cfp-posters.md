@@ -6,9 +6,16 @@ title: Posters Call for Participation
 * This bulletpoint is necessary for kramdown to generate the ToC
 {:toc}
 
+Submission deadline extended to 22 March
+{:.large-text}
 
-*__Summary:__ 15 March 2024 deadline; submission format: Either 2 page extended abstract using the ["sigconf"](https://www.siggraph.org/learn/instructions-authors) style OR a complete 24x36 inch poster; submission link <https://easychair.org/conferences/?conf=i3d2024>*
+*__Summary:__ 22 March 2024 deadline; submission format: Either 2 page extended abstract using the ["sigconf"](https://www.siggraph.org/learn/instructions-authors) style OR a complete 24x36 inch poster; submission link <https://easychair.org/conferences/?conf=i3d2024>*
 
+To encourage more submissions we have decided to extend the deadline for posters by one week. Please help spread the word to your colleagues and collaborators.
+
+The poster notification date remains on April 8 to enable accepted authors to benefit from the early bird rates when registering.
+
+---
 
 The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D) is the leading conference for real-time 3D computer graphics and human interaction. The symposium brings together researchers, engineers, and industry professionals to discuss their latest work on real-time and interactive computer graphics and related applications. The symposium has a long legacy of innovative and excellent technical content, with influential work on rendering, texture synthesis, collision detection, VR interaction, animation, and many other areas of real-time computer graphics, having been presented at the conference.
 
