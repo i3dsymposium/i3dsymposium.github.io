@@ -78,6 +78,7 @@ committee:
         email: akdm@ror3d.xyz
         pronouns: (he, him)
       - name: Zackary P. T. Sin
+        link: https://zackarysin.github.io/
         institution: The Hong Kong Polytechnic University
         email: zackary-p-t.sin@polyu.edu.hk
         pronouns: (he, him)
