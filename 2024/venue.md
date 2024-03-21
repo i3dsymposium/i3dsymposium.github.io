@@ -25,9 +25,9 @@ We are pleased to announce that I3D 2024 will take place at Cesium in Philadelph
 
 <div class="flex">
     <div class="img_sizing" style="height: 15vw; justify-content: space-between; display: flex;">
-        <img src="img/venue/library.jpg" style="object-fit: cover; width: 33%;">
-        <img src="img/venue/gameroom.jpg" style="object-fit: cover; width: 33%;">
-        <img src="img/venue/glass_wall.jpg" style="object-fit: cover; width: 33%;">
+        <img src="img/venue/library0.jpg" style="object-fit: cover; width: 33%;">
+        <img src="img/venue/gameroom0.jpg" style="object-fit: cover; width: 33%;">
+        <img src="img/venue/glass_wall0.jpg" style="object-fit: cover; width: 33%;">
     </div>
 </div>
 
