@@ -21,7 +21,7 @@ title: Venue
 We are pleased to announce that I3D 2024 will take place at Cesium in Philadelphia, PA, United States.
 
 <!-- ![Cesium's Conference Room](img/cesium-conf.jpg){: .venue-picture} -->
-![Cesium's Conference Room 2](img/venue/room.jpg){: .venue-picture}
+![Cesium's Conference Room 2](img/venue/room0.jpg){: .venue-picture}
 
 <div class="flex">
     <div class="img_sizing" style="height: 15vw; justify-content: space-between; display: flex;">
