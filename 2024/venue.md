@@ -32,7 +32,7 @@ We are pleased to announce that I3D 2024 will take place at Cesium in Philadelph
 </div>
 
 ## Location 
-Cesium headquarter is located at: <br>
+Cesium office is located at: <br>
 400 Market St, Philadelphia, PA 19106
 
 <div class="flex">
@@ -52,6 +52,8 @@ Here are some suggestions of hotels you could consider staying in. We don't have
 __Wyndham Philadelphia Historic District__ <br> 400 Arch St, Philadelphia, PA 19106 <br> Phone: 877-999-3223 <br> [Website Link](https://www.wyndhamhotels.com/wyndham/philadelphia-pennsylvania/wyndham-philadelphia-historic-district/overview)
 
 __Loews Philadelphia Hotel__ <br> 1200 Market St, Philadelphia, PA 19107 <br> Phone: 1-877-878-3629 <br> [Website Link](https://www.loewshotels.com/philadelphia-hotel/accommodations)
+
+*We will provide more hotel suggestions later*
 
 <!-- We will later suggest some the of hotels you could consider staying in. We don't have any agreement with them for the conference, so feel free to look around for other options that better match your needs. -->
 
