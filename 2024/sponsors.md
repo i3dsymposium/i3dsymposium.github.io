@@ -14,14 +14,12 @@ sponsors_definition:
 sponsors:
   - level: venue
     title: Venue Sponsor
-    single_column: true
     members:
       - name: Cesium
         image: cesium.png
         link: https://cesium.com
   - level: platinum
     title: Platinum Sponsor
-    single_column: true
     members:
       - name: The Forge
         image: the_forge.png
@@ -29,6 +27,9 @@ sponsors:
       - name: arm
         image: arm.png
         link: https://www.arm.com
+      - name: ea
+        image: ea.png
+        link: https://seed.ea.com
   - level: gold
     title: Gold Sponsors
     members:
@@ -58,7 +59,7 @@ If your organization would like to become a corporate sponsor of I3D 2024, pleas
         {% if level.members -%}
         <hr>
         <h3>{{ level.title }}</h3>
-        <ul class="sponsors-list sponsors-{{ level.level }}{% if level.single_column and level.members.size == 1 %} sponsor-single{% endif %}">
+        <ul class="sponsors-list sponsors-{{ level.level }}">
         {% for sponsor in level.members -%}
             <li>
                 <a href="{{ sponsor.link }}" target="_blank">

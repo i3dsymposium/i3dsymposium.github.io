@@ -665,12 +665,14 @@ footer {
     ul.sponsors-list {
         position: relative;
         list-style: none;
-        columns: 3;
 
         $sponsor-column-gap: 24px;
-        column-gap: $sponsor-column-gap;
 
-        column-fill: balance;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        column-gap: $sponsor-column-gap;
 
         li {
             display: block;
@@ -689,10 +691,6 @@ footer {
                     display: block;
                 }
             }
-        }
-
-        &.sponsor-single {
-            columns: 1;
         }
 
         @each $tier, $tier-size in $sponsor-sizes {
