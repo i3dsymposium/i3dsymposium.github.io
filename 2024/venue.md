@@ -49,13 +49,37 @@ This is the entance to Cesium.
 # Lodging {#Lodging}
 Here are some suggestions of hotels you could consider staying in. We don't have any agreement with them for the conference, so feel free to look around for other options that better match your needs.
 
-__Wyndham Philadelphia Historic District__ <br> 400 Arch St, Philadelphia, PA 19106 <br> Phone: 877-999-3223 <br> [Website Link](https://www.wyndhamhotels.com/wyndham/philadelphia-pennsylvania/wyndham-philadelphia-historic-district/overview)
+### Within around 1-2 blocks from Celsium
 
-__Loews Philadelphia Hotel__ <br> 1200 Market St, Philadelphia, PA 19107 <br> Phone: 1-877-878-3629 <br> [Website Link](https://www.loewshotels.com/philadelphia-hotel/accommodations)
+<!-- 4 stars -->
+__Renaissance Philadelphia__ &#9733;&#9733;&#9733;&#9733; <br> 401 Chestnut St, Philadelphia, PA 19106 <br> Phone: 215-925-0000 <br> [Website Link](https://www.marriott.com/en-us/hotels/phlpr-renaissance-philadelphia-downtown-hotel/overview/)
 
-*We will provide more hotel suggestions later*
+<!-- 4 stars -->
+__Kimpton Hotel Monaco__ &#9733;&#9733;&#9733;&#9733; <br> 433 Chestnut St, Philadelphia, PA 19106 <br> Phone: 215-925-2111 <br> [Website Link](https://www.ihg.com/kimptonhotels/hotels/us/en/hotel-monaco-philadelphia-pa/phlpm/hoteldetail)
 
-<!-- We will later suggest some the of hotels you could consider staying in. We don't have any agreement with them for the conference, so feel free to look around for other options that better match your needs. -->
+<!-- 3 stars -->
+__Wyndham Philadelphia Historic District__ &#9733;&#9733;&#9733; <br> 400 Arch St, Philadelphia, PA 19106 <br> Phone: 877-999-3223 <br> [Website Link](https://www.wyndhamhotels.com/wyndham/philadelphia-pennsylvania/wyndham-philadelphia-historic-district/overview)
+
+<!-- 3 stars -->
+__The Independence Park Hotel__ &#9733;&#9733;&#9733; <br> 235 Chestnut St, Philadelphia, PA 19106 <br> Phone: 215-922-4443 <br> [Website Link](https://www.bestwestern.com/en_US/book/philadelphia/hotel-rooms/independence-park-hotel-bw-premier-collection/propertyCode.39080.html)
+
+__The Ledger Residences by Sosuites__ <br> Independence Square, 150 S Independence Mall W, Philadelphia, PA 19106 <br> Phone: 833-533-4371 <br> [Website Link](https://www.ledgerphilly.com/)
+
+### Within around 4-5 blocks from Celsium
+
+<!-- 4 stars -->
+__Philadelphia Marriott Old City__ &#9733;&#9733;&#9733;&#9733; <br> One Dock St, Philadelphia, PA 19106 <br> Phone: 121-523-86000 <br> [Website Link](https://www.marriott.com/en-us/hotels/phlmo-philadelphia-marriott-old-city/overview/)
+
+<!-- 4 stars -->
+__Hilton Philadelphia at Penn's Landing__ &#9733;&#9733;&#9733;&#9733; <br> 201 S Christopher Columbus Blvd, Philadelphia, PA 19106 <br> Phone: 215-521-6500 <br> [Website Link](https://www.hilton.com/en/hotels/phlpnhh-hilton-philadelphia-at-penns-landing/)
+
+<!-- 3 stars -->
+__Penn's View__ &#9733;&#9733;&#9733; <br> 14 N Front St, Philadelphia, PA 19106 <br> Phone: 215-922-7600 <br> [Website Link](https://www.pennsviewhotel.com/)
+
+<!-- 3 stars -->
+__Morris House Hotel__ &#9733;&#9733;&#9733; <br> 225 S 8th St, Philadelphia, PA 19106 <br> Phone: 215-922-2446 <br> [Website Link](https://www.morrishousehotel.com/)
+
+<!-- __Loews Philadelphia Hotel__ <br> 1200 Market St, Philadelphia, PA 19107 <br> Phone: 1-877-878-3629 <br> [Website Link](https://www.loewshotels.com/philadelphia-hotel/accommodations) -->
 
 
 
