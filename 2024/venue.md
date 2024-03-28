@@ -24,7 +24,7 @@ We are pleased to announce that I3D 2024 will take place at Cesium in Philadelph
 ![Cesium's Conference Room 2](img/venue/room0.jpg){: .venue-picture}
 
 <div class="flex">
-    <div class="img_sizing" style="height: 15vw; justify-content: space-between; display: flex;">
+    <div class="img_sizing" style="justify-content: space-between; display: flex;">
         <img src="img/venue/library0.jpg" style="object-fit: cover; width: 33%;">
         <img src="img/venue/gameroom0.jpg" style="object-fit: cover; width: 33%;">
         <img src="img/venue/glass_wall0.jpg" style="object-fit: cover; width: 33%;">
@@ -49,13 +49,29 @@ This is the entance to Cesium.
 # Lodging {#Lodging}
 Here are some suggestions of hotels you could consider staying in. We don't have any agreement with them for the conference, so feel free to look around for other options that better match your needs.
 
-__Wyndham Philadelphia Historic District__ <br> 400 Arch St, Philadelphia, PA 19106 <br> Phone: 877-999-3223 <br> [Website Link](https://www.wyndhamhotels.com/wyndham/philadelphia-pennsylvania/wyndham-philadelphia-historic-district/overview)
+### 1-2 blocks from Cesium
 
-__Loews Philadelphia Hotel__ <br> 1200 Market St, Philadelphia, PA 19107 <br> Phone: 1-877-878-3629 <br> [Website Link](https://www.loewshotels.com/philadelphia-hotel/accommodations)
+__Renaissance Philadelphia__ &#9733;&#9733;&#9733;&#9733; <br> 401 Chestnut St, Philadelphia, PA 19106 <br> Phone: 215-925-0000 <br> [Website Link](https://www.marriott.com/en-us/hotels/phlpr-renaissance-philadelphia-downtown-hotel/overview/)
 
-*We will provide more hotel suggestions later*
+<!-- __Kimpton Hotel Monaco__ &#9733;&#9733;&#9733;&#9733; <br> 433 Chestnut St, Philadelphia, PA 19106 <br> Phone: 215-925-2111 <br> [Website Link](https://www.ihg.com/kimptonhotels/hotels/us/en/hotel-monaco-philadelphia-pa/phlpm/hoteldetail) -->
 
-<!-- We will later suggest some the of hotels you could consider staying in. We don't have any agreement with them for the conference, so feel free to look around for other options that better match your needs. -->
+__Wyndham Philadelphia Historic District__ &#9733;&#9733;&#9733; <br> 400 Arch St, Philadelphia, PA 19106 <br> Phone: 877-999-3223 <br> [Website Link](https://www.wyndhamhotels.com/wyndham/philadelphia-pennsylvania/wyndham-philadelphia-historic-district/overview)
+
+<!-- __The Independence Park Hotel__ &#9733;&#9733;&#9733; <br> 235 Chestnut St, Philadelphia, PA 19106 <br> Phone: 215-922-4443 <br> [Website Link](https://www.bestwestern.com/en_US/book/philadelphia/hotel-rooms/independence-park-hotel-bw-premier-collection/propertyCode.39080.html) -->
+
+<!-- __The Ledger Residences by Sosuites__ <br> Independence Square, 150 S Independence Mall W, Philadelphia, PA 19106 <br> Phone: 833-533-4371 <br> [Website Link](https://www.ledgerphilly.com/) -->
+
+### 4-5 blocks from Cesium
+
+__Philadelphia Marriott Old City__ &#9733;&#9733;&#9733;&#9733; <br> One Dock St, Philadelphia, PA 19106 <br> Phone: 121-523-86000 <br> [Website Link](https://www.marriott.com/en-us/hotels/phlmo-philadelphia-marriott-old-city/overview/)
+
+<!-- __Hilton Philadelphia at Penn's Landing__ &#9733;&#9733;&#9733;&#9733; <br> 201 S Christopher Columbus Blvd, Philadelphia, PA 19106 <br> Phone: 215-521-6500 <br> [Website Link](https://www.hilton.com/en/hotels/phlpnhh-hilton-philadelphia-at-penns-landing/) -->
+
+__Penn's View__ &#9733;&#9733;&#9733; <br> 14 N Front St, Philadelphia, PA 19106 <br> Phone: 215-922-7600 <br> [Website Link](https://www.pennsviewhotel.com/)
+
+<!-- __Morris House Hotel__ &#9733;&#9733;&#9733; <br> 225 S 8th St, Philadelphia, PA 19106 <br> Phone: 215-922-2446 <br> [Website Link](https://www.morrishousehotel.com/) -->
+
+<!-- __Loews Philadelphia Hotel__ <br> 1200 Market St, Philadelphia, PA 19107 <br> Phone: 1-877-878-3629 <br> [Website Link](https://www.loewshotels.com/philadelphia-hotel/accommodations) -->
 
 
 
