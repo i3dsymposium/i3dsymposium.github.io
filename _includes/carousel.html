@@ -1,0 +1,18 @@
+<div class="carousel">
+	{%- assign images = include.images | split: "," -%}
+
+	{% for img in images -%}
+	<figure>
+		<input type="radio" name="slides" id="slide-{{forloop.index}}" {% if forloop.index == 1 %} checked="checked"{% endif %}>
+		<img src="{{include.path_prefix}}{{img}}" alt="">
+	</figure>
+	{%- endfor %}
+
+	<ul class="carousel__thumbnails">
+		{% for img in images -%}
+		<li>
+			<label for="slide-{{forloop.index}}"><img src="{{include.path_prefix}}{{img}}" alt=""></label>
+		</li>
+		{%- endfor %}
+	</ul>
+</div>

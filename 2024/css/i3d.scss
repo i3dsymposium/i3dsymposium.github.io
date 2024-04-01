@@ -534,7 +534,7 @@ footer {
             }
         }
 
-        & ~ p, & ~ article {
+        & ~ p, & ~ article, & ~ div {
             box-sizing: border-box;
             width: 100%;
             text-align: left;
@@ -824,13 +824,4 @@ img.keynote-headshot {
     }
 }
 
-.img_sizing{
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-
-    @include bigger-than($large-screen-size) {
-        width: calc(66% - 1.5em);
-        text-align: justify;
-    }    
-}
+@import '2024/caroussel';
