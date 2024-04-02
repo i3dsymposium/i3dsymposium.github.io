@@ -1,6 +1,12 @@
 ---
 current_year: 2024
 
+# This next can be left commented out before conference info is known/announced
+conference_info:
+  location: Cesium, Philadelphia, PA, USA
+  dates: 8-10 May 2024
+
+
 nav_links:
   - link: index.html
     title: Home
@@ -60,6 +66,7 @@ footer_socials:
     title: Facebook
   - link: https://twitter.com/I3DCONF
     title: Twitter
+
 ---
 <!DOCTYPE html>
 <html>
@@ -131,7 +138,6 @@ footer_socials:
 </head>
 
 <body>
-
     <header>
         <a href="index.html">
             <img id="banner" src="img/banner.png" alt="I3D {{ layout.current_year }}" />
@@ -173,7 +179,12 @@ footer_socials:
             </ul>
         </nav>
         {% if page.title -%}
-        <h1 id="page-title">{{ page.title }}</h1>
+        <div id="page-title">
+            <h1>{{ page.title }}</h1>
+            {% if layout.conference_info -%}
+            <div id="conference-info-card">{{layout.conference_info.location}}<br />{{layout.conference_info.dates}}</div>
+            {%- endif %}
+        </div>
         {%- endif %}
     </header>
 
