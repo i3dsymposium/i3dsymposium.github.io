@@ -25,8 +25,12 @@ nav_links:
 
   - title: Program
     links:
+      - link: papers.html
+        title: Papers
       - link: keynotes.html
         title: Keynotes
+      - link: posters.html
+        title: Posters
 
   - title: Participate
     links:
@@ -193,6 +197,8 @@ footer_socials:
     <div id="main-wrapper">
 		
         <main id="main">
+            {% if page.two_thirds_content %}<div id="markdown-toc" style="display: none;"><!-- This is a hack to ensure 2/3ds content size on pages where TOC is not generated --></div>{% endif %}
+
             {{ content }}
 
             {% unless page.no_contact_panel %}
