@@ -19,7 +19,6 @@ sessions_definition:
 
 sessions:
   - title: "2024 Accepted Papers"
-    chair: "test"
     papers:
       - title: "Reducing the Memory Footprint of 3D Gaussian Splatting"
         authors: "Panagiotis Papantonakis, Georgios Kopanas, Bernhard Kerbl, Alexandre Lanvin and George Drettakis"
