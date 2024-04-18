@@ -224,7 +224,7 @@ sessions:
 
   - title: "Solvers And Simulation"
     papers:
-      - title: "Windblown sand around obstacles – simulation and validation of deposition patterns"
+      - title: "Windblown Sand Around Obstacles – Simulation And Validation Of Deposition Patterns"
         authors: "Nicolas Rosset, Régis Duvigneau, Adrien Bousseau, Guillaume Cordonnier"
         abstract: |
           Sand dunes are iconic landmarks of deserts, but can also put human infrastructures at risk, for instance by forming near buildings or roads. We present a simulator of sand erosion and deposition to predict how dunes form around and behind obstacles under wind.
