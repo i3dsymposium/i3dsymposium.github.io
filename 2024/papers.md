@@ -2,6 +2,8 @@
 layout: default2024
 title: Papers Program
 
+temporary_session_order: true # This enables/disables the "Papers N" in the titles
+
 sessions_definition:
   - title: "Title for the session"
     chair: ""
@@ -296,6 +298,10 @@ This year, we continue a track record of excellence with 23 high-quality papers 
 
 Conference papers will appear in <a href="https://dl.acm.org/loi/pacmcgit" target="_blank">PACM CGIT</a> after the conference. We will also publish links to author versions of the papers as they provide them until then. Refresh this page periodically, or use <a href="https://www.hongkiat.com/blog/detect-website-change-notification/" target="_blank">a web page monitoring tool</a>, to check this page for updates.
 
+{% if page.temporary_session_order -%}
+Sessions are not in the order they will be scheduled, check back later when the final program is published!
+{% endif %}
+
 #### Invited papers
 The program also includes 3 papers originally published in the [IEEE Transactions on Visualization and Computer Graphics](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2945){: target="_blank"} (TVCG).
 
@@ -303,7 +309,11 @@ The program also includes 3 papers originally published in the [IEEE Transaction
 {% for session in page.sessions %}
 
 {% if forloop.length > 1 -%}
+  {% unless page.temporary_session_order -%}
 # Papers {{ forloop.index }}: {{ session.title }}
+  {% else %}
+# {{ session.title }}
+  {% endunless -%}
 {: #Papers{{ forloop.index }}}
 {%- else -%}
 # {{ session.title }}
