@@ -42,7 +42,12 @@ keynotes:
       
       Sylvain is now investigating the use of FPGA architectures for his research, for education and for fun. He develops the Silice language for this purpose.
 
-  - title: TBA
+  - title: "AI in Play: The Impact of the AI Revolution on Gaming"
+    abstract: |
+      The AI revolution is reshaping the landscape of numerous industries with groundbreaking technologies like ChatGPT, Midjourney, and others at the forefront. These innovations are not only technological breakthroughs; they are fundamentally altering how we develop and interact with tech, including video games.
+      
+      In this keynote, Fabio Zinno, Head of ML for EA Sports, and Harold Chaput, Head of Product for EA Tech Growth & SEED, will unpack the implications of these advancements for the gaming industry. We will explore the immediate impact and long-term potential of AI in gaming, highlighting the significance of recent breakthroughs for game development and player engagement. Our presentation will outline the exciting opportunities these technologies unlock, providing actionable insights into how they are poised to propel the industry forward. Join us as we discuss the transformative role of AI in gaming today and envision its future trajectory in revolutionizing digital entertainment.
+
     authors:
       - name: "Fabio Zinno, Head of Machine Learning, EA"
         headshot: "img/fabiozinno_headshot.jpg"
@@ -78,25 +83,9 @@ keynotes:
 # {{keynote.title}}
 {: #Keynote{{forloop.index}} }
 
-{% if keynote.authors %}
-  {%- for author in keynote.authors %}
-### {{author.name}}
-  {%- if author.headshot %}
-![]({{author.headshot}}){: .keynote-headshot}
-  {%- endif %}
-
-  {%- if author.bio %}
-#### Bio
-{{ author.bio | strip | escape_once | newline_to_br | replace: "<br />
-<br />
-", "
-
-" }}
-  {%- endif %}
-  {% endfor -%}
-{% else %}
+{% unless keynote.authors %}
 ### {{keynote.author}}
-{% endif %}
+{% endunless %}
 
 {% if keynote.video -%}
 [Watch Video]({{keynote.video}}){: .button target="_blank"}
@@ -115,13 +104,34 @@ keynotes:
 " }}
 {%- endif %}
 
-{% if keynote.bio -%}
+
+{% if keynote.authors %}
+  {%- for author in keynote.authors %}
+### {{author.name}}
+  {%- if author.headshot %}
+![]({{author.headshot}}){: .keynote-headshot}
+  {%- endif %}
+
+  {%- if author.bio %}
+#### Bio
+{{ author.bio | strip | escape_once | newline_to_br | replace: "<br />
+<br />
+", "
+
+" }}
+  {%- endif %}
+  {% endfor -%}
+
+{% else -%}
+
+  {% if keynote.bio -%}
 #### Bio
 {{ keynote.bio | strip | escape_once | newline_to_br | replace: "<br />
 <br />
 ", "
 
 " }}
+  {%- endif %}
 {%- endif %}
 
 {%unless forloop.last %}
