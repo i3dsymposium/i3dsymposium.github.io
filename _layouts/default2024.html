@@ -21,7 +21,7 @@ nav_links:
 
       - link: http://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment
         title: Code of Conduct
-        blank: True
+        new_window: True
 
   - title: Program
     links:
@@ -31,6 +31,8 @@ nav_links:
         title: Posters
       - link: keynotes.html
         title: Keynotes
+      - link: sponsored-talks.html
+        title: Sponsored Talks
 
   - title: Participate
     links:
@@ -59,7 +61,7 @@ footer_links:
     title: Media Kit
   - link: http://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment
     title: Code of Conduct
-    blank: True
+    new_window: True
 
 footer_socials:
   - link: https://www.youtube.com/channel/UCZNuH6k97yBaiTerqd0u1_Q/
@@ -169,14 +171,14 @@ footer_socials:
                             <ul>
                         {% for link2 in link.links -%}
                             <li{% if page_fname == link2.link %} class="active"{% endif %}>
-                                <a href="{{ link2.link }}"{% if link2.blank %} target="_blank"{% endif %}>{{ link2.title }}</a>
+                                <a href="{{ link2.link }}"{% if link2.new_window %} target="_blank"{% endif %}>{{ link2.title }}</a>
                             </li>
                         {% endfor %}
                             </ul>
                         </li>
                     {%- else -%}
                         <li{% if page_fname == link.link %} class="active"{% endif %}>
-                            <a href="{{ link.link }}"{% if link.blank %} target="_blank"{% endif %}>{{ link.title }}</a>
+                            <a href="{{ link.link }}"{% if link.new_window %} target="_blank"{% endif %}>{{ link.title }}</a>
                         </li>
                     {% endif -%}
                 {% endfor %}
@@ -234,7 +236,7 @@ footer_socials:
         <ul id="footer-links">
             <ul>
                 {% for link in layout.footer_links -%}
-                <li><a href="{{ link.link }}"{% if link.blank %} target="_blank"{% endif %}>{{ link.title }}</a></li>
+                <li><a href="{{ link.link }}"{% if link.new_window %} target="_blank"{% endif %}>{{ link.title }}</a></li>
                 {%- endfor %}
             </ul>
 
