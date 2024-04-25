@@ -18,6 +18,7 @@ keynotes:
     company: "The Forge Interactive, Inc."
     speakers:
       - David Erler
+      - Wolfgang Engel
     abstract: |
       This article updates the development between 2018 and today and features new major developments in the realm of the Triangle Visibility Buffer architecture.
 

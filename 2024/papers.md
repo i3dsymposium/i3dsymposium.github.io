@@ -78,6 +78,14 @@ sessions:
           Our results indicate that the hybrid lighting approach is better than realtime lighting in terms of graphical performance and also yields better perceptions of quality for scenes with a small to moderately large number of lights.
 
 
+      - title: "Skill-Based Matchmaking for Competitive Two-Player Games"
+        authors: "Cem Yuksel"
+        abstract: |
+          Skill-based matchmaking is a crucial component of competitive multiplayer games and it is directly tied to how the players would enjoy the game.
+          
+          We present a simple matchmaking algorithm that aims to achieve a target win rate for all players, making long win/loss streaks less probable. It is based on the estimated rating of players. Therefore, we also present a raking estimation for players that does not require any game-specific information and purely relies on game outcomes. Our evaluation shows that our methods are effective in estimating a player’s rating, responding to changes in rating, and achieving a desirable win rate that avoids long win/loss streaks in competitive two-player games.
+
+
       - title: "Impact of Tutorial Modes with Different Time Flow Rates in Virtual Reality Games"
         authors: "Boyuan Chen, Xinan Yan, Xuning Hu, Dominic Kao, Hai-Ning Liang"
         abstract: |
@@ -86,14 +94,6 @@ sessions:
           This paper evaluates the impact of these 4 VR game tutorial modes with varying time flow rates on control learnability, engagement-related outcomes, and player performance. We conducted a between-subjects experiment with 59 participants. Results indicated that bullet time significantly enhanced control learnability, reduced cognitive load, and improved player performance when compared to other tutorial modes.
           
           Our research contributes to a more comprehensive understanding of VR game tutorials and offers practical guidance for game designers, underscoring the potential of bullet time to enhance learnability and game experience.
-
-
-      - title: "Skill-Based Matchmaking for Competitive Two-Player Games"
-        authors: "Cem Yuksel"
-        abstract: |
-          Skill-based matchmaking is a crucial component of competitive multiplayer games and it is directly tied to how the players would enjoy the game.
-          
-          We present a simple matchmaking algorithm that aims to achieve a target win rate for all players, making long win/loss streaks less probable. It is based on the estimated rating of players. Therefore, we also present a raking estimation for players that does not require any game-specific information and purely relies on game outcomes. Our evaluation shows that our methods are effective in estimating a player’s rating, responding to changes in rating, and achieving a desirable win rate that avoids long win/loss streaks in competitive two-player games.
 
 
 
@@ -259,16 +259,6 @@ sessions:
 
   - title: "Volumes And Fields"
     papers:
-      - title: "Efficient Visibility Approximation for Game AI using Neural Omnidirectional Distance Fields"
-        authors: "Zhi Ying, Nicholas Edwards, Mikhail Kutuzov"
-        abstract: |
-          Visibility information is critical in game AI applications, but the computational cost of raycasting-based methods poses a challenge for real-time systems.
-          
-          To address this challenge, we propose a novel method that represents a partitioned game scene as neural Omnidirectional Distance Fields (ODFs), allowing scalable and efficient visibility approximation between positions without raycasting. For each position of interest, we map its omnidirectional distance data from the spherical surface onto a UV plane. We then use multi-resolution grids and bilinearly interpolated features to encode directions. This allows us to use a compact multi-layer perceptron (MLP) to reconstruct the high-frequency directional distance data at these positions, ensuring fast inference speed. We demonstrate the effectiveness of our method through offline experiments and in-game evaluation.
-          
-          For in-game evaluation, we conduct a side-by-side comparison with raycasting-based visibility tests in three different scenes. Using a compact MLP (128 neurons and 2 layers), our method achieves an average cold start speedup of 9.35 times and warm start speedup of 4.8 times across these scenes. In addition, unlike the raycasting-based method, whose evaluation time is affected by the characteristics of the scenes, our method's evaluation time remains constant.
-
-
       - title: "ProteusNeRF: Fast Lightweight NeRF Editing using 3D-Aware Image Context"
         authors: "Binglun Wang, Niladri Shekhar Dutt, Niloy Mitra"
         abstract: |
@@ -284,6 +274,15 @@ sessions:
           
           We present a novel representation that enables high-quality volumetric rendering of an actor’s dynamic facial performances with minimal compute and memory footprint. It runs natively on commodity graphics soft- and hardware, and allows for a graceful trade-off between quality and efficiency. Our method utilizes recent advances in neural rendering, particularly learning discrete radiance manifolds to sparsely sample the scene to model volumetric effects. We achieve efficient modeling by learning a single set of manifolds for the entire dynamic sequence, while implicitly modeling appearance changes as temporal canonical texture. We export a single layered mesh and view-independent RGBA texture video that is compatible with legacy graphics renderers without additional ML integration. We demonstrate our method by rendering dynamic face captures of real actors in a game engine, at comparable photorealism to state-of-the-art neural rendering techniques at previously unseen frame rates.
 
+
+      - title: "Efficient Visibility Approximation for Game AI using Neural Omnidirectional Distance Fields"
+        authors: "Zhi Ying, Nicholas Edwards, Mikhail Kutuzov"
+        abstract: |
+          Visibility information is critical in game AI applications, but the computational cost of raycasting-based methods poses a challenge for real-time systems.
+          
+          To address this challenge, we propose a novel method that represents a partitioned game scene as neural Omnidirectional Distance Fields (ODFs), allowing scalable and efficient visibility approximation between positions without raycasting. For each position of interest, we map its omnidirectional distance data from the spherical surface onto a UV plane. We then use multi-resolution grids and bilinearly interpolated features to encode directions. This allows us to use a compact multi-layer perceptron (MLP) to reconstruct the high-frequency directional distance data at these positions, ensuring fast inference speed. We demonstrate the effectiveness of our method through offline experiments and in-game evaluation.
+          
+          For in-game evaluation, we conduct a side-by-side comparison with raycasting-based visibility tests in three different scenes. Using a compact MLP (128 neurons and 2 layers), our method achieves an average cold start speedup of 9.35 times and warm start speedup of 4.8 times across these scenes. In addition, unlike the raycasting-based method, whose evaluation time is affected by the characteristics of the scenes, our method's evaluation time remains constant.
 
 
 
