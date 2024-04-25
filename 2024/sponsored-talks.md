@@ -15,7 +15,7 @@ keynotes_definition:
 
 keynotes:
   - title: "Triangle Visibility Buffer 2.0"
-    company: "The Forge Interactive, Inc."
+    company: "The Forge Interactive"
     speakers:
       - David Erler
       - Wolfgang Engel
@@ -35,7 +35,7 @@ keynotes:
 
   - title: "The future of User Interaction in Games"
     subtitle: "Speech as a Natural Way of Interacting with Non-Playable Characters in Games"
-    company: "Arm Ltd."
+    company: "Arm"
     speakers:
       - Roberto Lopez Mendez
       - SICONG LI
@@ -59,7 +59,8 @@ keynotes:
 {% for keynote in page.keynotes %}
 
 # {{keynote.title}}
-{: #Keynote{{forloop.index}} }
+{: #{{keynote.company | split: " " | join: "" }} }
+
 
 {% if keynote.subtitle -%}
 ### {{keynote.subtitle}}
@@ -67,6 +68,7 @@ keynotes:
 {%- endif %}
 
 ## {{keynote.company}}
+{: #Company{{forloop.index}} }
 
 {% if keynote.abstract -%}
 {{ keynote.abstract | strip | escape_once | newline_to_br | replace: "<br />

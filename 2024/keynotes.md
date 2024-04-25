@@ -23,25 +23,6 @@ keynotes_definition:
           bio of the author (optional)
 
 keynotes:
-  - title: "The Gates of Graphics: a deep dive into making your own Computer Graphics hardware"
-    abstract: |
-      We use incredibly powerful hardware everyday, from many-core CPUs to GPUs of extreme performance. This has created unprecedented and exciting opportunities, but the increase in complexity inside our computers has become hard to grasp. This makes it difficult to understand, to explain and to experiment with the hardware that lies between our code and the pixels on our screen.
-
-      In this talk I will recount my quest to explore hardware design for Computer Graphics, using inexpensive FPGAs and modern open-source tools. Through strange examples and uncanny architectures, we will see how little it takes, in fact, to do interesting graphics effects and design your own specialized hardware. We will discuss whether and when this can make sense nowadays.
-
-      As a researcher trained on GPUs but with a lacking background in hardware design, I'll share what I learned, what I was able to make, the mistakes and surprises I faced, the great community I met along the way, and what this can mean for us as Computer Graphics enthusiasts and researchers.
-
-    author: "Sylvain Lefebvre, Senior Researcher, Inria"
-    headshot: "img/sylvainlefebvre_headshot.jpg"
-    bio: |
-      Sylvain Lefebvre is a senior researcher at Inria (France), where he leads the MFX team.
-
-      His main research focus is on geometry modeling, processing and procedural synthesis in the context of additive manufacturing, most often targeting GPU algorithms. Sylvain received the EUROGRAPHICS Young Researcher Award in 2010.
-
-      From 2012 to 2017 he was the principal investigator of the ERC ShapeForge (StG) and IceXL (PoC) projects. He created and is the lead developer of the IceSL software for additive manufacturing.
-      
-      Sylvain is now investigating the use of FPGA architectures for his research, for education and for fun. He develops the Silice language for this purpose.
-
   - title: "AI in Play: The Impact of the AI Revolution on Gaming"
     abstract: |
       The AI revolution is reshaping the landscape of numerous industries with groundbreaking technologies like ChatGPT, Midjourney, and others at the forefront. These innovations are not only technological breakthroughs; they are fundamentally altering how we develop and interact with tech, including video games.
@@ -72,6 +53,25 @@ keynotes:
           In 2004 I joined Electronic Arts and spent several years as a software engineer, then as Technical Director for FIFA Gameplay, World Cup 2010 South Africa, FIFA Ultimate Team Server Dev, and Mass Effect: Andromeda. In 2017 I joined and then led AILab, an AI research team, which merged last year with the SEED to become part of EA’s central Tech Growth Strategy team. As the Head of Product for Tech Growth, I’m merging my two passions — AI and video games — to bring about the next generation of digital entertainment.
 
 
+  - title: "The Gates of Graphics: a deep dive into making your own Computer Graphics hardware"
+    abstract: |
+      We use incredibly powerful hardware everyday, from many-core CPUs to GPUs of extreme performance. This has created unprecedented and exciting opportunities, but the increase in complexity inside our computers has become hard to grasp. This makes it difficult to understand, to explain and to experiment with the hardware that lies between our code and the pixels on our screen.
+
+      In this talk I will recount my quest to explore hardware design for Computer Graphics, using inexpensive FPGAs and modern open-source tools. Through strange examples and uncanny architectures, we will see how little it takes, in fact, to do interesting graphics effects and design your own specialized hardware. We will discuss whether and when this can make sense nowadays.
+
+      As a researcher trained on GPUs but with a lacking background in hardware design, I'll share what I learned, what I was able to make, the mistakes and surprises I faced, the great community I met along the way, and what this can mean for us as Computer Graphics enthusiasts and researchers.
+
+    author: "Sylvain Lefebvre, Senior Researcher, Inria"
+    headshot: "img/sylvainlefebvre_headshot.jpg"
+    bio: |
+      Sylvain Lefebvre is a senior researcher at Inria (France), where he leads the MFX team.
+
+      His main research focus is on geometry modeling, processing and procedural synthesis in the context of additive manufacturing, most often targeting GPU algorithms. Sylvain received the EUROGRAPHICS Young Researcher Award in 2010.
+
+      From 2012 to 2017 he was the principal investigator of the ERC ShapeForge (StG) and IceXL (PoC) projects. He created and is the lead developer of the IceSL software for additive manufacturing.
+      
+      Sylvain is now investigating the use of FPGA architectures for his research, for education and for fun. He develops the Silice language for this purpose.
+
 ---
 
 * This bulletpoint is necessary for kramdown to generate the ToC
@@ -80,8 +80,28 @@ keynotes:
 
 {% for keynote in page.keynotes %}
 
+{% comment -%}
+# Making a short title for the quick access link
+{%- endcomment -%}
+{%- if keynote.title -%}
+  {%- assign title_parts = keynote.title | split: ":" -%}
+  {%- if title_parts.size > 1 -%}
+    {%- assign keyn_title = title_parts[0] | downcase | split: " " | join: "-" -%}
+  {%- else -%}
+    {%- assign keyn_title = keynote.title | downcase | split: " " | slice: 0, 5 | join: "-" -%}
+  {%- endif %}
+{%- else -%}
+  {%- capture keyn_title %}Keynote{{forloop.index}}{% endcapture -%}
+{%- endif %}
+
+
+{% if keynote.title -%}
 # {{keynote.title}}
-{: #Keynote{{forloop.index}} }
+{: #{{keyn_title}} }
+{%- else -%}
+# TBA
+{: #{{keyn_title}} }
+{%- endif %}
 
 {% unless keynote.authors %}
 ### {{keynote.author}}

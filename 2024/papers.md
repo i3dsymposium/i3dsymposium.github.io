@@ -2,7 +2,7 @@
 layout: default2024
 title: Papers Program
 
-temporary_session_order: true # This enables/disables the "Papers N" in the titles
+temporary_session_order: false # This enables/disables the "Papers N" in the titles
 
 sessions_definition:
   - title: "Title for the session"
@@ -21,42 +21,7 @@ sessions_definition:
 
 
 sessions:
-  - title: "Efficient Forward And Differentiable Rendering"
-    papers:
-      - title: "Efficient Particle-Based Fluid Surface Reconstruction Using Mesh Shaders and Bidirectional Two-Level Grids"
-        authors: "Yuki Nishidate, Issei Fujishiro"
-        abstract: |
-          In this paper, we introduce a novel method for particle-based fluid surface reconstruction that incorporates mesh shaders for the first time.
-          
-          This approach eliminates the need to store triangle meshes in the GPU's global memory, resulting in a significant memory size reduction.
-          
-          Furthermore, our method employs a bidirectional two-level uniform grid, which not only accelerates the computationally expensive stage of surface cell detection but also effectively addresses the issue of vertex overflow among the mesh shaders.
-          
-          Experimental results proved that our method outperforms the state-of-the-art method, achieving both acceleration and memory reduction simultaneously, without sacrificing quality.
-          
-          The method is highly practical, with no major limitations other than requiring a GPU that supports the mesh shaders.
-
-
-      - title: "ShaderPerFormer: Platform-independent Context-aware Shader Performance Predictor"
-        authors: "Zitan Liu, Yikai Huang, Ligang Liu"
-        abstract: |
-          The ability to model and predict execution time of GPU computations is crucial for real-time graphics application development and optimization. While there are many existing methodologies for graphics programmers to provide such estimates, those methods are often vendor-dependent, require the platforms to be tested, or fail to capture the contextual influences among shader instructions.
-          
-          To address this challenge, we propose ShaderPerFormer, a platform-independent, context-aware deep-learning approach to model GPU performance and provide end-to-end performance predictions on a per-shader basis. In order to provide more accurate predictions, our method contains a separate stage to gather platform-independent shader program trace information.
-          
-          We also provide a dataset consisting of a total of 54,667 fragment shader performance samples on 5 different platforms. Compared to the PILR and SH baseline methods, our approach reduces the average MAPE across five platforms by 8.26% and 25.25%, respectively.
-
-
-      - title: "Transforming a Non-Differentiable Rasterizer into a Differentiable One with Stochastic Gradient Estimation"
-        authors: "Thomas Deliot, Eric Heitz, Laurent Belcour"
-        abstract: |
-          We show how to transform a non-differentiable rasterizer into a differentiable one with minimal engineering efforts and no external dependencies (no Pytorch/Tensorflow). We rely on Stochastic Gradient Estimation, a technique that consists of rasterizing after randomly perturbing the scene's parameters such that their gradient can be stochastically estimated and descended. This method is simple and robust but does not scale in dimensionality (number of scene parameters).
-          
-          Our insight is that the number of parameters contributing to a given rasterized pixel is bounded. Estimating and averaging gradients on a per-pixel basis hence bounds the dimensionality of the underlying optimization problem and makes the method scalable. Furthermore, it is simple to track per-pixel contributing parameters by rasterizing ID- and UV-buffers, which are trivial additions to a rasterization engine if not already available. With these minor modifications, we obtain an in-engine optimizer for 3D assets with millions of geometry and texture parameters.
-
-
-
-  - title: "Interaction And VR"
+  - title: "Interaction and VR"
     papers:
       - title: "Collaborating with my Doppelgänger: The Effects of Self-similar Appearance and Voice of a Virtual Character during a Jigsaw Puzzle Co-solving Task"
         authors: "Siqi Guo, Minsoo Choi, Dominic Kao, Christos Mousas"
@@ -94,33 +59,10 @@ sessions:
           This paper evaluates the impact of these 4 VR game tutorial modes with varying time flow rates on control learnability, engagement-related outcomes, and player performance. We conducted a between-subjects experiment with 59 participants. Results indicated that bullet time significantly enhanced control learnability, reduced cognitive load, and improved player performance when compared to other tutorial modes.
           
           Our research contributes to a more comprehensive understanding of VR game tutorials and offers practical guidance for game designers, underscoring the potential of bullet time to enhance learnability and game experience.
-
-
-
-  - title: "Learning To Move"
-    papers:
-      - title: "Efficient Deformation Learning of Varied Garments with a Structure-Preserving Multilevel Framework"
-        authors: "Tianxing Li, Rui Shi, Zihui Li, Takashi Kanai, Qing Zhu"
-        abstract: |
-          Due to the highly nonlinear behavior of clothing, modelling fine-scale garment deformation on arbitrary meshes under varied conditions within a unified network poses a significant challenge. Existing methods often compromise on either model generalization, deformation quality, or runtime speed, making them less suitable for real-world applications.
           
-          To address it, we propose to incorporate multi-source graph construction and pooling to achieve a novel graph learning scheme. We first introduce methods for extracting cues from different deformation correlations and transform the garment mesh into a comprehensive graph enriched with deformation-related information.
-          
-          To enhance the learning capability and generalizability of the model, we present structure-preserving pooling and unpooling strategies for the mesh deformation task, thereby improving information propagation across the mesh and enhancing the realism of deformation.
-          
-          Lastly, we conduct an attribution analysis and visualize the contribution of various vertices in the graph to the output, providing insights into the deformation behavior. The experimental results demonstrate superior performance against state-of-the-art methods.
 
 
-      - title: "Learning Crowd Motion Dynamics with Crowds"
-        authors: "Bilas Talukdar, Yunhao Zhang, Tomer Weiss"
-        abstract: |
-          Reinforcement Learning (RL) has become a popular framework for learning desired behaviors for computational agents in graphics and games. In a multi-agent crowd, one major goal is for agents to avoid collisions while navigating in a dynamic environment. Another goal is to simulate natural-looking crowds, which is difficult to define due to the ambiguity as to what is a natural crowd motion.
-          
-          We introduce a novel methodology for simulating crowds, which learns most-preferred crowd simulation behaviors from crowd-sourced votes via Bayesian optimization. Our method uses deep reinforcement learning for simulating crowds, where crowd-sourcing is used to select policy hyper-parameters. Training agents with such parameters results in a crowd simulation that is preferred to users. We demonstrate our method's robustness in multiple scenarios and metrics, where we show it is superior compared to alternate policies and prior work.
-
-
-
-  - title: "Light Transport And Storage"
+  - title: "Light Transport and Storage"
     papers:
       - title: "Bounded VNDF Sampling for the Smith–GGX BRDF"
         authors: "Yusuke Tokuyoshi, Kenta Eto"
@@ -147,7 +89,73 @@ sessions:
 
 
 
-  - title: "Noise And Reconstruction"
+  - title: "Volumes and Fields"
+    papers:
+      - title: "ProteusNeRF: Fast Lightweight NeRF Editing using 3D-Aware Image Context"
+        authors: "Binglun Wang, Niladri Shekhar Dutt, Niloy Mitra"
+        abstract: |
+          Neural Radiance Fields (NeRFs) have recently emerged as a popular option for photo-realistic object capture due to their ability to faithfully capture high-fidelity volumetric content even from handheld video input. Although much research has been devoted to efficient optimization leading to real-time training and rendering, options for interactive editing NeRFs remain limited.
+          
+          We present a very simple but effective neural network architecture that is fast and efficient while maintaining a low memory footprint. This architecture can be incrementally guided through user-friendly image-based edits. Our representation allows straightforward object selection via semantic feature distillation at the training stage. More importantly, we propose a local 3D-aware image context to facilitate view-consistent image editing that can then be distilled into fine-tuned NeRFs, via geometric and appearance adjustments. We evaluate our setup on a variety of examples to demonstrate appearance and geometric edits and report 10-30× speedup over concurrent work focusing on text-guided NeRF editing.
+
+
+      - title: "FaceFolds: Meshed Radiance Manifolds for Efficient Volumetric Rendering of Dynamic Faces"
+        authors: "Safa Medin, Gengyan Li, Ruofei Du, Stephan Garbin, Philip Davidson, Gregory Wornell, Thabo Beeler, Abhimitra Meka"
+        abstract: |
+          3D rendering of dynamic face captures is a challenging problem, and it demands improvements on several fronts—photorealism, efficiency, compatibility, and configurability.
+          
+          We present a novel representation that enables high-quality volumetric rendering of an actor’s dynamic facial performances with minimal compute and memory footprint. It runs natively on commodity graphics soft- and hardware, and allows for a graceful trade-off between quality and efficiency. Our method utilizes recent advances in neural rendering, particularly learning discrete radiance manifolds to sparsely sample the scene to model volumetric effects. We achieve efficient modeling by learning a single set of manifolds for the entire dynamic sequence, while implicitly modeling appearance changes as temporal canonical texture. We export a single layered mesh and view-independent RGBA texture video that is compatible with legacy graphics renderers without additional ML integration. We demonstrate our method by rendering dynamic face captures of real actors in a game engine, at comparable photorealism to state-of-the-art neural rendering techniques at previously unseen frame rates.
+
+
+      - title: "Efficient Visibility Approximation for Game AI using Neural Omnidirectional Distance Fields"
+        authors: "Zhi Ying, Nicholas Edwards, Mikhail Kutuzov"
+        abstract: |
+          Visibility information is critical in game AI applications, but the computational cost of raycasting-based methods poses a challenge for real-time systems.
+          
+          To address this challenge, we propose a novel method that represents a partitioned game scene as neural Omnidirectional Distance Fields (ODFs), allowing scalable and efficient visibility approximation between positions without raycasting. For each position of interest, we map its omnidirectional distance data from the spherical surface onto a UV plane. We then use multi-resolution grids and bilinearly interpolated features to encode directions. This allows us to use a compact multi-layer perceptron (MLP) to reconstruct the high-frequency directional distance data at these positions, ensuring fast inference speed. We demonstrate the effectiveness of our method through offline experiments and in-game evaluation.
+          
+          For in-game evaluation, we conduct a side-by-side comparison with raycasting-based visibility tests in three different scenes. Using a compact MLP (128 neurons and 2 layers), our method achieves an average cold start speedup of 9.35 times and warm start speedup of 4.8 times across these scenes. In addition, unlike the raycasting-based method, whose evaluation time is affected by the characteristics of the scenes, our method's evaluation time remains constant.
+
+
+
+  - title: "Points and Splats"
+    papers:
+      - title: "Reducing the Memory Footprint of 3D Gaussian Splatting"
+        authors: "Panagiotis Papantonakis, Georgios Kopanas, Bernhard Kerbl, Alexandre Lanvin, George Drettakis"
+        abstract: |
+          3D Gaussian splatting provides excellent visual quality for novel view synthesis, with fast training and real-time rendering; unfortunately, the memory requirements of this method are unreasonably high. We first analyze the reasons for this, identifying three main areas where storage can be reduced: the number of 3D Gaussian primitives used to represent a scene, the number of coefficients for the spherical harmonics used to represent directional radiance and the precision required to store Gaussian primitive attributes.
+
+          We present a solution to each of these issues. First, we propose an efficient, resolution-aware primitive pruning approach, reducing primitive count by half. Second, we introduce an adaptive adjustment method to choose the number of coefficients used to represent directional radiance for each Gaussian primitive, and finally a codebook-based quantization method, together with a half-float representation for further memory reduction. Taken together, these three components result in a ×27 reduction in overall memory usage on the standard datasets we tested, along with a ×1.7 speedup in rendering speed. We demonstrate our method on standard datasets, and show how our solution results in significantly reduced download times when using the method on a mobile device.
+
+
+      - title: "SimLOD: Simultaneous LOD Generation and Rendering for Point Clouds"
+        authors: "Markus Schütz, Lukas Herzberger, Michael Wimmer"
+        abstract: |
+          We propose an incremental LOD generation approach for point clouds that allows us to simultaneously load points from disk, update an octree-based level-of-detail representation, and render the intermediate results in real time while additional points are still being loaded from disk. LOD construction and rendering are both implemented in CUDA and share the GPU’s processing power, but each incremental update is lightweight enough to leave enough time to maintain real-time frame rates.
+          
+          Background: LOD construction is typically implemented as a preprocessing step that requires users to wait before they are able to view the results in real time. This approach allows users to view intermediate results right away.  Results: Our approach is able to stream points from an SSD and update the octree on the GPU at rates of up to 580 million points per second (~9.3GB/s from a PCIe 5.0 SSD) on an RTX 4090. Depending on the data set, our approach spends an average of about 1 to 2 ms to incrementally insert 1 million points into the octree, allowing us to insert several million points per frame into the LOD structure and render the intermediate results within the same frame.
+          
+          Discussion/Limitations: We aim to provide near-instant, real-time visualization of large data sets without preprocessing. Out-of-core processing of arbitrarily large data sets and color-filtering for higher-quality LODs are subject to future work.
+
+
+      - title: "Deblur-GS: 3D Gaussian Splatting from Camera Motion Blurred Images"
+        authors: "Wenbo Chen, Ligang Liu"
+        abstract: |
+          Novel view synthesis has undergone a revolution thanks to the radiance field method. The introduction of 3D Gaussian splatting (3DGS) has successfully addressed the issues of prolonged training times and slow rendering speeds associated with Neural Radiance Field (NeRF), all while preserving the quality of reconstructions. However, 3DGS remains heavily reliant on the quality of input images and their initial camera pose initialization. In cases where input images are blurred, the reconstruction results suffer from blurriness and artifacts.
+          
+          In this paper, we propose the Deblur-GS method for reconstructing 3D Gaussian points to create a sharp radiance field from a camera motion blurred image set. We model the problem of motion blur as a joint optimization challenge involving camera trajectory estimation and time sampling. We cohesively optimize the parameters of the Gaussian points and the camera trajectory during the shutter time. Deblur-GS consistently achieves superior performance and rendering quality when compared to previous methods, as demonstrated in evaluations conducted on both synthetic and real datasets.
+
+
+      - title: "Light Field Display Point Rendering"
+        authors: "Ajinkya Gavane, Benjamin Watson"
+        abstract: |
+          Rendering for light field displays (LFDs) requires rendering of dozens or hundreds of views, which must then be combined into a single image on the display, making real-time LFD rendering extremely difficult.
+          
+          We introduce light field display point rendering (LFDPR), which meets these challenges by improving eye-based point rendering [12] with texture-based splatting, which avoids oversampling of triangles mapped to only a few texels; and with LFD-biased sampling, which adjusts horizontal and vertical triangle sampling to match the sampling of the LFD itself. To improve image quality, we introduce multiview mipmapping, which reduces texture aliasing even though compute shaders do not support hardware mipmapping. We also introduce angular supersampling and reconstruction to combat LFD view aliasing and crosstalk. The resulting LFDPR is 2-8× times faster than multiview rendering, with similar comparable quality.
+
+
+
+  - title: "Noise and Reconstruction"
     papers:
       - title: "FAST: Filter-Adapted Spatio-Temporal Sampling for Real-Time Rendering"
         authors: "William Donnelly, Alan Wolfe, Judith Bütepage, Jon Valdés"
@@ -187,44 +195,66 @@ sessions:
           We further introduce subpixel edge reconstruction (SER), a technique that extends CTSS to locate and resolve complex pixels with geometric edges in relatively flat regions, which are otherwise undetected by cone intersections. Our combined solution relies on a specialized sampling strategy to minimize the number of shading computations and correlates sample visibility to aggregate the samples. With comparable antialiasing quality at significantly lower computational cost, CTSS is a reliable practical alternative to conventional supersampling.
 
 
-  - title: "Points And Splats"
+
+  - title: "Efficient Forward and Differentiable Rendering"
     papers:
-      - title: "Reducing the Memory Footprint of 3D Gaussian Splatting"
-        authors: "Panagiotis Papantonakis, Georgios Kopanas, Bernhard Kerbl, Alexandre Lanvin, George Drettakis"
+      - title: "Efficient Particle-Based Fluid Surface Reconstruction Using Mesh Shaders and Bidirectional Two-Level Grids"
+        authors: "Yuki Nishidate, Issei Fujishiro"
         abstract: |
-          3D Gaussian splatting provides excellent visual quality for novel view synthesis, with fast training and real-time rendering; unfortunately, the memory requirements of this method are unreasonably high. We first analyze the reasons for this, identifying three main areas where storage can be reduced: the number of 3D Gaussian primitives used to represent a scene, the number of coefficients for the spherical harmonics used to represent directional radiance and the precision required to store Gaussian primitive attributes.
+          In this paper, we introduce a novel method for particle-based fluid surface reconstruction that incorporates mesh shaders for the first time.
+          
+          This approach eliminates the need to store triangle meshes in the GPU's global memory, resulting in a significant memory size reduction.
+          
+          Furthermore, our method employs a bidirectional two-level uniform grid, which not only accelerates the computationally expensive stage of surface cell detection but also effectively addresses the issue of vertex overflow among the mesh shaders.
+          
+          Experimental results proved that our method outperforms the state-of-the-art method, achieving both acceleration and memory reduction simultaneously, without sacrificing quality.
+          
+          The method is highly practical, with no major limitations other than requiring a GPU that supports the mesh shaders.
 
-          We present a solution to each of these issues. First, we propose an efficient, resolution-aware primitive pruning approach, reducing primitive count by half. Second, we introduce an adaptive adjustment method to choose the number of coefficients used to represent directional radiance for each Gaussian primitive, and finally a codebook-based quantization method, together with a half-float representation for further memory reduction. Taken together, these three components result in a ×27 reduction in overall memory usage on the standard datasets we tested, along with a ×1.7 speedup in rendering speed. We demonstrate our method on standard datasets, and show how our solution results in significantly reduced download times when using the method on a mobile device.
 
-
-      - title: "SimLOD: Simultaneous LOD Generation and Rendering for Point Clouds"
-        authors: "Markus Schütz, Lukas Herzberger, Michael Wimmer"
+      - title: "ShaderPerFormer: Platform-independent Context-aware Shader Performance Predictor"
+        authors: "Zitan Liu, Yikai Huang, Ligang Liu"
         abstract: |
-          We propose an incremental LOD generation approach for point clouds that allows us to simultaneously load points from disk, update an octree-based level-of-detail representation, and render the intermediate results in real time while additional points are still being loaded from disk. LOD construction and rendering are both implemented in CUDA and share the GPU’s processing power, but each incremental update is lightweight enough to leave enough time to maintain real-time frame rates.
+          The ability to model and predict execution time of GPU computations is crucial for real-time graphics application development and optimization. While there are many existing methodologies for graphics programmers to provide such estimates, those methods are often vendor-dependent, require the platforms to be tested, or fail to capture the contextual influences among shader instructions.
           
-          Background: LOD construction is typically implemented as a preprocessing step that requires users to wait before they are able to view the results in real time. This approach allows users to view intermediate results right away.  Results: Our approach is able to stream points from an SSD and update the octree on the GPU at rates of up to 580 million points per second (~9.3GB/s from a PCIe 5.0 SSD) on an RTX 4090. Depending on the data set, our approach spends an average of about 1 to 2 ms to incrementally insert 1 million points into the octree, allowing us to insert several million points per frame into the LOD structure and render the intermediate results within the same frame.
+          To address this challenge, we propose ShaderPerFormer, a platform-independent, context-aware deep-learning approach to model GPU performance and provide end-to-end performance predictions on a per-shader basis. In order to provide more accurate predictions, our method contains a separate stage to gather platform-independent shader program trace information.
           
-          Discussion/Limitations: We aim to provide near-instant, real-time visualization of large data sets without preprocessing. Out-of-core processing of arbitrarily large data sets and color-filtering for higher-quality LODs are subject to future work.
+          We also provide a dataset consisting of a total of 54,667 fragment shader performance samples on 5 different platforms. Compared to the PILR and SH baseline methods, our approach reduces the average MAPE across five platforms by 8.26% and 25.25%, respectively.
 
 
-      - title: "Deblur-GS: 3D Gaussian Splatting from Camera Motion Blurred Images"
-        authors: "Wenbo Chen, Ligang Liu"
+      - title: "Transforming a Non-Differentiable Rasterizer into a Differentiable One with Stochastic Gradient Estimation"
+        authors: "Thomas Deliot, Eric Heitz, Laurent Belcour"
         abstract: |
-          Novel view synthesis has undergone a revolution thanks to the radiance field method. The introduction of 3D Gaussian splatting (3DGS) has successfully addressed the issues of prolonged training times and slow rendering speeds associated with Neural Radiance Field (NeRF), all while preserving the quality of reconstructions. However, 3DGS remains heavily reliant on the quality of input images and their initial camera pose initialization. In cases where input images are blurred, the reconstruction results suffer from blurriness and artifacts.
+          We show how to transform a non-differentiable rasterizer into a differentiable one with minimal engineering efforts and no external dependencies (no Pytorch/Tensorflow). We rely on Stochastic Gradient Estimation, a technique that consists of rasterizing after randomly perturbing the scene's parameters such that their gradient can be stochastically estimated and descended. This method is simple and robust but does not scale in dimensionality (number of scene parameters).
           
-          In this paper, we propose the Deblur-GS method for reconstructing 3D Gaussian points to create a sharp radiance field from a camera motion blurred image set. We model the problem of motion blur as a joint optimization challenge involving camera trajectory estimation and time sampling. We cohesively optimize the parameters of the Gaussian points and the camera trajectory during the shutter time. Deblur-GS consistently achieves superior performance and rendering quality when compared to previous methods, as demonstrated in evaluations conducted on both synthetic and real datasets.
+          Our insight is that the number of parameters contributing to a given rasterized pixel is bounded. Estimating and averaging gradients on a per-pixel basis hence bounds the dimensionality of the underlying optimization problem and makes the method scalable. Furthermore, it is simple to track per-pixel contributing parameters by rasterizing ID- and UV-buffers, which are trivial additions to a rasterization engine if not already available. With these minor modifications, we obtain an in-engine optimizer for 3D assets with millions of geometry and texture parameters.
 
 
-      - title: "Light Field Display Point Rendering"
-        authors: "Ajinkya Gavane, Benjamin Watson"
+
+  - title: "Learning to Move"
+    papers:
+      - title: "Efficient Deformation Learning of Varied Garments with a Structure-Preserving Multilevel Framework"
+        authors: "Tianxing Li, Rui Shi, Zihui Li, Takashi Kanai, Qing Zhu"
         abstract: |
-          Rendering for light field displays (LFDs) requires rendering of dozens or hundreds of views, which must then be combined into a single image on the display, making real-time LFD rendering extremely difficult.
+          Due to the highly nonlinear behavior of clothing, modelling fine-scale garment deformation on arbitrary meshes under varied conditions within a unified network poses a significant challenge. Existing methods often compromise on either model generalization, deformation quality, or runtime speed, making them less suitable for real-world applications.
           
-          We introduce light field display point rendering (LFDPR), which meets these challenges by improving eye-based point rendering [12] with texture-based splatting, which avoids oversampling of triangles mapped to only a few texels; and with LFD-biased sampling, which adjusts horizontal and vertical triangle sampling to match the sampling of the LFD itself. To improve image quality, we introduce multiview mipmapping, which reduces texture aliasing even though compute shaders do not support hardware mipmapping. We also introduce angular supersampling and reconstruction to combat LFD view aliasing and crosstalk. The resulting LFDPR is 2-8× times faster than multiview rendering, with similar comparable quality.
+          To address it, we propose to incorporate multi-source graph construction and pooling to achieve a novel graph learning scheme. We first introduce methods for extracting cues from different deformation correlations and transform the garment mesh into a comprehensive graph enriched with deformation-related information.
+          
+          To enhance the learning capability and generalizability of the model, we present structure-preserving pooling and unpooling strategies for the mesh deformation task, thereby improving information propagation across the mesh and enhancing the realism of deformation.
+          
+          Lastly, we conduct an attribution analysis and visualize the contribution of various vertices in the graph to the output, providing insights into the deformation behavior. The experimental results demonstrate superior performance against state-of-the-art methods.
+
+
+      - title: "Learning Crowd Motion Dynamics with Crowds"
+        authors: "Bilas Talukdar, Yunhao Zhang, Tomer Weiss"
+        abstract: |
+          Reinforcement Learning (RL) has become a popular framework for learning desired behaviors for computational agents in graphics and games. In a multi-agent crowd, one major goal is for agents to avoid collisions while navigating in a dynamic environment. Another goal is to simulate natural-looking crowds, which is difficult to define due to the ambiguity as to what is a natural crowd motion.
+          
+          We introduce a novel methodology for simulating crowds, which learns most-preferred crowd simulation behaviors from crowd-sourced votes via Bayesian optimization. Our method uses deep reinforcement learning for simulating crowds, where crowd-sourcing is used to select policy hyper-parameters. Training agents with such parameters results in a crowd simulation that is preferred to users. We demonstrate our method's robustness in multiple scenarios and metrics, where we show it is superior compared to alternate policies and prior work.
 
 
 
-  - title: "Solvers And Simulation"
+  - title: "Solvers and Simulation"
     papers:
       - title: "Windblown Sand Around Obstacles – Simulation And Validation Of Deposition Patterns"
         authors: "Nicolas Rosset, Régis Duvigneau, Adrien Bousseau, Guillaume Cordonnier"
@@ -257,35 +287,6 @@ sessions:
 
 
 
-  - title: "Volumes And Fields"
-    papers:
-      - title: "ProteusNeRF: Fast Lightweight NeRF Editing using 3D-Aware Image Context"
-        authors: "Binglun Wang, Niladri Shekhar Dutt, Niloy Mitra"
-        abstract: |
-          Neural Radiance Fields (NeRFs) have recently emerged as a popular option for photo-realistic object capture due to their ability to faithfully capture high-fidelity volumetric content even from handheld video input. Although much research has been devoted to efficient optimization leading to real-time training and rendering, options for interactive editing NeRFs remain limited.
-          
-          We present a very simple but effective neural network architecture that is fast and efficient while maintaining a low memory footprint. This architecture can be incrementally guided through user-friendly image-based edits. Our representation allows straightforward object selection via semantic feature distillation at the training stage. More importantly, we propose a local 3D-aware image context to facilitate view-consistent image editing that can then be distilled into fine-tuned NeRFs, via geometric and appearance adjustments. We evaluate our setup on a variety of examples to demonstrate appearance and geometric edits and report 10-30× speedup over concurrent work focusing on text-guided NeRF editing.
-
-
-      - title: "FaceFolds: Meshed Radiance Manifolds for Efficient Volumetric Rendering of Dynamic Faces"
-        authors: "Safa Medin, Gengyan Li, Ruofei Du, Stephan Garbin, Philip Davidson, Gregory Wornell, Thabo Beeler, Abhimitra Meka"
-        abstract: |
-          3D rendering of dynamic face captures is a challenging problem, and it demands improvements on several fronts—photorealism, efficiency, compatibility, and configurability.
-          
-          We present a novel representation that enables high-quality volumetric rendering of an actor’s dynamic facial performances with minimal compute and memory footprint. It runs natively on commodity graphics soft- and hardware, and allows for a graceful trade-off between quality and efficiency. Our method utilizes recent advances in neural rendering, particularly learning discrete radiance manifolds to sparsely sample the scene to model volumetric effects. We achieve efficient modeling by learning a single set of manifolds for the entire dynamic sequence, while implicitly modeling appearance changes as temporal canonical texture. We export a single layered mesh and view-independent RGBA texture video that is compatible with legacy graphics renderers without additional ML integration. We demonstrate our method by rendering dynamic face captures of real actors in a game engine, at comparable photorealism to state-of-the-art neural rendering techniques at previously unseen frame rates.
-
-
-      - title: "Efficient Visibility Approximation for Game AI using Neural Omnidirectional Distance Fields"
-        authors: "Zhi Ying, Nicholas Edwards, Mikhail Kutuzov"
-        abstract: |
-          Visibility information is critical in game AI applications, but the computational cost of raycasting-based methods poses a challenge for real-time systems.
-          
-          To address this challenge, we propose a novel method that represents a partitioned game scene as neural Omnidirectional Distance Fields (ODFs), allowing scalable and efficient visibility approximation between positions without raycasting. For each position of interest, we map its omnidirectional distance data from the spherical surface onto a UV plane. We then use multi-resolution grids and bilinearly interpolated features to encode directions. This allows us to use a compact multi-layer perceptron (MLP) to reconstruct the high-frequency directional distance data at these positions, ensuring fast inference speed. We demonstrate the effectiveness of our method through offline experiments and in-game evaluation.
-          
-          For in-game evaluation, we conduct a side-by-side comparison with raycasting-based visibility tests in three different scenes. Using a compact MLP (128 neurons and 2 layers), our method achieves an average cold start speedup of 9.35 times and warm start speedup of 4.8 times across these scenes. In addition, unlike the raycasting-based method, whose evaluation time is affected by the characteristics of the scenes, our method's evaluation time remains constant.
-
-
-
 ---
 
 * This bulletpoint is necessary for kramdown to generate the ToC
@@ -313,7 +314,7 @@ The program also includes 3 papers originally published in the [IEEE Transaction
   {% else %}
 # {{ session.title }}
   {% endunless -%}
-{: #Papers{{ forloop.index }}}
+{: #{{ session.title | downcase | split: " " | join: "-" }} }
 {%- else -%}
 # {{ session.title }}
 {%- endif %}
