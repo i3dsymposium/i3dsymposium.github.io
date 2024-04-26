@@ -1,9 +1,9 @@
 ---
 layout: default2024
 title: Schedule
-iana_timezone: "US/Pacific"
-timezone: "UTC-7"
-timezone_name: "PT"
+iana_timezone: "US/Eastern"
+timezone: "UTC-4"
+timezone_name: "EDT"
 
 program_definition:
   - day: A date, in YYYY-MM-DD format
@@ -48,7 +48,7 @@ program:
       - time: "16:25"
         endtime: true
 
-  - day: 2025-05-09
+  - day: 2024-05-09
     times:
       - time: "8:20"
         notes: Breakfast
@@ -78,7 +78,7 @@ program:
       - time: "16:10"
         endtime: true
 
-  - day: 2023-05-10
+  - day: 2024-05-10
     times:
       - time: "8:20"
         notes: Breakfast
@@ -115,11 +115,9 @@ program:
 {:toc}
 
 
-# THIS PAGE IS FOR 2023, HERE ONLY FOR TESTING PURPOSES
+The conference will run from Wednesday, 8th of May to Friday, 10th of May 2024, in [Philadelphia, PA, USA](venue.html).
 
-The conference will run from Wednesday, 3rd of May to Friday, 5th of May 2023, in [Bellevue, WA, USA](venue.html). We will prepare the detailed program when we have the full list of papers that will be presented. Times and details shown here are due to change in the following weeks.
-
-All times are United States Pacific Time ({{ page.timezone_name }}, or {{ page.timezone }}).
+All times are United States Eastern Daylight Time ({{ page.timezone_name }}, or {{ page.timezone }}).
 
 {% for day in page.program %}
 
