@@ -63,7 +63,7 @@ program:
       - time: "12:10"
         notes: Lunch
       - time: "13:10"
-        title: "Cesium Industry Talk"
+        title: "Cesium Keynote Talk"
         link: "sponsored-talks.html#Cesium"
       - time: "13:30"
         title: "Posters Fast-Forward"
