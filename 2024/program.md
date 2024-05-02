@@ -73,7 +73,7 @@ program:
       - time: "14:30"
         title: "Papers 5: Noise and Reconstruction"
         link: "papers.html#noise-and-reconstruction"
-      - time: "19:00"
+      - time: "18:00"
         notes: Banquet dinner
       - time: "16:10"
         endtime: true

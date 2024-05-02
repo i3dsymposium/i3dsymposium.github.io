@@ -19,7 +19,7 @@ sponsors:
         image: cesium.png
         link: https://cesium.com
   - level: platinum
-    title: Platinum Sponsor
+    title: Platinum Sponsors
     members:
       - name: The Forge
         image: the_forge.png
@@ -36,6 +36,15 @@ sponsors:
       - name: Activision
         image: activision.png
         link: https://www.activision.com
+      - name: Roblox
+        image: roblox.png
+        link: https://research.roblox.com
+  - level: silver
+    title: Silver Sponsor
+    members:
+      - name: NVIDIA
+        image: nvidia.png
+        link: https://research.nvidia.com
 
 ---
 
@@ -52,7 +61,7 @@ supporting the latest developments in computer graphics research.
 
 
 If your organization would like to become a corporate sponsor of I3D 2024, please contact the conference chairs: [general@i3dsymposium.org](mailto:general@i3dsymposium.org)
-    
+
 <div id="sponsors" class="flex">
     <div class="two-thirds">
         {% for level in page.sponsors -%}
