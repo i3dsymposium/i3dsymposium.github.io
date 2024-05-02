@@ -14,6 +14,16 @@ keynotes_definition:
       - Names
 
 keynotes:
+  - title: "3D Tiles: Bringing Computer Graphics Research Into Production"
+    company: "Cesium"
+    speakers:
+      - Sean Lilley
+    abstract: |
+      This talk provides a systems-level overview of 3D Tiles, an open standard for rendering geospatial-accurate massive models. Geospatial data comes in many forms including high-resolution photogrammetry models, semantically-rich CAD models, massive point clouds, and global terrain and imagery. Real world data is often gigabytes to terabytes in size, unable to fit on a single drive let alone in GPU memory.
+ 
+      We'll explore spatial data structures, level of detail, culling, batching, compression, and other foundational techniques that have informed the design of 3D Tiles. We'll also suggest future areas of research including use-case specific traverse algorithms, mixed geometry representations (e.g. mesh vs. voxels vs. Gaussian splats), time-dynamic data, and editing.
+
+
   - title: "Triangle Visibility Buffer 2.0"
     company: "The Forge Interactive"
     speakers:
