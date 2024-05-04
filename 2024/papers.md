@@ -22,6 +22,7 @@ sessions_definition:
 
 sessions:
   - title: "Interaction and VR"
+    chair: "Omer Shapira"
     papers:
       - title: "Collaborating with my Doppelgänger: The Effects of Self-similar Appearance and Voice of a Virtual Character during a Jigsaw Puzzle Co-solving Task"
         authors: "Siqi Guo, Minsoo Choi, Dominic Kao, Christos Mousas"
@@ -170,6 +171,7 @@ sessions:
 
 
   - title: "Noise and Reconstruction"
+    chair: "Eric Haines"
     papers:
       - title: "FAST: Filter-Adapted Spatio-Temporal Sampling for Real-Time Rendering"
         authors: "William Donnelly, Alan Wolfe, Judith Bütepage, Jon Valdés"
@@ -214,6 +216,7 @@ sessions:
 
 
   - title: "Efficient Forward and Differentiable Rendering"
+    chair: "Mike Vance"
     papers:
       - title: "Efficient Particle-Based Fluid Surface Reconstruction Using Mesh Shaders and Bidirectional Two-Level Grids"
         authors: "Yuki Nishidate, Issei Fujishiro"
@@ -277,6 +280,7 @@ sessions:
 
 
   - title: "Solvers and Simulation"
+    chair: "Cem Yuksel"
     papers:
       - title: "Windblown Sand Around Obstacles – Simulation And Validation Of Deposition Patterns"
         authors: "Nicolas Rosset, Régis Duvigneau, Adrien Bousseau, Guillaume Cordonnier"
