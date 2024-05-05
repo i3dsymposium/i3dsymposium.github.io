@@ -48,7 +48,7 @@ The reception dinner on the 8th of May will be in the Cesium offices.
 
 ![Del Frisco's](img/venue/delfriscos.jpg)
 
-The first evening (Wednesday 3rd of May) we will be having a reception dinner at [Del Frisco's](https://www.delfriscos.com/private-events-philadelphia-pa/).
+On Thursday 9th of May, we will be having a banquet dinner at [Del Frisco's](https://www.delfriscos.com/private-events-philadelphia-pa/).
 
 ## Location
 
