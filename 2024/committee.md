@@ -41,7 +41,7 @@ committee:
         institution: Chalmers University of Technology, Sweden
         email: erik.sintorn@chalmers.se
         pronouns: (he, him)
-      - name: Bart Wroński
+      - name: Bart Wronski
         link: https://bartwronski.com
         institution: NVIDIA Corporation
         email: elirian@gmail.com
@@ -69,6 +69,12 @@ committee:
         institution: Meta
         email: liuxiaoxicici@gmail.com
         pronouns: (she, her)
+
+  - chair: Local Chair
+    members:
+      - name: Jason Bodewitz
+        institution: Cesium
+        email: jason@cesium.com
 
   - chair: Publicity Chair
     members:
