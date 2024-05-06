@@ -68,6 +68,7 @@ sessions:
 
 
   - title: "Light Transport and Storage"
+    chair: "William Donnelly"
     papers:
       - title: "Bounded VNDF Sampling for the Smith–GGX BRDF"
         authors: "Yusuke Tokuyoshi, Kenta Eto"
@@ -130,6 +131,7 @@ sessions:
 
 
   - title: "Points and Splats"
+    chair: "Peter Shirley"
     papers:
       - title: "Reducing the Memory Footprint of 3D Gaussian Splatting"
         authors: "Panagiotis Papantonakis, Georgios Kopanas, Bernhard Kerbl, Alexandre Lanvin, George Drettakis"
@@ -216,7 +218,7 @@ sessions:
 
 
   - title: "Efficient Forward and Differentiable Rendering"
-    chair: "Mike Vance"
+    chair: "Michael Vance"
     papers:
       - title: "Efficient Particle-Based Fluid Surface Reconstruction Using Mesh Shaders and Bidirectional Two-Level Grids"
         authors: "Yuki Nishidate, Issei Fujishiro"
@@ -255,6 +257,7 @@ sessions:
 
 
   - title: "Learning to Move"
+    chair: "Sylvain Lefebvre"
     papers:
       - title: "Efficient Deformation Learning of Varied Garments with a Structure-Preserving Multilevel Framework"
         authors: "Tianxing Li, Rui Shi, Zihui Li, Takashi Kanai, Qing Zhu"
