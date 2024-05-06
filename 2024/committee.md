@@ -70,11 +70,17 @@ committee:
         email: liuxiaoxicici@gmail.com
         pronouns: (she, her)
 
-  - chair: Local Chair
+  - chair: Local Chair and Support
     members:
       - name: Jason Bodewitz
         institution: Cesium
         email: jason@cesium.com
+      - name: Samantha Melanchuk
+        institution: Cesium
+        pronouns: (she, her)
+      - name: Brad Shilling
+        institution: Cesium
+        pronouns: (he, him)
 
   - chair: Publicity Chair
     members:
