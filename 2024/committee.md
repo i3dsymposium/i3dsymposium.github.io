@@ -75,11 +75,14 @@ committee:
       - name: Jason Bodewitz
         institution: Cesium
         email: jason@cesium.com
+        pronouns: (he, him)
       - name: Samantha Melanchuk
         institution: Cesium
+        email: Samantha@cesium.com
         pronouns: (she, her)
       - name: Brad Shilling
         institution: Cesium
+        email: Brad@cesium.com
         pronouns: (he, him)
 
   - chair: Publicity Chair
