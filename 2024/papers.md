@@ -99,6 +99,7 @@ sessions:
 
 
   - title: "Volumes and Fields"
+    chair: "Ricardo Marroquim"
     papers:
       - title: "ProteusNeRF: Fast Lightweight NeRF Editing using 3D-Aware Image Context"
         authors: "Binglun Wang, Niladri Shekhar Dutt, Niloy Mitra"
