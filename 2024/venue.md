@@ -30,11 +30,13 @@ Cesium office is located at:
     <iframe style="width:100%;height:500px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2162.7631658920036!2d-75.14950469155715!3d39.950134825432386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c981093646d7%3A0xc117d14670c0778f!2sCesium!5e0!3m2!1sen!2shk!4v1710255557130!5m2!1sen!2shk"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </div>
 
-This is the entrance to Cesium.
+\
+The building entrance is on Market Street, near the intersection with 4th Street. When you arrive, take the elevator to the **11th floor**.
+The following is the entrance to Cesium.
 
 ![Entrance to Cesium HQ](img/venue/cesium-entrance.jpg)
 
-*More details will be provided in the near future*
+<!-- *More details will be provided in the near future* -->
 
 ---
 
