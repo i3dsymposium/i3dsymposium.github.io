@@ -24,7 +24,8 @@ We are pleased to announce that I3D 2024 will take place at Cesium in Philadelph
 ## Location 
 Cesium office is located at:
 
-400 Market St, Philadelphia, PA 19106
+400 Market St, 11th floor \
+Philadelphia, PA 19106
 
 <div class="flex">
     <iframe style="width:100%;height:500px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2162.7631658920036!2d-75.14950469155715!3d39.950134825432386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c981093646d7%3A0xc117d14670c0778f!2sCesium!5e0!3m2!1sen!2shk!4v1710255557130!5m2!1sen!2shk"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
