@@ -27,6 +27,7 @@ sessions:
       - title: "Collaborating with my Doppelgänger: The Effects of Self-similar Appearance and Voice of a Virtual Character during a Jigsaw Puzzle Co-solving Task"
         authors: "Siqi Guo, Minsoo Choi, Dominic Kao, Christos Mousas"
         thumbnail: "01_01_guo.jpg"
+        preprint: "https://web.ics.purdue.edu/~cmousas/papers/jour24-PACMCGIT-SelfSimiarAppearanceVoice.pdf"
         abstract: |
           The research community has long been interested in human interaction with embodied virtual characters in virtual reality (VR). At the same time, interaction with self-similar virtual characters, or virtual doppelgängers, has become a prominent topic in both VR and psychology due to the intriguing psychological effects these characters can have on people. However, studies on human interaction with self-similar virtual characters are still limited.
           
@@ -49,6 +50,7 @@ sessions:
       - title: "Skill-Based Matchmaking for Competitive Two-Player Games"
         authors: "Cem Yuksel"
         thumbnail: "01_03_yuksel.jpg"
+        preprint: "http://www.cemyuksel.com/research/matchmaking/"
         abstract: |
           Skill-based matchmaking is a crucial component of competitive multiplayer games and it is directly tied to how the players would enjoy the game.
           
@@ -73,6 +75,7 @@ sessions:
       - title: "Bounded VNDF Sampling for the Smith–GGX BRDF"
         authors: "Yusuke Tokuyoshi, Kenta Eto"
         thumbnail: "02_01_tokuyoshi.jpg"
+        preprint: "https://gpuopen.com/advanced-rendering-research/"
         abstract: |
           Sampling according to a visible normal distribution function (VNDF) is often used to sample rays scattered by glossy surfaces, such as the Smith–GGX microfacet model. However, for rough reflections, existing VNDF sampling methods can generate undesirable reflection vectors occluded by the surface. Since these occluded reflection vectors must be rejected, VNDF sampling is inefficient for rough reflections.
           
@@ -82,6 +85,7 @@ sessions:
       - title: "ZH3: Quadratic Zonal Harmonics"
         authors: "Thomas Roughton, Peter-Pike Sloan, Ari Silvennoinen, Michal Iwanicki, Peter Shirley"
         thumbnail: "02_02_roughton.jpg"
+        preprint: "http://torust.me/ZH3.pdf"
         abstract: |
           Spherical Harmonics (SH) have been used widely to represent lighting in games and film. While the quadratic (SH3) and higher order spherical harmonics represent irradiance well, they are expensive to store and evaluate, requiring 27 coefficients per sample. Linear SH (SH2), requiring only 12 coefficients, are sometimes used, but they do not represent irradiance signals accurately and can have challenges with negative reconstruction.
           
@@ -91,6 +95,7 @@ sessions:
       - title: "Interactive Rendering of Caustics using Dimension Reduction for Manifold Next-Event Estimation"
         authors: "Ana Granizo-Hidalgo, Nicolas Holzschuch"
         thumbnail: "02_03_granizo-hidalgo.jpg"
+        preprint: "https://inria.hal.science/hal-04561024"
         abstract: |
           Specular surfaces, like water surfaces, create caustics by focusing the light being refracted or reflected. These caustics are very important for scene realism, but also challenging to render: to compute them, we need to find the exact path connecting two points through a specular reflection or refraction. This requires finding the roots of a complicated function on the surface. Manifold-Exploration methods find these roots using the Newton-Raphson method, but this involves computing path derivatives at each step, which can be challenging.
           
@@ -104,6 +109,7 @@ sessions:
       - title: "ProteusNeRF: Fast Lightweight NeRF Editing using 3D-Aware Image Context"
         authors: "Binglun Wang, Niladri Shekhar Dutt, Niloy Mitra"
         thumbnail: "03_01_wang.jpg"
+        preprint: "https://proteusnerf.github.io"
         abstract: |
           Neural Radiance Fields (NeRFs) have recently emerged as a popular option for photo-realistic object capture due to their ability to faithfully capture high-fidelity volumetric content even from handheld video input. Although much research has been devoted to efficient optimization leading to real-time training and rendering, options for interactive editing NeRFs remain limited.
           
@@ -113,6 +119,7 @@ sessions:
       - title: "FaceFolds: Meshed Radiance Manifolds for Efficient Volumetric Rendering of Dynamic Faces"
         authors: "Safa Medin, Gengyan Li, Ruofei Du, Stephan Garbin, Philip Davidson, Gregory Wornell, Thabo Beeler, Abhimitra Meka"
         thumbnail: "03_02_medin.jpg"
+        preprint: "https://syntec-research.github.io/FaceFolds/"
         abstract: |
           3D rendering of dynamic face captures is a challenging problem, and it demands improvements on several fronts—photorealism, efficiency, compatibility, and configurability.
           
@@ -146,6 +153,7 @@ sessions:
       - title: "SimLOD: Simultaneous LOD Generation and Rendering for Point Clouds"
         authors: "Markus Schütz, Lukas Herzberger, Michael Wimmer"
         thumbnail: "04_02_schutz.jpg"
+        preprint: "https://arxiv.org/abs/2310.03567"
         abstract: |
           We propose an incremental LOD generation approach for point clouds that allows us to simultaneously load points from disk, update an octree-based level-of-detail representation, and render the intermediate results in real time while additional points are still being loaded from disk. LOD construction and rendering are both implemented in CUDA and share the GPU’s processing power, but each incremental update is lightweight enough to leave enough time to maintain real-time frame rates.
           
@@ -188,6 +196,7 @@ sessions:
       - title: "Filtering After Shading With Stochastic Texture Filtering"
         authors: "Matt Pharr, Bartlomiej Wronski, Marco Salvi, Marcos Fajardo"
         thumbnail: "05_02_pharr.jpg"
+        preprint: "https://research.nvidia.com/labs/rtr/publication/pharr2024stochtex/"
         abstract: |
           2D texture maps and 3D voxel arrays are widely used to add rich detail to the surfaces and volumes of rendered scenes, and filtered texture lookups are integral to producing high-quality imagery.
           
@@ -250,6 +259,7 @@ sessions:
       - title: "Transforming a Non-Differentiable Rasterizer into a Differentiable One with Stochastic Gradient Estimation"
         authors: "Thomas Deliot, Eric Heitz, Laurent Belcour"
         thumbnail: "06_03_deliot.jpg"
+        preprint: "https://ggx-research.github.io/publication/2024/04/17/publication-intel-diffrast.html"
         abstract: |
           We show how to transform a non-differentiable rasterizer into a differentiable one with minimal engineering efforts and no external dependencies (no Pytorch/Tensorflow). We rely on Stochastic Gradient Estimation, a technique that consists of rasterizing after randomly perturbing the scene's parameters such that their gradient can be stochastically estimated and descended. This method is simple and robust but does not scale in dimensionality (number of scene parameters).
           
@@ -263,6 +273,7 @@ sessions:
       - title: "Efficient Deformation Learning of Varied Garments with a Structure-Preserving Multilevel Framework"
         authors: "Tianxing Li, Rui Shi, Zihui Li, Takashi Kanai, Qing Zhu"
         thumbnail: "07_01_li.jpg"
+        preprint: "https://shirui-homepage.com/files/pdf/research/202404psdunet-I3D.pdf"
         abstract: |
           Due to the highly nonlinear behavior of clothing, modelling fine-scale garment deformation on arbitrary meshes under varied conditions within a unified network poses a significant challenge. Existing methods often compromise on either model generalization, deformation quality, or runtime speed, making them less suitable for real-world applications.
           
@@ -327,7 +338,8 @@ Over the past three decades, the ACM SIGGRAPH Symposium on Interactive 3D Graphi
 
 This year, we continue a track record of excellence with 23 high-quality papers selected by the international paper committee for publication and presentation at the conference.
 
-Conference papers will appear in <a href="https://dl.acm.org/loi/pacmcgit" target="_blank">PACM CGIT</a> after the conference. We will also publish links to author versions of the papers as they provide them until then. Refresh this page periodically, or use <a href="https://www.hongkiat.com/blog/detect-website-change-notification/" target="_blank">a web page monitoring tool</a>, to check this page for updates.
+Conference papers will appear in <a href="https://dl.acm.org/loi/pacmcgit" target="_blank">PACM CGIT</a> after the conference. We will also publish links to author versions of the papers as they provide them. Refresh this page periodically, or use <a href="https://www.hongkiat.com/blog/detect-website-change-notification/" target="_blank">a web page monitoring tool</a>, to check this page for updates. Also, in the meantime, you can check Ke-Sen's page where they are also collecting material for these papers:\
+<https://www.realtimerendering.com/kesen/i3d2024Papers.htm>
 
 {% if page.temporary_session_order -%}
 Sessions are not in the order they will be scheduled, check back later when the final program is published!
