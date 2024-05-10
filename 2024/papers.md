@@ -144,6 +144,7 @@ sessions:
       - title: "Reducing the Memory Footprint of 3D Gaussian Splatting"
         authors: "Panagiotis Papantonakis, Georgios Kopanas, Bernhard Kerbl, Alexandre Lanvin, George Drettakis"
         thumbnail: "04_01_papantonakis.jpg"
+        preprint: "https://repo-sam.inria.fr/fungraph/reduced_3dgs/"
         abstract: |
           3D Gaussian splatting provides excellent visual quality for novel view synthesis, with fast training and real-time rendering; unfortunately, the memory requirements of this method are unreasonably high. We first analyze the reasons for this, identifying three main areas where storage can be reduced: the number of 3D Gaussian primitives used to represent a scene, the number of coefficients for the spherical harmonics used to represent directional radiance and the precision required to store Gaussian primitive attributes.
 
@@ -287,6 +288,7 @@ sessions:
       - title: "Learning Crowd Motion Dynamics with Crowds"
         authors: "Bilas Talukdar, Yunhao Zhang, Tomer Weiss"
         thumbnail: "07_02_talukdar.jpg"
+        preprint: "https://drive.google.com/file/d/1zIjE_O9P4LQjQOGvtsQULaPc3VyEkjPl/view"
         abstract: |
           Reinforcement Learning (RL) has become a popular framework for learning desired behaviors for computational agents in graphics and games. In a multi-agent crowd, one major goal is for agents to avoid collisions while navigating in a dynamic environment. Another goal is to simulate natural-looking crowds, which is difficult to define due to the ambiguity as to what is a natural crowd motion.
           
