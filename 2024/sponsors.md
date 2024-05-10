@@ -1,6 +1,6 @@
 ---
 layout: default2024
-title: sponsors
+title: Sponsors
 
 sponsors_definition:
   - level: ID of the level of sponsorship (for CSS, defines size, in i3d.scss)
