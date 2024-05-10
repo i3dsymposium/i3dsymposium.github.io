@@ -310,7 +310,8 @@ sessions:
 
       - title: "A Unified Particle-Based Solver for Non-Newtonian Behaviors Simulation"
         authors: "Chunlei Li, Yang Gao, Jiayi He, Tianwei Cheng, Shuai Li, Aimin Hao, Hong Qin"
-        link: "https://arxiv.org/abs/2312.04814v1"
+        link: "https://ieeexplore.ieee.org/document/10354362"
+        preprint: "https://arxiv.org/abs/2312.04814v1"
         journal: "tvcg"
         abstract: |
           In this paper, we present a unified framework to simulate non-Newtonian behaviors. We combine viscous and elasto-plastic stress into a unified particle solver to achieve various non-Newtonian behaviors ranging from fluid-like to solid-like.
@@ -322,7 +323,8 @@ sessions:
 
       - title: "MPMNet: A Data-Driven MPM Framework for Dynamic Fluid-Solid Interaction"
         authors: "Jin Li, Yang Gao, Ju Dai, Shuai Li, Aimin Hao, Hong Qin"
-        link: "https://arxiv.org/abs/2305.03315"
+        link: "https://ieeexplore.ieee.org/abstract/document/10113697"
+        preprint: "https://arxiv.org/abs/2305.03315"
         journal: "tvcg"
         abstract: |
           High-accuracy, high-efficiency physics-based fluid-solid interaction is essential for reality modeling and computer animation in online games or real-time Virtual Reality (VR) systems. However, the large-scale simulation of incompressible fluid and its interaction with the surrounding solid environment is either time-consuming or suffering from the reduced time/space resolution due to the complicated iterative nature pertinent to numerical computations of involved Partial Differential Equations (PDEs). In recent years, we have witnessed significant growth in exploring a different, alternative data-driven approach to addressing some of the existing technical challenges in conventional model-centric graphics and animation methods.
@@ -398,7 +400,7 @@ The program also includes 3 papers originally published in the [IEEE Transaction
   {%- assign preprint = paper.preprint | strip -%}
   {%- assign presentation = paper.presentation | strip -%}
   {%- if link != empty -%}
-  <a href="{{ link }}">link</a>{% if preprint != empty or presentation != empty %}, {% endif -%}
+  <a href="{{ link }}">DOI link</a>{% if preprint != empty or presentation != empty %}, {% endif -%}
   {%- endif -%}
   {%- if preprint != empty -%}
   <a href="{{ preprint }}">preprint</a>{% if presentation != empty %}, {% endif -%}
