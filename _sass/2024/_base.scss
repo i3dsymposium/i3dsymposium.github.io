@@ -55,7 +55,7 @@ body {
     /* blue */
 }
 
-small {
+small, .small {
     font-size: 85%;
 }
 
@@ -88,7 +88,6 @@ a:active {
 hr {
     border: 0 solid rgb(204, 204, 204);
     border-top-width: 1px;
-    clear: both;
     height: 0;
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -101,7 +100,7 @@ h4,
 h5,
 h6 {
     margin: 1.25em 0 0.5em;
-    &:first-child {
+    &:first-child, &.no-margin-top {
         margin-top: 0;
     }
     font-weight: 500;
