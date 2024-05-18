@@ -12,13 +12,11 @@ awards_definition:
 
 awards:
   - title: "Best Paper"
-    prize: "NVIDIA GeForce RTX 4080"
     papers:
       - title: "Filtering After Shading With Stochastic Texture Filtering"
         authors: "Matt Pharr, Bartlomiej Wronski, Marco Salvi, Marcos Fajardo"
 
   - title: "Best Paper Runner-Ups"
-    prize: "NVIDIA GeForce RTX 4080"
     papers:
       - title: "ZH3: Quadratic Zonal Harmonics"
         authors: "Thomas Roughton, Peter-Pike Sloan, Ari Silvennoinen, Michal Iwanicki, Peter Shirley"
