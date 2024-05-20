@@ -4,6 +4,8 @@ mailing_list_form: true
 
 papers_preview_youtube_hash: "MVGoiofe-4g"
 
+show_registration_button: false
+
 important_dates:
   - name: Conference
     date: 8-10 May 2024
@@ -79,12 +81,12 @@ sponsors:
         Cesium looks better as a separate line, but
         in the other pages there's only space for 2 lines. -->{% endcomment -%}
         <h1 class="thin">Cesium<br />Philadelphia, PA, USA<br />8-10 May 2024</h1>
+        {%- if page.show_registration_button %}
         <h1><a href="registration.html" class="button">Register</a></h1>
+        {%- endif %}
     </div>
     <div class="two-thirds">
-        <div class="youtube-embed">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{page.papers_preview_youtube_hash}}" title="Papers preview" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-        </div>
+        {% include youtube-embed.html youtube_hash="MVGoiofe-4g" title="Papers preview" thumbnail="img/papers-preview-thumbnail.png" %}
         <h3 class="medium-thin">Watch the 2024 Papers Preview!</h3>
     </div>
 </div>

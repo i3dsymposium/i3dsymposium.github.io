@@ -350,6 +350,7 @@ article {
     @include smaller-than($medium-screen-size) {
         flex: 100%;
         max-width: 100%;
+        margin-bottom: 1em;
     }
 }
 
@@ -404,6 +405,23 @@ a.button {
     padding-bottom: 56.25%;
     overflow: hidden;
     margin: 20px auto;
+}
+
+.youtube-embed .tos-notice {
+    width: 20%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+
+    @include smaller-than($medium-screen-size) {
+        font-size: 0.85em;
+        padding: 0.1em;
+        width: 40%;
+    }
 }
 
 .youtube-embed iframe,

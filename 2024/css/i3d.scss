@@ -648,6 +648,7 @@ footer {
         @include smaller-than($medium-screen-size) {
             margin: 0 (-$main-horizontal-padding-small);
             width: 100vw;
+            padding-bottom: 56.25vw;
         }
     }
 
