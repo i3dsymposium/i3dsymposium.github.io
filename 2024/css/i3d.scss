@@ -642,7 +642,7 @@ footer {
     background: linear-gradient(120deg, $bg-blue 0%, $bg-green 100%);
     color: white;
 
-    .youtube-embed {
+    .video-embed {
         margin: 0;
 
         @include smaller-than($medium-screen-size) {

@@ -1,0 +1,44 @@
+{% comment %}<!-- Use either the argument `youtube_hash` with the random string associated with a youtube video, or the argument `embed_link` for other services. In that case, also include a `video_host` for the TOS notice. -->
+<!-- The arguments `title` and `thumbnail` are required. -->{% endcomment %}
+
+<div class="video-wrapper">
+	<div class="video-embed" style="position: relative;">
+		<script type="text/javascript">
+			function show_video_embed(clicked_link)
+			{
+				console.log(clicked_link);
+				window.clicked_link = clicked_link;
+				var iframe = clicked_link.parentNode.getElementsByTagName("iframe")[0];
+				iframe.src = iframe.getAttribute("data-src");
+
+				var children = clicked_link.parentNode.children;
+				for (var i = 0; i < children.length; ++i)
+				{
+					if (children[i].tagName.toLowerCase() != "iframe")
+					{
+						children[i].style.display = "none";
+					}
+				}
+			}
+		</script>
+		{% if include.youtube_hash -%}
+			{% assign src_link="https://www.youtube.com/embed/{{include.youtube_hash}}?autoplay=1" %}
+			<iframe width="560" height="315" data-src="{{src_link}}" title="{{include.title}}" frameborder="0" allow="accelerometer; encrypted-media; gyroscope" allowfullscreen></iframe> 
+		{%- else -%}
+			<iframe width="560" height="315" allow="accelerometer; encrypted-media; gyroscope" data-src="{{include.embed_link}}" frameborder="0" allowfullscreen></iframe> 
+		{%- endif %}
+		<img src="{{ include.thumbnail }}" alt="{{ include.title }}" style="position: absolute; width: 100%; left: 0; top: 0;" />
+		<a href="#" style="display: block; width: 100%; height: 100%;" onclick="show_video_embed(this)">
+			<img src="../img/watch-video.png" alt="Watch on Youtube" style="width:100%; position: relative;" />
+		</a>
+		<div class="tos-notice">
+			{% if include.youtube_hash -%}
+			This content is hosted by a third party (youtube.com).<br>
+			By clicking to play the external content, you accept the <a href="https://www.youtube.com/static?template=terms">terms and conditions</a> of youtube.com, including the use of their cookies.
+			{%- else -%}
+			This content is hosted by a third party ({{include.video_host}}).<br>
+			By clicking to play the external content, you accept the use of their cookies.
+			{%- endif %}
+		</div>
+	</div>
+</div>

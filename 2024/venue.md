@@ -8,11 +8,7 @@ title: Venue
 
 # Conference Venue {#ConferenceVenue}
 
-<div class="flex">
-    <div class="youtube-embed">
-        <iframe src="https://drive.google.com/file/d/1GNzmEGDfyRHJtiPoPrprkjb4KjGR8INE/preview"></iframe>
-    </div>
-</div>
+{% include video-embed.html embed_link="https://drive.google.com/file/d/1GNzmEGDfyRHJtiPoPrprkjb4KjGR8INE/preview" video_host="google drive" title="Cesium HQ" thumbnail="img/venue/cesium-video-thumbnail.jpg" %}
 
 ### Cesium  will host I3D 2024!
 
@@ -27,11 +23,9 @@ Cesium office is located at:
 400 Market St, 11th floor \
 Philadelphia, PA 19106
 
-<div class="flex">
-    <iframe style="width:100%;height:500px" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2162.7631658920036!2d-75.14950469155715!3d39.950134825432386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c981093646d7%3A0xc117d14670c0778f!2sCesium!5e0!3m2!1sen!2shk!4v1710255557130!5m2!1sen!2shk"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+{% comment %}<!-- We use this method, which requires storing a screen capture of the map because otherwise google will store cookies just for embedding it, and we don't want to deal with GDPR notices if we can avoid it. -->{% endcomment %}
+{% include map-embed.html link="https://maps.app.goo.gl/TaRBSQR5oqiup5hs6" image="img/venue/cesium-map.jpg" %}
 
-\
 The building entrance is on Market Street, near the intersection with 4th Street. When you arrive, take the elevator to the **11th floor**.
 The following is the entrance to Cesium.
 
@@ -55,12 +49,11 @@ On Thursday 9th of May, we will be having a banquet dinner at [Del Frisco's](htt
 
 ## Location
 
-1428-1432 Chestnut St
+1428-1432 Chestnut St \
 Philadelphia, PA 19102
 
-<div class="flex">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.5722649000154!2d-75.1654591!3d39.950956399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c62fc4813459%3A0x78308acf8d2ef653!2sDel%20Frisco&#39;s%20Double%20Eagle%20Steakhouse!5e0!3m2!1sen!2ses!4v1714678287781!5m2!1sen!2ses" style="width: 100%; height: 500px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
+{% comment %}<!-- We use this method, which requires storing a screen capture of the map because otherwise google will store cookies just for embedding it, and we don't want to deal with GDPR notices if we can avoid it. -->{% endcomment %}
+{% include map-embed.html link="https://maps.app.goo.gl/cpU1d2so8HEjdeHz8" image="img/venue/delfriscos-map.jpg" %}
 
 
 ---
