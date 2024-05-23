@@ -22,7 +22,7 @@
 			}
 		</script>
 		{% if include.youtube_hash -%}
-			{% assign src_link="https://www.youtube.com/embed/{{include.youtube_hash}}?autoplay=1" %}
+			{% capture src_link %}https://www.youtube.com/embed/{{include.youtube_hash}}?autoplay=1{% endcapture -%}
 			<iframe width="560" height="315" data-src="{{src_link}}" title="{{include.title}}" frameborder="0" allow="accelerometer; encrypted-media; gyroscope" allowfullscreen></iframe> 
 		{%- else -%}
 			<iframe width="560" height="315" allow="accelerometer; encrypted-media; gyroscope" data-src="{{include.embed_link}}" frameborder="0" allowfullscreen></iframe> 
