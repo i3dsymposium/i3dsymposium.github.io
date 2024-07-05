@@ -24,6 +24,7 @@ keynotes_definition:
 
 keynotes:
   - title: "AI in Play: The Impact of the AI Revolution on Gaming"
+    video: "https://youtu.be/RA_ohgUr51o"
     abstract: |
       The AI revolution is reshaping the landscape of numerous industries with groundbreaking technologies like ChatGPT, Midjourney, and others at the forefront. These innovations are not only technological breakthroughs; they are fundamentally altering how we develop and interact with tech, including video games.
       
@@ -54,6 +55,7 @@ keynotes:
 
 
   - title: "The Gates of Graphics: a deep dive into making your own Computer Graphics hardware"
+    video: "https://youtu.be/XycwTFPDZ6w"
     abstract: |
       We use incredibly powerful hardware everyday, from many-core CPUs to GPUs of extreme performance. This has created unprecedented and exciting opportunities, but the increase in complexity inside our computers has become hard to grasp. This makes it difficult to understand, to explain and to experiment with the hardware that lies between our code and the pixels on our screen.
 

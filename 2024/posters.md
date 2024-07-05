@@ -4,6 +4,8 @@ title: Posters Program
 
 two_thirds_content: true
 
+fast_forward_video: "https://youtu.be/HuYNWNllmcA"
+
 posters_definition:
   - title: "Poster title"
     authors: "Authors, all separated by commas"
@@ -53,6 +55,10 @@ posters:
 ---
 
 The following posters are expected to be presented during the conference's posters session. We will include links to them after the conference as provided by the authors.
+
+{% if page.fast_forward_video -%}
+[Watch Fast-Forward Video]({{page.fast_forward_video}}){: .button target="_blank"}
+{%- endif %}
 
 
 {: .papers-list }

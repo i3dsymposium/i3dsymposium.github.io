@@ -773,6 +773,9 @@ footer {
     margin-top: 2rem;
     width: 100% !important;
     box-sizing: border-box;
+    & p {
+        text-align: left;
+    }
 }
 
 #contacts-list {

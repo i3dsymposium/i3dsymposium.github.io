@@ -54,6 +54,7 @@ awards:
 * This bulletpoint is necessary for kramdown to generate the ToC
 {:toc}
 
+The awards were presented during the closing session on the last day of the conference. You can [watch it here](https://youtu.be/rHwmYO10AF4). Best paper awards were selected using the scores given by the reviewers. The awards for best paper presentation and for the best poster were selected on a vote by the audience. Best reviewer was selected by the paper chairs among the participating reviewers.
 
 {% for award in page.awards %}
 

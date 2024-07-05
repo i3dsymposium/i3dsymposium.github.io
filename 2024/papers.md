@@ -14,7 +14,7 @@ sessions_definition:
         journal: "optionally, the acronym of the journal, such as jcgt"
         doi_link: "DOI link"
         preprint: "link to the preprint provided by authors"
-        presentation: "direct link to the presentation (with timestamp, if it's a short part of a long session)"
+        presentation: "direct link to the video presentation (with timestamp, if it's a short part of a long session)"
         thumbnail: "filename of the thumbnail, stored in the [year]/img/paper_thumbnails/ directory"
         abstract:  |
           some text here, can be multiline. If separated by a single line, it will be converted to <br>, otherwise it will be converted to separate <p> tags
@@ -23,12 +23,14 @@ sessions_definition:
 sessions:
   - title: "Interaction and VR"
     chair: "Omer Shapira"
+    video: "https://youtu.be/p8EgZlPkafg"
     papers:
       - title: "Collaborating with my Doppelgänger: The Effects of Self-similar Appearance and Voice of a Virtual Character during a Jigsaw Puzzle Co-solving Task"
         authors: "Siqi Guo, Minsoo Choi, Dominic Kao, Christos Mousas"
         thumbnail: "01_01_guo.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651288"
         preprint: "https://web.ics.purdue.edu/~cmousas/papers/jour24-PACMCGIT-SelfSimiarAppearanceVoice.pdf"
+        presentation: "https://www.youtube.com/watch?v=p8EgZlPkafg&t=10s"
         abstract: |
           The research community has long been interested in human interaction with embodied virtual characters in virtual reality (VR). At the same time, interaction with self-similar virtual characters, or virtual doppelgängers, has become a prominent topic in both VR and psychology due to the intriguing psychological effects these characters can have on people. However, studies on human interaction with self-similar virtual characters are still limited.
           
@@ -54,6 +56,7 @@ sessions:
         thumbnail: "01_03_yuksel.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651303"
         preprint: "http://www.cemyuksel.com/research/matchmaking/"
+        presentation: "https://www.youtube.com/watch?v=p8EgZlPkafg&t=1380s"
         abstract: |
           Skill-based matchmaking is a crucial component of competitive multiplayer games and it is directly tied to how the players would enjoy the game.
           
@@ -65,6 +68,7 @@ sessions:
         thumbnail: "01_04_chen.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651296"
         preprint: "https://www.researchgate.net/publication/379638881_Impact_of_Tutorial_Modes_with_Different_Time_Flow_Rates_in_Virtual_Reality_Games"
+        presentation: "https://www.youtube.com/watch?v=p8EgZlPkafg&t=3104s"
         abstract: |
           The disparities between virtual reality (VR) technology and traditional media make VR games to adopt innovative interaction modes and tutorial methodologies. Existing research in related fields predominantly concentrates on the performance of VR tutorial modes, such as the placement of text and diagrams within tutorial content. However, few studies have delved into other attributes of tutorials. This study categorizes 4 VR game tutorial modes based on the time flow: traditional instruction screen, slow motion, bullet time, and context-sensitive mode.
           
@@ -76,12 +80,14 @@ sessions:
 
   - title: "Light Transport and Storage"
     chair: "William Donnelly"
+    video: "https://youtu.be/cMo0wFP879U"
     papers:
       - title: "Bounded VNDF Sampling for the Smith–GGX BRDF"
         authors: "Yusuke Tokuyoshi, Kenta Eto"
         thumbnail: "02_01_tokuyoshi.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651291"
         preprint: "https://gpuopen.com/advanced-rendering-research/"
+        presentation: "https://www.youtube.com/watch?v=cMo0wFP879U&t=18s"
         abstract: |
           Sampling according to a visible normal distribution function (VNDF) is often used to sample rays scattered by glossy surfaces, such as the Smith–GGX microfacet model. However, for rough reflections, existing VNDF sampling methods can generate undesirable reflection vectors occluded by the surface. Since these occluded reflection vectors must be rejected, VNDF sampling is inefficient for rough reflections.
           
@@ -93,6 +99,7 @@ sessions:
         thumbnail: "02_02_roughton.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651294"
         preprint: "http://torust.me/ZH3.pdf"
+        presentation: "https://www.youtube.com/watch?v=cMo0wFP879U&t=1091s"
         abstract: |
           Spherical Harmonics (SH) have been used widely to represent lighting in games and film. While the quadratic (SH3) and higher order spherical harmonics represent irradiance well, they are expensive to store and evaluate, requiring 27 coefficients per sample. Linear SH (SH2), requiring only 12 coefficients, are sometimes used, but they do not represent irradiance signals accurately and can have challenges with negative reconstruction.
           
@@ -104,6 +111,7 @@ sessions:
         thumbnail: "02_03_granizo-hidalgo.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651297"
         preprint: "https://inria.hal.science/hal-04561024"
+        presentation: "https://www.youtube.com/watch?v=cMo0wFP879U&t=2641s"
         abstract: |
           Specular surfaces, like water surfaces, create caustics by focusing the light being refracted or reflected. These caustics are very important for scene realism, but also challenging to render: to compute them, we need to find the exact path connecting two points through a specular reflection or refraction. This requires finding the roots of a complicated function on the surface. Manifold-Exploration methods find these roots using the Newton-Raphson method, but this involves computing path derivatives at each step, which can be challenging.
           
@@ -113,12 +121,14 @@ sessions:
 
   - title: "Volumes and Fields"
     chair: "Ricardo Marroquim"
+    video: "https://youtu.be/Zlf9U8_je04"
     papers:
       - title: "ProteusNeRF: Fast Lightweight NeRF Editing using 3D-Aware Image Context"
         authors: "Binglun Wang, Niladri Shekhar Dutt, Niloy Mitra"
         thumbnail: "03_01_wang.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651290"
         preprint: "https://proteusnerf.github.io"
+        presentation: "https://www.youtube.com/watch?v=Zlf9U8_je04&t=21s"
         abstract: |
           Neural Radiance Fields (NeRFs) have recently emerged as a popular option for photo-realistic object capture due to their ability to faithfully capture high-fidelity volumetric content even from handheld video input. Although much research has been devoted to efficient optimization leading to real-time training and rendering, options for interactive editing NeRFs remain limited.
           
@@ -140,6 +150,7 @@ sessions:
         authors: "Zhi Ying, Nicholas Edwards, Mikhail Kutuzov"
         thumbnail: "03_03_ying.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651289"
+        presentation: "https://www.youtube.com/watch?v=Zlf9U8_je04&t=1106s"
         abstract: |
           Visibility information is critical in game AI applications, but the computational cost of raycasting-based methods poses a challenge for real-time systems.
           
@@ -151,12 +162,14 @@ sessions:
 
   - title: "Points and Splats"
     chair: "Peter Shirley"
+    video: "https://youtu.be/EnKE-d7eMds"
     papers:
       - title: "Reducing the Memory Footprint of 3D Gaussian Splatting"
         authors: "Panagiotis Papantonakis, Georgios Kopanas, Bernhard Kerbl, Alexandre Lanvin, George Drettakis"
         thumbnail: "04_01_papantonakis.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651282"
         preprint: "https://repo-sam.inria.fr/fungraph/reduced_3dgs/"
+        presentation: "https://www.youtube.com/watch?v=EnKE-d7eMds&t=51s"
         abstract: |
           3D Gaussian splatting provides excellent visual quality for novel view synthesis, with fast training and real-time rendering; unfortunately, the memory requirements of this method are unreasonably high. We first analyze the reasons for this, identifying three main areas where storage can be reduced: the number of 3D Gaussian primitives used to represent a scene, the number of coefficients for the spherical harmonics used to represent directional radiance and the precision required to store Gaussian primitive attributes.
 
@@ -168,6 +181,7 @@ sessions:
         thumbnail: "04_02_schutz.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651287"
         preprint: "https://arxiv.org/abs/2310.03567"
+        presentation: "https://www.youtube.com/watch?v=EnKE-d7eMds&t=1534s"
         abstract: |
           We propose an incremental LOD generation approach for point clouds that allows us to simultaneously load points from disk, update an octree-based level-of-detail representation, and render the intermediate results in real time while additional points are still being loaded from disk. LOD construction and rendering are both implemented in CUDA and share the GPU’s processing power, but each incremental update is lightweight enough to leave enough time to maintain real-time frame rates.
           
@@ -180,6 +194,8 @@ sessions:
         authors: "Wenbo Chen, Ligang Liu"
         thumbnail: "04_03_chen.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651301"
+        preprint: "https://chaphlagical.icu/Deblur-GS/static/paper/Deblur_GS_author_version.pdf"
+        presentation: "https://www.youtube.com/watch?v=EnKE-d7eMds&t=2681s"
         abstract: |
           Novel view synthesis has undergone a revolution thanks to the radiance field method. The introduction of 3D Gaussian splatting (3DGS) has successfully addressed the issues of prolonged training times and slow rendering speeds associated with Neural Radiance Field (NeRF), all while preserving the quality of reconstructions. However, 3DGS remains heavily reliant on the quality of input images and their initial camera pose initialization. In cases where input images are blurred, the reconstruction results suffer from blurriness and artifacts.
           
@@ -190,6 +206,7 @@ sessions:
         authors: "Ajinkya Gavane, Benjamin Watson"
         thumbnail: "04_04_gavane.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651300"
+        presentation: "https://www.youtube.com/watch?v=EnKE-d7eMds&t=4175s"
         abstract: |
           Rendering for light field displays (LFDs) requires rendering of dozens or hundreds of views, which must then be combined into a single image on the display, making real-time LFD rendering extremely difficult.
           
@@ -199,11 +216,14 @@ sessions:
 
   - title: "Noise and Reconstruction"
     chair: "Eric Haines"
+    video: "https://youtu.be/aTUSyJ5zmV8"
     papers:
       - title: "FAST: Filter-Adapted Spatio-Temporal Sampling for Real-Time Rendering"
         authors: "William Donnelly, Alan Wolfe, Judith Bütepage, Jon Valdés"
         thumbnail: "05_01_donnelly.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651283"
+        preprint: "https://media.contentapi.ea.com/content/dam/ea/seed/presentations/seed-id3-2024-spatio-temporal-sampling-paper.pdf"
+        presentation: "https://www.youtube.com/watch?v=aTUSyJ5zmV8&t=23s"
         abstract: |
           Stochastic sampling techniques are ubiquitous in real-time rendering, where performance constraints force the use of low sample counts, leading to noisy intermediate results. To remove this noise, the post-processing step of temporal and spatial denoising is an integral part of the real-time graphics pipeline.
           
@@ -215,6 +235,7 @@ sessions:
         thumbnail: "05_02_pharr.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651293"
         preprint: "https://research.nvidia.com/labs/rtr/publication/pharr2024stochtex/"
+        presentation: "https://www.youtube.com/watch?v=aTUSyJ5zmV8&t=1409s"
         abstract: |
           2D texture maps and 3D voxel arrays are widely used to add rich detail to the surfaces and volumes of rendered scenes, and filtered texture lookups are integral to producing high-quality imagery.
           
@@ -227,6 +248,7 @@ sessions:
         authors: "Reiner Dolp, Johannes Hanika, Carsten Dachsbacher"
         thumbnail: "05_03_dolp.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651299"
+        preprint: "https://reinerdolp.com/paper/fast-svgf/"
         abstract: |
           Given limitations of contemporary graphics hardware, real-time ray-traced global illumination is only estimated using a few samples per pixel. This consequently causes stochastic noise in the resulting frame sequences which requires wide filter support during denoising for temporally stable estimates. The edge avoiding à-trous wavelet transform amortizes runtime cost by hierarchical filtering using a constant number of increasingly dilated tabs in each iteration. While the number of taps stays constant, the runtime of each iteration increases in these usually memory-throughput bound shaders with increasing dilation.
           
@@ -236,6 +258,7 @@ sessions:
       - title: "Cone-Traced Supersampling for Signed Distance Field Rendering"
         authors: "Andrei Chubarau, Yangyang Zhao, Ruby Rao, Derek Nowrouzezahrai, Paul G. Kry"
         doi_link: "https://ieeexplore.ieee.org/document/10360320"
+        presentation: "https://www.youtube.com/watch?v=aTUSyJ5zmV8&t=3324s"
         journal: "tvcg"
         abstract: |
           While signed distance fields (SDFs) in theory offer infinite level of detail, they are typically rendered using the sphere tracing algorithm at finite resolutions, which causes the common rasterized image synthesis problem of aliasing. Most existing optimized antialiasing solutions rely on polygon mesh representations; SDF-based geometry can only be directly antialiased with the computationally expensive supersampling or with post-processing filters that may produce undesirable blurriness and ghosting.
@@ -248,11 +271,13 @@ sessions:
 
   - title: "Efficient Forward and Differentiable Rendering"
     chair: "Michael Vance"
+    video: "https://youtu.be/mVAGcqgEXdU"
     papers:
       - title: "Efficient Particle-Based Fluid Surface Reconstruction Using Mesh Shaders and Bidirectional Two-Level Grids"
         authors: "Yuki Nishidate, Issei Fujishiro"
         thumbnail: "06_01_nishidate.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651285"
+        presentation: "https://www.youtube.com/watch?v=mVAGcqgEXdU&t=45s"
         abstract: |
           In this paper, we introduce a novel method for particle-based fluid surface reconstruction that incorporates mesh shaders for the first time.
           
@@ -270,6 +295,7 @@ sessions:
         thumbnail: "06_02_liu.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651295"
         preprint: "https://github.com/libreliu/ShaderPerFormer/blob/main/ShaderPerFormer.pdf"
+        presentation: "https://www.youtube.com/watch?v=mVAGcqgEXdU&t=1413s"
         abstract: |
           The ability to model and predict execution time of GPU computations is crucial for real-time graphics application development and optimization. While there are many existing methodologies for graphics programmers to provide such estimates, those methods are often vendor-dependent, require the platforms to be tested, or fail to capture the contextual influences among shader instructions.
           
@@ -283,6 +309,7 @@ sessions:
         thumbnail: "06_03_deliot.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651298"
         preprint: "https://ggx-research.github.io/publication/2024/04/17/publication-intel-diffrast.html"
+        presentation: "https://www.youtube.com/watch?v=mVAGcqgEXdU&t=3010s"
         abstract: |
           We show how to transform a non-differentiable rasterizer into a differentiable one with minimal engineering efforts and no external dependencies (no Pytorch/Tensorflow). We rely on Stochastic Gradient Estimation, a technique that consists of rasterizing after randomly perturbing the scene's parameters such that their gradient can be stochastically estimated and descended. This method is simple and robust but does not scale in dimensionality (number of scene parameters).
           
@@ -292,12 +319,14 @@ sessions:
 
   - title: "Learning to Move"
     chair: "Sylvain Lefebvre"
+    video: "https://youtu.be/ie-yDjXr0G4"
     papers:
       - title: "Efficient Deformation Learning of Varied Garments with a Structure-Preserving Multilevel Framework"
         authors: "Tianxing Li, Rui Shi, Zihui Li, Takashi Kanai, Qing Zhu"
         thumbnail: "07_01_li.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651286"
         preprint: "https://shirui-homepage.com/files/pdf/research/202404psdunet-I3D.pdf"
+        presentation: "https://www.youtube.com/watch?v=ie-yDjXr0G4&t=45s"
         abstract: |
           Due to the highly nonlinear behavior of clothing, modelling fine-scale garment deformation on arbitrary meshes under varied conditions within a unified network poses a significant challenge. Existing methods often compromise on either model generalization, deformation quality, or runtime speed, making them less suitable for real-world applications.
           
@@ -313,6 +342,7 @@ sessions:
         thumbnail: "07_02_talukdar.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651302"
         preprint: "https://drive.google.com/file/d/1zIjE_O9P4LQjQOGvtsQULaPc3VyEkjPl/view"
+        presentation: "https://www.youtube.com/watch?v=ie-yDjXr0G4&t=1577s"
         abstract: |
           Reinforcement Learning (RL) has become a popular framework for learning desired behaviors for computational agents in graphics and games. In a multi-agent crowd, one major goal is for agents to avoid collisions while navigating in a dynamic environment. Another goal is to simulate natural-looking crowds, which is difficult to define due to the ambiguity as to what is a natural crowd motion.
           
@@ -322,12 +352,14 @@ sessions:
 
   - title: "Solvers and Simulation"
     chair: "Cem Yuksel"
+    video: "https://youtu.be/UOD3uAO_sH8"
     papers:
       - title: "Windblown Sand Around Obstacles – Simulation And Validation Of Deposition Patterns"
         authors: "Nicolas Rosset, Régis Duvigneau, Adrien Bousseau, Guillaume Cordonnier"
         thumbnail: "08_01_rosset.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651284"
         preprint: "http://www-sop.inria.fr/reves/Basilic/2024/RDBC24/"
+        presentation: "https://www.youtube.com/watch?v=UOD3uAO_sH8&t=26s"
         abstract: |
           Sand dunes are iconic landmarks of deserts, but can also put human infrastructures at risk, for instance by forming near buildings or roads. We present a simulator of sand erosion and deposition to predict how dunes form around and behind obstacles under wind.
           
@@ -338,6 +370,7 @@ sessions:
         authors: "Chunlei Li, Yang Gao, Jiayi He, Tianwei Cheng, Shuai Li, Aimin Hao, Hong Qin"
         doi_link: "https://ieeexplore.ieee.org/document/10354362"
         preprint: "https://arxiv.org/abs/2312.04814v1"
+        presentation: "https://www.youtube.com/watch?v=UOD3uAO_sH8&t=1523s"
         journal: "tvcg"
         abstract: |
           In this paper, we present a unified framework to simulate non-Newtonian behaviors. We combine viscous and elasto-plastic stress into a unified particle solver to achieve various non-Newtonian behaviors ranging from fluid-like to solid-like.
@@ -351,6 +384,7 @@ sessions:
         authors: "Jin Li, Yang Gao, Ju Dai, Shuai Li, Aimin Hao, Hong Qin"
         doi_link: "https://ieeexplore.ieee.org/abstract/document/10113697"
         preprint: "https://arxiv.org/abs/2305.03315"
+        presentation: "https://www.youtube.com/watch?v=UOD3uAO_sH8&t=2323s"
         journal: "tvcg"
         abstract: |
           High-accuracy, high-efficiency physics-based fluid-solid interaction is essential for reality modeling and computer animation in online games or real-time Virtual Reality (VR) systems. However, the large-scale simulation of incompressible fluid and its interaction with the surrounding solid environment is either time-consuming or suffering from the reduced time/space resolution due to the complicated iterative nature pertinent to numerical computations of involved Partial Differential Equations (PDEs). In recent years, we have witnessed significant growth in exploring a different, alternative data-driven approach to addressing some of the existing technical challenges in conventional model-centric graphics and animation methods.
@@ -396,9 +430,8 @@ The program also includes 3 papers originally published in the [IEEE Transaction
 {% if session.chair -%}
 - Session chair: {{ session.chair }}{% endif %}
 {% assign presentations_video = session.video | strip -%}
-{%- assign qa_video = session.qa_video | strip -%}
 {%- if presentations_video != empty -%}
-- [Watch Video]({{ session.presentations_video }}){: .button target="_blank"}
+- [Watch Video]({{ presentations_video }}){: .button target="_blank"}
 {% endif -%}
 {: .unstyled }
 

@@ -5,6 +5,7 @@ title: Sponsored Talks
 keynotes_definition:
   - title: "title of the presentation"
     company: "affiliation of the speaker"
+    video: "optiona, link to youtube video"
     abstract: |
       abstract of the presentation (optional)
 
@@ -18,6 +19,7 @@ keynotes:
     company: "Cesium"
     speakers:
       - Sean Lilley
+    video: "https://youtu.be/DPHDNnICrX0"
     abstract: |
       This talk provides a systems-level overview of 3D Tiles, an open standard for rendering geospatial-accurate massive models. Geospatial data comes in many forms including high-resolution photogrammetry models, semantically-rich CAD models, massive point clouds, and global terrain and imagery. Real world data is often gigabytes to terabytes in size, unable to fit on a single drive let alone in GPU memory.
  
@@ -29,6 +31,7 @@ keynotes:
     speakers:
       - David Erler
       - Wolfgang Engel
+    video: "https://youtu.be/kWLev9CoQdg"
     abstract: |
       This article updates the development between 2018 and today and features new major developments in the realm of the Triangle Visibility Buffer architecture.
 
@@ -50,6 +53,7 @@ keynotes:
       - Roberto Lopez Mendez
       - SICONG LI
       - HONG JI LIU
+    video: "https://youtu.be/302-7xemHow"
     abstract: |
       This paper showcases the future of user interaction in gaming, more natural, based on speech. The paper explains the implementation of verbal interaction with an NPC on a mobile game. Large Language Models (LLM) open new ways of interacting in gaming, but the large size and big memory footprint make using them on mobile very challenging.
       
@@ -79,6 +83,10 @@ keynotes:
 
 ## {{keynote.company}}
 {: #Company{{forloop.index}} }
+
+{% if keynote.video -%}
+[Watch Video]({{keynote.video}}){: .button target="_blank"}
+{%- endif %}
 
 {% if keynote.abstract -%}
 {{ keynote.abstract | strip | escape_once | newline_to_br | replace: "<br />
