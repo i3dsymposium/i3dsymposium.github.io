@@ -150,6 +150,7 @@ sessions:
         authors: "Zhi Ying, Nicholas Edwards, Mikhail Kutuzov"
         thumbnail: "03_03_ying.jpg"
         doi_link: "https://dl.acm.org/doi/10.1145/3651289"
+        preprint: "https://arxiv.org/abs/2407.03330"
         presentation: "https://www.youtube.com/watch?v=Zlf9U8_je04&t=1106s"
         abstract: |
           Visibility information is critical in game AI applications, but the computational cost of raycasting-based methods poses a challenge for real-time systems.

@@ -91,23 +91,10 @@ sponsors:
     </div>
 </div>
 
-<div id="important-dates" class="highlight-bg">
-    <h2>Important Dates</h2>
-    <ul class="three-columns">
-        {% for date in page.important_dates -%}
-            {% assign thisdate = date.date | date: "%Y%m%d" | plus: 0 -%}
-            {% assign now = "now" | date: "%Y%m%d" | plus: 0 -%}
-            {% if thisdate < now and thisdate > 0 -%}
-                {% assign past = true -%}
-            {% else -%}
-                {% assign past = false -%}
-            {% endif -%}
-            <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
-        {%- endfor %}
-    </ul>
-</div>
-
 <section class="flex">
+    <!-- NOTE: originally, the "important dates" section was at the top of the page below the video,
+     and this section was originally below the important dates, but since the conference
+     is passed, those dates are not really too important anymore -->
     <div class="one-third">
         <h3>
             I3D is the leading conference for real time 3D computer graphics and human interaction
@@ -116,17 +103,17 @@ sponsors:
 
     <div class="two-thirds">
         <p>
+            You can watch all of this year's presentations in the <a href="https://www.youtube.com/playlist?list=PLspdidzS3EBGJd9g1MhFrrvNYihcypmtG">YouTube playlist</a>.
+        </p>
+        <p>
+            If you want to see what the venue was like other than the presentations, you can see <a href="https://www.flickr.com/photos/mvives/albums/72177720318174686/">our official photo album</a>. Eric Haines also kindly shared <a href="https://photos.app.goo.gl/haFUhngd1BoxWvv1A">his pictures from the event</a>.
+        </p>
+        <p>
             2024 is I3D's 38th year since the <a href="http://dl.acm.org/citation.cfm?id=319120&picked=prox&CFID=734542800&CFTOKEN=48967429">inaugural workshop in 1986</a>,
             and the 28th conference (I3D occurred roughly biennially until 2005).
         </p>
         <p>
             More details on <a href="conference.html">prior conferences are available here</a>.
-        </p>
-        <p>
-            You can watch all of this year's presentations in the <a href="https://www.youtube.com/playlist?list=PLspdidzS3EBGJd9g1MhFrrvNYihcypmtG">youtube playlist</a>.
-        </p>
-        <p>
-            If you want to see what the venue was like other than the presentations, <a href="https://www.flickr.com/photos/mvives/albums/72177720318174686/">Mauricio Vives</a> and <a href="https://photos.app.goo.gl/haFUhngd1BoxWvv1A">Eric Haines</a> have kindly shared the pictures they took during the event.
         </p>
     </div>
 </section>
@@ -164,5 +151,21 @@ sponsors:
         {% endif -%}
         {% endfor -%}
     </div>
+</div>
+
+<div id="important-dates" class="highlight-bg">
+    <h2>Important Dates</h2>
+    <ul class="three-columns">
+        {% for date in page.important_dates -%}
+            {% assign thisdate = date.date | date: "%Y%m%d" | plus: 0 -%}
+            {% assign now = "now" | date: "%Y%m%d" | plus: 0 -%}
+            {% if thisdate < now and thisdate > 0 -%}
+                {% assign past = true -%}
+            {% else -%}
+                {% assign past = false -%}
+            {% endif -%}
+            <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
+        {%- endfor %}
+    </ul>
 </div>
 
