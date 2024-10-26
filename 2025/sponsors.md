@@ -51,7 +51,7 @@ sponsors:
 # Corporate Sponsors
 
 The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
-{{ layout.current_year }} is a highly-visible, leading-edge conference for techniques that
+2025 is a highly-visible, leading-edge conference for techniques that
 combine 3D computer graphics with human interaction. I3D continues to
 focus on the hottest research in 3D game technology, interactive
 visualization and visual depiction, interactive modeling,
