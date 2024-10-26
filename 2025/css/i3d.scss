@@ -1,0 +1,884 @@
+---
+---
+
+@import '2024/media-queries';
+
+@import '2024/reset';
+
+@import '2024/base';
+
+
+$nav-height: 80px;
+
+$sponsor-sizes: ("venue": 350px, "platinum": 230px, "gold": 170px, "silver": 120px);
+
+$hamburger-menu-breakpoint: $large-screen-size;
+
+header {
+    background-color: white;
+    position: relative;
+    width: $max-page-width;
+    clear: both;
+    margin: 0 auto;
+
+    box-sizing: border-box;
+    padding-left: $main-horizontal-padding;
+    padding-right: $main-horizontal-padding;
+
+    @include smaller-than($max-page-width) {
+        width: 100%;
+    }
+
+    @include smaller-than($large-screen-size) {
+        padding-left: $main-horizontal-padding-small;
+        padding-right: $main-horizontal-padding-small;
+    }
+    
+
+    img {
+        height: $nav-height;
+    }
+
+    nav#nav-menu {
+        float: right;
+        right: 0;
+        top: 0;
+        max-height: $nav-height;
+        font-size: 16px;
+
+        $open-button-circle-radius: 40px;
+
+        @include smaller-than($hamburger-menu-breakpoint) {
+            float: none;
+            position: fixed;
+            max-height: inherit;
+            bottom: 0;
+            top: inherit;
+            left: 0;
+            width: 100%;
+            margin: 0;
+            z-index: 100000;
+        }
+
+        #nav-list {
+            list-style: none;
+
+            text-transform: uppercase;
+            font-weight: bold;
+
+            @include smaller-than($hamburger-menu-breakpoint) {
+                visibility: hidden;
+                opacity: 0;
+                background-color: white;
+                padding-bottom: calc(#{$open-button-circle-radius} + 1em);
+                padding-top: 1em;
+
+                border-top: 4px solid;
+                border-top-width: 4px;
+                border-image-slice: 1;
+                border-image-source: linear-gradient(-90deg, $bg-blue 0%, $bg-green 100%);
+
+                width: 100%;
+                margin-bottom: -100%;
+                transition: .5s ease-in-out;
+            }
+
+            li {
+                a, a:hover, a:active, a:visited {
+                    color: black;
+                    text-decoration: none;
+                }
+
+                &.active {
+                    a, a:hover, a:active, a:visited {
+                        color: $link;
+                    }
+                }
+            }
+
+            & > li {
+                float: left;
+                margin: 0;
+                padding: 30px 4px;
+
+                @include smaller-than($hamburger-menu-breakpoint) {
+                    float: none;
+                    width: 100%;
+                    padding: 0;
+                }
+
+                & > a, & > span.submenu-title {
+                    padding: 1em 0.625em;
+                    margin: 0;
+
+                    @include smaller-than($max-page-width) {
+                        padding: 1em 0.25em;
+                    }
+                    @include smaller-than($hamburger-menu-breakpoint) {
+                        padding: 0.5em 0 0.5em 80px;
+                        width: 100%;
+                        display: block;
+                        box-sizing: border-box;
+                        margin: 0 auto;
+                        max-width: 400px;
+                    }
+                }
+
+                &.sub-active > span.submenu-title {
+                    @include bigger-than($hamburger-menu-breakpoint) {
+                        color: $link;
+                    }
+                }
+
+                & > span.submenu-title {
+                    @include smaller-than($hamburger-menu-breakpoint) {
+                        padding: 0.5em 0 0 90px;
+                        font-size: 75%;
+                        color: $dark-gray;
+
+                        &::after {
+                            content: '';
+                            position: relative;
+                            left: 0.5em;
+                            border: solid $dark-gray;
+                            border-width: 1px 1px 0 0;
+                            display: inline-block;
+                            padding: 3px;
+                        }
+                    }
+                }
+
+                @include bigger-than($hamburger-menu-breakpoint) {
+                    &:first-child {
+                        padding-left: 0;
+                        & > a {
+                            padding-left: 0;
+                        }
+                    }
+                    &:last-child {
+                        padding-right: 0;
+                        & > a {
+                            padding-right: 0;
+                        }
+                    }
+                }
+
+                &.submenu {
+                    position: relative;
+                    margin-right: 5px;
+
+                    & > span.submenu-title {
+                        cursor: default;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: relative;
+                        left: -5px;
+                        top: -1.5px;
+                        border: solid black;
+                        border-width: 0 3px 3px 0;
+                        display: inline-block;
+                        padding: 3px;
+                        transform: rotate(-45deg);
+                        transition: .2s ease-in-out;
+
+                        @include smaller-than($hamburger-menu-breakpoint) {
+                            display: none;
+                        }
+                    }
+
+                    &:hover::after {
+                        transform: rotate(45deg);
+                    }
+
+                    & > ul {
+                        display: none;
+
+                        list-style: none;
+
+                        position: absolute;
+                        top: $nav-height;
+                        //left: 0;
+                        right: 0;
+
+                        background-color: $bg-soft;
+
+                        box-sizing: border-box;
+                        //width: 100vw;
+                        //max-width: $max-page-width;
+                        min-width: 25em;
+                        padding: calc(#{$main-vertical-padding} - 1.5em) 0;
+
+                        @include smaller-than($hamburger-menu-breakpoint) {
+                            display: block;
+                            position: relative;
+                            top: 0;
+                            padding: 0;
+                            background-color: white;
+                        }
+
+                        & > li {
+                            text-align: right;
+                            margin: 0;
+
+                            @include smaller-than($hamburger-menu-breakpoint) {
+                                text-align: left;
+                            }
+
+                            a {
+                                display: block;
+                                box-sizing: border-box;
+                                padding: 0.75em $main-horizontal-padding;
+
+                                transition: .2s ease-in-out;
+                                background-color: transparent;
+
+                                &:hover {
+                                    background-color: $bg-soft-darker;
+                                }
+
+                                @include smaller-than($hamburger-menu-breakpoint) {
+                                    padding: 0.5em 0 0.5em 110px;
+                                    max-width: 400px;
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+
+                    &:hover > ul {
+                        display: block;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+
+        #nav-menu-open {
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+
+            @include smaller-than($hamburger-menu-breakpoint) {
+                display: block;
+            }
+
+            & ~ #nav-menu-open-bg {
+                display: none;
+                position: absolute;
+                width: 2*$open-button-circle-radius;
+                height: 2*$open-button-circle-radius;
+                bottom: -$open-button-circle-radius;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                z-index: 1000;
+                background-color: $bg-blue;
+                border-radius: 50%;
+
+                transition: .5s ease-in-out;
+
+                @include smaller-than($hamburger-menu-breakpoint) {
+                    display: block;
+                }
+            }
+
+            & ~ label[for=nav-menu-open] {
+                display: none;
+
+                @include smaller-than($hamburger-menu-breakpoint) {
+                    display: block;
+                }
+
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: $open-button-circle-radius - 5px;
+                height: $open-button-circle-radius;
+                margin: 0 auto;
+                z-index: 1001;
+                cursor: pointer;
+
+                .hamburger {
+                    position: absolute;
+                    bottom: $open-button-circle-radius / 2 - 4px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    width: $open-button-circle-radius*0.625;
+                    height: 2px;
+                    background: white;
+                    display: block;
+                    transform-origin: center;
+                    transition: .5s ease-in-out;
+
+                    &:after, &:before {
+                        transition: .5s ease-in-out;
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        background: white;
+                    }
+
+                    &:before { top: -($open-button-circle-radius*0.625 / 4 + 2px); }
+
+                    &:after { bottom: -($open-button-circle-radius*0.625 / 4 + 2px); }
+                }
+
+            }
+        }
+
+        @include smaller-than($hamburger-menu-breakpoint) {
+            &>#nav-menu-open:checked ~ #nav-list {
+                visibility: visible;
+                opacity: 1;
+                margin-bottom: 0%;
+            }
+
+            &>#nav-menu-open:checked ~ #nav-menu-open-bg {
+                background-color: white;
+            }
+
+            &>#nav-menu-open:checked ~ label[for=nav-menu-open] {
+                &> .hamburger {
+                    transform: rotate(45deg);
+                    background: $blue;
+
+                    &:after {
+                        transform: rotate(90deg);
+                        bottom: 0;
+                        background: $blue;
+                    }
+
+                    &:before {
+                        transform: rotate(90deg);
+                        background: $blue;
+                        top: 0;
+                        visibility: hidden;
+                    }
+                }
+
+            }
+        }
+    }
+
+    #page-title {
+        position: relative;
+        padding: $main-vertical-padding $main-horizontal-padding;
+        margin: 0px (-$main-horizontal-padding);
+        margin-bottom: $main-vertical-padding;
+        @include smaller-than($large-screen-size) {
+            padding: $main-vertical-padding-small $main-horizontal-padding-small;
+            margin: 0px (-$main-horizontal-padding-small);
+            margin-bottom: $main-vertical-padding-small;
+        }
+        background: $bg-blue;
+        background: linear-gradient(90deg, $bg-blue 0%, $bg-green 100%);
+        color: white;
+
+        > h1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        > #conference-info-card {
+            font-weight: 100;
+            font-size: 24px;
+            line-height: 120%;
+            text-transform: uppercase;
+            text-rendering: optimizeLegibility;
+            text-align: right;
+            position: absolute;
+            right: $main-horizontal-padding;
+            top: 0;
+            height: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            @include smaller-than($large-screen-size) {
+                font-size: 16px;
+                font-weight: 200;
+            }
+            @include smaller-than($medium-screen-size) {
+                display: none;
+            }
+        }
+    }
+}
+
+footer {
+    position: relative;
+    width: $max-page-width;
+    clear: both;
+    margin: $main-vertical-padding auto 0;
+    padding-bottom: 2*$main-vertical-padding; 
+    @include smaller-than($large-screen-size) {
+        margin: $main-vertical-padding-small auto 0;
+        padding-bottom: 2*$main-vertical-padding-small; 
+    }
+
+    box-sizing: border-box;
+    padding-left: $main-horizontal-padding;
+    padding-right: $main-horizontal-padding;
+    @include smaller-than($large-screen-size) {
+        padding-left: $main-horizontal-padding-small;
+        padding-right: $main-horizontal-padding-small;
+    }
+
+    @include smaller-than($max-page-width) {
+        width: 100%;
+    }
+
+    #footer-logo {
+        height: $nav-height;
+    }
+
+    #footer-copy {
+        margin-top: $main-vertical-padding;
+        @include smaller-than($large-screen-size) {
+            margin-top: $main-vertical-padding-small;
+        }
+    }
+
+    #footer-links {
+        float: right;
+        list-style: none;
+        right: 0;
+        top: 0;
+        font-size: 16px;
+
+        display: flex;
+        width: 60%;
+        @include smaller-than($max-page-width) {
+            float: none;
+            width: 100%;
+            margin-top: 1em;
+        }
+
+        &>ul {
+            list-style: none;
+
+            flex: 1 1 50%;
+
+            li {
+                margin-left: 0;
+                text-align: right;
+            }
+        }
+
+        a, a:hover, a:active, a:visited {
+            color: black;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 0;
+        }
+
+    }
+}
+
+#main-wrapper {
+    position: relative;
+    width: $max-page-width;
+    clear: both;
+    margin: 0 auto;
+
+    @include smaller-than($max-page-width) {
+        width: 100%;
+    }
+
+    @each $tag in (div, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, section, article) {
+        #main > #{$tag} {
+            padding-left: $main-horizontal-padding;
+            padding-right: $main-horizontal-padding;
+            @include smaller-than($large-screen-size) {
+                padding-left: $main-horizontal-padding-small;
+                padding-right: $main-horizontal-padding-small;
+            }
+        }
+    }
+    @each $tag in (img) {
+        #main > #{$tag} {
+            margin-left: $main-horizontal-padding;
+            margin-right: $main-horizontal-padding;
+            @include smaller-than($large-screen-size) {
+                margin-left: $main-horizontal-padding-small;
+                margin-right: $main-horizontal-padding-small;
+            }
+        }
+    }
+
+    #main > section {
+        margin-top: $main-vertical-padding;
+        margin-bottom: $main-vertical-padding;
+        @include smaller-than($large-screen-size) {
+            margin-top: $main-vertical-padding-small;
+            margin-bottom: $main-vertical-padding-small;
+        }
+    }
+
+    #main {
+        p, article, ul, ol {
+            margin-bottom: 1em;
+
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    // This is because tables apparently are horrible and can't be properly
+    // positioned with margin or padding, so we have to do hacks.
+    @each $tag in (table, blockquote, hr) {
+        #main > #{$tag} {
+            box-sizing: border-box;
+            position: relative;
+            width: calc(100% - 2 * #{$main-horizontal-padding});
+            left: $main-horizontal-padding;
+
+            @include smaller-than($large-screen-size) {
+                width: calc(100% - 2 * #{$main-horizontal-padding-small});
+                left: $main-horizontal-padding-small;
+            }
+        }
+    }
+
+    // If there's a TOC we stay at 2/3 the size
+    #main > #markdown-toc {
+        @each $tag in (h2, h3, h4, h5, h6, ul, ol, dl) {
+            & ~ #{$tag} {
+                box-sizing: border-box;
+                width: 100%;
+                @include bigger-than($large-screen-size) {
+                    width: 66%;
+                }
+            }
+        }
+
+        & ~ p, & ~ article, & ~ div {
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+
+            @include bigger-than($large-screen-size) {
+                width: 66%;
+                text-align: justify;
+            }
+        }
+
+        & ~ blockquote {
+            text-align: left;
+            @include bigger-than($large-screen-size) {
+                text-align: justify;
+            }
+        }
+
+        @each $tag in (table, blockquote, hr) {
+            & ~ #{$tag} {
+                @include bigger-than($large-screen-size) {
+                    width: calc(66% - 2 * #{$main-horizontal-padding});
+                }
+            }
+        }
+    }
+
+
+    #main > img, #main > * > img {
+        max-width: 100%;
+    }
+
+    #main #markdown-toc {
+        list-style: none;
+        position: relative;
+
+        &> li {
+            text-indent: -1em;
+            margin-left: 1em;
+            margin-top: 1em;
+        }
+
+        & ul {
+            list-style: none;
+        }
+        @include bigger-than($large-screen-size) {
+            position: sticky;
+            top: $main-vertical-padding;
+            float:right;
+            width: 33%;
+            box-sizing: border-box;
+            padding-bottom: 1em;
+            background: white;
+            border-left: 1px solid $blue;
+
+            &:first-child {
+                & + * {
+                    margin-top: 0;
+                }
+            }
+        }
+        @include smaller-than($large-screen-size) {
+            padding-bottom: 1.5em;
+            border-bottom: 1px solid $blue;
+        }
+    }
+}
+
+#index-highlight {
+    padding: $main-vertical-padding 0;
+    @include smaller-than($large-screen-size) {
+        padding: $main-vertical-padding-small 0;
+    }
+
+    background: $bg-blue;
+    background: linear-gradient(120deg, $bg-blue 0%, $bg-green 100%);
+    color: white;
+
+    .video-embed {
+        margin: 0;
+
+        @include smaller-than($medium-screen-size) {
+            margin: 0 (-$main-horizontal-padding-small);
+            width: 100vw;
+            padding-bottom: 56.25vw;
+        }
+    }
+
+    h1 a.button {
+        font-size: 24px;
+        border: 3px solid white;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0;
+    }
+}
+
+#important-dates {
+    h2 {
+        margin-bottom: 1.5rem;
+    }
+
+    li {
+        font-weight: bold;
+
+        .date {
+            display: block;
+            color: $blue;
+        }
+
+        &.past .date {
+            text-decoration: line-through;
+            color: $dark-gray;
+        }
+    }
+}
+
+#sponsors {
+    margin-top: $main-vertical-padding;
+    @include smaller-than($large-screen-size) {
+        margin-top: $main-vertical-padding-small;
+    }
+
+    hr {
+        margin-top: 2rem;
+
+        @include bigger-than($medium-screen-size) {
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+
+    ul.sponsors-list {
+        position: relative;
+        list-style: none;
+
+        $sponsor-column-gap: 24px;
+
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        column-gap: $sponsor-column-gap;
+
+        li {
+            display: block;
+            margin: 0;
+            break-inside: avoid;
+
+            a {
+                display: inline-block;
+                height: 100%;
+                width: 100%;
+                position: relative;
+
+                img {
+                    position: relative;
+                    margin: 20px auto;
+                    display: block;
+                }
+            }
+        }
+
+        @each $tier, $tier-size in $sponsor-sizes {
+            &.sponsors-#{$tier} {
+                li a img {
+                    width: $tier-size;
+                    max-height: $tier-size;
+                    @include smaller-than($tier-size + 2*$main-horizontal-padding) {
+                        max-width: 100%;
+                    }
+                    // These two are so logos get centered horizontally when they are too thin
+                    min-height: $tier-size * 2/3;
+                    object-fit: contain;
+                }
+
+                // Change the number of columns dynamically so that
+                // we never go over the 2/3ds of the screen when
+                // the screen is divided, and otherwise just the 100% of it
+                // That is calculated by:
+                // N columns * size of the logo + spacing between all the columns
+                // all multiplied by 3/2 to obtain the total size, plus padding
+                // plus the padding that separates left and right sides of the screen (18px)
+                // If all that is bigger than the 2/3 division breakpoint, we
+                // deal with that. If it's smaller, then we don't use the 3/2 factor.
+                @for $n-cols from 3 to 1 {
+                    $breakpoint: ($n-cols * $tier-size + ($n-cols - 1) * $sponsor-column-gap) * 3 / 2 + 2*$main-horizontal-padding + 18px;
+                    @if $breakpoint > $medium-screen-size {
+                        @include smaller-than($breakpoint) {
+                            columns: ($n-cols - 1);
+                        }
+                    } @else {
+                        @include smaller-than(($n-cols * $tier-size + ($n-cols - 1) * $sponsor-column-gap) + 2*$main-horizontal-padding) {
+                            columns: ($n-cols - 1);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+#contact-panel {
+    margin-top: 2rem;
+    width: 100% !important;
+    box-sizing: border-box;
+    & p {
+        text-align: left;
+    }
+}
+
+#contacts-list {
+    list-style: none;
+
+    li {
+        margin-left: 0;
+        margin-bottom: 2em;
+
+        a {
+            display: block;
+            font-size: 125%;
+        }
+    }
+}
+
+.time[title] {
+    text-decoration: underline dotted 1px;
+    cursor: help;
+
+    @media (pointer: coarse), (hover: none) {
+        user-select: none;
+        position: relative;
+        &:hover {
+            user-select: auto;
+        }
+        &:hover::after {
+            content: attr(title);
+            position: absolute;
+            top: 1em;
+            left: calc(100%);
+            font-size: 1rem;
+            line-height: 1.25;
+            font-weight: normal;
+            color: #000;
+            background-color: #fff;
+            border: 1px solid;
+            width: max-content;
+            padding: 3px;
+            text-transform: none;
+            z-index: 10000;
+        }
+    }
+}
+
+table.program {
+    td {
+        &.time {
+            font-variant-numeric: tabular-nums;
+            text-align: right;
+            width: 5em;
+        }
+    }
+
+    .session-chair {
+        display: block;
+        font-size: 95%;
+    }
+}
+
+img.paper-thumbnail {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+img.keynote-headshot {
+    float: right;
+    margin-left: $main-horizontal-padding;
+    margin-bottom: $main-vertical-padding;
+    max-width: 250px !important;
+    position: relative;
+    top: -1.5em;
+
+    @include smaller-than($small-screen-size) {
+        float: none;
+        margin: 0 auto;
+        max-height: 250px;
+        top: 0;
+        display: block;
+    }
+
+}
+
+.keynote-subtitle {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.e-mail[data-e-user][data-e-domain] {
+    &::before {
+        content: attr(data-e-user) '@' attr(data-e-domain);
+    }
+}
+
+dl.papers-list {
+    dd {
+        padding-left: 1.5em;
+
+        details p {
+            font-style: italic;
+            text-align: justify;
+        }
+    }
+}
+
+@import '2024/caroussel';

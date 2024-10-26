@@ -1,0 +1,45 @@
+
+
+.carousel {
+    display: block;
+    text-align: left;
+    position: relative;
+	margin-bottom: 1em;
+
+	figure {
+		img {
+			display: none;
+			max-width: 100%;
+		}
+
+		& > input {
+			display: none;
+			&:checked + img {
+				display: block;
+			}
+		}
+	}
+
+	ul.carousel__thumbnails {
+		list-style: none;
+		margin-top: 1em;
+		display: flex;
+		align-items: center;
+		column-gap: 1em;
+		justify-content: flex-start;
+
+		overflow-x: auto;
+
+		li {
+			display: block;
+			flex: 0 0 20%;
+
+			margin: 0;
+		}
+		img {
+			max-width: 200px;
+			cursor: pointer;
+		}
+	}
+
+}

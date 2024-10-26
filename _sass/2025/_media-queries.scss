@@ -1,0 +1,13 @@
+@mixin bigger-than($breakpoint) {
+    // Write the media query.
+    @media (min-width: ($breakpoint + 1px)) {
+        @content;
+    }
+}
+
+@mixin smaller-than($breakpoint) {
+    // Write the media query.
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}

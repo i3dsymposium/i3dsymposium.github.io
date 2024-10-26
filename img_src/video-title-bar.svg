@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 508.00001 285.75002"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="video-title-bar.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   inkscape:export-filename="video-title-bar-3-line.png"
+   inkscape:export-xdpi="192"
+   inkscape:export-ydpi="192"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.72945683"
+     inkscape:cx="996.63197"
+     inkscape:cy="653.22577"
+     inkscape:window-width="2131"
+     inkscape:window-height="1370"
+     inkscape:window-x="3853"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <rect
+       x="948.65106"
+       y="3065.2944"
+       width="6430.7063"
+       height="323.85877"
+       id="rect3" />
+    <linearGradient
+       id="linearGradient1"
+       inkscape:collect="always">
+      <stop
+         style="stop-color:#0090de;stop-opacity:1;"
+         offset="0"
+         id="stop1" />
+      <stop
+         style="stop-color:#0eab39;stop-opacity:1;"
+         offset="1"
+         id="stop2" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient2"
+       x1="177.00385"
+       y1="680.44922"
+       x2="1781.6453"
+       y2="837.14117"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.28030664,0,0,0.13508459,-20.511176,130.3318)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient1"
+       id="linearGradient4"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.28030664,0,0,0.18574131,-20.511167,87.924959)"
+       x1="177.00385"
+       y1="680.44922"
+       x2="1781.6453"
+       y2="837.14117" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="display:none;fill:url(#linearGradient4);stroke:none;stroke-width:0.0603716"
+       id="rect4"
+       width="449.79169"
+       height="29.104168"
+       x="29.10417"
+       y="214.3125"
+       inkscape:label="title-3-line" />
+    <rect
+       style="display:inline;fill:url(#linearGradient2);stroke:none;stroke-width:0.0514851"
+       id="rect1"
+       width="449.79169"
+       height="21.166668"
+       x="29.104162"
+       y="222.25002"
+       inkscape:label="title-2-line" />
+    <rect
+       style="fill:#e7f2f4;fill-opacity:1;stroke:none;stroke-width:0.0695427"
+       id="rect2"
+       width="396.87503"
+       height="21.166668"
+       x="55.562492"
+       y="243.41667" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:7.76111px;line-height:1.25;font-family:sans-serif;display:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0555002"
+       x="145.05722"
+       y="256.0914"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.76111px;font-family:Outfit;-inkscape-font-specification:Outfit;stroke-width:0.0555002"
+         x="145.05722"
+         y="256.0914">Yang Xu, Yuanfa Jiang, Junbo Zhang, Kang Li and Guohua Geng</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:8.46667px;line-height:1.25;font-family:sans-serif;display:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="94.384117"
+       y="235.10641"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8.46667px;font-family:Outfit;-inkscape-font-specification:Outfit;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         x="94.384117"
+         y="235.10641">Real-Time Ray-Traced Soft Shadows of Environmental Lighting by Conical Ray Culling</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,171 @@
+---
+layout: default2025
+mailing_list_form: true
+
+# Change this to "Papers preview" when we have that made
+video_youtube_hash: "MVGoiofe-4g"
+video_title: "Last year's papers preview"
+
+show_registration_button: false
+
+#important_dates:
+#  - name: Conference
+#    date: 8-10 May 2024
+#  - name: Early registration deadline
+#    date: 12 April, 2024
+#  - name: Camera-ready deadline
+#    date: 19 April 2024
+#  - name: Paper notifications
+#    date: 3 March 2024
+#  - name: Paper submission deadline
+#    date: 5 January 2024
+#  - name: Poster submission deadline
+#    date: 15 March 2024
+#  - name: Revision deadline
+#    date: 29 March 2024
+#  - name: Extended Poster submission deadline
+#    date: 30 March, 2023
+#  - name: Poster notifications
+#    date: 3 April, 2023
+
+sponsors_definition:
+  - level: Title of the level of sponsorship
+    single_column: Makes this set of entries single column instead of 3 columns if only one entry. Mainly intended for venue (and platinum if only one)
+    members: # List of members
+      - name: Name of the company (Only used in the "alt" of the img tag)
+        image: Image to show for this sponsor
+        link: url to link to for this sponsor
+
+sponsors:
+#  - level: venue
+#    title: Venue Sponsor
+#    members:
+#      - name: Cesium
+#        image: cesium.png
+#        link: https://cesium.com
+#  - level: platinum
+#    title: Platinum Sponsors
+#    members:
+#      - name: The Forge
+#        image: the_forge.png
+#        link: https://theforge.dev
+#      - name: arm
+#        image: arm.png
+#        link: https://www.arm.com
+#      - name: ea
+#        image: ea.png
+#        link: https://seed.ea.com
+#  - level: gold
+#    title: Gold Sponsors
+#    members:
+#      - name: Activision
+#        image: activision.png
+#        link: https://www.activision.com
+#      - name: Roblox
+#        image: roblox.png
+#        link: https://research.roblox.com
+#  - level: silver
+#    title: Silver Sponsor
+#    members:
+#      - name: NVIDIA
+#        image: nvidia.png
+#        link: https://research.nvidia.com
+
+    
+---
+
+<div id="index-highlight" class="flex">
+    <div class="one-third">
+        <h1>{{ layout.current_year }} ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games</h1>
+        {% comment %}<!-- The location information is duplicated in
+        in the template, to be shown in the rest of the pages.
+        It's not reused at least in this case because in the index
+        Cesium looks better as a separate line, but
+        in the other pages there's only space for 2 lines. -->{% endcomment -%}
+        {% if layout.location %}
+        <h1 class="thin">Cesium<br />Philadelphia, PA, USA<br />8-10 May 2024</h1>
+        {%- endif %}
+        {%- if page.show_registration_button %}
+        <h1><a href="registration.html" class="button">Register</a></h1>
+        {%- endif %}
+    </div>
+    <div class="two-thirds">
+        {% include video-embed.html youtube_hash=page.video_youtube_hash title=page.video_title thumbnail="img/index-video-thumbnail.png" %}
+        <h3 class="medium-thin">Watch last year's Papers Preview!</h3>
+    </div>
+</div>
+
+<section class="flex">
+    <!-- NOTE: originally, the "important dates" section was at the top of the page below the video,
+     and this section was originally below the important dates, but since the conference
+     is passed, those dates are not really too important anymore -->
+    <div class="one-third">
+        <h3>
+            I3D is the leading conference for real time 3D computer graphics and human interaction
+        </h3>
+    </div>
+
+    <div class="two-thirds">
+        <p>
+            {{ layout.current_year }} will be I3D's {{ layout.current_year | minus: 1986 }}th year since the <a href="http://dl.acm.org/citation.cfm?id=319120&picked=prox&CFID=734542800&CFTOKEN=48967429">inaugural workshop in 1986</a>,
+            and the {{ layout.current_year | minus: 2005 | plus: 9 }}th conference (I3D occurred roughly biennially until 2005).
+        </p>
+        <p>
+            More details on <a href="conference.html">prior conferences are available here</a>.
+        </p>
+    </div>
+</section>
+
+{% include_relative _mailing-list-form.html %}
+
+<div id="sponsors" class="flex">
+    <div class="one-third">
+        <h2>Sponsors</h2>
+        <p>
+            The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
+            {{ layout.current_year }} is a highly-visible, leading-edge conference for techniques that
+            combine 3D computer graphics with human interaction.
+        </p>
+        <p>
+            More about corporate sponsors <a href="sponsors.html">here</a>
+        </p>
+    </div>
+
+    <div class="two-thirds">
+        {% for level in page.sponsors -%}
+        {% if level.members -%}
+        
+        <hr>
+        <h3>{{ level.title }}</h3>
+        <ul class="sponsors-list sponsors-{{ level.level }}">
+        {% for sponsor in level.members -%}
+            <li>
+                <a href="{{ sponsor.link }}" target="_blank">
+                    <img src="img/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
+                </a>
+            </li>
+        {% endfor -%}
+        </ul>
+        {% endif -%}
+        {% endfor -%}
+    </div>
+</div>
+
+{% if page.important_dates %}
+<div id="important-dates" class="highlight-bg">
+    <h2>Important Dates</h2>
+    <ul class="three-columns">
+        {% for date in page.important_dates -%}
+            {% assign thisdate = date.date | date: "%Y%m%d" | plus: 0 -%}
+            {% assign now = "now" | date: "%Y%m%d" | plus: 0 -%}
+            {% if thisdate < now and thisdate > 0 -%}
+                {% assign past = true -%}
+            {% else -%}
+                {% assign past = false -%}
+            {% endif -%}
+            <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
+        {%- endfor %}
+    </ul>
+</div>
+{% endif %}
+

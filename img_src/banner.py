@@ -1,4 +1,5 @@
 import argparse
+import os
 
 parser = argparse.ArgumentParser(description="Create the banner image for the given year")
 parser.add_argument("year", type=int, help="For what year the banner should be generated. 0 to build the generic banners and logos.")
@@ -38,6 +39,7 @@ if args.year == 0:
     svg2png("cvent-banner.svg", "cvent-banner.png")
     svg2png("cvent-logo.svg", "cvent-logo.png")
 else:
+    os.makedirs(f"../{args.year}/img", exist_ok=True)
     svg2png_year("banner-year.svg", "banner.png", args.year)
     svg2png_year("banner-year.svg", "banner-bg.png", args.year, bg=True)
     svg2png_year("social-card-year.svg", "social-card.png", args.year)
