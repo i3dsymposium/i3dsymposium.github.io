@@ -6,23 +6,25 @@ mailing_list_form: true
 video_youtube_hash: "MVGoiofe-4g"
 video_title: "Last year's papers preview"
 
-show_registration_button: false
+action_button:
+    text: Call for Papers
+    link: cfp.html
 
-#important_dates:
-#  - name: Conference
-#    date: 8-10 May 2024
+important_dates:
+  - name: Paper submission deadline
+    date: 10 January 2025
+  - name: Paper notifications
+    date: 14 February 2025
+  - name: Revision deadline
+    date: 14 March 2025
+  - name: Camera-ready deadline
+    date: 18 April 2025
+  - name: Conference
+    date: TBD 2025
 #  - name: Early registration deadline
 #    date: 12 April, 2024
-#  - name: Camera-ready deadline
-#    date: 19 April 2024
-#  - name: Paper notifications
-#    date: 3 March 2024
-#  - name: Paper submission deadline
-#    date: 5 January 2024
 #  - name: Poster submission deadline
 #    date: 15 March 2024
-#  - name: Revision deadline
-#    date: 29 March 2024
 #  - name: Extended Poster submission deadline
 #    date: 30 March, 2023
 #  - name: Poster notifications
@@ -85,8 +87,8 @@ sponsors:
         {% if layout.location %}
         <h1 class="thin">Cesium<br />Philadelphia, PA, USA<br />8-10 May 2024</h1>
         {%- endif %}
-        {%- if page.show_registration_button %}
-        <h1><a href="registration.html" class="button">Register</a></h1>
+        {%- if page.action_button %}
+        <h1><a href="{{ page.action_button.link }}" class="button">{{ page.action_button.text }}</a></h1>
         {%- endif %}
     </div>
     <div class="two-thirds">
@@ -95,10 +97,26 @@ sponsors:
     </div>
 </div>
 
+{% if page.important_dates %}
+<div id="important-dates" class="highlight-bg">
+    <h2>Important Dates</h2>
+    <ul class="three-columns">
+        {% for date in page.important_dates -%}
+            {% assign thisdate = date.date | date: "%Y%m%d" | plus: 0 -%}
+            {% assign now = "now" | date: "%Y%m%d" | plus: 0 -%}
+            {% if thisdate < now and thisdate > 0 -%}
+                {% assign past = true -%}
+            {% else -%}
+                {% assign past = false -%}
+            {% endif -%}
+            <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
+        {%- endfor %}
+    </ul>
+</div>
+{% endif %}
+
+
 <section class="flex">
-    <!-- NOTE: originally, the "important dates" section was at the top of the page below the video,
-     and this section was originally below the important dates, but since the conference
-     is passed, those dates are not really too important anymore -->
     <div class="one-third">
         <h3>
             I3D is the leading conference for real time 3D computer graphics and human interaction
@@ -150,22 +168,4 @@ sponsors:
         {% endfor -%}
     </div>
 </div>
-
-{% if page.important_dates %}
-<div id="important-dates" class="highlight-bg">
-    <h2>Important Dates</h2>
-    <ul class="three-columns">
-        {% for date in page.important_dates -%}
-            {% assign thisdate = date.date | date: "%Y%m%d" | plus: 0 -%}
-            {% assign now = "now" | date: "%Y%m%d" | plus: 0 -%}
-            {% if thisdate < now and thisdate > 0 -%}
-                {% assign past = true -%}
-            {% else -%}
-                {% assign past = false -%}
-            {% endif -%}
-            <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
-        {%- endfor %}
-    </ul>
-</div>
-{% endif %}
 

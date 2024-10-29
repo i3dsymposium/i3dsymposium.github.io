@@ -29,6 +29,11 @@ committee:
         institution: School of Computing, University of Leeds
         email: m.billeter@leeds.ac.uk
         pronouns: (he, him)
+      - name: Benjamin Watson
+        link: https://watson.csc.ncsu.edu/
+        institution: Dept. of Computer Science, North Carolina State University
+        email: bwatson@ncsu.edu
+        pronouns: (he, him)
 
   - chair: Papers Chairs
     members:
@@ -70,7 +75,7 @@ steering_committee:
   - year: 2025
     members:
       - Markus Billeter
-      - Ben Watson
+      - Benjamin Watson
   - year: 2024
     members:
       - Ricardo Marroquim
