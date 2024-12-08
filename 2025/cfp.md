@@ -64,7 +64,7 @@ Please ensure that you and your co-authors obtain an [ORCID](https://orcid.org) 
 **24 February 2025** &nbsp;&nbsp; Notification of committee decisions\
 **14 March 2025** &nbsp;&nbsp; Revision deadline for conditionally accepted papers\
 **4 April 2025** &nbsp;&nbsp; PACM CGIT camera-ready deadline for accepted papers\
-**(Exact dates TBD) 2025** &nbsp;&nbsp; Conference
+**7-9 May 2025** &nbsp;&nbsp; Conference at NJIT, Jersey City, NJ, USA
 
 All questions about paper submissions should be emailed to [papers@i3dsymposium.org](mailto:papers@i3dsymposium.org).
 
