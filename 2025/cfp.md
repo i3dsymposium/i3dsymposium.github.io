@@ -9,6 +9,7 @@ title: Papers Call for Participation
 
 *__Summary:__ 10 January 2025 deadline; at most 16 pages + references (shorter submissions are welcome); anonymous submission; submission link <https://easychair.org/conferences/?conf=i3d2025>*
 
+*Committee notifications and camera-ready dates have been shifted by a few days from the original announcement.*
 
 The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D) is the leading conference for real-time 3D computer graphics and human interaction. The symposium brings together researchers, engineers, and industry professionals to discuss their latest work on real-time and interactive computer graphics and related applications. The symposium has a long legacy of innovative and excellent technical content, with influential work on rendering, texture synthesis, collision detection, VR interaction, animation, and many other areas of real-time computer graphics, having been presented at the conference.
 
@@ -60,9 +61,9 @@ Please ensure that you and your co-authors obtain an [ORCID](https://orcid.org) 
 *All deadlines are 23:59 Pacific Time (UTC -7).*
 
 **10 January 2025** &nbsp;&nbsp; Paper submission deadline\
-**14 February 2025** &nbsp;&nbsp; Notification of committee decisions\
+**24 February 2025** &nbsp;&nbsp; Notification of committee decisions\
 **14 March 2025** &nbsp;&nbsp; Revision deadline for conditionally accepted papers\
-**18 April 2025** &nbsp;&nbsp; PACM CGIT camera-ready deadline for accepted papers\
+**4 April 2025** &nbsp;&nbsp; PACM CGIT camera-ready deadline for accepted papers\
 **(Exact dates TBD) 2025** &nbsp;&nbsp; Conference
 
 All questions about paper submissions should be emailed to [papers@i3dsymposium.org](mailto:papers@i3dsymposium.org).
@@ -70,5 +71,5 @@ All questions about paper submissions should be emailed to [papers@i3dsymposium.
 Ricardo Marroquim and Laura Reznikov\
 Papers Co-Chairs I3D 2025
 
-*Last updated 29 of October, 2024*
+*Last updated 8th of December, 2024*
 

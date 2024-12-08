@@ -20,7 +20,7 @@ important_dates:
   - name: Camera-ready deadline
     date: 4 April 2025
   - name: Conference
-    date: TBD 2025
+    date: 7-9 May 2025
 #  - name: Early registration deadline
 #    date: 12 April, 2024
 #  - name: Poster submission deadline
@@ -79,14 +79,14 @@ sponsors:
 <div id="index-highlight" class="flex">
     <div class="one-third">
         <h1>2025 ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games</h1>
-        {% comment %}<!-- The location information is duplicated in
-        in the template, to be shown in the rest of the pages.
-        It's not reused at least in this case because in the index
-        Cesium looks better as a separate line, but
-        in the other pages there's only space for 2 lines. -->{% endcomment -%}
-        {% if layout.location %}
-        <h1 class="thin">Cesium<br />Philadelphia, PA, USA<br />8-10 May 2024</h1>
-        {%- endif %}
+        {% comment %}<!-- This should just use the same data that's set and used in the layout,
+            but jekyll is bugged (https://github.com/jekyll/jekyll/issues/9710) so until that is fixed,
+            we can't use information from the layout in here. -->
+            {% if layout.conference_info and layout.conference_info.location %}
+            <h1 class="thin">{{layout.conference_info.location}}<br />{{layout.conference_info.dates}}</h1>
+            {%- endif %}
+        {% endcomment -%}
+        <h1 class="thin">NJIT, Jersey City, NJ, USA<br />7-9 May 2025</h1>
         {%- if page.action_button %}
         <h1><a href="{{ page.action_button.link }}" class="button">{{ page.action_button.text }}</a></h1>
         {%- endif %}
