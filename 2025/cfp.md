@@ -13,7 +13,9 @@ title: Papers Call for Participation
 
 The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D) is the leading conference for real-time 3D computer graphics and human interaction. The symposium brings together researchers, engineers, and industry professionals to discuss their latest work on real-time and interactive computer graphics and related applications. The symposium has a long legacy of innovative and excellent technical content, with influential work on rendering, texture synthesis, collision detection, VR interaction, animation, and many other areas of real-time computer graphics, having been presented at the conference.
 
-We invite you to submit papers about real-time 3D graphics, interaction, and games. Submissions from industry and outside of academia are welcome. Topics include, but are not limited to:
+We invite you to submit papers about real-time 3D graphics, interaction, and games. All accepted papers will be published in [PACMCGIT](https://dl.acm.org/journal/pacmcgit) Issue I3D 2025 and presented at I3D 2025 in May 2025, which is sponsored by ACM SIGGRAPH.
+
+Submissions from industry and outside of academia are welcome. Topics include, but are not limited to:
 
 - Real-time rendering
 - Real-time ray tracing and path tracing
@@ -51,7 +53,7 @@ There is a single track for paper submission, and authors will be asked to prese
 
 Papers must be submitted anonymously and will be evaluated by double-blind peer review from an international paper committee of published authors and tertiary reviewers. There is no rebuttal process. The submission system link is: <https://easychair.org/conferences/?conf=i3d2025>
 
-All accepted papers will be published in a special issue of the [Proceedings of the ACM in Computer Graphics and Interactive Techniques (PACM CGIT)](https://dl.acm.org/journal/pacmcgit), once all mandatory changes have been addressed and a second round of peer review by the primary reviewer is passed.
+Papers go through a two-round review process. If papers are accepted after the first review round, all mandatory changes must be passed in a second round of peer review by the primary reviewer.
 
 By submitting your article to an ACM Publication, you are hereby acknowledging that you and your co-authors are subject to all [ACM Publications Policies](https://www.acm.org/publications/policies), including ACM's new [Publications Policy on Research Involving Human Participants and Subjects](https://www.acm.org/publications/policies/research-involving-human-participants-and-subjects). Alleged violations of this policy or any ACM Publications Policy will be investigated by ACM and may result in a full retraction of your paper, in addition to other potential penalties, as per ACM Publications Policy.
 
@@ -71,5 +73,5 @@ All questions about paper submissions should be emailed to [papers@i3dsymposium.
 Ricardo Marroquim and Laura Reznikov\
 Papers Co-Chairs I3D 2025
 
-*Last updated 8th of December, 2024*
+*Last updated 31st of January, 2025*
 
