@@ -1,5 +1,5 @@
 ---
-title: 2025 Call for Papers
+title: 2025 Venue Announcement
 link: /2025/cfp.html
 related: https://easychair.org/conferences/?conf=i3d2025
 ---

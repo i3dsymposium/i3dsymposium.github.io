@@ -71,6 +71,14 @@ committee:
         email: akdm@ror3d.xyz
         pronouns: (he, him)
 
+  - chair: Local Chair
+    members:
+      - name: Tomer Weiss
+        link: https://tomerwei.github.io/
+        institution: New Jersey Institute of Technology
+        email: tweiss@njit.edu
+        pronouns: (he, him)
+
 steering_committee:
   - year: 2025
     members:
