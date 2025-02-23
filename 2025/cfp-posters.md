@@ -12,7 +12,7 @@ title: Posters Call for Participation
 
 The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D) is the leading conference for real-time 3D computer graphics and human interaction. The symposium brings together researchers, engineers, and industry professionals to discuss their latest work on real-time and interactive computer graphics and related applications. The symposium has a long legacy of innovative and excellent technical content, with influential work on rendering, texture synthesis, collision detection, VR interaction, animation, and many other areas of real-time computer graphics, having been presented at the conference.
 
-We encourage submission of work-in-progress, demos, app prototypes with novel techniques and works published at another venue that are relevant to the I3D community. Accepted posters will be displayed at the conference. In-person attendance of at least one author is expected.
+We encourage submission of work-in-progress, demos, app prototypes with novel techniques and works published at another venue that are relevant to the I3D community. Accepted posters will be displayed at the conference. Registration and in-person attendance of at least one author is expected.
 
 Authors are invited to submit their recent work about real-time 3D graphics, interaction, and games as a poster. Topics include, but are not limited to:
 
