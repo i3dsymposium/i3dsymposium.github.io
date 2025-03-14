@@ -30,15 +30,15 @@ sponsors:
 #      - name: ea
 #        image: ea.png
 #        link: https://seed.ea.com
-#  - level: gold
-#    title: Gold Sponsors
-#    members:
-#      - name: Activision
-#        image: activision.png
-#        link: https://www.activision.com
-#      - name: Roblox
-#        image: roblox.png
-#        link: https://research.roblox.com
+  - level: gold
+    title: Gold Sponsors
+    members:
+      - name: Cygames
+        image: cygames.png
+        link: https://www.cygames.co.jp/en/
+      - name: Activision
+        image: activision.png
+        link: https://research.activision.com
 #  - level: silver
 #    title: Silver Sponsor
 #    members:
