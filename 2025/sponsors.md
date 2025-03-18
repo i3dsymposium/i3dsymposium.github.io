@@ -27,9 +27,6 @@ sponsors:
 #      - name: arm
 #        image: arm.png
 #        link: https://www.arm.com
-#      - name: ea
-#        image: ea.png
-#        link: https://seed.ea.com
   - level: gold
     title: Gold Sponsors
     members:
@@ -39,6 +36,9 @@ sponsors:
       - name: Activision
         image: activision.png
         link: https://research.activision.com
+      - name: ea
+        image: ea-seed.png
+        link: https://www.ea.com/seed
 #  - level: silver
 #    title: Silver Sponsor
 #    members:
