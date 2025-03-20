@@ -1,11 +1,11 @@
 ---
 ---
 
-@import '2024/media-queries';
+@import '2025/media-queries';
 
-@import '2024/reset';
+@import '2025/reset';
 
-@import '2024/base';
+@import '2025/base';
 
 
 $nav-height: 80px;
@@ -520,6 +520,24 @@ footer {
         @include smaller-than($large-screen-size) {
             margin-top: $main-vertical-padding-small;
             margin-bottom: $main-vertical-padding-small;
+        }
+
+        &.highlight-bg-even {
+            &:nth-of-type(odd) {
+                background-color: $bg-soft;
+                padding-top: $main-vertical-padding;
+                padding-bottom: $main-vertical-padding;
+                @include smaller-than($large-screen-size) {
+                    padding-top: $main-vertical-padding-small;
+                    padding-bottom: $main-vertical-padding-small;
+                }
+            }
+            &:nth-of-type(1) {
+                margin-top: 0;
+            }
+            &:nth-last-of-type(1) {
+                margin-bottom: 0;
+            }
         }
     }
 

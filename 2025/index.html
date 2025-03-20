@@ -42,13 +42,11 @@ sponsors_definition:
 
 sponsors:
 #  - level: venue
-#    title: Venue Sponsor
 #    members:
 #      - name: Cesium
 #        image: cesium.png
 #        link: https://cesium.com
 #  - level: platinum
-#    title: Platinum Sponsors
 #    members:
 #      - name: The Forge
 #        image: the_forge.png
@@ -57,7 +55,6 @@ sponsors:
 #        image: arm.png
 #        link: https://www.arm.com
   - level: gold
-    title: Gold Sponsors
     members:
       - name: Cygames
         image: cygames.png
@@ -68,12 +65,11 @@ sponsors:
       - name: ea
         image: ea-seed.png
         link: https://www.ea.com/seed
-#  - level: silver
-#    title: Silver Sponsor
-#    members:
-#      - name: NVIDIA
-#        image: nvidia.png
-#        link: https://research.nvidia.com
+  - level: silver
+    members:
+      - name: NVIDIA
+        image: nvidia.png
+        link: https://www.nvidia.com/en-us/research/
 
     
 ---
@@ -100,7 +96,7 @@ sponsors:
 </div>
 
 {% if page.important_dates %}
-<div id="important-dates" class="highlight-bg">
+<section id="important-dates" class="highlight-bg-even">
     <h2>Important Dates</h2>
     <ul class="three-columns">
         {% for date in page.important_dates -%}
@@ -114,11 +110,11 @@ sponsors:
             <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
         {%- endfor %}
     </ul>
-</div>
+</section>
 {% endif %}
 
 
-<section class="flex">
+<section class="flex highlight-bg-even">
     <div class="one-third">
         <h3>
             I3D is the leading conference for real time 3D computer graphics and human interaction
@@ -127,7 +123,8 @@ sponsors:
 
     <div class="two-thirds">
         <p>
-            2025 will be I3D's {{ 2025 | minus: 1986 }}th year since the <a href="http://dl.acm.org/citation.cfm?id=319120&picked=prox&CFID=734542800&CFTOKEN=48967429">inaugural workshop in 1986</a>,
+            2025 will be I3D's {{ 2025 | minus: 1986 }}th year since the
+            <a href="http://dl.acm.org/citation.cfm?id=319120&picked=prox&CFID=734542800&CFTOKEN=48967429">inaugural workshop in 1986</a>,
             and the {{ 2025 | minus: 2005 | plus: 9 }}th conference (I3D occurred roughly biennially until 2005).
         </p>
         <p>
@@ -136,9 +133,7 @@ sponsors:
     </div>
 </section>
 
-{% include_relative _mailing-list-form.html %}
-
-<div id="sponsors" class="flex">
+<section id="sponsors" class="flex highlight-bg-even">
     <div class="one-third">
         <h2>Sponsors</h2>
         <p>
@@ -152,22 +147,23 @@ sponsors:
     </div>
 
     <div class="two-thirds">
-        {% for level in page.sponsors -%}
+      {% for level in page.sponsors -%}
         {% if level.members -%}
-        
-        <hr>
-        <h3>{{ level.title }}</h3>
-        <ul class="sponsors-list sponsors-{{ level.level }}">
-        {% for sponsor in level.members -%}
-            <li>
-                <a href="{{ sponsor.link }}" target="_blank">
-                    <img src="img/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
-                </a>
-            </li>
-        {% endfor -%}
-        </ul>
+          {% unless forloop.first %}<hr>{% endunless %}
+          <h3>{{ level.level | capitalize }} Sponsor{% if level.members.size > 1 %}s{% endif %}</h3>
+          <ul class="sponsors-list sponsors-{{ level.level }}">
+          {% for sponsor in level.members -%}
+              <li>
+                  <a href="{{ sponsor.link }}" target="_blank">
+                      <img src="img/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
+                  </a>
+              </li>
+          {% endfor -%}
+          </ul>
         {% endif -%}
-        {% endfor -%}
+      {% endfor -%}
     </div>
-</div>
+</section>
 
+
+{% include_relative _mailing-list-form.html %}

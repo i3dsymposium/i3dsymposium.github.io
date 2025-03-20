@@ -4,7 +4,6 @@ title: Sponsors
 
 sponsors_definition:
   - level: ID of the level of sponsorship (for CSS, defines size, in i3d.scss)
-    title: Title of the sponsor level
     single_column: Makes this set of entries single column instead of 3 columns if only one entry. Mainly intended for venue (and platinum if only one)
     members: # List of members
       - name: Name of the company (Only used in the "alt" of the img tag)
@@ -13,13 +12,11 @@ sponsors_definition:
 
 sponsors:
 #  - level: venue
-#    title: Venue Sponsor
 #    members:
 #      - name: Cesium
 #        image: cesium.png
 #        link: https://cesium.com
 #  - level: platinum
-#    title: Platinum Sponsors
 #    members:
 #      - name: The Forge
 #        image: the_forge.png
@@ -28,7 +25,6 @@ sponsors:
 #        image: arm.png
 #        link: https://www.arm.com
   - level: gold
-    title: Gold Sponsors
     members:
       - name: Cygames
         image: cygames.png
@@ -39,16 +35,13 @@ sponsors:
       - name: ea
         image: ea-seed.png
         link: https://www.ea.com/seed
-#  - level: silver
-#    title: Silver Sponsor
-#    members:
-#      - name: NVIDIA
-#        image: nvidia.png
-#        link: https://research.nvidia.com
+  - level: silver
+    members:
+      - name: NVIDIA
+        image: nvidia.png
+        link: https://www.nvidia.com/en-us/research/
 
 ---
-
-# Corporate Sponsors
 
 The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
 2025 is a highly-visible, leading-edge conference for techniques that
@@ -60,25 +53,26 @@ you participate in this exciting field and demonstrate leadership in
 supporting the latest developments in computer graphics research.
 
 
-If your organization would like to become a corporate sponsor of I3D 2024, please contact the conference chairs: [general@i3dsymposium.org](mailto:general@i3dsymposium.org)
+If your organization would like to become a corporate sponsor of
+I3D 2025, please contact the conference chairs: [general@i3dsymposium.org](mailto:general@i3dsymposium.org)
 
-<div id="sponsors" class="flex">
+<div id="sponsors" class="flex centered">
     <div class="two-thirds">
-        {% for level in page.sponsors -%}
+      {% for level in page.sponsors -%}
         {% if level.members -%}
-        <hr>
-        <h3>{{ level.title }}</h3>
-        <ul class="sponsors-list sponsors-{{ level.level }}">
-        {% for sponsor in level.members -%}
-            <li>
-                <a href="{{ sponsor.link }}" target="_blank">
-                    <img src="img/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
-                </a>
-            </li>
-        {% endfor -%}
-        </ul>
+          {% unless forloop.first %}<hr>{% endunless %}
+          <h3>{{ level.level | capitalize }} Sponsor{% if level.members.size > 1 %}s{% endif %}</h3>
+          <ul class="sponsors-list sponsors-{{ level.level }}">
+          {% for sponsor in level.members -%}
+              <li>
+                  <a href="{{ sponsor.link }}" target="_blank">
+                      <img src="img/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
+                  </a>
+              </li>
+          {% endfor -%}
+          </ul>
         {% endif -%}
-        {% endfor -%}
+      {% endfor -%}
     </div>
 </div>
 

@@ -29,7 +29,7 @@ Register here: [https://cvent.me/vLZw0g](https://cvent.me/vLZw0g){:target="_blan
 <table class="center-text odd-rows-darker">
    <tr>
       <th>&nbsp;</th>
-      <th>Early (Before TBD)</th>
+      <th>Early (Before 18 April)</th>
       <th>Standard / On-site</th>
    </tr>
    <tr>
@@ -43,7 +43,7 @@ Register here: [https://cvent.me/vLZw0g](https://cvent.me/vLZw0g){:target="_blan
       <td>$600</td>
    </tr>
    <tr>
-      <th>Standard</th>
+      <th>Regular</th>
       <td>$575</td>
       <td>$750</td>
    </tr>
@@ -51,11 +51,20 @@ Register here: [https://cvent.me/vLZw0g](https://cvent.me/vLZw0g){:target="_blan
 
 All registration fees are in USD.
 
-{% comment %}# Additional details
-Early bird registration is available until 12 April 2025. After that date, registration will be at the standard/on-site rate.
+# Additional details
+
+Early bird registration is available until 18 April 2025. After that date, registration will be at the standard/on-site rate.
 
 Full conference registrations include breakfast and lunch each day of the conference, plus a ticket to the reception and banquet events on the first and second evenings of the conference.
-{% endcomment %}
+
+
+## Refund policy
+
+Attendees may cancel their registration for a full refund before the early registration deadline of April 18, 2025.
+
+Attendees may cancel their registration with a $50 refund processing fee before May 5, 2025.
+
+No refunds will be issued after May 5, 2025.
 
 
 ## Visa support letters

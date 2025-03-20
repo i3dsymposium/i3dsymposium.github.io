@@ -335,6 +335,10 @@ article {
     @include smaller-than($medium-screen-size) {
         flex-direction: column;
     }
+
+    &.centered {
+        justify-content: center;
+    }
 }
 
 .one-third {
@@ -362,13 +366,6 @@ article {
     }
 }
 
-.highlight-bg {
-    background-color: $bg-soft;
-    padding: $main-vertical-padding 0;
-    @include smaller-than($large-screen-size) {
-        padding: $main-vertical-padding-small 0;
-    }
-}
 
 a.button {
     font-size: 16px;
