@@ -24,7 +24,7 @@ Register here: [https://cvent.me/b3oBwl](https://cvent.me/b3oBwl){:target="_blan
       <th>Standard / On-site</th>
    </tr>
    <tr>
-      <th>Student ACM Member</th>
+      <th>Student</th>
       <td>$225</td>
       <td>$300</td>
    </tr>
