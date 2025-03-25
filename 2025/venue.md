@@ -21,6 +21,8 @@ NJIT is located at:
 101 Hudson St \
 Jersey City, NJ 07302
 
+**NOTE**: this is the NJIT campus in Jersey City, *NOT* the main campus in Newark.
+
 {% comment %}<!-- We use this method, which requires storing a screen capture of the map because otherwise google will store cookies just for embedding it, and we don't want to deal with GDPR notices if we can avoid it. -->{% endcomment %}
 {% include map-embed.html link="https://maps.app.goo.gl/3CDQyyb3eVAzoAEf7" image="img/venue/njit-map.jpg" %}
 

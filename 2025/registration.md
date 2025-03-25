@@ -7,19 +7,10 @@ title: Conference Registration
 {:toc}
 
 
-{% if false %}
-
 Conference registration is now available through the CVENT registration system.
 
-Register here: [https://cvent.me/vLZw0g](https://cvent.me/vLZw0g){:target="_blank"}
+Register here: [https://cvent.me/b3oBwl](https://cvent.me/b3oBwl){:target="_blank"}
 {:.large-text}
-
-{% else %}
-
-**Registration is not yet open**, we are working to have it open as soon as possible. Until then, here is some information about registering and attending.
-{:.large-text}
-
-{% endif %}
 
 	
 # Registration Fees
@@ -29,11 +20,11 @@ Register here: [https://cvent.me/vLZw0g](https://cvent.me/vLZw0g){:target="_blan
 <table class="center-text odd-rows-darker">
    <tr>
       <th>&nbsp;</th>
-      <th>Early (Before 18 April)</th>
+      <th>Early (Until 18 April)</th>
       <th>Standard / On-site</th>
    </tr>
    <tr>
-      <th>Student</th>
+      <th>Student ACM Member</th>
       <td>$225</td>
       <td>$300</td>
    </tr>

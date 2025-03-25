@@ -65,7 +65,7 @@ There will be an award for the best student poster submitted. Information about 
 *All deadlines are 8 PM Pacific Time.*
 
 - 21 March 2025: Poster submission deadline
-- 26 March 2025: Poster notification
+- 27 March 2025: Poster notification
 - 9 April 2025: Camera-ready of extended abstract deadline (for proceedings)
 
 Questions regarding the submission process should be emailed to <posters@i3dsymposium.org>.
@@ -73,4 +73,4 @@ Questions regarding the submission process should be emailed to <posters@i3dsymp
 Zackary P. T. Sin \
 Posters Chair, I3D 2025
 
-*Last updated: 11 March, 2025*
+*Last updated: 21 March, 2025*
