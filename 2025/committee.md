@@ -98,7 +98,53 @@ steering_committee:
       - Angelo Pesce
 
 ipc:
-#  - Name, Institution
+  - Colin Barré-Brisebois, SEED, Electronic Arts
+  - Laurent Belcour, Intel Corporation
+  - Markus Billeter, University of Leeds
+  - Jiri Bittner, Czech Technical University in Prague
+  - Brent Burley, Walt Disney Animation Studios
+  - Jiawen Chen, Adobe Inc.
+  - Petrik Clarberg, NVIDIA
+  - Marc Comino Trinidad, Universidad Rey Juan Carlos
+  - Carsten Dachsbacher, Karlsruhe Institute of Technology
+  - Thomas Deliot, Intel Corporation
+  - George Drettakis, INRIA
+  - Wolfgang Engel, The Forge Interactive
+  - Christiaan Gribble, Advanced Micro Devices, Inc.
+  - Adrien Gruson, ÉTS
+  - Johannes Hanika, Karlsruhe Institute of Technology
+  - Takahiro Harada, AMD
+  - Sebastian Herholz, Intel
+  - Sebastien Hillaire, Epic Games
+  - Ludovic Hoyet, INRIA Rennes - Centre Bretagne Atlantique
+  - Michal Iwanicki, Activision
+  - Bernhard Kerbl, TU Wien
+  - Soufiane Khiat, Electronic Arts
+  - Shiguang Liu, Tianjin University
+  - Nicolas Lopez, Ubisoft
+  - Javier Meseguer de Paz, Next Limit Technologies
+  - Marc Olano, University of Maryland, Baltimore County
+  - Sumanta Pattanaik, UCF
+  - Christoph Peters, TU Delft
+  - Matt Pharr, NVIDIA
+  - Marco Salvi, NVIDIA
+  - Pedro Sander, The Hong Kong University of Science and Technology
+  - Yann Savoye, Liverpool John Moores University
+  - Omer Shapira, NVIDIA
+  - Konstantin Shkurko, University of Utah
+  - Zackary P. T. Sin, The Hong Kong Polytechnic University
+  - Josef Spjut, NVIDIA
+  - Markus Steinberger, Graz University of Technology, Austria
+  - Qi Sun, New York University
+  - Tiow Seng Tan, National University of Singapore
+  - Yusuke Tokuyoshi, Advanced Micro Devices, Inc.
+  - Corey Toler-Franklin, Barnard College, Columbia University
+  - Michael Vance, Activision
+  - Tomer Weiss, NJIT
+  - Bartlomiej Wronski, NVIDIA
+  - Chris Wyman, NVIDIA
+  - Lingqi Yan, University of California, Santa Barbara
+  - Shuang Zhao, University of California, Irvine
 
 ---
 
