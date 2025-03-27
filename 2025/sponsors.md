@@ -11,19 +11,11 @@ sponsors_definition:
         link: url to link to for this sponsor
 
 sponsors:
-#  - level: venue
-#    members:
-#      - name: Cesium
-#        image: cesium.png
-#        link: https://cesium.com
-#  - level: platinum
-#    members:
-#      - name: The Forge
-#        image: the_forge.png
-#        link: https://theforge.dev
-#      - name: arm
-#        image: arm.png
-#        link: https://www.arm.com
+  - level: platinum
+    members:
+      - name: arm
+        image: arm.png
+        link: https://www.arm.com
   - level: gold
     members:
       - name: Cygames
