@@ -27,7 +27,7 @@ keynotes:
     author: "Chris Wyman"
     headshot: "img/chriswyman.jpg"
     abstract: |
-      Over the last 6 years, spatiotemporal importance resampling (aka ReSTIR) progressed from a crazy research accident to driving the high-end light transport of at least a half dozen shipped games.  Spatial and temporal reuse of lights, paths, and other samples is key to its success, as modern real-time renderers cannot afford anywhere close to the ray budgets of film and VFX.  In real-time, amortizing expensive ray costs is *required*, not just nice to have.
+      Over the last 6 years, spatiotemporal importance resampling (aka ReSTIR) progressed from a crazy research accident to driving the high-end light transport of at least a half dozen shipped games. Spatial and temporal reuse of lights, paths, and other samples is key to its success, as modern real-time renderers cannot afford anywhere close to the ray budgets of film and VFX. In real-time, amortizing expensive ray costs is *required*, not just nice to have.
 
       In this talk, we will explore how ReSTIR came about, why I think it helped drive adoption of real-time ray tracing, balancing the demands of engineering versus research to keep moving forward, what technology transfer looks like in industrial research, where ReSTIR is going, what challenges we still need to tackle, and how you can get involved.
 
@@ -40,6 +40,18 @@ keynotes:
       
       Chris has a PhD from the University of Utah and a BS from the University of Minnesota.
 
+  - title: "AI and the coming XR Singularity"
+    author: "Ken Perlin"
+    headshot: "img/kenperlin.jpg"
+    abstract: |
+      We are now only a few years away from a time when our smartphones will be replaced by blended reality glasses. This will be as big a revolution as was the Web in 1993 and the iPhone in 2007. But this time we will also have AI, so the changes in our daily lives will be even more fundamental and profound. In this talk I will explore the ways that our shared reality might change, as we approach the coming XR Singularity.
+
+    bio: |
+      Ken Perlin, a professor in the Department of Computer Science at New York University, directs the Future Reality Lab. His research interests include socially shared blended reality, computer graphics and animation, user interfaces and education.
+      
+      He is a Fellow of the National Academy of Inventors. He received an Academy Award for Technical Achievement from the Academy of Motion Picture Arts and Sciences for his noise and turbulence procedural texturing techniques, which are widely used in feature films and television, as well as membership in the ACM/SIGGRAPH Academy, the 2020 New York Visual Effects Society Empire Award and the 2008 ACM/SIGGRAPH Computer Graphics Achievement Award. He serves on the program committee of the AAAS, was general chair of the UIST2010 conference, and has been a featured artist at the Whitney Museum of American Art.
+      
+      He received his Ph.D. in Computer Science from NYU, and a B.A. in theoretical mathematics from Harvard. Before working at NYU he was Head of Software Development at R/GREENBERG Associates in New York, NY. Prior to that he was the System Architect for computer generated animation at MAGI, where he worked on TRON.
 
 
 ---
