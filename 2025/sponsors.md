@@ -4,7 +4,6 @@ title: Sponsors
 
 sponsors_definition:
   - level: ID of the level of sponsorship (for CSS, defines size, in i3d.scss)
-    single_column: Makes this set of entries single column instead of 3 columns if only one entry. Mainly intended for venue (and platinum if only one)
     members: # List of members
       - name: Name of the company (Only used in the "alt" of the img tag)
         image: Image to show for this sponsor
@@ -24,9 +23,12 @@ sponsors:
       - name: Activision
         image: activision.png
         link: https://research.activision.com
-      - name: ea
+      - name: EA
         image: ea-seed.png
         link: https://www.ea.com/seed
+      - name: Futurewei
+        image: futurewei.png
+        link: https://www.futurewei.com/
   - level: silver
     members:
       - name: NVIDIA
