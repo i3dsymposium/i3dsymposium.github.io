@@ -66,14 +66,13 @@ keynotes:
 
 {% if keynote.title -%}
 # {{keynote.title}}
-{: #{{keyn_title}} }
+{: #{{keynote.company | split: " " | join: "-" | downcase }} }
 {%- else -%}
 # TBA
 {: #{{keyn_title}} }
 {%- endif %}
 
 ## {{keynote.company}}
-{: #Company{{forloop.index}} }
 
 {% if keynote.video -%}
 [Watch Video]({{keynote.video}}){: .button target="_blank"}
