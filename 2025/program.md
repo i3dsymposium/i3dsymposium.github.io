@@ -31,12 +31,12 @@ program:
         notes: break
       - time: "11:15"
         title: "Papers 1"
-        #link: "papers.html#interaction-and-vr"
+        link: "papers.html#virtual-worlds-vr-ar"
       - time: "12:55"
         notes: "Lunch"
       - time: "13:55"
         title: "Papers 2"
-        #link: "papers.html#light-transport-and-storage"
+        link: "papers.html#simulation"
       - time: "17:00"
         notes: TBD time and location of reception
       - time: "15:35"
@@ -48,6 +48,7 @@ program:
         notes: Breakfast
       - time: "9:00"
         title: "Papers 3"
+        link: "papers.html#animation-voxels"
       - time: "10:40"
         notes: break
       - time: "11:10"
@@ -62,7 +63,7 @@ program:
         #link: "posters.html"
       - time: "14:00"
         title: "Papers 4"
-        #link: "papers.html#noise-and-reconstruction"
+        link: "papers.html#filtering-reconstruction"
       - time: "18:00"
         notes: Banquet dinner
       - time: "15:40"
@@ -79,12 +80,12 @@ program:
         notes: break
       - time: "10:30"
         title: "Papers 5"
-        #link: "papers.html#efficient-forward-and-differentiable-rendering"
+        link: "papers.html#rendering"
       - time: "12:10"
         notes: Lunch
       - time: "13:10"
         title: "Papers 6"
-        #link: "papers.html#solvers-and-simulation"
+        link: "papers.html#neural-splatting"
       - time: "14:50"
         notes: break
       - time: "15:20"

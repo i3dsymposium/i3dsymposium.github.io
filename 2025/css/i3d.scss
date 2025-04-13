@@ -542,8 +542,8 @@ footer {
     }
 
     #main {
-        p, article, ul, ol {
-            margin-bottom: 1em;
+        p, article, ul, ol, table, dl, blockquote {
+            margin-bottom: $main-vertical-padding;
 
             &:first-child {
                 margin-top: 0;
