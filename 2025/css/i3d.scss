@@ -706,6 +706,11 @@ footer {
         margin-top: $main-vertical-padding-small;
     }
 
+    padding-bottom: $main-vertical-padding;
+    @include smaller-than($large-screen-size) {
+        padding-bottom: $main-vertical-padding-small;
+    }
+
     hr {
         margin-top: 2rem;
 
@@ -732,32 +737,28 @@ footer {
             display: block;
             margin: 0;
             break-inside: avoid;
+            align-content: center;
 
             a {
                 display: inline-block;
-                height: 100%;
-                width: 100%;
+                vertical-align: middle;
                 position: relative;
-
-                img {
-                    position: relative;
-                    margin: 20px auto;
-                    display: block;
-                }
             }
         }
 
         @each $tier, $tier-size in $sponsor-sizes {
             &.sponsors-#{$tier} {
-                li a img {
-                    width: $tier-size;
-                    max-height: $tier-size;
-                    @include smaller-than($tier-size + 2*$main-horizontal-padding) {
-                        max-width: 100%;
+                li {
+                    height: $tier-size;
+                    a img {
+                        width: $tier-size;
+                        @include smaller-than($tier-size + 2*$main-horizontal-padding) {
+                            max-width: 100%;
+                        }
+                        // These two are so logos get centered horizontally when they are too thin
+                        max-height: $tier-size * 9/16;
+                        object-fit: contain;
                     }
-                    // These two are so logos get centered horizontally when they are too thin
-                    min-height: $tier-size * 2/3;
-                    object-fit: contain;
                 }
 
                 // Change the number of columns dynamically so that
