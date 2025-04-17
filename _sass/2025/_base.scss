@@ -202,8 +202,9 @@ dd {
     p {
         text-indent: 0.5em;
         margin-top: 0 !important;
+        margin-bottom: 0 !important;
         &:not(:last-child) {
-            margin-bottom: 0.5em;
+            margin-bottom: 0.5em !important;
         }
     }
 

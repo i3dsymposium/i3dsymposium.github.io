@@ -27,8 +27,8 @@ nav_links:
         title: Schedule
       - link: papers.html
         title: Papers
-#      - link: posters.html
-#        title: Posters
+      - link: posters.html
+        title: Posters
       - link: keynotes.html
         title: Keynotes
       - link: sponsored-talks.html
@@ -167,7 +167,7 @@ footer_socials:
     <div id="main-wrapper">
 		
         <main id="main">
-            {% if page.two_thirds_content %}<div id="markdown-toc" style="display: none;"><!-- This is a hack to ensure 2/3ds content size on pages where TOC is not generated --></div>{% endif %}
+            {% if page.two_thirds_content %}<ul id="markdown-toc" style="display: none;"><!-- This is a hack to ensure 2/3ds content size on pages where TOC is not generated --></ul>{% endif %}
 
             {{ content }}
 
