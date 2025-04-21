@@ -46,7 +46,7 @@ sessions:
           To mitigate this, we have developed an easy-to-implement human-object interface based on auxiliary projection shapes. Our method, like other software-centered solutions, does not require any additional advanced haptic hardware; it relies solely on a standard VR headset (HMD) with controllers. The evaluation performed confirmed that our approach allows smooth motion to be attained in a 3D scene without adding additional latency to the VR system. Furthermore, for different projection shapes, different hand behavior on the same 3D object is obtained. As a result, scene designers are offered a simple visual mechanism to manipulate hand motion on 3D objects' surfaces, enhancing its precision while sliding to create more desirable hand trajectories.
 
 
-      - title: "VM-BHINet:Vision Mamba Bimanual Hand Interaction Network for 3D Interacting Hand Mesh Recovery From a Single RGB Image"
+      - title: "VM-BHINet: Vision Mamba Bimanual Hand Interaction Network for 3D Interacting Hand Mesh Recovery From a Single RGB Image"
         authors: "Han Bi, Ge Yu, Yu He, Wenzhuo Liu, Zijie Zheng"
         doi_link: ""
         abstract: |
