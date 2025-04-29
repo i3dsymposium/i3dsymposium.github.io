@@ -45,3 +45,4 @@ else:
     svg2png_year("social-card-year.svg", "social-card.png", args.year)
     svg2png_year("logo-square-title-year.svg", "logo-square-title.png", args.year)
     svg2png_year("logo-square-title-year.svg", "logo-square-title-bg.png", args.year, bg=True)
+    svg2png_year("video-cover-papers-preview.svg", "index-video-thumbnail.png", args.year, bg=True)

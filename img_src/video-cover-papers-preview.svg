@@ -29,7 +29,7 @@
      inkscape:document-units="mm"
      inkscape:zoom="0.29923903"
      inkscape:cx="1822.9574"
-     inkscape:cy="1186.3426"
+     inkscape:cy="1188.0135"
      inkscape:window-width="2131"
      inkscape:window-height="1370"
      inkscape:window-x="3853"
@@ -929,17 +929,17 @@
        y="0"><tspan
          x="1417.0755"
          y="1121.5073"
-         id="tspan10"><tspan
+         id="tspan2"><tspan
            dx="0 0 0 -9.5733557 9.5733557 -9.5733538 9.5733557 -9.57335 9.573348 0 0 -9.5733442 9.573348 0 0 0 -9.5733557"
            style="font-weight:normal;-inkscape-font-specification:Outfit"
-           id="tspan9">May 8 – 10, 2024
+           id="tspan1">May 8 – 10, 2024
 </tspan></tspan><tspan
          x="1300.4086"
          y="1163.1614"
-         id="tspan12"><tspan
+         id="tspan4"><tspan
            dx="0 0 0 0 0 0 0 0 0 0 0 0 0 -9.5733442 9.573348 0 0 0 0 0 0 0 0 0 0 0 0 -9.5733595 9.5733328"
            style="font-weight:normal;-inkscape-font-specification:Outfit"
-           id="tspan11">Philadelphia, Pennsylvania, USA</tspan></tspan></text><g
+           id="tspan3">Philadelphia, Pennsylvania, USA</tspan></tspan></text><g
        id="g2"
        transform="translate(14.272662,70.793231)"><text
          xml:space="preserve"
@@ -996,10 +996,10 @@
        style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:37.8673px;line-height:1.1;font-family:Outfit;-inkscape-font-specification:'Outfit Light';text-align:center;letter-spacing:0px;word-spacing:9.57335px;white-space:pre;shape-inside:url(#rect8);shape-padding:0;display:inline;fill:#000000;fill-opacity:1;stroke:none"
        x="159.38408"
        y="0"><tspan
-         x="1390.0879"
+         x="1371.4856"
          y="1121.5073"
-         id="tspan14"><tspan
-           dx="0 0 0 0 -9.573348 9.573348 0 0 0 0 0 -9.5733461 9.573348 0 0 0 0 0 0 -9.5733728"
+         id="tspan6"><tspan
+           dx="0 0 0 0 0 0 0 0 -9.5733452 9.573348 0 0 0 0 0 -9.5733614 9.5733633 0 0 0 0 0 0 -9.5733423"
            style="font-weight:normal;-inkscape-font-specification:Outfit"
-           id="tspan13">2024 Papers Preview
+           id="tspan5">{{year}} Papers Preview
 </tspan></tspan></text></g></svg>
