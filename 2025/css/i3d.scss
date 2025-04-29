@@ -542,7 +542,14 @@ footer {
     }
 
     #main {
-        p, article, ul, ol, table, dl, blockquote {
+        p {
+            margin-bottom: 1em;
+        }
+        & > p:last-of-type {
+            margin-bottom: $main-vertical-padding;
+        }
+
+        article, ul, ol, table, dl, blockquote {
             margin-bottom: $main-vertical-padding;
 
             &:first-child {
