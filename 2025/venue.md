@@ -28,7 +28,8 @@ Jersey City, NJ 07302
 
 The closest airport to the venue is Newark Liberty International Airport.
 
-*More details will be provided in the near future*
+{% include video-embed.html youtube_hash="pB-3njzGZlw" title=page.video_title thumbnail="img/venue/walking-video-thumbnail.jpg" %}
+
 
 ---
 

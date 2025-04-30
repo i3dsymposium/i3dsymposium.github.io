@@ -29,6 +29,8 @@ sessions:
       - title: "VRSplat: Fast and Robust Gaussian Splatting for Virtual Reality"
         authors: "Xuechang Tu, Lukas Radl, Michael Steiner, Markus Steinberger, Bernhard Kerbl, Fernando de la Torre"
         doi_link: ""
+        preprint: "https://r4dl.github.io/data/vrsplat_authorversion.pdf"
+        thumbnail: "vrsplat-tu.jpg"
         abstract: |
           3D Gaussian Splatting (3DGS) has rapidly become a leading technique for novel-view synthesis, providing exceptional performance through efficient software-based GPU rasterization. Its versatility enables real-time applications, including on mobile and lower-powered devices. However, 3DGS faces key challenges in virtual reality (VR): (1) temporal artifacts, such as popping during head movements, (2) projection-based distortions that result in disturbing and view-inconsistent floaters, and (3) reduced framerates when rendering large numbers of Gaussians, falling below the critical threshold for VR.
           
@@ -40,6 +42,8 @@ sessions:
       - title: "Enhancing the Precision of a User's Hand When Sliding on Objects in VR"
         authors: "Anna Kozłowska, Mikołaj Wójcik, Maciej Spychała, Joanna Porter-Sobieraj, Jakub Ciecierski"
         doi_link: ""
+        preprint: "https://yamianne.github.io/Enhancing-the-Precision-VR/"
+        thumbnail: "sliding-kozlowska.jpg"
         abstract: |
           Interaction in virtual reality (VR) remains a major research challenge, due to the difficulty of accurately reproducing a user's position, the differences that exist between the virtual and real worlds, and the need to ensure a faster response than in traditional computer systems. Our work focuses on software-based approaches that support the user's hand running over VR objects. Existing constraint-based methods implemented in game engines result in visible glitches which negatively affect the user's immersion.
           
@@ -49,6 +53,8 @@ sessions:
       - title: "VM-BHINet: Vision Mamba Bimanual Hand Interaction Network for 3D Interacting Hand Mesh Recovery From a Single RGB Image"
         authors: "Han Bi, Ge Yu, Yu He, Wenzhuo Liu, Zijie Zheng"
         doi_link: ""
+        preprint: ""
+        thumbnail: "bhinet-bi.jpg"
         abstract: |
           Understanding bimanual hand interactions is essential for realistic 3D pose and shape reconstruction. However, existing methods struggle with occlusions, ambiguous appearances, and computational inefficiencies.
           
@@ -58,6 +64,8 @@ sessions:
       - title: "Generalized, Dynamic Multi-agent Torso Crowds"
         authors: "Bilas Talukdar, Tomer Weiss"
         doi_link: ""
+        preprint: "https://sagarbilas.github.io/portfolio-details_i3d2025.html"
+        thumbnail: "torso-talukdar.jpg"
         abstract: |
           In crowd simulation algorithms, discs are commonly used due to their geometrical simplicity. However, discs overestimate the body's projected shape on the ground plane, and do not naturally embody rotational information for each crowd agent.
           
@@ -70,6 +78,8 @@ sessions:
       - title: "A Robust and Generalized Gauss-Seidel Solver for Physically-Correct Simultaneous Collisions"
         authors: "Huanbo Zhou, Zhenyu Xu, Xijun Liu, Xinyu Zhang"
         doi_link: ""
+        preprint: "https://github.com/TopHillRobotics/ggs/blob/master/i3D2025_Zhou_authorversion.pdf"
+        thumbnail: "collisions-zhou.jpg"
         abstract: |
           Simulating multi-object collisions in real-time environments remains a significant challenge, particularly when handling simultaneous collisions in a physically accurate manner. Traditional Gauss-Seidel solvers, widely employed in physics engines, often fail to preserve the symmetry and consistency for multi-object interactions that are often observed in physics.
           
@@ -79,6 +89,8 @@ sessions:
       - title: "An Incompressible Crack Model for Volume Preserving MPM Fracture"
         authors: "Shiguang Liu, Maolin Wu, Chenfanfu Jiang, Yisheng Zhang"
         doi_link: ""
+        preprint: ""
+        thumbnail: ""
         abstract: |
           This paper proposes a novel method to simulate the dynamic fracture effect of elastoplastic objects. Our method is based on the continuum damage mechanics (CDM) theory and uses the material point method (MPM) to discretize the governing equations. Our proposed approach distinguishes itself from previous works by incorporating a novel method for modeling decohesion, which preserves the incompressibility of the cracks.
           
@@ -88,6 +100,8 @@ sessions:
       - title: "Thunderscapes: Simulating the Dynamics of Mesoscale Convective System"
         authors: "Tianchen Hao, Jinxian Pan, Yangcheng Xiang, Xiangda Shen, Xinsheng Li, Yanci Zhang"
         doi_link: ""
+        preprint: "https://arxiv.org/abs/2412.00703"
+        thumbnail: "thunderscapes-hao.jpg"
         abstract: |
           A Mesoscale Convective System (MCS) is a collection of thunderstorms operating as a unified system, showcasing nature's untamed power. They represent a phenomenon widely referenced in both the natural sciences and the visual effects (VFX) industries. However, in computer graphics, visually accurate simulation of MCS dynamics remains a significant challenge due to the inherent complexity of atmospheric microphysical processes.
 
@@ -100,6 +114,8 @@ sessions:
         authors: "David Algis, Bérenger Bramas, Emmanuelle Darles, Lilian Aveneau"
         journal: "jcgt"
         doi_link: "https://jcgt.org/published/0014/01/05/"
+        preprint: ""
+        thumbnail: ""
         abstract: |
           The oceans cover the vast majority of the Earth. Therefore, their simulation has many scientific, industrial and military interests, including computer graphics domain. By fully exploiting the multi-threading power of GPU and CPU, current state-of-the-art tools can achieve real-time ocean simulation, even if it is sometimes needed to reduce the physical realism for large scenes. Although most of the building blocks for implementing an ocean simulator are described in the literature, a clear explanation of how they interconnect is lacking.
           
@@ -112,6 +128,8 @@ sessions:
       - title: "Hierarchical Neural Skinning Deformation with Self-supervised Training for Character Animation"
         authors: "Tianyi Wang, Shiguang Liu"
         doi_link: ""
+        preprint: ""
+        thumbnail: "skinning-wang.jpg"
         abstract: |
           We propose a self-supervised neural deformation method for character skin deformation animations, incorporating musculoskeletal and adipose tissue deformations driven by joint movements. This hierarchical approach combines two self-supervised neural emulators: the musculoskeletal neural emulator, based on a biomaterial musculoskeletal model, and the soft-tissue neural emulator, capturing soft secondary dynamics. The neural emulators achieve self-supervised learning through a loss function derived from physical principles, eliminating the need for ground-truth datasets. The musculoskeletal neural emulator enhances deformation effects, including musculoskeletal bulging, contraction, and dynamic responses, and generates inner-layer animations.
           
@@ -121,6 +139,8 @@ sessions:
       - title: "Foveated Animations for Efficient Crowd Simulation"
         authors: "Florin-Vladimir Stancu, Tomer Weiss, Rafael Kuffner dos Anjos"
         doi_link: ""
+        preprint: "https://rafaelkuffner.github.io/assets/papers/I3D2025.pdf"
+        thumbnail: "crowd-stancu.jpg"
         abstract: |
           Foveated rendering techniques have seen recent development with the advent of commercial head-mounted displays with eye-tracking capabilities. The main drive is to exploit particular features of our peripheral vision that allow optimizing rendering pipelines, which allows using less computational effort where the human visual system may be unaware of differences. Most efforts have been focused on simplifying spatial visual detail on areas not being focused on by adjusting acuity of shading models, sharpness of images, and pixel density. However, other perception pipeline areas are also influential, particularly in certain purpose-specific applications.
           
@@ -130,6 +150,8 @@ sessions:
       - title: "Aokana: A GPU-Driven Voxel Rendering Framework for Open World Games"
         authors: "Yingrong Fang, Qitong Wang, Wei Wang"
         doi_link: ""
+        preprint: ""
+        thumbnail: "aokana-fang.jpg"
         abstract: |
           Voxels are one of the most popular 3D geometric representations today. Due to their intuitiveness and ease of editing for non-professionals, voxels have been widely adopted in stylized games and low-cost independent games. However, the high storage cost of voxels, along with the significant time overhead associated with large-scale voxel rendering, limits the further development of open-world voxel games.
           
@@ -139,6 +161,8 @@ sessions:
       - title: "Transform-Aware Sparse Voxel Directed Acyclic Graphs"
         authors: "Mathijs Molenaar, Elmar Eisemann"
         doi_link: ""
+        preprint: "https://publications.graphics.tudelft.nl/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdjBUIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3e9c1bfab97521b420d59c348403286749dcf70d/I3D_authors_version.pdf"
+        thumbnail: "voxel-molenaar.jpg"
         abstract: |
           Sparse Voxel Directed Acyclic Graphs (SVDAGs) have proven to be an efficient data structure for storing sparse binary voxel scenes. The SVDAG exploits repeating geometric patterns; which can be improved when considering mirror symmetries. We extend the previous work by providing a generalized framework to efficiently involve additional types of transformations and propose a novel translation matching for even more geometry reuse. Our new data structure is stored using a novel pointer encoding scheme to achieve a practical reduction in memory usage.
 
@@ -149,6 +173,8 @@ sessions:
       - title: "Normal-guided Detail-Preserving Neural Implicit Function for High-Fidelity 3D Surface Reconstruction"
         authors: "Aarya Patel, Hamid Laga, Ojaswa Sharma"
         doi_link: ""
+        preprint: "https://drive.google.com/file/d/1iZEBoGMSf3koLYmcjS3d5Cp4-LNWmWp2/view?usp=sharing"
+        thumbnail: "nguided-patel.jpg"
         abstract: |
           Neural implicit representations have emerged as a powerful paradigm for 3D reconstruction. However, despite their success, existing methods fail to capture fine geometric details and thin structures, especially in scenarios where only sparse multi-view RGB images of the objects of interest are available.
           
@@ -158,6 +184,8 @@ sessions:
       - title: "Non-uniform Point Cloud Upsampling via Local Manifold Distribution"
         authors: "Yao Hui Fang, Xing Ce Wang"
         doi_link: ""
+        preprint: "https://arxiv.org/abs/2504.11701"
+        thumbnail: ""
         abstract: |
           Existing learning-based point cloud upsampling methods often overlook the intrinsic data distribution characteristics of point clouds, leading to suboptimal results when handling sparse and non-uniform point clouds. We propose a novel approach to point cloud upsampling by imposing constraints from the perspective of manifold distributions.
           
@@ -167,6 +195,8 @@ sessions:
       - title: "Improved Stochastic Texture Filtering Through Sample Reuse"
         authors: "Bartlomiej Wronski, Matt Pharr, Tomas Akenine-Möller"
         doi_link: ""
+        preprint: "https://research.nvidia.com/labs/rtr/publication/wronski2025stfreuse/stf_sample_reuse.pdf"
+        thumbnail: "reuse-akenine.jpg"
         abstract: |
           Stochastic texture filtering (STF) has re-emerged as a technique that can be combined with advanced texture compression methods, e.g., neural texture compression, to bring down the cost of texture sampling and filtering. However, during texture magnification, the swapped order of filtering and shading with STF can result in aliasing and the inability to smoothly interpolate surface curvature represented in normal maps, leading to undesirable appearance changes.
           
@@ -177,6 +207,8 @@ sessions:
         authors: "Bartlomiej Wronski"
         journal: "jcgt"
         doi_link: "https://jcgt.org/published/0014/01/02/"
+        preprint: ""
+        thumbnail: ""
         abstract: |
           Texture and material blending is one of the leading methods for adding variety to rendered virtual worlds, creating composite materials, and generating procedural content. When done naively, it can introduce either visible seams or contrast loss, leading to an unnatural look not representative of blended textures. Earlier work proposed addressing this problem through careful manual parameter tuning, lengthy per-texture statistics precomputation, look-up tables, or training deep neural networks.
           
@@ -189,6 +221,8 @@ sessions:
       - title: "Real-Time Markov Chain Path Guiding for Global Illumination and Single Scattering"
         authors: "Lucas Domingo Alber, Johannes Hanika, Carsten Dachsbacher"
         doi_link: ""
+        preprint: "https://www.lalber.org/alber2025mcpg/"
+        thumbnail: "markov-alber.jpg"
         abstract: |
           We present a lightweight and unbiased path guiding algorithm tailored for real-time applications with highly dynamic content. The algorithm demonstrates effectiveness in guiding both direct and indirect illumination. Moreover, it can be extended to guide single scattering events in participating media. Building upon the screen-space approach by Dittebrandt et al. [2023], the incident light distribution is represented as a von Mises-Fisher mixture model, which is controlled by a Markov chain process.
           
@@ -198,6 +232,8 @@ sessions:
       - title: "Joint Denoising and Upscaling via Multi-branch and Multi-scale Feature Network"
         authors: "Pawel Kazmierczyk, Sungye Kim, Wojciech Uss, Wojciech Kalinski, Tomasz Galaj, Mateusz Maciejewski, Rama Harihara"
         doi_link: ""
+        preprint: ""
+        thumbnail: "feature-kim.jpg"
         abstract: |
           Deep learning-based denoising and upscaling techniques have emerged to enhance framerates for real-time rendering. A single neural network for joint denoising and upscaling offers the advantage of sharing parameters in the feature space, enabling efficient prediction of filter weights for both. However, it is still ongoing research to devise an efficient feature extraction neural network that uses different characteristics in inputs for the two combined problems.
           
@@ -208,6 +244,8 @@ sessions:
         authors: "Jamie Portsmouth, Peter Kutz, Stephen Hill"
         journal: "jcgt"
         doi_link: "https://jcgt.org/published/0014/01/06/"
+        preprint: ""
+        thumbnail: ""
         abstract: |
           We introduce the energy-preserving Oren-Nayar (EON) model for reflection from rough surfaces. Unlike the popular qualitative Oren--Nayar model (QON) and its variants, our model is energy preserving via analytical energy compensation. We include self-contained GLSL source code for efficient evaluation of the new model and importance sampling based on a novel technique we term Clipped Linearly Transformed Cosine (CLTC) sampling.
 
@@ -216,6 +254,8 @@ sessions:
         authors: "Ingo Wald"
         journal: "jcgt"
         doi_link: "https://jcgt.org/published/0014/01/03/"
+        preprint: ""
+        thumbnail: ""
         abstract: |
           We present an algorithm that allows for find-closest-point and k-nearest-neighbor (kNN) style traversals of left-balanced k-d trees, without the need for either recursion or software-managed stacks; instead using only current and last previously traversed node to compute which node to traverse next.
 
@@ -226,6 +266,8 @@ sessions:
       - title: "LSNIF: Locally-Subdivided Neural Intersection Function"
         authors: "Shin Fujieda, Chih-Chen Kao, Takahiro Harada"
         doi_link: ""
+        preprint: ""
+        thumbnail: "lsnif-harada.jpg"
         abstract: |
           Neural representations have shown the potential to accelerate ray casting in a conventional ray-tracing-based rendering pipeline.
           
@@ -235,6 +277,8 @@ sessions:
       - title: "VR-Splatting: Foveated Radiance Field Rendering via 3D Gaussian Splatting and Neural Points"
         authors: "Linus Franke, Laura Fink, Marc Stamminger"
         doi_link: ""
+        preprint: "https://arxiv.org/pdf/2410.17932"
+        thumbnail: "foveated-franke.jpg"
         abstract: |
           Recent advances in novel view synthesis have demonstrated impressive results in fast photorealistic scene rendering through differentiable point rendering, either via Gaussian splatting (3DGS) [Kerbl et al. 2023] or neural point rendering [Aliev et al. 2020]. Unfortunately, these directions require either a large number of small Gaussians or expensive per-pixel post-processing for reconstructing fine details, which negatively impacts rendering performance. With the high performance demands of virtual reality~(VR) systems, primitive or pixel counts therefore have to be kept low, affecting visual quality.
           
@@ -244,6 +288,8 @@ sessions:
       - title: "ESCT3D: Efficient and Selectively Controllable Text-Driven 3D Content Generation with Gaussian Splatting"
         authors: "Huiqi Wu, Li Yao, Jianbo Mei, Yingjie Huang, Yining Xu, Jingjiao You, Yilong Liu"
         doi_link: ""
+        preprint: "https://arxiv.org/abs/2504.10316"
+        thumbnail: "esct3d-wu.jpg"
         abstract: |
           In recent years, significant advancements have been made in text-driven 3D content generation. However, several challenges remain. In practical applications, users often provide extremely simple text inputs while expecting high-quality 3D content. Generating optimal results from such minimal text is a difficult task due to the strong dependency of text-to-3D models on the quality of input prompts. Moreover, the generation process exhibits high variability, making it difficult to control. Consequently, multiple iterations are typically required to produce content that meets user expectations, reducing generation efficiency.
           
@@ -253,6 +299,8 @@ sessions:
       - title: "SplatMAP: Online Dense Monocular SLAM with 3D Gaussian Splatting"
         authors: "Yue Hu, Rong Liu, Meida Chen, Peter Beerel, Andrew Feng"
         doi_link: ""
+        preprint: "https://arxiv.org/pdf/2501.07015"
+        thumbnail: "splatmap-hu.jpg"
         abstract: |
           Achieving high-fidelity 3D reconstruction from monocular video remains challenging due to the inherent limitations of traditional methods like Structure-from-Motion (SfM) and monocular SLAM in accurately capturing scene details. While differentiable rendering techniques such as Neural Radiance Fields (NeRF) address some of these challenges, their high computational costs make them unsuitable for real-time applications. Additionally, existing 3D Gaussian Splatting (3DGS) methods often focus on photometric consistency, neglecting geometric accuracy and failing to exploit SLAM's dynamic depth and pose updates for scene refinement.
           
@@ -337,7 +385,7 @@ The program also includes 4 papers originally published in the [Journal of Compu
 
 {%- comment %}<!-- Abstract and thumbnail -->{% endcomment %}
 
-: {% if paper.abstract or paper.thumbnail -%}
+: {% if paper.abstract or paper.thumbnail != empty -%}
   <details>
   {%- if paper.abstract %}
   <summary>Abstract</summary>
@@ -345,7 +393,7 @@ The program also includes 4 papers originally published in the [Journal of Compu
   {{ abstract }}
 
   {%- endif -%}
-  {%- if paper.thumbnail %}
+  {%- if paper.thumbnail != empty %}
   <img src="img/paper_thumbnails/{{ paper.thumbnail }}" class="paper-thumbnail">
   {% endif -%}
   </details>

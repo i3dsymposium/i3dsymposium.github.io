@@ -30,15 +30,15 @@ program:
       - time: "10:45"
         notes: break
       - time: "11:15"
-        title: "Papers 1"
+        title: "Papers 1 - Virtual Worlds, VR/AR"
         link: "papers.html#virtual-worlds-vr-ar"
       - time: "12:55"
         notes: "Lunch"
       - time: "13:55"
-        title: "Papers 2"
+        title: "Papers 2 - Simulation"
         link: "papers.html#simulation"
-      - time: "17:00"
-        notes: TBD time and location of reception
+      - time: "15:40"
+        notes: Reception
       - time: "15:35"
         endtime: true
 
@@ -47,7 +47,7 @@ program:
       - time: "8:20"
         notes: Breakfast
       - time: "9:00"
-        title: "Papers 3"
+        title: "Papers 3 - Animation & Voxels"
         link: "papers.html#animation-voxels"
       - time: "10:40"
         notes: break
@@ -60,13 +60,13 @@ program:
         notes: Lunch
       - time: "13:00"
         title: "Posters Session"
-        #link: "posters.html"
+        link: "posters.html"
       - time: "14:00"
-        title: "Papers 4"
+        title: "Papers 4 - Filtering & Reconstruction"
         link: "papers.html#filtering-reconstruction"
       - time: "18:00"
         notes: Banquet dinner
-      - time: "15:40"
+      - time: "17:15"
         endtime: true
 
   - day: 2025-05-09
@@ -79,12 +79,12 @@ program:
       - time: "10:00"
         notes: break
       - time: "10:30"
-        title: "Papers 5"
+        title: "Papers 5 - Rendering"
         link: "papers.html#rendering"
       - time: "12:10"
         notes: Lunch
       - time: "13:10"
-        title: "Papers 6"
+        title: "Papers 6 - Neural & Splatting"
         link: "papers.html#neural-splatting"
       - time: "14:50"
         notes: break
