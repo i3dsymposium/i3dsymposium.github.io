@@ -12,7 +12,7 @@ title: Venue
 
 We are pleased to announce that I3D 2025 will take place at NJIT in Jersey City, NJ, United States.
 
-{% include carousel.html images="room-people.jpg,merrill-lynch-building.jpg,kitchen.jpg,room-empty.jpg" path_prefix="img/venue/" %}
+{% include carousel.html images="room-empty.jpg,merrill-lynch-building.jpg,room-empty-2.jpg,kitchen.jpg" path_prefix="img/venue/" %}
 
 
 ## Location 
