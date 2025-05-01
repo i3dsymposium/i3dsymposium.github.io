@@ -542,14 +542,16 @@ footer {
     }
 
     #main {
-        p {
+        p, ul, ol {
             margin-bottom: 1em;
         }
-        & > p:last-of-type {
-            margin-bottom: $main-vertical-padding;
+        & > p, ul, ol {
+            &:last-child {
+                margin-bottom: $main-vertical-padding;
+            }
         }
 
-        article, ul, ol, table, dl, blockquote {
+        article, table, dl, blockquote {
             margin-bottom: $main-vertical-padding;
 
             &:first-child {
@@ -732,6 +734,8 @@ footer {
         position: relative;
         list-style: none;
 
+        margin-bottom: 0 !important;
+
         $sponsor-column-gap: 24px;
 
         display: flex;
@@ -796,7 +800,7 @@ footer {
 }
 
 #contact-panel {
-    margin-top: 2rem;
+    margin-top: $main-vertical-padding !important;
     width: 100% !important;
     box-sizing: border-box;
     & p {

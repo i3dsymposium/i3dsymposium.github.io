@@ -185,7 +185,7 @@ If you can't see the emails of the committee members (you likely have javascript
 
 {% for member in page.ipc %}
 - {{ member }}
-{% endfor %}
+{%- endfor %}
 
 
 ---
@@ -196,12 +196,12 @@ The steering committee consists of the conference and general
 co-chairs of the most recent 4 years, including the chairs of the
 upcoming conference that is still being planned.
 
-For {{ layout.current_year }}, this is:
+For {% comment %}<!-- This doesn't work at the moment because jekyll is bugged. -->{{layout.current_year}}{% endcomment -%} 2025, this is:
 {% for year in page.steering_committee -%}
 <!-- {{ year.year }} -->
 {%- for member in year.members %}
 - {{ member }}
-{% endfor -%}
+{%- endfor -%}
 {% endfor %}
 
 In general, we expect that a junior and senior person will serve as
