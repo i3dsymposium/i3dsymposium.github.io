@@ -103,14 +103,6 @@ posters:
     We propose a MCMC decoupled shading method that works alongside the original ReSTIR PT process to produce better-converged images without requiring additional rays. By exploiting the structural similarity between ReSTIR PT and MCMC methods, we treat each candidate path generated within ReSTIR PT as if it were spawned using a Markov chain, interpreting spatiotemporal reuses as mutations. This approach allows energy transfer and deposition between pixels, effectively extracting more information from each candidate path within the ReSTIR PT procedure. As a result, our method enhances stratification, reduces correlation, and achieves a more converged output compared to the original ReSTIR PT.
 
 
-- title: "Splatmesh: Interactive 3D Segmentation and Editing Using Mesh-Based Gaussian Splatting"
-  authors: "Alex Kc Zhou, Lanqing Hong, Xinhai Chang, Yingji Zhong, Enze Xie, Hao Dong, Zhihao Li, Yongxin Yang, Zhenguo Li, Wei Zhang"
-  abstract: |
-    A major challenge in fine-grained 3D interactive editing is finding an efficient representation that balances diverse modifications, high-quality view synthesis, and memory constraints. While 3D meshes enable robust editing, they yield lower-quality view synthesis than 3D Gaussian Splats, which suffer from instability under extensive modifications. A naive combination of both leads to suboptimal performance and memory issues.
-    
-    We propose Splatmesh, which integrates 3D Gaussian splats with a mesh while dynamically adjusting memory usage. Specifically, Splatmesh simplifies the mesh to meet memory requirements while preserving color and shape and aligns the Gaussian splats by treating each triangle as a reference. To enable accurate editing, Splatmesh proposes an efficient 3D segmentation method. Editing the simplified mesh allows for effective geometry and texture modifications to the Gaussian splats.
-
-
 - title: "Stochastic Lightcuts for Reflective Shadow Maps"
   authors: "Goanghun Kim, Yesol Yun, Hyeong-Seok Ko"
   abstract: |
