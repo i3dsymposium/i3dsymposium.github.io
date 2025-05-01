@@ -33,6 +33,29 @@ The closest airport to the venue is Newark Liberty International Airport.
 
 ---
 
+# Reception
+
+The reception on the 7th will take place in the NJIT building's Lounge.
+
+---
+
+# Banquet
+
+![Sixpoint](img/venue/sixpoint.jpg)
+
+On Thursday 8th of May, we will be having a banquet dinner at [Sixpoint Brewery at Brookfield Place](https://brookfieldplace.sixpoint.com).
+
+We will be going there at around 5:15 via ferry, for which we will provide tickets (for legal reasons we may require a waiver to provide the tickets).
+
+### Location
+
+200 Liberty St Suite 106-A \
+New York, NY 10281
+
+{% comment %}<!-- We use this method, which requires storing a screen capture of the map because otherwise google will store cookies just for embedding it, and we don't want to deal with GDPR notices if we can avoid it. -->{% endcomment %}
+{% include map-embed.html link="https://maps.app.goo.gl/H8CdsU6zMQofssnG9" image="img/venue/sixpoint-map.jpg" %}
+
+---
 
 # Lodging {#Lodging}
 
