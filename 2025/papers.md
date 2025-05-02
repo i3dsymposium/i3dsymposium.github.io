@@ -25,6 +25,7 @@ sessions_definition:
 
 sessions:
   - title: "Virtual Worlds, VR/AR"
+    chair: "Ken Perlin"
     papers:
       - title: "VRSplat: Fast and Robust Gaussian Splatting for Virtual Reality"
         authors: "Xuechang Tu, Lukas Radl, Michael Steiner, Markus Steinberger, Bernhard Kerbl, Fernando de la Torre"
@@ -74,6 +75,7 @@ sessions:
 
 
   - title: "Simulation"
+    chair: "Bartlomiej Wronski"
     papers:
       - title: "A Robust and Generalized Gauss-Seidel Solver for Physically-Correct Simultaneous Collisions"
         authors: "Huanbo Zhou, Zhenyu Xu, Xijun Liu, Xinyu Zhang"
@@ -124,6 +126,7 @@ sessions:
 
 
   - title: "Animation & Voxels"
+    chair: "Paul Torrens"
     papers:
       - title: "Hierarchical Neural Skinning Deformation with Self-supervised Training for Character Animation"
         authors: "Tianyi Wang, Shiguang Liu"
@@ -169,6 +172,7 @@ sessions:
 
 
   - title: "Filtering & Reconstruction"
+    chair: "Takahiro Harada"
     papers:
       - title: "Normal-guided Detail-Preserving Neural Implicit Function for High-Fidelity 3D Surface Reconstruction"
         authors: "Aarya Patel, Hamid Laga, Ojaswa Sharma"
@@ -217,6 +221,7 @@ sessions:
 
 
   - title: "Rendering"
+    chair: "Chris Wyman"
     papers:
       - title: "Real-Time Markov Chain Path Guiding for Global Illumination and Single Scattering"
         authors: "Lucas Domingo Alber, Johannes Hanika, Carsten Dachsbacher"
@@ -262,6 +267,7 @@ sessions:
 
 
   - title: "Neural & Splatting"
+    chair: "Sungye Kim"
     papers:
       - title: "LSNIF: Locally-Subdivided Neural Intersection Function"
         authors: "Shin Fujieda, Chih-Chen Kao, Takahiro Harada"
