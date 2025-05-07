@@ -54,7 +54,7 @@ sessions:
       - title: "VM-BHINet: Vision Mamba Bimanual Hand Interaction Network for 3D Interacting Hand Mesh Recovery From a Single RGB Image"
         authors: "Han Bi, Ge Yu, Yu He, Wenzhuo Liu, Zijie Zheng"
         doi_link: ""
-        preprint: ""
+        preprint: "http://arxiv.org/abs/2504.14618"
         thumbnail: "bhinet-bi.jpg"
         abstract: |
           Understanding bimanual hand interactions is essential for realistic 3D pose and shape reconstruction. However, existing methods struggle with occlusions, ambiguous appearances, and computational inefficiencies.
@@ -91,7 +91,7 @@ sessions:
       - title: "An Incompressible Crack Model for Volume Preserving MPM Fracture"
         authors: "Shiguang Liu, Maolin Wu, Chenfanfu Jiang, Yisheng Zhang"
         doi_link: ""
-        preprint: ""
+        preprint: "https://kdocs.cn/l/cs8JFRWTzlgP?f=301"
         thumbnail: ""
         abstract: |
           This paper proposes a novel method to simulate the dynamic fracture effect of elastoplastic objects. Our method is based on the continuum damage mechanics (CDM) theory and uses the material point method (MPM) to discretize the governing equations. Our proposed approach distinguishes itself from previous works by incorporating a novel method for modeling decohesion, which preserves the incompressibility of the cracks.
@@ -116,7 +116,6 @@ sessions:
         authors: "David Algis, Bérenger Bramas, Emmanuelle Darles, Lilian Aveneau"
         journal: "jcgt"
         doi_link: "https://jcgt.org/published/0014/01/05/"
-        preprint: ""
         thumbnail: ""
         abstract: |
           The oceans cover the vast majority of the Earth. Therefore, their simulation has many scientific, industrial and military interests, including computer graphics domain. By fully exploiting the multi-threading power of GPU and CPU, current state-of-the-art tools can achieve real-time ocean simulation, even if it is sometimes needed to reduce the physical realism for large scenes. Although most of the building blocks for implementing an ocean simulator are described in the literature, a clear explanation of how they interconnect is lacking.
@@ -131,7 +130,7 @@ sessions:
       - title: "Hierarchical Neural Skinning Deformation with Self-supervised Training for Character Animation"
         authors: "Tianyi Wang, Shiguang Liu"
         doi_link: ""
-        preprint: ""
+        preprint: "https://kdocs.cn/l/cn10LijBeTPv?f=301"
         thumbnail: "skinning-wang.jpg"
         abstract: |
           We propose a self-supervised neural deformation method for character skin deformation animations, incorporating musculoskeletal and adipose tissue deformations driven by joint movements. This hierarchical approach combines two self-supervised neural emulators: the musculoskeletal neural emulator, based on a biomaterial musculoskeletal model, and the soft-tissue neural emulator, capturing soft secondary dynamics. The neural emulators achieve self-supervised learning through a loss function derived from physical principles, eliminating the need for ground-truth datasets. The musculoskeletal neural emulator enhances deformation effects, including musculoskeletal bulging, contraction, and dynamic responses, and generates inner-layer animations.
@@ -177,7 +176,7 @@ sessions:
       - title: "Normal-guided Detail-Preserving Neural Implicit Function for High-Fidelity 3D Surface Reconstruction"
         authors: "Aarya Patel, Hamid Laga, Ojaswa Sharma"
         doi_link: ""
-        preprint: "https://drive.google.com/file/d/1iZEBoGMSf3koLYmcjS3d5Cp4-LNWmWp2/view?usp=sharing"
+        preprint: "https://arxiv.org/pdf/2406.04861"
         thumbnail: "nguided-patel.jpg"
         abstract: |
           Neural implicit representations have emerged as a powerful paradigm for 3D reconstruction. However, despite their success, existing methods fail to capture fine geometric details and thin structures, especially in scenarios where only sparse multi-view RGB images of the objects of interest are available.
@@ -211,7 +210,6 @@ sessions:
         authors: "Bartlomiej Wronski"
         journal: "jcgt"
         doi_link: "https://jcgt.org/published/0014/01/02/"
-        preprint: ""
         thumbnail: ""
         abstract: |
           Texture and material blending is one of the leading methods for adding variety to rendered virtual worlds, creating composite materials, and generating procedural content. When done naively, it can introduce either visible seams or contrast loss, leading to an unnatural look not representative of blended textures. Earlier work proposed addressing this problem through careful manual parameter tuning, lengthy per-texture statistics precomputation, look-up tables, or training deep neural networks.
@@ -237,7 +235,7 @@ sessions:
       - title: "Joint Denoising and Upscaling via Multi-branch and Multi-scale Feature Network"
         authors: "Pawel Kazmierczyk, Sungye Kim, Wojciech Uss, Wojciech Kalinski, Tomasz Galaj, Mateusz Maciejewski, Rama Harihara"
         doi_link: ""
-        preprint: ""
+        preprint: "https://drive.google.com/file/d/1s4FZI-sDqcp8-CDjxtEEe9VSKQhzZUNv/view?usp=sharing"
         thumbnail: "feature-kim.jpg"
         abstract: |
           Deep learning-based denoising and upscaling techniques have emerged to enhance framerates for real-time rendering. A single neural network for joint denoising and upscaling offers the advantage of sharing parameters in the feature space, enabling efficient prediction of filter weights for both. However, it is still ongoing research to devise an efficient feature extraction neural network that uses different characteristics in inputs for the two combined problems.
@@ -249,7 +247,6 @@ sessions:
         authors: "Jamie Portsmouth, Peter Kutz, Stephen Hill"
         journal: "jcgt"
         doi_link: "https://jcgt.org/published/0014/01/06/"
-        preprint: ""
         thumbnail: ""
         abstract: |
           We introduce the energy-preserving Oren-Nayar (EON) model for reflection from rough surfaces. Unlike the popular qualitative Oren--Nayar model (QON) and its variants, our model is energy preserving via analytical energy compensation. We include self-contained GLSL source code for efficient evaluation of the new model and importance sampling based on a novel technique we term Clipped Linearly Transformed Cosine (CLTC) sampling.
@@ -259,7 +256,6 @@ sessions:
         authors: "Ingo Wald"
         journal: "jcgt"
         doi_link: "https://jcgt.org/published/0014/01/03/"
-        preprint: ""
         thumbnail: ""
         abstract: |
           We present an algorithm that allows for find-closest-point and k-nearest-neighbor (kNN) style traversals of left-balanced k-d trees, without the need for either recursion or software-managed stacks; instead using only current and last previously traversed node to compute which node to traverse next.
@@ -272,7 +268,7 @@ sessions:
       - title: "LSNIF: Locally-Subdivided Neural Intersection Function"
         authors: "Shin Fujieda, Chih-Chen Kao, Takahiro Harada"
         doi_link: ""
-        preprint: ""
+        preprint: "https://arxiv.org/abs/2504.21627"
         thumbnail: "lsnif-harada.jpg"
         abstract: |
           Neural representations have shown the potential to accelerate ray casting in a conventional ray-tracing-based rendering pipeline.
