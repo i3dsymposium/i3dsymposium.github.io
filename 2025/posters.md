@@ -43,7 +43,7 @@ posters:
     We investigate how varying the distance function used in the construction of Voronoi Diagrams can create unique tilings and repeated patterns. We consider classical distance functions such as Euclidean and Manhattan as well as novel distance functions leading to variants of classical spaces and traditional patterned designs.
 
 
-- title: "Evaluation of Generative Models for Gesture Generation in VR"
+- title: "Evaluating Speech and Video Models for Face-Body Congruence"
   authors: "Kiran Chhatre, Renan Guarese, Andrii Matviienko, Christopher Peters"
   abstract: |
     Animations produced by generative models are often evaluated using objective quantitative metrics that do not fully capture perceptual effects in immersive virtual environments.
@@ -97,6 +97,12 @@ posters:
     This study investigates the development of a telepresence system that based on open-source technologies such as the Robot Operating System (ROS) to allow users to interact with distant environments. The system includes a quadruped robot with a stereoscopic camera for immersive experiences and was created in response to the increased demand for remote operations during the COVID-19 pandemic. Users reported a high level of physical comfort and a generally positive perception of the experience, reflecting an 80% success rate in locating objects during interactions. Improvements to response times and camera quality were suggested by participants. The system’s versatility positions it for applications in fields like deep space exploration, providing a scalable and economical solution. The findings also highlight the system’s potential to improve remote exploration tasks and elder care applications.
 
 
+- title: "Mid-Air Sketching for Interactive Terrain Authoring"
+  authors: "Yang Zhou, Wentao Chen, Xinyu Zhang, Yashan Xiang, Mingyu Zhai, Kun Zhao, Jie Liu, Guihuan Feng, Bin Luo"
+  abstract: |
+    In this paper, we present a terrain modeling approach based on mid-air sketching. Users can outline the key spatial features of the terrain with the assistance of sparse 3D strokes. This approach can generate digital elevation models based on 3D sketches, giving non- artists the freedom to create personalized terrains. Experiments demonstrate that the proposed approach has significant advantages in creative freedom and artistic control in some scenarios. Finally, we hope that the approach in this paper can provide a new idea for the automatic generation of 3D content.
+
+
 - title: "ReSTIR PT with MCMC Decoupled Shading"
   authors: "Fei Lee, Chun-Fa Chang"
   abstract: |
@@ -113,12 +119,6 @@ posters:
   authors: "Yiyang Shang, Sasan Bahrami, Paul Diefenbach"
   abstract: |
     SUKI+, a motion-based input framework, enhances digital interactions for users with diverse physical abilities. Originally developed for rehabilitation, it enables real-time movement control remapping without modifying game code. SUKI+ integrates Dynamic Difficulty Adjustment (DDA) using kinematic and biometric data to dynamically adjust difficulty based on user performance and engagement. A pilot study with 11 stroke patients showed improved engagement, suggesting its potential for scalable, adaptive solutions in rehabilitation, accessibility-focused gaming, and interactive training.
-
-
-- title: "Terrain3DSketch: Interactive Terrain Authoring through Mid-Air Sketching"
-  authors: "Yang Zhou, Wentao Chen, Xinyu Zhang, Yashan Xiang, Mingyu Zhai, Kun Zhao, Jie Liu, Guihuan Feng, Bin Luo"
-  abstract: |
-    In this paper, we present a terrain modeling approach based on mid-air sketching. Users can outline the key spatial features of the terrain with the assistance of sparse 3D strokes. This approach can generate digital elevation models based on 3D sketches, giving non- artists the freedom to create personalized terrains. Experiments demonstrate that the proposed approach has significant advantages in creative freedom and artistic control in some scenarios. Finally, we hope that the approach in this paper can provide a new idea for the automatic generation of 3D content.
 
 
 - title: "V2M-DGO: Multi-Dimensional Adaptation Framework for Efficient Volumetric Video Multicasting"
