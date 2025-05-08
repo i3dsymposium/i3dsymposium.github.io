@@ -152,7 +152,7 @@ sessions:
       - title: "Aokana: A GPU-Driven Voxel Rendering Framework for Open World Games"
         authors: "Yingrong Fang, Qitong Wang, Wei Wang"
         doi_link: ""
-        preprint: ""
+        preprint: "https://arxiv.org/pdf/2505.02017"
         thumbnail: "aokana-fang.jpg"
         abstract: |
           Voxels are one of the most popular 3D geometric representations today. Due to their intuitiveness and ease of editing for non-professionals, voxels have been widely adopted in stylized games and low-cost independent games. However, the high storage cost of voxels, along with the significant time overhead associated with large-scale voxel rendering, limits the further development of open-world voxel games.
