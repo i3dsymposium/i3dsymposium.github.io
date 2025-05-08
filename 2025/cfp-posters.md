@@ -57,7 +57,7 @@ The extended abstracts of posters in the companion proceedings are considered **
 
 ## Awards
 
-There will be an award for the best student poster submitted. Information about the prize will be announced at a later time.
+There will be an award for the best poster submitted. Information about the prize will be announced at a later time.
 
 
 # Important Dates
@@ -73,4 +73,4 @@ Questions regarding the submission process should be emailed to <posters@i3dsymp
 Zackary P. T. Sin \
 Posters Chair, I3D 2025
 
-*Last updated: 21 March, 2025*
+*Last updated: 08 May, 2025*
