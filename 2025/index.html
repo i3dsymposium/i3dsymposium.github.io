@@ -94,24 +94,6 @@ sponsors:
     </div>
 </div>
 
-{% if page.important_dates %}
-<section id="important-dates" class="highlight-bg-even">
-    <h2>Important Dates</h2>
-    <ul class="three-columns">
-        {% for date in page.important_dates -%}
-            {% assign thisdate = date.date | date: "%Y%m%d" | plus: 0 -%}
-            {% assign now = "now" | date: "%Y%m%d" | plus: 0 -%}
-            {% if thisdate < now and thisdate > 0 -%}
-                {% assign past = true -%}
-            {% else -%}
-                {% assign past = false -%}
-            {% endif -%}
-            <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
-        {%- endfor %}
-    </ul>
-</section>
-{% endif %}
-
 
 <section class="flex highlight-bg-even">
     <div class="one-third">
@@ -122,7 +104,7 @@ sponsors:
 
     <div class="two-thirds">
         <p>
-            2025 will be I3D's {{ 2025 | minus: 1986 }}th year since the
+            2025 is I3D's {{ 2025 | minus: 1986 }}th year since the
             <a href="http://dl.acm.org/citation.cfm?id=319120&picked=prox&CFID=734542800&CFTOKEN=48967429">inaugural workshop in 1986</a>,
             and the {{ 2025 | minus: 2005 | plus: 9 }}th conference (I3D occurred roughly biennially until 2005).
         </p>
@@ -131,6 +113,8 @@ sponsors:
         </p>
     </div>
 </section>
+
+{% include_relative _mailing-list-form.html %}
 
 <section id="sponsors" class="flex highlight-bg-even">
     <div class="one-third">
@@ -165,4 +149,20 @@ sponsors:
 </section>
 
 
-{% include_relative _mailing-list-form.html %}
+{% if page.important_dates %}
+<section id="important-dates" class="highlight-bg-even">
+    <h2>Important Dates</h2>
+    <ul class="three-columns">
+        {% for date in page.important_dates -%}
+            {% assign thisdate = date.date | date: "%Y%m%d" | plus: 0 -%}
+            {% assign now = "now" | date: "%Y%m%d" | plus: 0 -%}
+            {% if thisdate < now and thisdate > 0 -%}
+                {% assign past = true -%}
+            {% else -%}
+                {% assign past = false -%}
+            {% endif -%}
+            <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
+        {%- endfor %}
+    </ul>
+</section>
+{% endif %}

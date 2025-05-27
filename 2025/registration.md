@@ -7,10 +7,19 @@ title: Conference Registration
 {:toc}
 
 
+{% if false %}
+
 Conference registration is now available through the CVENT registration system.
 
 Register here: [https://cvent.me/b3oBwl](https://cvent.me/b3oBwl){:target="_blank"}
 {:.large-text}
+
+{% else %}
+
+Registration is closed, since the conference is already over.
+
+{% endif %}
+
 
 	
 # Registration Fees
