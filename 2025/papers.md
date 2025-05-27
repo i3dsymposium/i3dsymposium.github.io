@@ -29,7 +29,7 @@ sessions:
     papers:
       - title: "VRSplat: Fast and Robust Gaussian Splatting for Virtual Reality"
         authors: "Xuechang Tu, Lukas Radl, Michael Steiner, Markus Steinberger, Bernhard Kerbl, Fernando de la Torre"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728311"
         preprint: "https://r4dl.github.io/data/vrsplat_authorversion.pdf"
         thumbnail: "vrsplat-tu.jpg"
         abstract: |
@@ -42,7 +42,7 @@ sessions:
 
       - title: "Enhancing the Precision of a User's Hand When Sliding on Objects in VR"
         authors: "Anna Kozłowska, Mikołaj Wójcik, Maciej Spychała, Joanna Porter-Sobieraj, Jakub Ciecierski"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728307"
         preprint: "https://yamianne.github.io/Enhancing-the-Precision-VR/"
         thumbnail: "sliding-kozlowska.jpg"
         abstract: |
@@ -53,7 +53,7 @@ sessions:
 
       - title: "VM-BHINet: Vision Mamba Bimanual Hand Interaction Network for 3D Interacting Hand Mesh Recovery From a Single RGB Image"
         authors: "Han Bi, Ge Yu, Yu He, Wenzhuo Liu, Zijie Zheng"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728308"
         preprint: "http://arxiv.org/abs/2504.14618"
         thumbnail: "bhinet-bi.jpg"
         abstract: |
@@ -64,7 +64,7 @@ sessions:
 
       - title: "Generalized, Dynamic Multi-agent Torso Crowds"
         authors: "Bilas Talukdar, Tomer Weiss"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728303"
         preprint: "https://sagarbilas.github.io/portfolio-details_i3d2025.html"
         thumbnail: "torso-talukdar.jpg"
         abstract: |
@@ -79,7 +79,7 @@ sessions:
     papers:
       - title: "A Robust and Generalized Gauss-Seidel Solver for Physically-Correct Simultaneous Collisions"
         authors: "Huanbo Zhou, Zhenyu Xu, Xijun Liu, Xinyu Zhang"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728291"
         preprint: "https://github.com/TopHillRobotics/ggs/blob/master/i3D2025_Zhou_authorversion.pdf"
         thumbnail: "collisions-zhou.jpg"
         abstract: |
@@ -90,7 +90,7 @@ sessions:
 
       - title: "An Incompressible Crack Model for Volume Preserving MPM Fracture"
         authors: "Shiguang Liu, Maolin Wu, Chenfanfu Jiang, Yisheng Zhang"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728298"
         preprint: "https://kdocs.cn/l/cs8JFRWTzlgP?f=301"
         thumbnail: ""
         abstract: |
@@ -101,7 +101,7 @@ sessions:
 
       - title: "Thunderscapes: Simulating the Dynamics of Mesoscale Convective System"
         authors: "Tianchen Hao, Jinxian Pan, Yangcheng Xiang, Xiangda Shen, Xinsheng Li, Yanci Zhang"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728312"
         preprint: "https://arxiv.org/abs/2412.00703"
         thumbnail: "thunderscapes-hao.jpg"
         abstract: |
@@ -129,7 +129,7 @@ sessions:
     papers:
       - title: "Hierarchical Neural Skinning Deformation with Self-supervised Training for Character Animation"
         authors: "Tianyi Wang, Shiguang Liu"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728300"
         preprint: "https://kdocs.cn/l/cn10LijBeTPv?f=301"
         thumbnail: "skinning-wang.jpg"
         abstract: |
@@ -140,7 +140,7 @@ sessions:
 
       - title: "Foveated Animations for Efficient Crowd Simulation"
         authors: "Florin-Vladimir Stancu, Tomer Weiss, Rafael Kuffner dos Anjos"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728306"
         preprint: "https://rafaelkuffner.github.io/assets/papers/I3D2025.pdf"
         thumbnail: "crowd-stancu.jpg"
         abstract: |
@@ -151,7 +151,7 @@ sessions:
 
       - title: "Aokana: A GPU-Driven Voxel Rendering Framework for Open World Games"
         authors: "Yingrong Fang, Qitong Wang, Wei Wang"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728299"
         preprint: "https://arxiv.org/pdf/2505.02017"
         thumbnail: "aokana-fang.jpg"
         abstract: |
@@ -162,7 +162,7 @@ sessions:
 
       - title: "Transform-Aware Sparse Voxel Directed Acyclic Graphs"
         authors: "Mathijs Molenaar, Elmar Eisemann"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728301"
         preprint: "https://publications.graphics.tudelft.nl/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdjBUIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--3e9c1bfab97521b420d59c348403286749dcf70d/I3D_authors_version.pdf"
         thumbnail: "voxel-molenaar.jpg"
         abstract: |
@@ -175,7 +175,7 @@ sessions:
     papers:
       - title: "Normal-guided Detail-Preserving Neural Implicit Function for High-Fidelity 3D Surface Reconstruction"
         authors: "Aarya Patel, Hamid Laga, Ojaswa Sharma"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728293"
         preprint: "https://arxiv.org/pdf/2406.04861"
         thumbnail: "nguided-patel.jpg"
         abstract: |
@@ -186,7 +186,7 @@ sessions:
 
       - title: "Non-uniform Point Cloud Upsampling via Local Manifold Distribution"
         authors: "Yao Hui Fang, Xing Ce Wang"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728309"
         preprint: "https://arxiv.org/abs/2504.11701"
         thumbnail: ""
         abstract: |
@@ -197,7 +197,7 @@ sessions:
 
       - title: "Improved Stochastic Texture Filtering Through Sample Reuse"
         authors: "Bartlomiej Wronski, Matt Pharr, Tomas Akenine-Möller"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728292"
         preprint: "https://research.nvidia.com/labs/rtr/publication/wronski2025stfreuse/stf_sample_reuse.pdf"
         thumbnail: "reuse-akenine.jpg"
         abstract: |
@@ -223,7 +223,7 @@ sessions:
     papers:
       - title: "Real-Time Markov Chain Path Guiding for Global Illumination and Single Scattering"
         authors: "Lucas Domingo Alber, Johannes Hanika, Carsten Dachsbacher"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728296"
         preprint: "https://www.lalber.org/alber2025mcpg/"
         thumbnail: "markov-alber.jpg"
         abstract: |
@@ -234,7 +234,7 @@ sessions:
 
       - title: "Joint Denoising and Upscaling via Multi-branch and Multi-scale Feature Network"
         authors: "Pawel Kazmierczyk, Sungye Kim, Wojciech Uss, Wojciech Kalinski, Tomasz Galaj, Mateusz Maciejewski, Rama Harihara"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728297"
         preprint: "https://drive.google.com/file/d/1s4FZI-sDqcp8-CDjxtEEe9VSKQhzZUNv/view?usp=sharing"
         thumbnail: "feature-kim.jpg"
         abstract: |
@@ -267,7 +267,7 @@ sessions:
     papers:
       - title: "LSNIF: Locally-Subdivided Neural Intersection Function"
         authors: "Shin Fujieda, Chih-Chen Kao, Takahiro Harada"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728295"
         preprint: "https://arxiv.org/abs/2504.21627"
         thumbnail: "lsnif-harada.jpg"
         abstract: |
@@ -278,7 +278,7 @@ sessions:
 
       - title: "VR-Splatting: Foveated Radiance Field Rendering via 3D Gaussian Splatting and Neural Points"
         authors: "Linus Franke, Laura Fink, Marc Stamminger"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728302"
         preprint: "https://arxiv.org/pdf/2410.17932"
         thumbnail: "foveated-franke.jpg"
         abstract: |
@@ -289,7 +289,7 @@ sessions:
 
       - title: "ESCT3D: Efficient and Selectively Controllable Text-Driven 3D Content Generation with Gaussian Splatting"
         authors: "Huiqi Wu, Li Yao, Jianbo Mei, Yingjie Huang, Yining Xu, Jingjiao You, Yilong Liu"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728305"
         preprint: "https://arxiv.org/abs/2504.10316"
         thumbnail: "esct3d-wu.jpg"
         abstract: |
@@ -300,7 +300,7 @@ sessions:
 
       - title: "SplatMAP: Online Dense Monocular SLAM with 3D Gaussian Splatting"
         authors: "Yue Hu, Rong Liu, Meida Chen, Peter Beerel, Andrew Feng"
-        doi_link: ""
+        doi_link: "https://dl.acm.org/doi/10.1145/3728310"
         preprint: "https://arxiv.org/pdf/2501.07015"
         thumbnail: "splatmap-hu.jpg"
         abstract: |
@@ -321,7 +321,7 @@ Over the past three decades, the ACM SIGGRAPH Symposium on Interactive 3D Graphi
 
 This year, we continue a track record of excellence with 20 high-quality papers selected by the international paper committee for publication and presentation at the conference.
 
-Conference papers will be published in <a href="https://dl.acm.org/loi/pacmcgit" target="_blank">PACM CGIT</a> close to the conference. Check this page periodically, or use <a href="https://www.hongkiat.com/blog/detect-website-change-notification/" target="_blank">a web page monitoring tool</a>, to check this page for updates.
+Conference papers have been published in <a href="https://dl.acm.org/toc/pacmcgit/2025/8/1" target="_blank">PACM CGIT</a>.
 
 {% if page.temporary_session_order -%}
 Sessions are not in the order they will be scheduled, check back later when the final program is published!
