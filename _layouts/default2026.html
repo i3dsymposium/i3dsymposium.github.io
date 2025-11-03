@@ -1,0 +1,237 @@
+---
+current_year: 2026
+
+# This next can be left commented out before conference info is known/announced
+#conference_info:
+#  location: NJIT, Jersey City, NJ, USA
+#  dates: 7-9 May 2025
+
+
+nav_links:
+  - link: index.html
+    title: Home
+
+  #- title: Attend
+  #  links:
+  #    - link: registration.html
+  #      title: Register
+  #    - link: venue.html
+  #      title: Venue
+  #    - link: http://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment
+  #      title: Code of Conduct
+  #      new_window: True
+
+  #- title: Program
+  #  links:
+  #    - link: program.html
+  #      title: Schedule
+  #    - link: papers.html
+  #      title: Papers
+  #    - link: posters.html
+  #      title: Posters
+  #    - link: keynotes.html
+  #      title: Keynotes
+  #    - link: sponsored-talks.html
+  #      title: Sponsored Talks
+#      - link: awards.html
+#        title: Awards
+
+  - link: cfp.html
+    title: Paper Submissions
+  #- title: Participate
+  #  links:
+  #    - link: cfp.html
+  #      title: Paper Submissions
+  #    - link: cfp-posters.html
+  #      title: Poster Submissions
+
+  - title: Organization
+    links:
+      - link: contact.html
+        title: Contact Us
+
+      - link: committee.html
+        title: Committee
+
+
+footer_links:
+  - link: contact.html#mailing-list-form
+    title: Join our Mailing List
+  - link: conference.html
+    title: Past Conferences
+  - link: sponsors.html
+    title: Sponsorship
+  - link: media-kit.html
+    title: Media Kit
+  - link: http://www.acm.org/special-interest-groups/volunteer-resources/officers-manual/policy-against-discrimination-and-harassment
+    title: Code of Conduct
+    new_window: True
+
+footer_socials:
+  - link: https://www.youtube.com/channel/UCZNuH6k97yBaiTerqd0u1_Q/
+    title: Youtube
+  - link: https://mastodon.acm.org/@i3d
+    title: Mastodon
+  - link: http://www.facebook.com/pages/I3D-Symposium-on-Interactive-3D-Graphics-and-Games/147772558570274
+    title: Facebook
+  - link: https://bsky.app/profile/i3dsymposium.org
+    title: Bluesky
+
+---
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="{{ '/img/favicon.ico' | prepend: site.url | absolute_url | replace: 'http://','//' }}">
+
+    <title>{% if page.title %}{{ page.title }} | {% endif %}I3D {{ layout.current_year }}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url | replace: 'http://','https://' }}">
+
+    
+    <meta name="author" content="{{ site.author.name }} ({{ site.author.email }})">
+
+    <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/news-feed.xml" title="I3D Conference News">
+
+    {% if page.mailing_list_form %}
+    <!-- Mailchimp signup form styling -->
+    <link href="/css/mailchimp.css" rel="stylesheet" type="text/css"-->
+    {% endif %}
+
+    <link href="css/i3d.css" rel="stylesheet" media="screen">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% include social-media-header.html %}
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img id="banner" src="img/banner.png" alt="I3D {{ layout.current_year }}" />
+        </a>
+        <nav id="nav-menu">
+            <input type="checkbox" id="nav-menu-open" />
+            <label for="nav-menu-open">
+                <span class="hamburger"></span>
+            </label>
+            <span id="nav-menu-open-bg"></span>
+            <ul id="nav-list">
+                {% assign url_end = page.url | slice: -1 -%}
+                {%- if url_end == "/" -%}
+                    {%- assign page_fname = "index.html" -%}
+                {%- else -%}
+                    {%- assign page_fname = page.url | split: "/" | last -%}
+                {%- endif -%}
+                {% for link in layout.nav_links -%}
+                    {%- if link.links -%}
+                        {% assign submenu_active = false %}
+                        {%- for link2 in link.links -%}
+                        {%- if page_fname == link2.link %}{% assign submenu_active = true %}{% endif -%}
+                        {%- endfor %}
+                        <li class="submenu{% if submenu_active %} sub-active{% endif %}"><span class="submenu-title">{{ link.title }}</span>
+                            <ul>
+                        {% for link2 in link.links -%}
+                            <li{% if page_fname == link2.link %} class="active"{% endif %}>
+                                <a href="{{ link2.link }}"{% if link2.new_window %} target="_blank"{% endif %}>{{ link2.title }}</a>
+                            </li>
+                        {% endfor %}
+                            </ul>
+                        </li>
+                    {%- else -%}
+                        <li{% if page_fname == link.link %} class="active"{% endif %}>
+                            <a href="{{ link.link }}"{% if link.new_window %} target="_blank"{% endif %}>{{ link.title }}</a>
+                        </li>
+                    {% endif -%}
+                {% endfor %}
+            </ul>
+        </nav>
+        {% if page.title -%}
+        <div id="page-title">
+            <h1>{{ page.title }}</h1>
+            {% if layout.conference_info -%}
+            <div id="conference-info-card">{{layout.conference_info.location}}<br />{{layout.conference_info.dates}}</div>
+            {%- endif %}
+        </div>
+        {%- endif %}
+    </header>
+
+    <div class="clearfix"></div>
+
+    <div id="main-wrapper">
+		
+        <main id="main">
+            {% if page.two_thirds_content %}<ul id="markdown-toc" style="display: none;"><!-- This is a hack to ensure 2/3ds content size on pages where TOC is not generated --></ul>{% endif %}
+
+            {{ content }}
+
+            {% unless page.no_contact_panel %}
+            <section id="contact-panel" class="flex highlight-bg-even">
+                <div class="one-third">
+                    <h2>Contact</h2>
+                </div>
+                <div class="two-thirds">
+                    <p>
+                        Send questions to <a href="mailto:general@i3dsymposium.org">general@i3dsymposium.org</a>
+                        for general inquiries, registration, and sponsorship.
+                    </p>
+                    <p>
+                        Direct queries about paper submissions to <a href="mailto:papers@i3dsymposium.org">papers@i3dsymposium.org</a>
+                        and poster submissions to <a href="mailto:posters@i3dsymposium.org">posters@i3dsymposium.org</a>.
+                    </p>
+                </div>
+            </section>
+            {% endunless %}
+
+        </main> <!-- #main -->
+
+    </div> <!-- #main-wrapper -->
+
+    <div class="clearfix"></div>
+
+    <footer id="footer">
+        <a href="index.html">
+            <img id="footer-logo" src="img/banner.png" alt="I3D {{ layout.current_year }}" />
+        </a>
+
+        <!-- social media links -->
+        <ul id="footer-links">
+            <ul>
+                {% for link in layout.footer_links -%}
+                <li><a href="{{ link.link }}"{% if link.new_window %} target="_blank"{% endif %}>{{ link.title }}</a></li>
+                {%- endfor %}
+            </ul>
+
+            <ul>
+                {% for link in layout.footer_socials -%}
+                <li><a href="{{ link.link }}" target="_blank">{{ link.title }}</a></li>
+                {%- endfor %}
+            </ul>
+        </ul>
+
+        <div id="footer-copy">
+            &copy; {{ layout.current_year }}
+            ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
+        </div>
+
+    </footer>
+
+    <script>
+        (function(){
+            var mails = document.querySelectorAll(".e-mail[data-e-user][data-e-domain]");
+            for (var i = 0; i < mails.length; ++i) {
+                var user = mails[i].attributes["data-e-user"].value;
+                var domain = mails[i].attributes["data-e-domain"].value;
+                mails[i].textContent = user + '@' + domain;
+                mails[i].classList.remove("e-mail");
+            }
+        })();
+    </script>
+  </body>
+</html>

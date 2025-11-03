@@ -1,18 +1,30 @@
 ---
-layout: default2025
+layout: default2026
 mailing_list_form: true
 
 video_youtube_hash: "jyjzl0Km-J4"
-#video_title: "Last year's papers preview"
-video_title: "The 2025 papers preview"
+video_title: "Last year's papers preview"
+#video_title: "The 2026 papers preview"
 
-#action_button:
+action_button:
 #  text: Register
 #  link: registration.html
 #    text: Call for Posters
 #    link: cfp-posters.html
-#    text: Call for Papers
-#    link: cfp.html
+  text: Call for Papers
+  link: cfp.html
+
+important_dates:
+  - name: Paper submission deadline
+    date: 9 January 2026
+  - name: Paper notifications
+    date: 13 February 2026
+  - name: Revision deadline
+    date: 13 March 2026
+  - name: Camera-ready deadline
+    date: 10 April 2026
+  - name: Conference
+    date: TBD Mid-Late May 2026
 
 sponsors_definition:
   - level: Title of the level of sponsorship
@@ -22,40 +34,40 @@ sponsors_definition:
         link: url to link to for this sponsor
 
 sponsors:
-  - level: platinum
-    members:
-      - name: arm
-        image: arm.png
-        link: https://www.arm.com
-      - name: meta
-        image: meta.png
-        link: https://www.metacareers.com
-  - level: gold
-    members:
-      - name: Cygames
-        image: cygames.png
-        link: https://www.cygames.co.jp/en/
-      - name: Activision
-        image: activision.png
-        link: https://research.activision.com
-      - name: EA
-        image: ea-seed.png
-        link: https://www.ea.com/seed
-      - name: Futurewei
-        image: futurewei.png
-        link: https://www.futurewei.com/
-  - level: silver
-    members:
-      - name: NVIDIA
-        image: nvidia.png
-        link: https://www.nvidia.com/en-us/research/
+#  - level: platinum
+#    members:
+#      - name: arm
+#        image: arm.png
+#        link: https://www.arm.com
+#      - name: meta
+#        image: meta.png
+#        link: https://www.metacareers.com
+#  - level: gold
+#    members:
+#      - name: Cygames
+#        image: cygames.png
+#        link: https://www.cygames.co.jp/en/
+#      - name: Activision
+#        image: activision.png
+#        link: https://research.activision.com
+#      - name: EA
+#        image: ea-seed.png
+#        link: https://www.ea.com/seed
+#      - name: Futurewei
+#        image: futurewei.png
+#        link: https://www.futurewei.com/
+#  - level: silver
+#    members:
+#      - name: NVIDIA
+#        image: nvidia.png
+#        link: https://www.nvidia.com/en-us/research/
 
     
 ---
 
 <div id="index-highlight" class="flex">
     <div class="one-third">
-        <h1>2025 ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games</h1>
+        <h1>2026 ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games</h1>
         {% comment %}<!-- This should just use the same data that's set and used in the layout,
             but jekyll is bugged (https://github.com/jekyll/jekyll/issues/9710) so until that is fixed,
             we can't use information from the layout in here. -->
@@ -63,7 +75,8 @@ sponsors:
             <h1 class="thin">{{layout.conference_info.location}}<br />{{layout.conference_info.dates}}</h1>
             {%- endif %}
         {% endcomment -%}
-        <h1 class="thin">NJIT, Jersey City, NJ, USA<br />7-9 May 2025</h1>
+        <h1 class="thin">TBD Mid-Late May 2026</h1>
+        <!--h1 class="thin">NJIT, Jersey City, NJ, USA<br />7-9 May 2025</h1-->
         {%- if page.action_button %}
         <h1><a href="{{ page.action_button.link }}" class="button">{{ page.action_button.text }}</a></h1>
         {%- endif %}
@@ -73,6 +86,24 @@ sponsors:
         <h3 class="medium-thin">Watch {{page.video_title}}!</h3>
     </div>
 </div>
+
+{% if page.important_dates %}
+<section id="important-dates" class="highlight-bg-even">
+    <h2>Important Dates</h2>
+    <ul class="three-columns">
+        {% for date in page.important_dates -%}
+            {% assign thisdate = date.date | date: "%Y%m%d" | plus: 0 -%}
+            {% assign now = "now" | date: "%Y%m%d" | plus: 0 -%}
+            {% if thisdate < now and thisdate > 0 -%}
+                {% assign past = true -%}
+            {% else -%}
+                {% assign past = false -%}
+            {% endif -%}
+            <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
+        {%- endfor %}
+    </ul>
+</section>
+{% endif %}
 
 
 <section class="flex highlight-bg-even">
@@ -84,9 +115,9 @@ sponsors:
 
     <div class="two-thirds">
         <p>
-            2025 is I3D's {{ 2025 | minus: 1986 }}th year since the
+            2026 is I3D's {{ 2026 | minus: 1986 }}th year since the
             <a href="http://dl.acm.org/citation.cfm?id=319120&picked=prox&CFID=734542800&CFTOKEN=48967429">inaugural workshop in 1986</a>,
-            and the {{ 2025 | minus: 2005 | plus: 9 }}th conference (I3D occurred roughly biennially until 2005).
+            and the {{ 2026 | minus: 2005 | plus: 9 }}th conference (I3D occurred roughly biennially until 2005).
         </p>
         <p>
             More details on <a href="conference.html">prior conferences are available here</a>.
@@ -101,7 +132,7 @@ sponsors:
         <h2>Sponsors</h2>
         <p>
             The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
-            2025 is a highly-visible, leading-edge conference for techniques that
+            2026 is a highly-visible, leading-edge conference for techniques that
             combine 3D computer graphics with human interaction.
         </p>
         <p>
@@ -128,21 +159,3 @@ sponsors:
     </div>
 </section>
 
-
-{% if page.important_dates %}
-<section id="important-dates" class="highlight-bg-even">
-    <h2>Important Dates</h2>
-    <ul class="three-columns">
-        {% for date in page.important_dates -%}
-            {% assign thisdate = date.date | date: "%Y%m%d" | plus: 0 -%}
-            {% assign now = "now" | date: "%Y%m%d" | plus: 0 -%}
-            {% if thisdate < now and thisdate > 0 -%}
-                {% assign past = true -%}
-            {% else -%}
-                {% assign past = false -%}
-            {% endif -%}
-            <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
-        {%- endfor %}
-    </ul>
-</section>
-{% endif %}
