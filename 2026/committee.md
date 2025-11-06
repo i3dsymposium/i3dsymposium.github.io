@@ -143,7 +143,7 @@ The steering committee consists of the conference and general
 co-chairs of the most recent 4 years, including the chairs of the
 upcoming conference that is still being planned.
 
-For {% comment %}<!-- This doesn't work at the moment because jekyll is bugged. -->{{layout.current_year}}{% endcomment -%} 2025, this is:
+For {% comment %}<!-- This doesn't work at the moment because jekyll is bugged. -->{{layout.current_year}}{% endcomment -%} 2026, this is:
 {% for year in page.steering_committee -%}
 <!-- {{ year.year }} -->
 {%- for member in year.members %}
