@@ -47,13 +47,13 @@ committee:
         email: bwatson@ncsu.edu
         pronouns: (he, him)
 
-  #- chair: Posters Chair
-  #  members:
-  #    - name: Zackary P. T. Sin
-  #      link: https://zackarysin.github.io/
-  #      institution: The Hong Kong Polytechnic University
-  #      email: zackary-p-t.sin@polyu.edu.hk
-  #      pronouns: (he, him)
+  - chair: Posters Chair
+    members:
+      - name: Justus Robertson
+        link: http://justusrobertson.com
+        institution: Rochester Institute of Technology
+        email: jjrigm@rit.edu
+        pronouns: (he, him)  
 
   - chair: Program Chair
     members:
