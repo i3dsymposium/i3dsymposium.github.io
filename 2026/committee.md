@@ -55,20 +55,25 @@ committee:
         email: jjrigm@rit.edu
         pronouns: (he, him)  
 
-  - chair: Program Chair
-    members:
-      - name: Mauricio Vives
-        link: https://twitter.com/pixnblox
-        institution: Autodesk, Inc.
-        email: mauricio.vives@autodesk.com
-        pronouns: (he, him)
+#  - chair: Program Chair
+#    members:
+#      - name: Mauricio Vives
+#        link: https://twitter.com/pixnblox
+#        institution: Autodesk, Inc.
+#        email: mauricio.vives@autodesk.com
+#        pronouns: (he, him)
 
   - chair: Publicity Chair
     members:
-      - name: Roc R. Currius
-        link: https://ror3d.xyz
-        institution: Sony Interactive Entertainment
-        email: akdm@ror3d.xyz
+      - name: Arjun Madhusudhan
+        link: https://arjunmakes.games/AboutMe.html
+        institution: Dept. of Computer Science, North Carolina State University
+        email: amadhus2@ncsu.edu
+        pronouns: (he, him)
+      - name: Ashish Rajpurohit
+        link: https://www.linkedin.com/in/ashishsadanandrajpurohit/
+        institution: Dept. of Computer Science, North Carolina State University
+        email: arajpur@ncsu.edu
         pronouns: (he, him)
 
 steering_committee:
