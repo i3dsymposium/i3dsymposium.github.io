@@ -47,13 +47,18 @@ committee:
         email: bwatson@ncsu.edu
         pronouns: (he, him)
 
-  - chair: Posters Chair
+  - chair: Posters Chairs
     members:
       - name: Justus Robertson
         link: http://justusrobertson.com
         institution: Rochester Institute of Technology
         email: jjrigm@rit.edu
-        pronouns: (he, him)  
+        pronouns: (he, him)
+      - name: Tomer Weiss
+        link: https://tomerwei.github.io/
+        institution: New Jersey Institute of Technology
+        email: tweiss@njit.edu
+        pronouns: (he, him)
 
 #  - chair: Program Chair
 #    members:
@@ -63,7 +68,7 @@ committee:
 #        email: mauricio.vives@autodesk.com
 #        pronouns: (he, him)
 
-  - chair: Publicity Chair
+  - chair: Publicity Chairs
     members:
       - name: Arjun Madhusudhan
         link: https://arjunmakes.games/AboutMe.html
@@ -74,6 +79,11 @@ committee:
         link: https://www.linkedin.com/in/ashishsadanandrajpurohit/
         institution: Dept. of Computer Science, North Carolina State University
         email: arajpur@ncsu.edu
+        pronouns: (he, him)
+      - name: Roc R. Currius
+        link: https://ror3d.xyz
+        institution: Sony Interactive Entertainment
+        email: akdm@ror3d.xyz
         pronouns: (he, him)
 
 steering_committee:
