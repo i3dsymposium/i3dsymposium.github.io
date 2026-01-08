@@ -101,7 +101,7 @@ This represents a 65% discount off the regular [APC list prices](https://www.acm
 **16 February 2026** &nbsp;&nbsp; Notification of committee decisions\
 **13 March 2026** &nbsp;&nbsp; Revision deadline for conditionally accepted papers\
 **10 April 2026** &nbsp;&nbsp; PACM CGIT camera-ready deadline for accepted papers\
-**TBD Mid-Late May 2026** &nbsp;&nbsp; Conference
+**13 May 2026 - 15 May 2026** &nbsp;&nbsp; Conference
 
 All questions about paper submissions should be emailed to [papers@i3dsymposium.org](mailto:papers@i3dsymposium.org).
 
