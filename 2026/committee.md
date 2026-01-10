@@ -33,8 +33,8 @@ committee:
         link: https://omershapira.com/
         # institution: The Hong Kong Polytechnic University
         email: info@omershapira.com
-        # pronouns: (he, him)
-        
+        pronouns: (he, him)
+
   #    - name: 
   #      institution: 
   #      email: 
