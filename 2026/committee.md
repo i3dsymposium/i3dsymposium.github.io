@@ -29,6 +29,12 @@ committee:
         institution: The Hong Kong Polytechnic University
         email: zackary-p-t.sin@polyu.edu.hk
         pronouns: (he, him)
+      - name: Omer Shapira
+        link: https://omershapira.com/
+        # institution: The Hong Kong Polytechnic University
+        email: info@omershapira.com
+        # pronouns: (he, him)
+        
   #    - name: 
   #      institution: 
   #      email: 
