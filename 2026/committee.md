@@ -96,7 +96,7 @@ steering_committee:
   - year: 2026
     members:
       - Zackary P. T. Sin
-      - 
+      - Omer Shapira
   - year: 2025
     members:
       - Markus Billeter
