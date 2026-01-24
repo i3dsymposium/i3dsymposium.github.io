@@ -18,14 +18,14 @@ sponsors:
 #      - name: meta
 #        image: meta.png
 #        link: https://www.metacareers.com
-#  - level: gold
-#    members:
+  - level: gold
+    members:
 #      - name: Cygames
 #        image: cygames.png
 #        link: https://www.cygames.co.jp/en/
-#      - name: Activision
-#        image: activision.png
-#        link: https://research.activision.com
+      - name: Activision
+        image: activision.png
+        link: https://research.activision.com
 #      - name: EA
 #        image: ea-seed.png
 #        link: https://www.ea.com/seed
