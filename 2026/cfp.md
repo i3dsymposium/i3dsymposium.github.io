@@ -98,7 +98,7 @@ This represents a 65% discount off the regular [APC list prices](https://www.acm
 *All deadlines are 23:59 Pacific Time (UTC -7).*
 
 **9 January 2026** &nbsp;&nbsp; Paper submission deadline\
-**16 February 2026** &nbsp;&nbsp; Notification of committee decisions\
+**20 February 2026** &nbsp;&nbsp; Notification of committee decisions\
 **13 March 2026** &nbsp;&nbsp; Revision deadline for conditionally accepted papers\
 **10 April 2026** &nbsp;&nbsp; PACM CGIT camera-ready deadline for accepted papers\
 **13-15 May 2026** &nbsp;&nbsp; Conference
