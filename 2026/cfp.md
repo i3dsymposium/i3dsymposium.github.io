@@ -109,5 +109,5 @@ All questions about paper submissions should be emailed to [papers@i3dsymposium.
 Markus Billeter and Benjamin Watson\
 Papers Co-Chairs I3D 2026
 
-*Last updated 8 of January, 2026*
+*Last updated 13 of February, 2026*
 
