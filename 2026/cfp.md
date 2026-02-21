@@ -100,7 +100,7 @@ This represents a 65% discount off the regular [APC list prices](https://www.acm
 **9 January 2026** &nbsp;&nbsp; Paper submission deadline\
 **20 February 2026** &nbsp;&nbsp; Notification of committee decisions\
 **13 March 2026** &nbsp;&nbsp; Revision deadline for conditionally accepted papers\
-**10 April 2026** &nbsp;&nbsp; PACM CGIT camera-ready deadline for accepted papers\
+**31 March 2026** &nbsp;&nbsp; PACM CGIT camera-ready deadline for accepted papers\
 **13-15 May 2026** &nbsp;&nbsp; Conference
 
 All questions about paper submissions should be emailed to [papers@i3dsymposium.org](mailto:papers@i3dsymposium.org).
@@ -109,5 +109,5 @@ All questions about paper submissions should be emailed to [papers@i3dsymposium.
 Markus Billeter and Benjamin Watson\
 Papers Co-Chairs I3D 2026
 
-*Last updated 13 of February, 2026*
+*Last updated 20 of February, 2026*
 

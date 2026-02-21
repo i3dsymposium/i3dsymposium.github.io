@@ -64,7 +64,7 @@ There will be an award for the best abstract submitted to the poster and demo tr
 
 - 20 March 2026: Poster and demo submission deadline
 - 27 March 2026: Poster and demo notification
-- 9 April 2026: Camera-ready of extended abstract deadline (for proceedings)
+- 9 April 2026: Posters and demos camera-ready of extended abstract deadline (for proceedings)
 
 Registration and in-person attendance of at least one author is mandatory. Posters without in-person presenters will not be included in the proceedings. Questions regarding the submission process should be emailed to <posters@i3dsymposium.org>.
 
