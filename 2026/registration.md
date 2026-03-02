@@ -7,18 +7,14 @@ title: Conference Registration
 {:toc}
 
 
-{% if false %}
+
 
 Conference registration is now available through the CVENT registration system.
 
-Register here: [https://cvent.me/b3oBwl](https://cvent.me/b3oBwl){:target="_blank"}
+Register here: [https://cvent.me/qK0LgL](https://cvent.me/qK0LgL){:target="_blank"}
 {:.large-text}
 
-{% else %}
 
-Registration is closed, since the conference is already over.
-
-{% endif %}
 
 
 	
@@ -29,23 +25,23 @@ Registration is closed, since the conference is already over.
 <table class="center-text odd-rows-darker">
    <tr>
       <th>&nbsp;</th>
-      <th>Early (Until 18 April)</th>
+      <th>Early (Until 17 April)</th>
       <th>Standard / On-site</th>
    </tr>
    <tr>
       <th>Student</th>
-      <td>$225</td>
-      <td>$300</td>
+      <td>$250</td>
+      <td>$325</td>
    </tr>
    <tr>
       <th>ACM Member</th>
-      <td>$475</td>
-      <td>$600</td>
+      <td>$500</td>
+      <td>$625</td>
    </tr>
    <tr>
       <th>Regular</th>
-      <td>$575</td>
-      <td>$750</td>
+      <td>$600</td>
+      <td>$775</td>
    </tr>
 </table>
 
@@ -53,18 +49,18 @@ All registration fees are in USD.
 
 # Additional details
 
-Early bird registration is available until 18 April 2025. After that date, registration will be at the standard/on-site rate.
+Early bird registration is available until 17 April 2026. After that date, registration will be at the standard/on-site rate.
 
 Full conference registrations include breakfast and lunch each day of the conference, plus a ticket to the reception and banquet events on the first and second evenings of the conference.
 
 
 ## Refund policy
 
-Attendees may cancel their registration for a full refund before the early registration deadline of April 18, 2025.
+Attendees may cancel their registration for a full refund before the early registration deadline of April 17, 2026.
 
-Attendees may cancel their registration with a $50 refund processing fee before May 5, 2025.
+Attendees may cancel their registration with a $50 refund processing fee before May 4, 2026.
 
-No refunds will be issued after May 5, 2025.
+No refunds will be issued after May 4, 2026.
 
 
 ## Visa support letters
