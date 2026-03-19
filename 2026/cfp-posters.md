@@ -7,7 +7,6 @@ title: Posters Call for Participation
 {:toc}
 
 Submission deadline extended to 27 March 2026
-
 {:.large-text}
 
 *__Summary:__ 27 March 2026 deadline; submission format: 2-page extended abstract using the ["sigconf"](https://www.siggraph.org/learn/instructions-authors) style; submission link: <https://easychair.org/conferences/?conf=i3d2026>*
