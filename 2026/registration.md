@@ -58,7 +58,7 @@ Full conference registrations include breakfast and lunch each day of the confer
 
 Attendees may cancel their registration for a full refund before the early registration deadline of April 17, 2026.
 
-Attendees may cancel their registration with a $50 refund processing fee before May 4, 2026.
+Attendees may cancel their registration with a $50 refund processing fee by May 4, 2026.
 
 Refunds will not be issued after May 4, 2026, except in cases of visa issues or special requests (e.g., emergencies).
 
