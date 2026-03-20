@@ -66,13 +66,12 @@ committee:
         email: tweiss@njit.edu
         pronouns: (he, him)
 
-#  - chair: Program Chair
-#    members:
-#      - name: Mauricio Vives
-#        link: https://twitter.com/pixnblox
-#        institution: Autodesk, Inc.
-#        email: mauricio.vives@autodesk.com
-#        pronouns: (he, him)
+  - chair: Local Chair
+    members:
+      - name: Laura Reznikov
+        institution: Meta
+        email: laurareznikov@gmail.com
+        pronouns: (she, her)
 
   - chair: Publicity Chairs
     members:
