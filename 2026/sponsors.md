@@ -15,6 +15,9 @@ sponsors:
       - name: Cygames
         image: cygames.png
         link: https://www.cygames.co.jp/en/
+      - name: Epicgames
+        image: epicgames.png
+        link: https://dev.epicgames.com/
 #      - name: arm
 #        image: arm.png
 #        link: https://www.arm.com
@@ -32,11 +35,11 @@ sponsors:
 #      - name: Futurewei
 #        image: futurewei.png
 #        link: https://www.futurewei.com/
-#  - level: silver
-#    members:
-#      - name: NVIDIA
-#        image: nvidia.png
-#        link: https://www.nvidia.com/en-us/research/
+  - level: silver
+    members:
+      - name: NVIDIA
+        image: nvidia.png
+        link: https://www.nvidia.com/en-us/research/
 
 ---
 
