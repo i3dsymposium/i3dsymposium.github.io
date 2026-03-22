@@ -44,7 +44,7 @@ sponsors:
 ---
 
 The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
-2025 is a highly-visible, leading-edge conference for techniques that
+2026 is a highly-visible, leading-edge conference for techniques that
 combine 3D computer graphics with human interaction. I3D continues to
 focus on the hottest research in 3D game technology, interactive
 visualization and visual depiction, interactive modeling,
@@ -54,7 +54,7 @@ supporting the latest developments in computer graphics research.
 
 
 If your organization would like to become a corporate sponsor of
-I3D 2025, please contact the conference chairs: [general@i3dsymposium.org](mailto:general@i3dsymposium.org)
+I3D 2026, please contact the conference chairs: [general@i3dsymposium.org](mailto:general@i3dsymposium.org)
 
 <div id="sponsors" class="flex centered">
     <div class="two-thirds">
