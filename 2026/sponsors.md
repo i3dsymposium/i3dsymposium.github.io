@@ -29,9 +29,9 @@ sponsors:
       - name: Activision
         image: activision.png
         link: https://research.activision.com
-#      - name: EA
-#        image: ea-seed.png
-#        link: https://www.ea.com/seed
+      - name: EA
+        image: ea-seed.png
+        link: https://www.ea.com/seed
 #      - name: Futurewei
 #        image: futurewei.png
 #        link: https://www.futurewei.com/
