@@ -36,6 +36,59 @@ The closest airport to the venue is **San Francisco International Airport (SFO)*
 
 We recommend staying in or near the Presidio area for the most convenient access to the venue. The Lucasfilm campus entrance is walkable from many nearby locations within the Presidio.
 
+### Unique and Experiential Stays
+
+- **Lodge at the Presidio**  
+  *Walkable (5–10 min)* - Located within the Presidio, closest option to the venue.
+
+- **Inn at the Presidio**  
+  *Walkable (10–15 min)* - Quiet, park setting within the Presidio.
+
+- **Hotel Zephyr San Francisco**  
+  *15–20 min by bus or ~10 min by car*
+
+- **Argonaut Hotel**  
+  *15–20 min by bus or ~10 min by car*
+
+### Standard Hotels (Private Rooms)
+
+- **Cow Hollow Inn and Suites**  
+  *~20 min walk or 5–10 min by bus*
+
+- **Travelodge by Wyndham Presidio San Francisco**  
+  *Walkable (15–20 min)*
+
+- **La Luna Inn**  
+  *Walkable (15–20 min)*
+
+### Hostels and Shared Stays
+
+- **HI San Francisco Fisherman's Wharf Hostel**  
+  *~25 min walk or 10–15 min by bus*
+
+- **Green Tortoise Hostel**  
+  *20–25 min by bus or ~10–15 min by car*
+
+---
+
+### Booking Platforms
+
+For international travelers, the following websites are commonly used to search for accommodations in the United States:
+
+- [Google Travel](https://www.google.com/travel/)
+- [Hotels.com](https://www.hotels.com/)
+- [Expedia](http://expedia.com/)
+
+These platforms allow you to compare prices, locations, and availability across a wide range of hotels. Prices are typically displayed in your local currency, and in some cases payments can also be made in your preferred currency for added convenience.
+
+After identifying a suitable option, you may choose to book directly through the hotel’s official website or complete your reservation through the same platform.
+
+Attendees may also consider short-term rentals (e.g., Airbnb) in the Marina District or Richmond District for additional flexibility, particularly for group stays.
+
+San Francisco accommodations can fill quickly; early booking is strongly recommended.
+
+---
+
 # Transportation
 - The venue is accessible via [San Francisco Muni](https://www.sfmta.com/muni-transit) bus lines serving the Presidio.
 - Rideshare services (Uber/Lyft) operate throughout the city.
