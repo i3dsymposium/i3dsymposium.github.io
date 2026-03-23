@@ -36,6 +36,8 @@ The closest airport to the venue is **San Francisco International Airport (SFO)*
 
 We recommend staying in or near the Presidio area for the most convenient access to the venue. The Lucasfilm campus entrance is walkable from many nearby locations within the Presidio.
 
+Below are a few curated options for attendees; however, many additional accommodations are available throughout the city.
+
 ### Unique and Experiential Stays
 
 - **Lodge at the Presidio**  
