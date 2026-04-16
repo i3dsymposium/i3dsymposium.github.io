@@ -37,6 +37,9 @@ sponsors:
 #        link: https://www.futurewei.com/
   - level: silver
     members:
+      - name: Autodesk
+        image: autodesk.png
+        link: https://www.autodesk.com/research    
       - name: NVIDIA
         image: nvidia.png
         link: https://www.nvidia.com/en-us/research/
