@@ -19,8 +19,7 @@ San Francisco, CA, USA
 ## Location 
 Lucasfilm is located at:
 
-[1110 Gorgas Ave,
-San Francisco, CA 94129](https://maps.app.goo.gl/dCARzmShCPhoDpvM9)
+[1 Letterman Drive ("Entrance by the Yoda Foutain")](https://maps.app.goo.gl/rNz1qeRKdUNuDiSs7)
 
 
 {% comment %}<!-- We use this method, which requires storing a screen capture of the map because otherwise google will store cookies just for embedding it, and we don't want to deal with GDPR notices if we can avoid it. -->{% endcomment %}
