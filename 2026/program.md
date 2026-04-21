@@ -33,7 +33,7 @@ program:
         title: "Posters Fast Forward"
       - time: "11:40"
         title: "Keynote: Blake Taylor (Meta) - The Horizon Engine"
-        link: "keynotes.html#blake-taylor"
+        #link: "keynotes.html#blake-taylor"
       - time: "12:40"
         notes: "Lunch + Posters 1"
       - time: "14:10"
