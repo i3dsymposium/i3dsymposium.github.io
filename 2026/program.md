@@ -32,7 +32,7 @@ program:
       - time: "11:15"
         title: "Posters Fast Forward"
       - time: "11:40"
-        title: "Keynote: Blake Taylor (Meta) - The Horizon Engine"
+        title: "Keynote"
         #link: "keynotes.html#blake-taylor"
       - time: "12:40"
         notes: "Lunch + Posters 1"
@@ -69,7 +69,7 @@ program:
       - time: "14:50"
         notes: break
       - time: "15:00"
-        title: "Keynote: Kayvon Fatahalian (Stanford / Roblox)"
+        title: "Keynote"
         #link: "keynotes.html#kayvon-fatahalian"
       - time: "18:00"
         notes: Banquet
