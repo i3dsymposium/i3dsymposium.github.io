@@ -43,6 +43,7 @@ program:
         notes: break
       - time: "15:45"
         title: "[Invited Talk] An Art University & Game Company Partnership for Co-Creation with AI"
+        link: "sponsored-talks.html#an-art-university-and-game-company-partnership-for-co-creation-with-ai"
       - time: "17:00"
         notes: Reception
       - time: "19:00"
