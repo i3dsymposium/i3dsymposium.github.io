@@ -10,6 +10,12 @@ sponsors_definition:
         link: url to link to for this sponsor
 
 sponsors:
+  - level: venue
+    title: Venue Sponsor
+    members:
+      - name: Industrial Light & Magic
+        image: ilm.png
+        link: https://www.ilm.com/
   - level: platinum
     members:
       - name: Cygames
