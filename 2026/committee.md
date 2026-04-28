@@ -75,7 +75,7 @@ committee:
 
   - chair: Publicity Chairs
     members:
-      - name: Arjun Madhusudhan
+      - name: Arjun Madhusudan
         link: https://arjunmakes.games/AboutMe.html
         institution: Dept. of Computer Science, North Carolina State University
         email: amadhus2@ncsu.edu
