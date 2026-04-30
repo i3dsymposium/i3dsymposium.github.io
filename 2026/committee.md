@@ -44,7 +44,7 @@ committee:
     members:
       - name: Markus Billeter
         link: http://newq.net/
-        institution: School of Computing, University of Leeds
+        institution: School of Computer Science, University of Leeds
         email: m.billeter@leeds.ac.uk
         pronouns: (he, him)
       - name: Benjamin Watson
