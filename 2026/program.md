@@ -32,8 +32,8 @@ program:
       - time: "11:15"
         title: "Posters Fast Forward"
       - time: "11:40"
-        title: "Keynote"
-        #link: "keynotes.html#blake-taylor"
+        title: "Keynote: Dor Verbin"
+        link: "keynotes.html#dor-verbin"
       - time: "12:40"
         notes: "Lunch + Posters 1"
       - time: "14:10"
@@ -42,8 +42,7 @@ program:
       - time: "15:30"
         notes: break
       - time: "15:45"
-        title: "[Invited Talk] An Art University & Game Company Partnership for Co-Creation with AI"
-        link: "sponsored-talks.html#an-art-university-and-game-company-partnership-for-co-creation-with-ai"
+        title: "Invited Talk (TBA)"
       - time: "17:00"
         notes: Reception
       - time: "19:00"
@@ -70,8 +69,8 @@ program:
       - time: "14:50"
         notes: break
       - time: "15:00"
-        title: "Keynote"
-        #link: "keynotes.html#kayvon-fatahalian"
+        title: "Keynote: Kayvon Fatahalian (Stanford / Roblox)"
+        link: "keynotes.html#kayvon-fatahalian"
       - time: "18:00"
         notes: Banquet
       - time: "21:00"
@@ -82,7 +81,8 @@ program:
       - time: "8:00"
         notes: Breakfast
       - time: "9:00"
-        title: "Invited Talk (TBA)"
+        title: "Invited Talk: Game Artists and Game Companies: A New Model for Creative Collaboration with AI"
+        link: "sponsored-talks.html#game-artists-and-game-companies-a-new-model-for-creative-collaboration-with-ai"
       - time: "10:00"
         notes: break
       - time: "10:10"
@@ -96,12 +96,18 @@ program:
       - time: "13:50"
         notes: break
       - time: "14:00"
-        title: "Forum (TBA)"
-      - time: "14:50"
+        title: "Keynote: Naty Hoffman"
+        link: "keynotes.html#naty-hoffman" 
+      - time: "15:00"
+        title: "Forum"
+      - time: "16:00"
+        notes: break
+      - time: "16:10"
         title: "Closing & Awards"
-      - time: "15:10"
+      - time: "16:30"
         title: "Town Hall"
-      - time: "15:40"
+      - time: "17:00"
+        title: "Wrap" 
         endtime: true
 ---
 

@@ -23,7 +23,7 @@ keynotes_definition:
           bio of the author (optional)
 
 keynotes:
-  - title: "An Art University and Game Company Partnership for Co-Creation with AI"
+  - title: "Game Artists and Game Companies: A New Model for Creative Collaboration with AI"
     company: "Cygames & Tokyo University of the Arts"
     abstract: |
       We present an industry-academia research agenda for co-creation with AI in games and interactive media, developed through a collaboration between Cygames and Tokyo University of the Arts. Our central argument is that next-generation generative systems for creative production should be designed not primarily for automation or replacement, but as infrastructures for sustained collaboration with artists. From this perspective, we discuss three research directions. First, drawing on case studies from game production, we show that AI systems can be substantially improved when artists participate directly in the design of data preparation, curation, and evaluation pipelines. Second, we argue that artists should be understood not merely as end users of AI tools, but as active contributors who define quality targets, steer iterative experimentation, and provide historically and aesthetically grounded criteria for evaluation. Third, as an alternative to conventional approaches that rely heavily on web-scale data, we discuss the potential of generative modeling under small- to medium-scale training regimes tailored to individual artists, production teams, and specific creative projects.
