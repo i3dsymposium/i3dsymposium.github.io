@@ -35,6 +35,10 @@ keynotes:
     headshot: "img/vd.jpg"
     bio:
       Dor Verbin is a research scientist at Google DeepMind in San Francisco, where he works on computer vision, computer graphics, and machine learning. He received his Ph.D. in computer science from Harvard University. Previously, he received a double B.Sc. in physics and in electrical engineering from Tel Aviv University, after which he worked as a researcher at Camerai, developing real-time computer vision algorithms for mobile devices. He received the Best Student Paper Honorable Mention award at CVPR 2022.
+  - title: "Naty Hoffman"
+    headshot: "img/hoffman.png"
+    bio:
+      Naty Hoffman is currently retired after a 35-year career at companies including Meta (improving the appearance of Meta Avatars), Lucasfilm (designing and implementing advanced rendering algorithms for virtual production and VR), 2K Games (leading technology development), Activision (advancing graphics R&D for many games including the Call of Duty series), Santa Monica Studio (coding graphics technology for God of War III), Naughty Dog (developing low-level Playstation 3 libraries), Westwood Studios (leading graphics development on Earth and Beyond) and Intel (architecting CPU pipeline modifications and working on early x86 SIMD extensions). Naty has also authored influential publications and presentations on topics including physically based shading, cinematic lighting, and color perception in graphics.
 
 
 ---
