@@ -32,17 +32,13 @@ program:
       - time: "11:15"
         title: "Posters Fast Forward"
       - time: "11:40"
-        title: "Keynote: Dor Verbin"
-        link: "keynotes.html#dor-verbin"
+        title: "Keynote: Blake Taylor"
+        link: "keynotes.html#blake-taylor"
       - time: "12:40"
         notes: "Lunch + Posters 1"
       - time: "14:10"
         title: "Papers 2: Making Characters Behave"
         link: "papers.html#making-characters-behave"
-      - time: "15:30"
-        notes: break
-      - time: "15:45"
-        title: "Invited Talk (TBA)"
       - time: "17:00"
         notes: Reception
       - time: "19:00"
@@ -60,7 +56,8 @@ program:
       - time: "10:50"
         notes: break
       - time: "11:00"
-        title: "Invited Talk (TBA)"
+        title: "Keynote: Dor Verbin"
+        link: "keynotes.html#dor-verbin"
       - time: "12:00"
         notes: "Lunch + Posters 2"
       - time: "13:30"
@@ -84,29 +81,27 @@ program:
         title: "Invited Talk: Game Artists and Game Companies: A New Model for Creative Collaboration with AI"
         link: "sponsored-talks.html#game-artists-and-game-companies-a-new-model-for-creative-collaboration-with-ai"
       - time: "10:00"
-        notes: break
-      - time: "10:10"
         title: "Papers 5: STIRRing Up the Splatmosphere"
         link: "papers.html#stirring-up-the-splatmosphere"
+      - time: "11:20"
+        notes: break
       - time: "11:30"
-        notes: Lunch
-      - time: "12:30"
         title: "Session 6: My Game is All-A-Stutter"
         link: "papers.html#my-game-is-all-a-stutter"
-      - time: "13:50"
-        notes: break
-      - time: "14:00"
+      - time: "12:50"
+        notes: Lunch
+      - time: "13:45"
         title: "Keynote: Naty Hoffman"
         link: "keynotes.html#naty-hoffman" 
-      - time: "15:00"
+      - time: "14:45"
         title: "Forum"
-      - time: "16:00"
+      - time: "15:45"
         notes: break
-      - time: "16:10"
+      - time: "15:55"
         title: "Closing & Awards"
-      - time: "16:30"
+      - time: "16:15"
         title: "Town Hall"
-      - time: "17:00"
+      - time: "16:45"
         title: "Wrap" 
         endtime: true
 ---
