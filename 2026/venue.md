@@ -31,6 +31,30 @@ The closest airport to the venue is **San Francisco International Airport (SFO)*
 
 ---
 
+# Reception
+
+The reception on the 13th will take place in the cafe at Lucasfilm.
+
+---
+
+# Banquet
+
+![Bluewhale](img/venue/Blue-whale.jpg)
+
+On Thursday 14th of May, we will be having a banquet dinner at [Blue Whale Restaurant and Lounge](https://bluewhalerestaurant-lounge.com/).
+
+We plan to use the outdoor seating area, weather permitting.
+
+### Location
+
+2033 Union Street \\
+San Francisco, CA 94123
+
+{% comment %}<!-- We use this method, which requires storing a screen capture of the map because otherwise google will store cookies just for embedding it, and we don't want to deal with GDPR notices if we can avoid it. -->{% endcomment %}
+{% include map-embed.html link="https://maps.app.goo.gl/zotdAv1XQCFKBnWt5" image="img/venue/bluewhale-map.png" %}
+
+---
+
 # Lodging {#Lodging}
 
 We recommend staying in or near the Presidio area for the most convenient access to the venue. The Lucasfilm campus entrance is walkable from many nearby locations within the Presidio.
@@ -97,14 +121,3 @@ San Francisco accommodations can fill quickly; early booking is strongly recomme
 - For those staying outside San Francisco (e.g., in Marin County, the South Bay/Silicon Valley, or along the Peninsula), regional rail ([BART](https://www.bart.gov/) or [Caltrain](https://www.caltrain.com/)), bus, and ferry services provide connections into the city, with onward transit to the Presidio.
 
 
----
-
-# Reception
-
-To be announced soon.
-
----
-
-# Banquet
-
-To be announced soon.
