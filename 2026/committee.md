@@ -110,18 +110,15 @@ steering_committee:
       - Bart Wroński
 
 ipc:
-  - Rafael Kuffner dos Anjos, University of Leeds
   - Jiri Bittner, Czech Technical University in Prague
-  - Lingqi Yan, University of California, Santa Barbara
   - Jiawen Chen, Adobe Inc.
   - Petrik Clarberg, NVIDIA
-  - Corey Toler-Franklin, Barnard College, Columbia University
-  - Christiaan Gribble, Advanced Micro Devices, Inc.
-  - Yusuke Tokuyoshi, Advanced Micro Devices, Inc.
+  - Marc Comino Trinidad, Universidad Rey Juan Carlos
   - George Drettakis, INRIA
   - Adrien Dubouchet, Activision
   - Linus Franke, FAU
   - Ajinkya Gavane, NCSU
+  - Christiaan Gribble, Advanced Micro Devices, Inc.
   - Johannes Hanika, Karlsruhe Institute of Technology
   - Takahiro Harada, AMD
   - Sebastian Herholz, Intel
@@ -131,12 +128,13 @@ ipc:
   - Michal Iwanicki, Activision
   - Yoshihiro Kanamori, University of Tsukuba
   - Bernhard Kerbl, TU Wien
+  - Rafael Kuffner dos Anjos, University of Leeds
   - Shiguang Liu, Tianjin University
   - Nicolas Lopez, Ubi Soft
   - Ricardo Marroquim, TU Delft
+  - Javier Meseguer de Paz, Next Limit Technologies
   - Aline Normoyle, Bryn Mawr College
   - Sumanta Pattanaik, UCF
-  - Javier Meseguer de Paz, Next Limit Technologies
   - Christoph Peters, TU Delft
   - Matt Pharr, NVIDIA
   - Rulon Raymond, Microsoft / Activision
@@ -147,14 +145,16 @@ ipc:
   - Zackary P. T. Sin, The Hong Kong Polytechnic University
   - Josef Spjut, NVIDIA
   - Marc Stamminger, Friedrich-Alexander-Universitaet Erlangen-Nuernberg
-  - Tiow Seng Tan, National University of Singapore
   - Markus Steinberger, Graz University of Technology, Austria
-  - Marc Comino Trinidad, Universidad Rey Juan Carlos
+  - Tiow Seng Tan, National University of Singapore
+  - Yusuke Tokuyoshi, Advanced Micro Devices, Inc.
+  - Corey Toler-Franklin, Barnard College, Columbia University
   - David Walton, Birmingham City University
   - Tomer Weiss, New Jersey Institute of Technology
   - Bartlomiej Wronski, NVIDIA
   - Tianyu Wu, eBots Inc
   - Chris Wyman, NVIDIA
+  - Lingqi Yan, University of California, Santa Barbara
   - Lei Yang, Industrial Graphics R&D
 
 ---
