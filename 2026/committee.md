@@ -110,52 +110,52 @@ steering_committee:
       - Bart Wroński
 
 ipc:
- - Zackary P. T. Sin, The Hong Kong Polytechnic University
- - Ludovic Hoyet, INRIA Rennes - Centre Bretagne Atlantique
- - Ricardo Marroquim, TU Delft
- - Yusuke Tokuyoshi, Advanced Micro Devices, Inc.
- - Jiri Bittner, Czech Technical University in Prague
- - Javier Meseguer de Paz, Next Limit Technologies
- - Tomer Weiss, New Jersey Institute of Technology
- - Christiaan Gribble, Advanced Micro Devices, Inc.
- - Bartlomiej Wronski, NVIDIA
- - Lei Yang, Industrial Graphics R&D
- - Takahiro Harada, AMD
- - Shiguang Liu, Tianjin University
- - Rafael Kuffner dos Anjos, University of Leeds
- - Sebastien Hillaire, Epic Games
- - Bernhard Kerbl, TU Wien
- - Tianyu Wu, eBots Inc
- - Rulon Raymond, Microsoft / Activision
- - Aline Normoyle, Bryn Mawr College
- - David Walton, Birmingham City University
- - Christoph Peters, TU Delft
- - Josef Spjut, NVIDIA
- - Marc Stamminger, Friedrich-Alexander-Universitaet Erlangen-Nuernberg
- - Sumanta Pattanaik, UCF
- - Yann Savoye, Liverpool John Moores University
- - Corey Toler-Franklin, Barnard College, Columbia University
- - Marc Comino Trinidad, Universidad Rey Juan Carlos
- - Pedro Sander, The Hong Kong University of Science and Technology
- - Marco Salvi, NVIDIA
- - Tiow Seng Tan, National University of Singapore
- - Michal Iwanicki, Activision
- - Linus Franke, FAU
- - Sebastian Herholz, Intel
- - Ajinkya Gavane, NCSU
- - Adrien Dubouchet, Activision
- - Petrik Clarberg, NVIDIA
- - Nicolas Lopez, Ubi Soft
- - Jiawen Chen, Adobe Inc.
- - Matt Pharr, NVIDIA
- - George Drettakis, INRIA
- - Lingqi Yan, University of California, Santa Barbara
- - Yuichi Itoh, Osaka University
- - Johannes Hanika, Karlsruhe Institute of Technology
- - Yoshihiro Kanamori, University of Tsukuba
- - Markus Steinberger, Graz University of Technology, Austria
- - Konstantin Shkurko, University of Utah
- - Chris Wyman, NVIDIA
+- Rafael Kuffner dos Anjos, University of Leeds
+- Jiri Bittner, Czech Technical University in Prague
+- Lingqi Yan, University of California, Santa Barbara
+- Jiawen Chen, Adobe Inc.
+- Petrik Clarberg, NVIDIA
+- Corey Toler-Franklin, Barnard College, Columbia University
+- Christiaan Gribble, Advanced Micro Devices, Inc.
+- Yusuke Tokuyoshi, Advanced Micro Devices, Inc.
+- George Drettakis, INRIA
+- Adrien Dubouchet, Activision
+- Linus Franke, FAU
+- Ajinkya Gavane, NCSU
+- Johannes Hanika, Karlsruhe Institute of Technology
+- Takahiro Harada, AMD
+- Sebastian Herholz, Intel
+- Sebastien Hillaire, Epic Games
+- Ludovic Hoyet, INRIA Rennes - Centre Bretagne Atlantique
+- Yuichi Itoh, Osaka University
+- Michal Iwanicki, Activision
+- Yoshihiro Kanamori, University of Tsukuba
+- Bernhard Kerbl, TU Wien
+- Shiguang Liu, Tianjin University
+- Nicolas Lopez, Ubi Soft
+- Ricardo Marroquim, TU Delft
+- Aline Normoyle, Bryn Mawr College
+- Sumanta Pattanaik, UCF
+- Javier Meseguer de Paz, Next Limit Technologies
+- Christoph Peters, TU Delft
+- Matt Pharr, NVIDIA
+- Rulon Raymond, Microsoft / Activision
+- Marco Salvi, NVIDIA
+- Pedro Sander, The Hong Kong University of Science and Technology
+- Yann Savoye, Liverpool John Moores University
+- Konstantin Shkurko, University of Utah
+- Zackary P. T. Sin, The Hong Kong Polytechnic University
+- Josef Spjut, NVIDIA
+- Marc Stamminger, Friedrich-Alexander-Universitaet Erlangen-Nuernberg
+- Tiow Seng Tan, National University of Singapore
+- Markus Steinberger, Graz University of Technology, Austria
+- Marc Comino Trinidad, Universidad Rey Juan Carlos
+- David Walton, Birmingham City University
+- Tomer Weiss, New Jersey Institute of Technology
+- Bartlomiej Wronski, NVIDIA
+- Tianyu Wu, eBots Inc
+- Chris Wyman, NVIDIA
+- Lei Yang, Industrial Graphics R&D
 
 ---
 
