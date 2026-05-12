@@ -20,8 +20,8 @@ sessions_definition:
 sessions:
   - title: "Session 1: Posters"
     entries:
-      - title: "What Do Competitive Players Do With Their Settings? A Multi-Game Esports Configuration Survey"
-        authors: "Ashish Rajpurohit, Arjun Madhusudan, Benjamin Watson"
+      - title: "Scene2Scene: LLM-driven 3D Spatial Blockout for Guided AI Video Synthesis"
+        authors: "Yutong Alison Mei, Wei Cai"
       - title: "Weber: An Efficient and Interactive Framework for Crafting and Simulating Physics in the Web Browser"
         authors: "Chengguizi Han, Alon Flor, Timothy Meehan, Mridul Aanjaneya"
       - title: "Photon-Driven Neural Radiance Caching"
@@ -63,8 +63,8 @@ sessions:
         authors: "Taekgeun You, Woong Seo, Donghee Han, Insung Ihm"
       - title: "Application of Implicit Surface and Signed Distance Field to Wellbore Data Visualization"
         authors: "Thibaut Andrieu, Hendrik Schroots"
-      - title: "Scene2Scene: LLM-driven 3D Spatial Blockout for Guided AI Video Synthesis"
-        authors: "Yutong Alison Mei, Wei Cai"
+      - title: "What Do Competitive Players Do With Their Settings? A Multi-Game Esports Configuration Survey"
+        authors: "Ashish Rajpurohit, Arjun Madhusudan, Benjamin Watson"
 
 
   - title: "Session 2: Demos"
