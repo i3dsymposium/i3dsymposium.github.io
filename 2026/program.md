@@ -27,20 +27,21 @@ program:
       - time: "9:45"
         title: "Papers 1: VR in Hard Places"
         link: "papers.html#vr-in-hard-places"
-      - time: "10:50"
+      - time: "11:10"
         notes: break
-      - time: "11:05"
+      - time: "11:25"
         title: "Posters Fast Forward"
-      - time: "11:35"
+      - time: "11:50"
         title: "Keynote: Blake Taylor"
         link: "keynotes.html#blake-taylor"
-      - time: "12:35"
+      - time: "12:50"
         notes: "Lunch + Posters 1"
-      - time: "14:05"
+      - time: "14:10"
         title: "Papers 2: Making Characters Behave"
         link: "papers.html#making-characters-behave"
       - time: "17:00"
         notes: Reception
+        link: "venue.html#reception"
       - time: "19:00"
         endtime: true
  
@@ -70,6 +71,7 @@ program:
         link: "keynotes.html#kayvon-fatahalian"
       - time: "18:00"
         notes: Banquet
+        link: "venue.html#banquet"
       - time: "21:00"
         endtime: true
  
