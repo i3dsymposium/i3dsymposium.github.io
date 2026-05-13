@@ -31,7 +31,7 @@ committee:
         pronouns: (he, him)
       - name: Omer Shapira
         link: https://omershapira.com/
-        # institution: The Hong Kong Polytechnic University
+        institution: Meta
         email: info@omershapira.com
         pronouns: (he, him)
 
