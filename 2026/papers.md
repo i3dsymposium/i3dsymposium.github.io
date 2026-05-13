@@ -118,11 +118,13 @@ sessions:
         authors: "Lasse Henrich, Falko Kötter"
         journal: "IEEE TRANSACTIONS ON GAMES"
         doi_link: "https://doi.org/10.1109/TG.2025.3561107"
+        thumbnail: "Lasse Henrich.png"
         abstract: |
           Procedural content generation is a useful tool for content creation in computer games. We present a novel approach for generating closed, arcade-like race tracks. Our algorithm generates an initial shape by growing a curve inside a constrained space under self-repulsion, hence avoiding self-intersections while ensuring tight packing. This system is capable of generating a wide variety of closed race track shapes with deep customization options, like an isometric alignment of straight sections as developed here. Further, we devise algorithms for fitting the shape to a spline and introducing intersections, as well as fully generating a 3-D model with features like crossings and bridges. We extend this approach with an editor tool developed in the Unity Engine for easy access to controls and customization options, and conclude with an expressive range analysis of the generator's output.
       - title: "Unpaired 3D Point Cloud Shape Translation through Structure-aware Token Space and Gated Fusion Translator"
         authors: "Yu-Chiao Wu, I-Chen Lin, Tzu-Miao Yao, Po-Jui Lin"
         doi_link: "https://doi.org/10.1145/3804503"
+        thumbnail: "I-Chen.png"
         abstract: |
           This paper addresses the problem of unpaired shape translation on 3D point clouds. While prior methods typically rely on global latent vectors or spatially structured grids, such representations often lack the flexibility to capture both semantic structures and fine-grained geometric details. To address this, we propose operating directly in a structured token space, where tokens are pretrained through masked auto encoding. Unlike rigid spatial grids that impose fixed layouts, our tokens naturally adapt to geometric variations while maintaining semantic coherence. This structured yet flexible latent space enables semantically meaningful and geometrically precise transformations. A transformer-based translator is proposed to manipulate these tokens. This gated dual-branch translator enables detail-preserving and topology-aware shape translation across categories. Experiments on challenging tasks, such as chair-to-table transformations, demonstrate that our approach outperforms existing methods in preserving both global structure and part-level details.
 
@@ -132,16 +134,19 @@ sessions:
       - title: "ReSTIR PT Enhanced: Algorithmic Advances for Faster and More Robust ReSTIR Path Tracing"
         authors: "Daqi Lin, Markus Kettunen, Chris Wyman"
         doi_link: "https://doi.org/10.1145/3804494"
+        thumbnail: "Daqi-Lin.png"
         abstract: |
           Algorithms leveraging ReSTIR-style spatiotemporal reuse have recently proliferated, hugely increasing effective sample count for light transport in real-time ray and path tracers. Many papers have been published on novel theoretical improvements, but algorithmic improvements and engineering insights toward optimal implementation have largely been neglected. We demonstrate enhancements to ReSTIR PT that make it 2–3x faster, decrease both visual and numerical error, and improve its robustness, making it closer to production-ready. We halve the spatial reuse cost by reciprocal neighbor selection, robustify shift mappings with new footprint-based reconnection criteria, and reduce spatiotemporal correlation with duplication maps. We further improve both performance and quality by extensive optimization, unifying direct and global illumination into the same reservoirs, and utilizing existing techniques for color noise and disocclusion noise reduction.
       - title: "GRay: Ray Tracing 3D Gaussians Near The Speed of Splats"
         authors: "Yohan Poirier-Ginter, Jean-François Lalonde, George Drettakis"
         doi_link: "https://doi.org/10.1145/3804496"
+        thumbnail: "Yohan Poirier-Ginter.png"
         abstract: |
           3D Gaussian Splatting is a popular representation for radiance field reconstruction, distinguished by the rendering speed of its rasterization-based renderer. While 3D Gaussians can also be raytraced, this approach has so far been slower, with 3D Gaussian Ray Tracing (3DGRT) taking nearly one order of magnitude longer to optimize. To address this, we present GRay, a fast ray tracer for 3D Gaussians designed to close this performance gap and match 3DGS's speed. Our method leverages the algorithmic difference between both approaches: unlike rasterization, ray tracing evaluates only Gaussians that are actually intersected by a ray, leading to potentially logarithmic---rather than linear---scaling in the number of primitives. This property allows ray tracing to better exploit dense scenes composed of numerous tiny Gaussians, a configuration which has largely been overlooked. Notably, we show that dense initialization---which creates many small primitives---slows down rasterization, but instead speeds up ray tracing. Designed to leverage this effect, GRay renders nearly 4× faster and optimizes nearly 10× faster than 3DGRT while maintaining similar quality, and has competitive speed with 3DGS albeit with somewhat lower quality. Code will be released upon publication.
       - title: "Improving Spatial Domain Repetition of Implicit Surfaces"
         authors: "Clément Magniez, Cédric Zanni"
         doi_link: "https://doi.org/10.1145/3804498"
+        thumbnail: "Clément Magniez.png"
         abstract: |
           Implicit surfaces offer distinct advantages over traditional boundary representations, including infinite resolution, low memory footprint, smooth geometry by construction, and support for non-destructive modeling. In this work, we introduce a method for localizing geometric detail in a way that preserves the mathematical properties required for accurate and efficient rendering using sphere tracing. Our contributions include novel procedural modeling techniques that expand the range of repetition patterns achievable in implicit surfaces; an interpolation-based approach that maintains field correctness while remaining computationally efficient; and a cache-based acceleration strategy that significantly improves the rendering performance of domain-repeated implicit geometries.
 
@@ -151,18 +156,21 @@ sessions:
       - title: "Impact of Graphical Fidelity and Frame-Time Stutter in a First-Person Shooter Game"
         authors: "Samin Shahriar Tokey, Ben Boudaoud, Joohwan Kim, Josef Spjut, Peter Xenopoulos, Mark Claypool"
         doi_link: "https://doi.org/10.1145/3804493"
+        thumbnail: "Samin Shahriar Tokey.png"
         abstract: |
           Frametime spikes and graphical fidelity both influence the feel of first-person shooter (FPS) games, yet their combined effects are not well understood. This paper examines how graphics settings and frametime spike magnitude interact with player performance and experience. We developed a custom FPS game with configurable textures, lighting, and visual effects, and induced frametime spikes of 0~ms, 225~ms, or 675~ms during play. Twenty-one participants completed all combinations while providing performance data and subjective ratings for visual quality and smoothness. Results show that graphical fidelity primarily affects perceived visual quality, while frametime spikes strongly reduce perceived smoothness. Performance (i.e., score and accuracy) declines with larger spikes but remains largely unchanged across graphics settings. These findings suggest that spike magnitude, rather than graphical fidelity, is the dominant factor shaping smoothness and performance, while players still notice and prefer higher-fidelity visuals.
       - title: "A Toolkit for Visual Game Content Exploration and Modification"
         authors: "Philipp Fleck, Michael Hochörtler, David Kastl, Georg Gotschier, Johanna Pirker, Dieter Schmalstieg"
         journal: "IEEE TRANSACTIONS ON GAMES"
         doi_link: "https://doi.org/10.1109/TG.2025.3528513"
+        thumbnail: "Philipp Fleck.jpg"
         abstract: |
           We investigate the idea of a toolkit for visually exploring and modifying game content, addressing questions, such as how to identify relevant in-game data, how to make use of the data to create in-game visual representations, and what benefits these representations have. To that aim, we build a toolkit on top of the .NET platform employed by Unity in order to explore and add custom content without access to the game's source code. Our visual modifications use live objects in the game as data sources. The results appear as an integral part of the game world, which is generated with the original Unity rendering engine. This capability enables visual exploration for debugging, playtesting, modding, streaming, and data-driven analysis of games, as we demonstrate with several examples.
       - title: "Will GPT-4 Run DOOM?"
         authors: "Adrian de Wynter"
         journal: " IEEE Transactions on Games"
         doi_link: "https://doi.org/10.1109/TG.2024.3497601"
+        thumbnail: "Adrian Wynter.png"
         abstract: |
           We show that GPT-4’s reasoning and planning capabilities extend to the 1993 first-person shooter Doom. This large language model (LLM) is able to run and play the game with only a few instructions, plus a textual description–generated by the model itself from screenshots–about the state of the game being observed. We find that GPT-4 can play the game to a passable degree: it is able to manipulate doors, combat enemies, and perform pathing. More complex prompting strategies involving multiple model calls provide better results. While further work is required to enable the LLM to play the game as well as its classical, reinforcement learning-based counterparts, we note that GPT-4 required no training, leaning instead on its own reasoning and observational capabilities. We hope our work pushes the boundaries on intelligent, LLM-based agents in video games. We conclude by discussing the ethical implications of our work.
 
