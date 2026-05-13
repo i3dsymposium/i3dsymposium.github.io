@@ -111,8 +111,6 @@ program:
 * This bulletpoint is necessary for kramdown to generate the ToC
 {:toc}
 
-This program is not definitive. The times and slot order listed here might change.
-
 The conference will run from Wednesday 13th of May to Friday 15th of May 2026, in [San Francisco, CA, USA](venue.html).
 
 All times are United States Pacific Daylight Savings Time ({{ page.timezone_name }}, or {{ page.timezone }}).
