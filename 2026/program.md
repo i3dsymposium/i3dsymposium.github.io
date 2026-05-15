@@ -96,7 +96,7 @@ program:
         title: "Keynote: Naty Hoffman"
         link: "keynotes.html#naty-hoffman" 
       - time: "14:45"
-        title: "Forum"
+        title: "Fireside Chat: Eric Haines + Naty Hoffman"
       - time: "15:45"
         notes: break
       - time: "15:55"
