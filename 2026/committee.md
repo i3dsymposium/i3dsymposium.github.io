@@ -91,6 +91,17 @@ committee:
         email: akdm@ror3d.xyz
         pronouns: (he, him)
 
+  - chair: Venue Chairs
+    members:
+      - name: Stephen Hill
+        link: https://www.linkedin.com/in/selfshadow/
+        institution: Lucasfilm
+        pronouns: (he, him)
+      - name: Julie Stallone
+        link: https://www.linkedin.com/in/juliestallone/
+        institution: Industrial Light & Magic
+        pronouns: (she, her)
+
 steering_committee:
   - year: 2026
     members:
