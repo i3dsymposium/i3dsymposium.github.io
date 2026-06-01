@@ -19,7 +19,7 @@ sessions_definition:
         abstract:  |
           some text here, can be multiline.
           If separated by a single line, it will be converted to <br>,
-          
+
           otherwise it will be converted to separate <p> tags
 
 
@@ -108,12 +108,6 @@ sessions:
   - title: "Shapes on track"
     chair: "Burkhard Wünsche"
     papers:
-      - title: "Canvas3D: Translating 2D Edits into Implicit Neural Instance Field"
-        authors: "Yuqin Lu, Yihua Dai, Yutao Jiang, Tianyi Xiang, Chuhua Xian, Shengfeng He"
-        doi_link: "https://doi.org/10.1145/3804490"
-        thumbnail: "Space-Lu.png"
-        abstract: |
-          We introduce Canvas3D, a novel framework for learning an editable 3D instance field from sparse 2D observations. Our approach utilizes depth information from observed views to warp sparse inputs into previously unobserved viewpoints. Each missing view is warped from the two nearest observed views in different directions, effectively filling occlusion-caused gaps. These warped views significantly enhance the learning of a geometrically precise 3D instance field by leveraging multi-view consistency. Additionally, we propose an effective method for manipulating the learned 3D instance field through 2D interactions in a geometrically coherent manner. This allows for object-level manipulation in 3D space by editing 2D instance maps from arbitrary viewpoints. The instance field also serves as an intermediate representation for 3D-aware editable image synthesis. This bypasses the complexities of direct 3D manipulation by editing a robust instance field before translating it into consistent images using off-the-shelf semantic image synthesis models. Extensive experiments demonstrate that our method accurately reconstructs a 3D instance field from sparse 2D observations and enables 2D-driven object-level manipulation of the field. We also explore the potential of our method in 3D-aware controllable image synthesis, showcasing synthesis results guided by edited semantic maps.
       - title: "From Generation to Gameplay: Authoring Race Tracks With Repulsive Curves"
         authors: "Lasse Henrich, Falko Kötter"
         journal: "IEEE TRANSACTIONS ON GAMES"
