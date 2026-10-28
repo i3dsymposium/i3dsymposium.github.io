@@ -1,0 +1,176 @@
+---
+layout: default2027
+mailing_list_form: true
+
+video_youtube_hash: "FWJxmwZmTdQ"
+video_title: "Last year's papers preview"
+#video_title: "The 2026 papers preview"
+
+action_button:
+#  text: Register
+#  link: registration.html
+#  text: Call for Posters
+#  link: cfp-posters.html
+#  text: Call for Papers
+#  link: cfp.html
+
+important_dates:
+  - name: Paper submission deadline
+    date: TBD
+  - name: Paper notifications
+    date: TBD
+  - name: Revision deadline
+    date: TBD
+  - name: Camera-ready deadline
+    date: TBD
+  - name: Conference
+    date: TBD 2027
+
+sponsors_definition:
+  - level: Title of the level of sponsorship
+    members: # List of members
+      - name: Name of the company (Only used in the "alt" of the img tag)
+        image: Image to show for this sponsor
+        link: url to link to for this sponsor
+
+sponsors:
+#  - level: venue
+#    title: Venue Sponsor
+#    members:
+#      - name: Industrial Light & Magic
+#        image: ilm.png
+#        link: https://www.ilm.com/
+#  - level: platinum
+#    members:
+#      - name: Cygames
+#        image: cygames.png
+#        link: https://www.cygames.co.jp/en/
+#      - name: Epicgames
+#        image: epicgames.png
+#        link: https://dev.epicgames.com/
+#      - name: Google
+#        image: google.png
+#        link: https://deepmind.google.com/
+#      - name: arm
+#        image: arm.png
+#        link: https://www.arm.com
+#      - name: meta
+#        image: meta.png
+#        link: https://www.metacareers.com
+#  - level: gold
+#    members:
+#      - name: Activision
+#        image: activision.png
+#        link: https://research.activision.com
+#      - name: EA
+#        image: ea-seed.png
+#        link: https://www.ea.com/seed
+#      - name: Futurewei
+#        image: futurewei.png
+#        link: https://www.futurewei.com/
+#  - level: silver
+#    members:
+#      - name: Autodesk
+#        image: autodesk.png
+#        link: https://www.autodesk.com/research    
+#      - name: NVIDIA
+#        image: nvidia.png
+#        link: https://www.nvidia.com/en-us/research/
+
+
+    
+---
+
+<div id="index-highlight" class="flex">
+    <div class="one-third">
+        <h1>2027 ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games</h1>
+        {% comment %}<!-- This should just use the same data that's set and used in the layout,
+            but jekyll is bugged (https://github.com/jekyll/jekyll/issues/9710) so until that is fixed,
+            we can't use information from the layout in here. -->
+            {% if layout.conference_info and layout.conference_info.location %}
+            <h1 class="thin">{{layout.conference_info.location}}<br />{{layout.conference_info.dates}}</h1>
+            {%- endif %}
+        {% endcomment -%}
+        <h1 class="thin">TBD 2027</h1>
+        {%- if page.action_button %}
+        <h1><a href="{{ page.action_button.link }}" class="button">{{ page.action_button.text }}</a></h1>
+        {%- endif %}
+    </div>
+    <div class="two-thirds">
+        {% include video-embed.html youtube_hash=page.video_youtube_hash title=page.video_title thumbnail="img/2026-index-video-thumbnail.png" %}
+        <h3 class="medium-thin">Watch {{page.video_title}}!</h3>
+    </div>
+</div>
+
+{% if page.important_dates %}
+<section id="important-dates" class="highlight-bg-even">
+    <h2>Important Dates</h2>
+    <ul class="three-columns">
+        {% for date in page.important_dates -%}
+            {% assign thisdate = date.date | date: "%Y%m%d" | plus: 0 -%}
+            {% assign now = "now" | date: "%Y%m%d" | plus: 0 -%}
+            {% if thisdate < now and thisdate > 0 -%}
+                {% assign past = true -%}
+            {% else -%}
+                {% assign past = false -%}
+            {% endif -%}
+            <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
+        {%- endfor %}
+    </ul>
+</section>
+{% endif %}
+
+
+<section class="flex highlight-bg-even">
+    <div class="one-third">
+        <h3>
+            I3D is the leading conference for real time 3D computer graphics and human interaction
+        </h3>
+    </div>
+
+    <div class="two-thirds">
+        <p>
+            2027 is I3D's {{ 2027 | minus: 1986 }}st year since the
+            <a href="http://dl.acm.org/citation.cfm?id=319120&picked=prox&CFID=734542800&CFTOKEN=48967429">inaugural workshop in 1986</a>,
+            and the {{ 2027 | minus: 2005 | plus: 9 }}st conference (I3D occurred roughly biennially until 2005).
+        </p>
+        <p>
+            More details on <a href="conference.html">prior conferences are available here</a>.
+        </p>
+    </div>
+</section>
+
+{% include_relative _mailing-list-form.html %}
+
+<section id="sponsors" class="flex highlight-bg-even">
+    <div class="one-third">
+        <h2>Sponsors</h2>
+        <p>
+            The ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games
+            2027 is a highly-visible, leading-edge conference for techniques that
+            combine 3D computer graphics with human interaction.
+        </p>
+        <p>
+            More about corporate sponsors <a href="sponsors.html">here</a>
+        </p>
+    </div>
+
+    <div class="two-thirds">
+      {% for level in page.sponsors -%}
+        {% if level.members -%}
+          {% unless forloop.first %}<hr>{% endunless %}
+          <h3>{{ level.level | capitalize }} Sponsor{% if level.members.size > 1 %}s{% endif %}</h3>
+          <ul class="sponsors-list sponsors-{{ level.level }}">
+          {% for sponsor in level.members -%}
+              <li>
+                  <a href="{{ sponsor.link }}" target="_blank">
+                      <img src="img/sponsors/{{ sponsor.image }}" alt="{{ sponsor.name }}">
+                  </a>
+              </li>
+          {% endfor -%}
+          </ul>
+        {% endif -%}
+      {% endfor -%}
+    </div>
+</section>
+
