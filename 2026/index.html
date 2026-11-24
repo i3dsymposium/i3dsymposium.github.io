@@ -110,25 +110,6 @@ sponsors:
     </div>
 </div>
 
-{% if page.important_dates %}
-<section id="important-dates" class="highlight-bg-even">
-    <h2>Important Dates</h2>
-    <ul class="three-columns">
-        {% for date in page.important_dates -%}
-            {% assign thisdate = date.date | date: "%Y%m%d" | plus: 0 -%}
-            {% assign now = "now" | date: "%Y%m%d" | plus: 0 -%}
-            {% if thisdate < now and thisdate > 0 -%}
-                {% assign past = true -%}
-            {% else -%}
-                {% assign past = false -%}
-            {% endif -%}
-            <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
-        {%- endfor %}
-    </ul>
-</section>
-{% endif %}
-
-
 <section class="flex highlight-bg-even">
     <div class="one-third">
         <h3>
@@ -177,8 +158,25 @@ sponsors:
               </li>
           {% endfor -%}
           </ul>
-        {% endif -%}
+        {% endif -%}      
       {% endfor -%}
     </div>
 </section>
 
+{% if page.important_dates %}
+<section id="important-dates" class="highlight-bg-even">
+    <h2>Important Dates</h2>
+    <ul class="three-columns">
+        {% for date in page.important_dates -%}
+            {% assign thisdate = date.date | date: "%Y%m%d" | plus: 0 -%}
+            {% assign now = "now" | date: "%Y%m%d" | plus: 0 -%}
+            {% if thisdate < now and thisdate > 0 -%}
+                {% assign past = true -%}
+            {% else -%}
+                {% assign past = false -%}
+            {% endif -%}
+            <li{% if past %} class="past"{% endif %}>{{ date.name }}:<span class="date">{{ date.date }}</span></li>
+        {%- endfor %}
+    </ul>
+</section>
+{% endif %}

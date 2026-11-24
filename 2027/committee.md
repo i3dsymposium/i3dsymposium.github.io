@@ -1,0 +1,233 @@
+---
+layout: default2027
+title: 2027 Committee
+
+committee_definition:
+  - chair: Name of the chair(s)
+    members: # List of people performing this function
+      - name: Name of the person
+        link: (optional) Url to link to on the name of the person
+        institution: Who they are associated with (company/university)
+        email: contact email of this person
+        pronouns: list of pronouns for this person, such as (he, him), (she, her), etc
+
+steering_committee_definition: # List of members in the steering committee, by year
+  - year: Year these people entered the steering committee
+    members: # List of 
+      - Name 1
+      - Name 2
+
+ipc_definition: # List of IPC members
+  - Name, Institution
+
+
+committee:
+  - chair: General Chairs
+    members:
+      - name: Przemyslaw Musialski
+        link: https://web.njit.edu/~przem/
+        institution: New Jersey Institute of Technology
+        email: przemyslaw.musialski@njit.edu
+        pronouns: (he, him)
+
+  #    - name:
+  #      institution: 
+  #      email: 
+  #      pronouns: (she, her)
+
+  - chair: Papers Chairs
+    members:
+      - name: Zackary P. T. Sin
+        link: https://zackarysin.github.io/
+        institution: The Hong Kong Polytechnic University
+        email: zackary-p-t.sin@polyu.edu.hk
+        pronouns: (he, him)
+      - name: Omer Shapira
+        link: https://omershapira.com/
+        institution: Meta
+        email: info@omershapira.com
+        pronouns: (he, him)
+
+#  - chair: Posters Chairs
+#    members:
+#      - name: Justus Robertson
+#        link: http://justusrobertson.com
+#        institution: Rochester Institute of Technology
+#        email: jjrigm@rit.edu
+#        pronouns: (he, him)
+#      - name: Tomer Weiss
+#        link: https://tomerwei.github.io/
+#        institution: New Jersey Institute of Technology
+#        email: tweiss@njit.edu
+#        pronouns: (he, him)
+
+#  - chair: Local Chair
+#    members:
+#      - name: Laura Reznikov
+#        institution: Meta
+#        email: laurareznikov@gmail.com
+#        pronouns: (she, her)
+
+  - chair: Publicity Chairs
+    members:
+      - name: Arjun Madhusudan
+        link: https://arjunmakes.games/AboutMe.html
+        institution: Dept. of Computer Science, North Carolina State University
+        email: amadhus2@ncsu.edu
+        pronouns: (he, him)
+      - name: Ashish Rajpurohit
+        link: https://www.linkedin.com/in/ashishsadanandrajpurohit/
+        institution: Dept. of Computer Science, North Carolina State University
+        email: arajpur@ncsu.edu
+        pronouns: (he, him)
+
+#  - chair: Venue Chairs
+#    members:
+#      - name: Stephen Hill
+#        link: https://www.linkedin.com/in/selfshadow/
+#        institution: Lucasfilm
+#        pronouns: (he, him)
+#      - name: Julie Stallone
+#        link: https://www.linkedin.com/in/juliestallone/
+#        institution: Industrial Light & Magic
+#        pronouns: (she, her)
+
+steering_committee:
+  - year: 2026
+    members:
+      - Zackary P. T. Sin
+      - Omer Shapira
+  - year: 2025
+    members:
+      - Markus Billeter
+      - Benjamin Watson
+  - year: 2024
+    members:
+      - Ricardo Marroquim
+      - Laura Reznikov
+  - year: 2023
+    members:
+      - Erik Sintorn
+      - Bart Wroński
+
+ipc:
+  - Jiri Bittner, Czech Technical University in Prague
+  - Jiawen Chen, Adobe Inc.
+  - Petrik Clarberg, NVIDIA
+  - Marc Comino Trinidad, Universidad Rey Juan Carlos
+  - George Drettakis, INRIA
+  - Adrien Dubouchet, Activision
+  - Linus Franke, FAU
+  - Ajinkya Gavane, NCSU
+  - Christiaan Gribble, Advanced Micro Devices, Inc.
+  - Johannes Hanika, Karlsruhe Institute of Technology
+  - Takahiro Harada, AMD
+  - Sebastian Herholz, Intel
+  - Sebastien Hillaire, Epic Games
+  - Ludovic Hoyet, INRIA Rennes - Centre Bretagne Atlantique
+  - Yuichi Itoh, Osaka University
+  - Michal Iwanicki, Activision
+  - Yoshihiro Kanamori, University of Tsukuba
+  - Bernhard Kerbl, TU Wien
+  - Rafael Kuffner dos Anjos, University of Leeds
+  - Shiguang Liu, Tianjin University
+  - Nicolas Lopez, Ubi Soft
+  - Ricardo Marroquim, TU Delft
+  - Javier Meseguer de Paz, Next Limit Technologies
+  - Aline Normoyle, Bryn Mawr College
+  - Sumanta Pattanaik, UCF
+  - Christoph Peters, TU Delft
+  - Matt Pharr, NVIDIA
+  - Rulon Raymond, Microsoft / Activision
+  - Marco Salvi, NVIDIA
+  - Pedro Sander, The Hong Kong University of Science and Technology
+  - Yann Savoye, Liverpool John Moores University
+  - Konstantin Shkurko, University of Utah
+  - Zackary P. T. Sin, The Hong Kong Polytechnic University
+  - Josef Spjut, NVIDIA
+  - Marc Stamminger, Friedrich-Alexander-Universitaet Erlangen-Nuernberg
+  - Markus Steinberger, Graz University of Technology, Austria
+  - Tiow Seng Tan, National University of Singapore
+  - Yusuke Tokuyoshi, Advanced Micro Devices, Inc.
+  - Corey Toler-Franklin, Barnard College, Columbia University
+  - David Walton, Birmingham City University
+  - Tomer Weiss, New Jersey Institute of Technology
+  - Bartlomiej Wronski, NVIDIA
+  - Tianyu Wu, eBots Inc
+  - Chris Wyman, NVIDIA
+  - Lingqi Yan, University of California, Santa Barbara
+  - Lei Yang, Industrial Graphics R&D
+
+---
+
+* This bulletpoint is necessary for kramdown to generate the ToC
+{:toc}
+
+# Organizing Committee
+
+<small>*Co-chairs are listed alphabetically*</small>
+
+
+{% for chair in page.committee %}
+
+{:.no_toc}
+## {{ chair.chair }}
+<ul class="three-columns">
+  {% for member in chair.members -%}
+  <li> 
+		<b class="member-name">{% if member.link %}<a href="{{ member.link }}" target="_blank">{{ member.name }}</a>{% else %}{{ member.name }}{% endif %}</b><br>
+		{% if member.institution %}{{ member.institution }}<br>{% endif %}
+		{% if member.email %}<span class="e-mail" data-e-user="{{ member.email | split: '@' | first}}" data-e-domain="{{ member.email | split: '@' | last}}">&nbsp;</span><br>{% endif %}
+		{{ member.pronouns }}
+	</li>
+  {%- endfor %}
+</ul>
+{% endfor %}
+
+<noscript>
+<p>&nbsp;</p>
+<p>
+If you can't see the emails of the committee members (you likely have javascript disabled) and need to contact us, use the general email address to do so.
+</p>
+</noscript>
+
+{% if page.ipc.size > 0 %}
+---
+
+# International Paper Committee
+
+{% for member in page.ipc %}
+- {{ member }}
+{%- endfor %}
+
+{% endif %}
+
+---
+
+# Steering Committee
+
+The steering committee consists of the conference and general
+co-chairs of the most recent 4 years, including the chairs of the
+upcoming conference that is still being planned.
+
+For {% comment %}<!-- This doesn't work at the moment because jekyll is bugged. -->{{layout.current_year}}{% endcomment -%} 2026, this is:
+{% for year in page.steering_committee -%}
+<!-- {{ year.year }} -->
+{%- for member in year.members %}
+- {{ member }}
+{%- endfor -%}
+{% endfor %}
+
+In general, we expect that a junior and senior person will serve as
+co-chairs for the conference and a similar team will serve as co-chairs
+for the program.  This guideline allows junior members of the community
+to gain exposure by participating in the conference organization.
+
+The general chairs for each year's conference become the next year's
+program chairs, unless they step down, in which case they can be replaced.
+The following year's general chairs are selected and recruited by the current
+chairs, with input and approval by the steering committee.
+
+The steering committee is also responsible for making long-term strategic
+decisions, such as those related to the publication format and timing.
+
