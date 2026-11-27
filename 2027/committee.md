@@ -17,8 +17,8 @@ steering_committee_definition: # List of members in the steering committee, by y
       - Name 1
       - Name 2
 
-ipc_definition: # List of IPC members
-  - Name, Institution
+#ipc_definition: # List of IPC members
+#  - Name, Institution
 
 
 committee:
@@ -110,53 +110,54 @@ steering_committee:
       - Erik Sintorn
       - Bart Wroński
 
-ipc:
-  - Jiri Bittner, Czech Technical University in Prague
-  - Jiawen Chen, Adobe Inc.
-  - Petrik Clarberg, NVIDIA
-  - Marc Comino Trinidad, Universidad Rey Juan Carlos
-  - George Drettakis, INRIA
-  - Adrien Dubouchet, Activision
-  - Linus Franke, FAU
-  - Ajinkya Gavane, NCSU
-  - Christiaan Gribble, Advanced Micro Devices, Inc.
-  - Johannes Hanika, Karlsruhe Institute of Technology
-  - Takahiro Harada, AMD
-  - Sebastian Herholz, Intel
-  - Sebastien Hillaire, Epic Games
-  - Ludovic Hoyet, INRIA Rennes - Centre Bretagne Atlantique
-  - Yuichi Itoh, Osaka University
-  - Michal Iwanicki, Activision
-  - Yoshihiro Kanamori, University of Tsukuba
-  - Bernhard Kerbl, TU Wien
-  - Rafael Kuffner dos Anjos, University of Leeds
-  - Shiguang Liu, Tianjin University
-  - Nicolas Lopez, Ubi Soft
-  - Ricardo Marroquim, TU Delft
-  - Javier Meseguer de Paz, Next Limit Technologies
-  - Aline Normoyle, Bryn Mawr College
-  - Sumanta Pattanaik, UCF
-  - Christoph Peters, TU Delft
-  - Matt Pharr, NVIDIA
-  - Rulon Raymond, Microsoft / Activision
-  - Marco Salvi, NVIDIA
-  - Pedro Sander, The Hong Kong University of Science and Technology
-  - Yann Savoye, Liverpool John Moores University
-  - Konstantin Shkurko, University of Utah
-  - Zackary P. T. Sin, The Hong Kong Polytechnic University
-  - Josef Spjut, NVIDIA
-  - Marc Stamminger, Friedrich-Alexander-Universitaet Erlangen-Nuernberg
-  - Markus Steinberger, Graz University of Technology, Austria
-  - Tiow Seng Tan, National University of Singapore
-  - Yusuke Tokuyoshi, Advanced Micro Devices, Inc.
-  - Corey Toler-Franklin, Barnard College, Columbia University
-  - David Walton, Birmingham City University
-  - Tomer Weiss, New Jersey Institute of Technology
-  - Bartlomiej Wronski, NVIDIA
-  - Tianyu Wu, eBots Inc
-  - Chris Wyman, NVIDIA
-  - Lingqi Yan, University of California, Santa Barbara
-  - Lei Yang, Industrial Graphics R&D
+
+#ipc:
+#  - Jiri Bittner, Czech Technical University in Prague
+#  - Jiawen Chen, Adobe Inc.
+#  - Petrik Clarberg, NVIDIA
+#  - Marc Comino Trinidad, Universidad Rey Juan Carlos
+#  - George Drettakis, INRIA
+#  - Adrien Dubouchet, Activision
+#  - Linus Franke, FAU
+#  - Ajinkya Gavane, NCSU
+#  - Christiaan Gribble, Advanced Micro Devices, Inc.
+#  - Johannes Hanika, Karlsruhe Institute of Technology
+#  - Takahiro Harada, AMD
+#  - Sebastian Herholz, Intel
+#  - Sebastien Hillaire, Epic Games
+#  - Ludovic Hoyet, INRIA Rennes - Centre Bretagne Atlantique
+#  - Yuichi Itoh, Osaka University
+#  - Michal Iwanicki, Activision
+#  - Yoshihiro Kanamori, University of Tsukuba
+#  - Bernhard Kerbl, TU Wien
+#  - Rafael Kuffner dos Anjos, University of Leeds
+#  - Shiguang Liu, Tianjin University
+#  - Nicolas Lopez, Ubi Soft
+#  - Ricardo Marroquim, TU Delft
+#  - Javier Meseguer de Paz, Next Limit Technologies
+#  - Aline Normoyle, Bryn Mawr College
+#  - Sumanta Pattanaik, UCF
+#  - Christoph Peters, TU Delft
+#  - Matt Pharr, NVIDIA
+#  - Rulon Raymond, Microsoft / Activision
+#  - Marco Salvi, NVIDIA
+#  - Pedro Sander, The Hong Kong University of Science and Technology
+#  - Yann Savoye, Liverpool John Moores University
+#  - Konstantin Shkurko, University of Utah
+#  - Zackary P. T. Sin, The Hong Kong Polytechnic University
+#  - Josef Spjut, NVIDIA
+#  - Marc Stamminger, Friedrich-Alexander-Universitaet Erlangen-Nuernberg
+#  - Markus Steinberger, Graz University of Technology, Austria
+#  - Tiow Seng Tan, National University of Singapore
+#  - Yusuke Tokuyoshi, Advanced Micro Devices, Inc.
+#  - Corey Toler-Franklin, Barnard College, Columbia University
+#  - David Walton, Birmingham City University
+#  - Tomer Weiss, New Jersey Institute of Technology
+#  - Bartlomiej Wronski, NVIDIA
+#  - Tianyu Wu, eBots Inc
+#  - Chris Wyman, NVIDIA
+#  - Lingqi Yan, University of California, Santa Barbara
+#  - Lei Yang, Industrial Graphics R&D
 
 ---
 
@@ -164,9 +165,6 @@ ipc:
 {:toc}
 
 # Organizing Committee
-
-<small>*Co-chairs are listed alphabetically*</small>
-
 
 {% for chair in page.committee %}
 
@@ -191,6 +189,7 @@ If you can't see the emails of the committee members (you likely have javascript
 </p>
 </noscript>
 
+{% comment %}
 {% if page.ipc.size > 0 %}
 ---
 
@@ -201,6 +200,7 @@ If you can't see the emails of the committee members (you likely have javascript
 {%- endfor %}
 
 {% endif %}
+{% endcomment %}
 
 ---
 
